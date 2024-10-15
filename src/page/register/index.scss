@@ -1,0 +1,50 @@
+.registerpage {
+  .register-1 {
+    padding: 100px 200px;
+    .header {
+      .title {
+        color: #024caa;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 28px;
+        text-align: left;
+      }
+      .caption {
+        color: #7f878f;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        letter-spacing: 0;
+        line-height: 20px;
+        margin-bottom: 0;
+        text-align: left;
+        margin-top: 10px;
+      }
+    }
+    .register {
+      margin-top: 30px;
+      .input {
+        margin-top: 30px;
+      }
+    }
+    .button {
+      .button-register {
+        margin-top: 30px;
+        background: #024caa;
+        color: #fff;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 20px;
+        border: none;
+        cursor: pointer;
+      }
+    }
+    .accept {
+      margin-top: 30px;
+    }
+  }
+  .backgroud {
+    background: #024caa;
+  }
+}

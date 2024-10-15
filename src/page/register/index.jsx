@@ -1,10 +1,14 @@
 import { Button, Checkbox, Col, Input, Row } from "antd";
-import { SafetyCertificateOutlined, ChromeOutlined } from "@ant-design/icons";
+import {
+  SafetyCertificateOutlined,
+  ChromeOutlined,
+  UserOutlined,
+} from "@ant-design/icons";
 import { useState } from "react";
 import "./index.scss";
 import { Link } from "react-router-dom";
 
-function LoginPage() {
+function RegisterPage() {
   const [isChecked, setIsChecked] = useState(false);
 
   const onChange = (e) => {
@@ -12,16 +16,24 @@ function LoginPage() {
   };
 
   return (
-    <div className="loginpage">
+    <div className="registerpage">
       <Row>
-        <Col span={18} className="login-1">
+        <Col span={18} className="register-1">
           <div className="header">
             <h2 className="title">Chào mừng bạn đến với Job Match</h2>
             <div className="caption">
               Cùng tìm kiếm và nhận được các cơ hội sự nghiệp lý tưởng
             </div>
           </div>
-          <div className="login">
+          <div className="register">
+            <div className="input">
+              <p style={{ marginBottom: "10px" }}>Họ và tên</p>
+              <Input
+                size="large"
+                placeholder="Họ và tên"
+                prefix={<UserOutlined style={{ color: "#024CAA" }} />}
+              />
+            </div>
             <div className="input">
               <p style={{ marginBottom: "10px" }}>Email</p>
               <Input
@@ -31,36 +43,37 @@ function LoginPage() {
               />
             </div>
             <div className="input">
-              <p style={{ marginBottom: "10px" }}>Password</p>
+              <p style={{ marginBottom: "10px" }}>Mật khẩu</p>
               <Input.Password
                 size="large"
-                placeholder="Password"
+                placeholder="Mật khẩu"
+                prefix={
+                  <SafetyCertificateOutlined style={{ color: "#024CAA" }} />
+                }
+              />
+            </div>
+            <div className="input">
+              <p style={{ marginBottom: "10px" }}>Nhập lại mật khẩu</p>
+              <Input.Password
+                size="large"
+                placeholder="Nhập lại mật khẩu"
                 prefix={
                   <SafetyCertificateOutlined style={{ color: "#024CAA" }} />
                 }
               />
             </div>
           </div>
-          <div className="forgot-password">
-            <Link to={""} style={{ color: "#024CAA" }}>
-              Quên mật khẩu
-            </Link>
-          </div>
           <div className="button">
-            <Button className="button-login" type="primary" block>
-              Đăng nhập
-            </Button>
-            <div className="or-login">Hoặc đăng nhập bằng</div>
             <Button
-              className="button-login-gg"
+              className="button-register"
               type="primary"
               block
               style={{
                 opacity: isChecked ? 1 : 0.5,
                 pointerEvents: isChecked ? "auto" : "none",
-              }} // Điều chỉnh opacity và pointerEvents
+              }}
             >
-              <ChromeOutlined /> Google
+              Đăng ký
             </Button>
           </div>
           <div className="accept">
@@ -71,17 +84,11 @@ function LoginPage() {
                 Điều khoản dịch vụ
               </Link>{" "}
               và{" "}
-              <Link to={"/chinh-sach"} style={{ color: "#00b14f" }}>
+              <Link to={"/chinh-sach"} style={{ color: "#024CAA" }}>
                 Chính sách bảo mật
               </Link>{" "}
               của Job Match
             </Checkbox>
-          </div>
-          <div className="register-account">
-            Bạn chưa có tài khoản?{" "}
-            <Link to={"/register"} style={{ color: "#024CAA" }}>
-              Đăng ký ngay
-            </Link>
           </div>
         </Col>
         <Col span={6} className="backgroud"></Col>
@@ -90,4 +97,4 @@ function LoginPage() {
   );
 }
 
-export default LoginPage;
+export default RegisterPage;

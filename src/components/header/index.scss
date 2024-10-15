@@ -1,0 +1,39 @@
+.header {
+  .logo {
+    float: left;
+    font-size: 24px;
+    font-weight: bold;
+  }
+
+  .ant-menu-horizontal {
+    line-height: 64px; /* Căn chỉnh các item menu */
+  }
+
+  .ant-menu-item {
+    font-size: 16px; /* Kích thước chữ của các item */
+  }
+  .button-group {
+    .login-home {
+      color: #024caa;
+      font-weight: 600;
+      border: none;
+    }
+
+    .register-home {
+      background-color: #024caa;
+      font-weight: 600;
+    }
+    .register-home:hover {
+      background-color: #024caa;
+    }
+
+    .dang-tuyen-home {
+      background-color: black;
+      color: white;
+      font-weight: 600;
+    }
+    .dang-tuyen-home:hover {
+      background-color: black;
+    }
+  }
+}
