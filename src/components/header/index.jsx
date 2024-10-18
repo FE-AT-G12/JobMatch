@@ -37,7 +37,7 @@ function Header() {
               }}
             >
               <Menu.Item key="1">
-                <Link to="/home" style={{ color: "black", fontWeight: "500" }}>
+                <Link to="/" style={{ color: "black", fontWeight: "500" }}>
                   Trang chủ
                 </Link>
               </Menu.Item>
@@ -84,7 +84,7 @@ function Header() {
                 <Link to={"/login"}>Đăng nhập</Link>
               </Button>
               <Button className="register-home" type="primary">
-                <Link to={"/login"}>Đăng ký</Link>
+                <Link to={"/register"}>Đăng ký</Link>
               </Button>
               <Button className="dang-tuyen-home" type="primary">
                 Đăng tuyển việc làm

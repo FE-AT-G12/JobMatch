@@ -84,7 +84,16 @@ function LoginPage() {
             </Link>
           </div>
         </Col>
-        <Col span={6} className="backgroud"></Col>
+        <Col span={6} className="backgroud">
+          <div className="sologan">
+            <p className="sologan-1">Tiếp lợi thế</p>
+            <p className="sologan-1">Nối thành công</p>
+            <p className="sologan-2">
+              Job Match - Hệ sinh thái nhân sự tiên phong ứng dụng công nghệ tại
+              Việt Nam
+            </p>
+          </div>
+        </Col>
       </Row>
     </div>
   );

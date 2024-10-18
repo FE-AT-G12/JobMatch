@@ -1,27 +1,28 @@
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
-import HomePage from "./page/home";
+
 import LoginPage from "./page/login";
 import RegisterPage from "./page/register";
 import Layout from "./components/layout";
+import HomePage from "./page/home";
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Layout />, // Bọc layout cho các trang chính
+    element: <Layout />, 
     children: [
       {
         path: "/",
-        element: <HomePage />, // Trang chủ sẽ được render bên trong Layout
+        element: <HomePage/>, 
       },
     ],
   },
   {
     path: "/login",
-    element: <LoginPage />, // Trang login không cần layout
+    element: <LoginPage />, 
   },
   {
     path: "/register",
-    element: <RegisterPage />, // Trang register không cần layout
+    element: <RegisterPage />, 
   },
 ]);
 
