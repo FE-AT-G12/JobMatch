@@ -1,33 +1,31 @@
-import { RouterProvider, createBrowserRouter } from "react-router-dom";
-
-import LoginPage from "./page/login";
-import RegisterPage from "./page/register";
-import Layout from "./components/layout";
-import HomePage from "./page/home";
-
-const router = createBrowserRouter([
-  {
-    path: "/",
-    element: <Layout />, 
-    children: [
-      {
-        path: "/",
-        element: <HomePage/>, 
-      },
-    ],
-  },
-  {
-    path: "/login",
-    element: <LoginPage />, 
-  },
-  {
-    path: "/register",
-    element: <RegisterPage />, 
-  },
-]);
+import { Route, Routes, useNavigate } from 'react-router-dom';
+import routes from './configs/routes';
 
 function App() {
-  return <RouterProvider router={router} />;
+  return (
+    <Routes>
+      {routes.map((route, i) => {
+        const Layout = route.layout;
+        return (
+          <Route key={i} element={<Layout />}>
+            {route.data.map(item => {
+              const Component = item.component;
+              return (
+                <Route
+                  key={item.path}
+                  path={item.path}
+                  element={
+                    <Component />
+                  }
+                />
+              );
+            })}
+          </Route>
+        );
+      })}
+    </Routes>
+  )
+
 }
 
 export default App;
