@@ -1,0 +1,253 @@
+.home {
+  .search {
+    background: linear-gradient(to bottom, #024caa, #ffffff);
+    padding: 40px 20px; // Tăng padding để làm thanh tìm kiếm nổi bật hơn
+
+    .slogan {
+      color: #ffffff;
+      display: flex;
+      justify-content: center;
+      padding: 20px 0px;
+      font-size: 32px; // Tăng kích thước chữ để thu hút sự chú ý
+      font-weight: bold;
+    }
+
+    .advanced-search {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 20px;
+
+      .search-group {
+        display: flex;
+        gap: 10px;
+        background-color: #fff; // Màu nền trắng để làm nổi bật input và nút tìm kiếm
+        border-radius: 12px;
+        padding: 5px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); // Thêm shadow để làm thanh tìm kiếm nổi bật
+
+        .combined-input {
+          display: flex;
+          border-radius: 12px;
+          overflow: hidden;
+
+          input {
+            padding: 15px;
+            border: none;
+            width: 370px; // Điều chỉnh kích thước input cho hợp lý
+            font-size: 16px;
+            color: #333; // Màu chữ input
+            background-color: #fff; // Thêm màu nền nhạt cho input
+
+            &:first-child {
+              border-right: 1px solid #fff;
+            }
+
+            &:focus {
+              outline: none;
+              background-color: #fff; // Đổi màu nền khi input được focus
+            }
+          }
+
+          .button {
+            padding: 15px 25px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 12px 12px 12px 12px; // Bo tròn góc cho nút tìm kiếm
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: bold; // In đậm để nút nổi bật
+            transition: background-color 0.3s ease; // Thêm hiệu ứng chuyển màu khi hover
+
+            &:hover {
+              background-color: #0056b3;
+            }
+
+            &:active {
+              background-color: #004494; // Màu khi nhấn nút
+            }
+          }
+        }
+      }
+    }
+  }
+  .home-1 {
+    .title-1 {
+      color: #024caa;
+      font-size: 24px;
+      font-weight: 500;
+    }
+    .search-dropdown {
+      position: relative;
+      width: 250px;
+      padding: 20px 0px;
+
+      .search-input {
+        display: flex;
+        align-items: center;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        padding: 5px;
+        cursor: pointer;
+        background-color: #fff;
+
+        input {
+          border: none;
+          width: 100%;
+          font-size: 16px;
+          cursor: pointer;
+          padding-left: 50px;
+
+          &:focus {
+            outline: none;
+          }
+        }
+
+        .dropdown-icon {
+          font-size: 18px;
+          margin-left: 10px;
+          color: #888;
+        }
+      }
+
+      .dropdown-menu {
+        position: absolute;
+        top: 70%;
+        left: 0;
+        right: 0;
+        background-color: #fff;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        margin-top: 5px;
+        list-style: none;
+        padding: 0;
+        z-index: 1000;
+        max-height: 150px;
+        overflow-y: auto; // Thêm scroll nếu có quá nhiều lựa chọn
+
+        li {
+          padding: 10px;
+          cursor: pointer;
+          transition: background-color 0.3s;
+
+          &:hover {
+            background-color: #f4f4f4;
+          }
+        }
+      }
+    }
+    .card-job-container {
+      display: flex;
+      flex-wrap: wrap; // Allow the cards to wrap to the next line
+      justify-content: space-between; // Distribute space evenly
+
+      .card-job {
+        //flex: 0 0 calc(33.33% - 16px);
+        margin-bottom: 16px;
+
+        display: flex;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+        &:hover {
+          transform: translateY(-5px);
+          box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+        }
+
+        .ant-card {
+          padding: 1px;
+          border: 1px solid #f0f0f0;
+          border-radius: 10px;
+          background-color: #fff;
+        }
+
+        .job-infor {
+          margin-top: -10px;
+
+          .job-title,
+          .job-city,
+          .salary,
+          .address {
+            justify-content: flex-start;
+            font-size: 18px;
+            color: #333;
+            margin: 0px 0;
+          }
+
+          .text_ellipsis {
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            display: block;
+            max-width: 100%;
+          }
+
+          .job-title {
+            font-weight: bold;
+            font-size: 20px;
+          }
+
+          .box-footer {
+            margin-top: 10px;
+          }
+
+          .col-job-info {
+            display: flex;
+
+            .salary {
+              color: #007bff;
+              font-weight: bold;
+            }
+
+            .address {
+              margin-left: 10px;
+              color: #666;
+            }
+          }
+        }
+      }
+    }
+  }
+  .home-2 {
+    .title-2 {
+      color: #024caa;
+      font-size: 24px;
+      font-weight: 500;
+      margin-top: 10px;
+    }
+    .city-card {
+      padding: 20px 0px;
+
+      .city-card-mini {
+        display: flex;
+        justify-content: center;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
+      .city-card-mini:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+      }
+
+      .city-name {
+        font-size: 20px;
+        font-weight: bold;
+        justify-content: center;
+        display: flex;
+      }
+    }
+  }
+  .home-3 {
+    background: linear-gradient(
+      to bottom,
+      rgba(2, 75, 170, 0.575), rgba(0, 0, 0, 0.205) 
+    );
+    border-radius: 10px;
+    .title-3 {
+        padding: 10px;
+      color: #ffffff;
+      font-size: 24px;
+      font-weight: 500;
+      margin-top: 10px;
+    }
+  }
+}
