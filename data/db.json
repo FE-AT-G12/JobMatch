@@ -1,0 +1,262 @@
+{
+    "job": [
+        {
+            "jobId": "job001",
+            "title": "Nhập Dữ Liệu",
+            "description": "Nhập dữ liệu từ các tài liệu đã quét vào bảng Excel.",
+            "skillRequirement": [
+                "Word cơ bản",
+                "Excel cơ bản"
+            ],
+            "ageRequirement": {
+                "min": "18",
+                "max": "20"
+            },
+            "category": "Hành chính",
+            "location": "Làm việc từ xa",
+            "dateStart": "20/10/2024",
+            "dateEnd": "21/10/2024",
+            "repeatOn": null,
+            "timeStart": "20:00",
+            "duration": 2,
+            "datePosted": "20/10/2024",
+            "payment": {
+                "payRate": 70000,
+                "paymentMethod": "cash",
+                "payTime": "after"
+            },
+            "hirerId": "user002",
+            "clientId": ["user001"],
+            "status": "Đang tuyển"
+        }
+    ],
+    "user": [
+        {
+            "userId": "user003",
+            "role": "client",
+            "name": "Trần Minh C",
+            "age": 30,
+            "phoneNumber": "0933445566",
+            "email": "tranmc@gmail.com",
+            "skills": [
+                "Nhập liệu",
+                "Phục vụ",
+                "Chăm sóc khách hàng"
+            ],
+            "location": "Hà Nội, Việt Nam",
+            "availability": "Toàn thời gian",
+            "birthDate": "18/05/1994",
+            "education": "12/12",
+            "rating": 4.6,
+            "identityCard": {
+                "identityNumber": "074200910287",
+                "placeOfIssue": "Hà Nội",
+                "dateOfIssue": "20/10/2020"
+            },
+            "description": "",
+            "status": "active"
+        },
+        {
+            "userId": "user004",
+            "role": "hirer",
+            "name": "Lê Thu D",
+            "location": "Đà Nẵng, Việt Nam",
+            "phoneNumber": "0911234567",
+            "email": "lethudn@gmail.com",
+            "rating": 4.4,
+            "identityCard": {
+                "identityNumber": "074200920374",
+                "placeOfIssue": "Đà Nẵng",
+                "dateOfIssue": "15/03/2021"
+            },
+            "description": "Công ty dịch vụ hỗ trợ tổ chức sự kiện.",
+            "status": "active"
+        },
+        {
+            "userId": "user005",
+            "role": "client",
+            "name": "Ngô Tấn E",
+            "age": 22,
+            "phoneNumber": "0922457890",
+            "email": "ngotane@gmail.com",
+            "skills": [
+                "Phục vụ quán",
+                "Tạp vụ",
+                "Dọn dẹp nhà cửa"
+            ],
+            "location": "Hồ Chí Minh, Việt Nam",
+            "availability": "Bán thời gian",
+            "birthDate": "01/09/2002",
+            "education": "12/12",
+            "rating": 4.7,
+            "identityCard": {
+                "identityNumber": "074200910483",
+                "placeOfIssue": "Tp. HCM",
+                "dateOfIssue": "22/07/2021"
+            },
+            "description": "",
+            "status": "active"
+        },
+        {
+            "userId": "user006",
+            "role": "hirer",
+            "name": "Phan Quốc F",
+            "location": "Hà Nội, Việt Nam",
+            "phoneNumber": "0909457899",
+            "email": "phanquocf@gmail.com",
+            "rating": 4.9,
+            "identityCard": {
+                "identityNumber": "074200920572",
+                "placeOfIssue": "Hà Nội",
+                "dateOfIssue": "30/06/2021"
+            },
+            "description": "Dịch vụ bảo vệ và vệ sinh văn phòng.",
+            "status": "active"
+        },
+        {
+            "userId": "user007",
+            "role": "client",
+            "name": "Nguyễn Mai G",
+            "age": 26,
+            "phoneNumber": "0912345690",
+            "email": "nguyenmaig@gmail.com",
+            "skills": [
+                "Chăm sóc cây cảnh",
+                "Giúp việc nhà",
+                "Sửa chữa đồ điện tử cơ bản"
+            ],
+            "location": "Đà Nẵng, Việt Nam",
+            "availability": "Bán thời gian",
+            "birthDate": "12/11/1997",
+            "education": "12/12",
+            "rating": 4.5,
+            "identityCard": {
+                "identityNumber": "074200910689",
+                "placeOfIssue": "Đà Nẵng",
+                "dateOfIssue": "15/08/2021"
+            },
+            "description": "",
+            "status": "active"
+        },
+        {
+            "userId": "user008",
+            "role": "hirer",
+            "name": "Bùi Thanh H",
+            "location": "Hồ Chí Minh, Việt Nam",
+            "phoneNumber": "0913567880",
+            "email": "buitanhh@gmail.com",
+            "rating": 4.8,
+            "identityCard": {
+                "identityNumber": "074200920781",
+                "placeOfIssue": "Tp. HCM",
+                "dateOfIssue": "10/12/2020"
+            },
+            "description": "Dịch vụ cung cấp lao động thời vụ cho nhà hàng.",
+            "status": "active"
+        },
+        {
+            "userId": "user009",
+            "role": "client",
+            "name": "Đỗ Văn I",
+            "age": 24,
+            "phoneNumber": "0903123789",
+            "email": "dovanai@gmail.com",
+            "skills": [
+                "Sửa chữa xe máy",
+                "Giao hàng"
+            ],
+            "location": "Hà Nội, Việt Nam",
+            "availability": "Toàn thời gian",
+            "birthDate": "19/07/2000",
+            "education": "Trung cấp",
+            "rating": 4.6,
+            "identityCard": {
+                "identityNumber": "074200930984",
+                "placeOfIssue": "Hà Nội",
+                "dateOfIssue": "05/04/2021"
+            },
+            "description": "",
+            "status": "active"
+        },
+        {
+            "userId": "user010",
+            "role": "hirer",
+            "name": "Lương Hà J",
+            "location": "Hải Phòng, Việt Nam",
+            "phoneNumber": "0934356789",
+            "email": "luonghaj@gmail.com",
+            "rating": 4.3,
+            "identityCard": {
+                "identityNumber": "074200920883",
+                "placeOfIssue": "Hải Phòng",
+                "dateOfIssue": "15/05/2020"
+            },
+            "description": "Doanh nghiệp vận tải hàng hóa.",
+            "status": "active"
+        },
+        {
+            "userId": "user011",
+            "role": "client",
+            "name": "Vũ Hồng K",
+            "age": 27,
+            "phoneNumber": "0905671234",
+            "email": "vuhongk@gmail.com",
+            "skills": [
+                "Giao hàng",
+                "Giúp việc gia đình"
+            ],
+            "location": "Cần Thơ, Việt Nam",
+            "availability": "Toàn thời gian",
+            "birthDate": "22/06/1996",
+            "education": "12/12",
+            "rating": 4.7,
+            "identityCard": {
+                "identityNumber": "074200910987",
+                "placeOfIssue": "Cần Thơ",
+                "dateOfIssue": "12/09/2021"
+            },
+            "description": "",
+            "status": "active"
+        },
+        {
+            "userId": "user012",
+            "role": "hirer",
+            "name": "Hoàng Mạnh L",
+            "location": "Hồ Chí Minh, Việt Nam",
+            "phoneNumber": "0913789567",
+            "email": "hoangmanhl@gmail.com",
+            "rating": 4.6,
+            "identityCard": {
+                "identityNumber": "074200920985",
+                "placeOfIssue": "Tp. HCM",
+                "dateOfIssue": "21/07/2021"
+            },
+            "description": "Dịch vụ sửa chữa điện lạnh.",
+            "status": "active"
+        },
+        {
+            "userId": "user013",
+            "role": "client",
+            "name": "Lý Quốc M",
+            "age": 29,
+            "phoneNumber": "0912678990",
+            "email": "lyquocm@gmail.com",
+            "skills": [
+                "Phục vụ sự kiện",
+                "Giữ trẻ"
+            ],
+            "location": "Hải Dương, Việt Nam",
+            "availability": "Bán thời gian",
+            "birthDate": "14/08/1995",
+            "education": "12/12",
+            "rating": 4.4,
+            "identityCard": {
+                "identityNumber": "074200911189",
+                "placeOfIssue": "Hải Dương",
+                "dateOfIssue": "15/03/2020"
+            },
+            "description": "",
+            "status": "active"
+        }
+    ]
+}
