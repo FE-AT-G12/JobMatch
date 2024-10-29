@@ -6,13 +6,6 @@ import HomePage from '../page/home';
 import Job from '../page/Job/Job';
 import JobAdmin from '../page/JobAdmin/JobAdmin';
 import JobAdminDetail from '../page/JobAdmin/JobAdminDetail';
-import UserTest from "../page/User/UserTest";
-import LoginPage from "../page/login";
-import RegisterPage from "../page/register";
-import Layout from "../components/layout";
-import HomePage from "../page/home";
-import Job from "../page/Job/Job";
-import Profile from "../page/User/Profile";
 const routes = [
   {
     layout: MainLayout,
