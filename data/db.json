@@ -1,262 +1,654 @@
 {
-    "job": [
-        {
-            "jobId": "job001",
-            "title": "Nhập Dữ Liệu",
-            "description": "Nhập dữ liệu từ các tài liệu đã quét vào bảng Excel.",
-            "skillRequirement": [
-                "Word cơ bản",
-                "Excel cơ bản"
-            ],
-            "ageRequirement": {
-                "min": "18",
-                "max": "20"
-            },
-            "category": "Hành chính",
-            "location": "Làm việc từ xa",
-            "dateStart": "20/10/2024",
-            "dateEnd": "21/10/2024",
-            "repeatOn": null,
-            "timeStart": "20:00",
-            "duration": 2,
-            "datePosted": "20/10/2024",
-            "payment": {
-                "payRate": 70000,
-                "paymentMethod": "cash",
-                "payTime": "after"
-            },
-            "hirerId": "user002",
-            "clientId": ["user001"],
-            "status": "Đang tuyển"
-        }
-    ],
-    "user": [
-        {
-            "userId": "user003",
-            "role": "client",
-            "name": "Trần Minh C",
-            "age": 30,
-            "phoneNumber": "0933445566",
-            "email": "tranmc@gmail.com",
-            "skills": [
-                "Nhập liệu",
-                "Phục vụ",
-                "Chăm sóc khách hàng"
-            ],
-            "location": "Hà Nội, Việt Nam",
-            "availability": "Toàn thời gian",
-            "birthDate": "18/05/1994",
-            "education": "12/12",
-            "rating": 4.6,
-            "identityCard": {
-                "identityNumber": "074200910287",
-                "placeOfIssue": "Hà Nội",
-                "dateOfIssue": "20/10/2020"
-            },
-            "description": "",
-            "status": "active"
-        },
-        {
-            "userId": "user004",
-            "role": "hirer",
-            "name": "Lê Thu D",
-            "location": "Đà Nẵng, Việt Nam",
-            "phoneNumber": "0911234567",
-            "email": "lethudn@gmail.com",
-            "rating": 4.4,
-            "identityCard": {
-                "identityNumber": "074200920374",
-                "placeOfIssue": "Đà Nẵng",
-                "dateOfIssue": "15/03/2021"
-            },
-            "description": "Công ty dịch vụ hỗ trợ tổ chức sự kiện.",
-            "status": "active"
-        },
-        {
-            "userId": "user005",
-            "role": "client",
-            "name": "Ngô Tấn E",
-            "age": 22,
-            "phoneNumber": "0922457890",
-            "email": "ngotane@gmail.com",
-            "skills": [
-                "Phục vụ quán",
-                "Tạp vụ",
-                "Dọn dẹp nhà cửa"
-            ],
-            "location": "Hồ Chí Minh, Việt Nam",
-            "availability": "Bán thời gian",
-            "birthDate": "01/09/2002",
-            "education": "12/12",
-            "rating": 4.7,
-            "identityCard": {
-                "identityNumber": "074200910483",
-                "placeOfIssue": "Tp. HCM",
-                "dateOfIssue": "22/07/2021"
-            },
-            "description": "",
-            "status": "active"
-        },
-        {
-            "userId": "user006",
-            "role": "hirer",
-            "name": "Phan Quốc F",
-            "location": "Hà Nội, Việt Nam",
-            "phoneNumber": "0909457899",
-            "email": "phanquocf@gmail.com",
-            "rating": 4.9,
-            "identityCard": {
-                "identityNumber": "074200920572",
-                "placeOfIssue": "Hà Nội",
-                "dateOfIssue": "30/06/2021"
-            },
-            "description": "Dịch vụ bảo vệ và vệ sinh văn phòng.",
-            "status": "active"
-        },
-        {
-            "userId": "user007",
-            "role": "client",
-            "name": "Nguyễn Mai G",
-            "age": 26,
-            "phoneNumber": "0912345690",
-            "email": "nguyenmaig@gmail.com",
-            "skills": [
-                "Chăm sóc cây cảnh",
-                "Giúp việc nhà",
-                "Sửa chữa đồ điện tử cơ bản"
-            ],
-            "location": "Đà Nẵng, Việt Nam",
-            "availability": "Bán thời gian",
-            "birthDate": "12/11/1997",
-            "education": "12/12",
-            "rating": 4.5,
-            "identityCard": {
-                "identityNumber": "074200910689",
-                "placeOfIssue": "Đà Nẵng",
-                "dateOfIssue": "15/08/2021"
-            },
-            "description": "",
-            "status": "active"
-        },
-        {
-            "userId": "user008",
-            "role": "hirer",
-            "name": "Bùi Thanh H",
-            "location": "Hồ Chí Minh, Việt Nam",
-            "phoneNumber": "0913567880",
-            "email": "buitanhh@gmail.com",
-            "rating": 4.8,
-            "identityCard": {
-                "identityNumber": "074200920781",
-                "placeOfIssue": "Tp. HCM",
-                "dateOfIssue": "10/12/2020"
-            },
-            "description": "Dịch vụ cung cấp lao động thời vụ cho nhà hàng.",
-            "status": "active"
-        },
-        {
-            "userId": "user009",
-            "role": "client",
-            "name": "Đỗ Văn I",
-            "age": 24,
-            "phoneNumber": "0903123789",
-            "email": "dovanai@gmail.com",
-            "skills": [
-                "Sửa chữa xe máy",
-                "Giao hàng"
-            ],
-            "location": "Hà Nội, Việt Nam",
-            "availability": "Toàn thời gian",
-            "birthDate": "19/07/2000",
-            "education": "Trung cấp",
-            "rating": 4.6,
-            "identityCard": {
-                "identityNumber": "074200930984",
-                "placeOfIssue": "Hà Nội",
-                "dateOfIssue": "05/04/2021"
-            },
-            "description": "",
-            "status": "active"
-        },
-        {
-            "userId": "user010",
-            "role": "hirer",
-            "name": "Lương Hà J",
-            "location": "Hải Phòng, Việt Nam",
-            "phoneNumber": "0934356789",
-            "email": "luonghaj@gmail.com",
-            "rating": 4.3,
-            "identityCard": {
-                "identityNumber": "074200920883",
-                "placeOfIssue": "Hải Phòng",
-                "dateOfIssue": "15/05/2020"
-            },
-            "description": "Doanh nghiệp vận tải hàng hóa.",
-            "status": "active"
-        },
-        {
-            "userId": "user011",
-            "role": "client",
-            "name": "Vũ Hồng K",
-            "age": 27,
-            "phoneNumber": "0905671234",
-            "email": "vuhongk@gmail.com",
-            "skills": [
-                "Giao hàng",
-                "Giúp việc gia đình"
-            ],
-            "location": "Cần Thơ, Việt Nam",
-            "availability": "Toàn thời gian",
-            "birthDate": "22/06/1996",
-            "education": "12/12",
-            "rating": 4.7,
-            "identityCard": {
-                "identityNumber": "074200910987",
-                "placeOfIssue": "Cần Thơ",
-                "dateOfIssue": "12/09/2021"
-            },
-            "description": "",
-            "status": "active"
-        },
-        {
-            "userId": "user012",
-            "role": "hirer",
-            "name": "Hoàng Mạnh L",
-            "location": "Hồ Chí Minh, Việt Nam",
-            "phoneNumber": "0913789567",
-            "email": "hoangmanhl@gmail.com",
-            "rating": 4.6,
-            "identityCard": {
-                "identityNumber": "074200920985",
-                "placeOfIssue": "Tp. HCM",
-                "dateOfIssue": "21/07/2021"
-            },
-            "description": "Dịch vụ sửa chữa điện lạnh.",
-            "status": "active"
-        },
-        {
-            "userId": "user013",
-            "role": "client",
-            "name": "Lý Quốc M",
-            "age": 29,
-            "phoneNumber": "0912678990",
-            "email": "lyquocm@gmail.com",
-            "skills": [
-                "Phục vụ sự kiện",
-                "Giữ trẻ"
-            ],
-            "location": "Hải Dương, Việt Nam",
-            "availability": "Bán thời gian",
-            "birthDate": "14/08/1995",
-            "education": "12/12",
-            "rating": 4.4,
-            "identityCard": {
-                "identityNumber": "074200911189",
-                "placeOfIssue": "Hải Dương",
-                "dateOfIssue": "15/03/2020"
-            },
-            "description": "",
-            "status": "active"
-        }
-    ]
+  "job": [
+    {
+      "id": "1",
+      "title": "Nhập Dữ Liệu",
+      "description": "Nhập dữ liệu từ các tài liệu đã quét vào bảng Excel.",
+      "skillRequirement": ["Word cơ bản", "Excel cơ bản"],
+      "ageRequirement": {
+        "min": "18",
+        "max": "20"
+      },
+      "category": "Hành chính",
+      "location": "Làm việc từ xa",
+      "dateStart": "20/10/2024",
+      "dateEnd": "21/10/2024",
+      "repeatOn": null,
+      "timeStart": "20:00",
+      "duration": 2,
+      "datePosted": "20/10/2024",
+      "payment": {
+        "payRate": 70000,
+        "paymentMethod": "cash",
+        "payTime": "after"
+      },
+      "hirerId": "2",
+      "clientId": ["1"],
+      "status": "Đang tuyển"
+    },
+    {
+      "id": "2",
+      "title": "Xử Lý Dữ Liệu",
+      "description": "Chỉnh sửa và định dạng dữ liệu từ file Word sang Excel.",
+      "skillRequirement": ["Word nâng cao", "Excel cơ bản"],
+      "ageRequirement": {
+        "min": "21",
+        "max": "25"
+      },
+      "category": "Hành chính",
+      "location": "Làm việc từ xa",
+      "dateStart": "25/10/2024",
+      "dateEnd": "26/10/2024",
+      "repeatOn": null,
+      "timeStart": "18:00",
+      "duration": 3,
+      "datePosted": "23/10/2024",
+      "payment": {
+        "payRate": 80000,
+        "paymentMethod": "cash",
+        "payTime": "before"
+      },
+      "hirerId": "3",
+      "clientId": ["4"],
+      "status": "Đang tuyển"
+    },
+    {
+      "id": "3",
+      "title": "Đánh Máy Văn Bản",
+      "description": "Đánh máy lại tài liệu từ bản viết tay vào Word.",
+      "skillRequirement": ["Word cơ bản", "Đánh máy nhanh"],
+      "ageRequirement": {
+        "min": "18",
+        "max": "22"
+      },
+      "category": "Hành chính",
+      "location": "Làm việc tại văn phòng",
+      "dateStart": "28/10/2024",
+      "dateEnd": "28/10/2024",
+      "repeatOn": null,
+      "timeStart": "14:00",
+      "duration": 4,
+      "datePosted": "26/10/2024",
+      "payment": {
+        "payRate": 90000,
+        "paymentMethod": "bank transfer",
+        "payTime": "after"
+      },
+      "hirerId": "5",
+      "clientId": ["6"],
+      "status": "Đang tuyển"
+    },
+    {
+      "id": "4",
+      "title": "Cập Nhật Dữ Liệu Khách Hàng",
+      "description": "Cập nhật thông tin khách hàng từ file cũ vào hệ thống quản lý.",
+      "skillRequirement": ["Excel cơ bản", "Kỹ năng tìm kiếm thông tin"],
+      "ageRequirement": {
+        "min": "20",
+        "max": "25"
+      },
+      "category": "Hành chính",
+      "location": "Làm việc từ xa",
+      "dateStart": "30/10/2024",
+      "dateEnd": "01/11/2024",
+      "repeatOn": null,
+      "timeStart": "09:00",
+      "duration": 6,
+      "datePosted": "29/10/2024",
+      "payment": {
+        "payRate": 85000,
+        "paymentMethod": "cash",
+        "payTime": "after"
+      },
+      "hirerId": "7",
+      "clientId": ["8"],
+      "status": "Đang tuyển"
+    },
+    {
+      "id": "5",
+      "title": "Kiểm Tra Dữ Liệu",
+      "description": "Kiểm tra độ chính xác của dữ liệu đã nhập vào hệ thống.",
+      "skillRequirement": ["Excel cơ bản", "Kiểm tra lỗi"],
+      "ageRequirement": {
+        "min": "19",
+        "max": "23"
+      },
+      "category": "Hành chính",
+      "location": "Làm việc từ xa",
+      "dateStart": "05/11/2024",
+      "dateEnd": "06/11/2024",
+      "repeatOn": null,
+      "timeStart": "10:00",
+      "duration": 3,
+      "datePosted": "01/11/2024",
+      "payment": {
+        "payRate": 75000,
+        "paymentMethod": "cash",
+        "payTime": "after"
+      },
+      "hirerId": "9",
+      "clientId": ["10"],
+      "status": "Đang tuyển"
+    },
+    {
+      "id": "6",
+      "title": "Nhập Liệu Khảo Sát",
+      "description": "Nhập dữ liệu từ các phiếu khảo sát vào Excel.",
+      "skillRequirement": ["Word cơ bản", "Excel cơ bản"],
+      "ageRequirement": {
+        "min": "20",
+        "max": "24"
+      },
+      "category": "Hành chính",
+      "location": "Làm việc từ xa",
+      "dateStart": "10/11/2024",
+      "dateEnd": "12/11/2024",
+      "repeatOn": null,
+      "timeStart": "13:00",
+      "duration": 5,
+      "datePosted": "08/11/2024",
+      "payment": {
+        "payRate": 70000,
+        "paymentMethod": "bank transfer",
+        "payTime": "after"
+      },
+      "hirerId": "11",
+      "clientId": ["12"],
+      "status": "Đang tuyển"
+    },
+    {
+      "id": "7",
+      "title": "Chuyển Đổi File PDF",
+      "description": "Chuyển đổi các tài liệu PDF sang định dạng Word.",
+      "skillRequirement": ["Word cơ bản", "Kỹ năng chuyển đổi tài liệu"],
+      "ageRequirement": {
+        "min": "22",
+        "max": "27"
+      },
+      "category": "Hành chính",
+      "location": "Làm việc từ xa",
+      "dateStart": "15/11/2024",
+      "dateEnd": "16/11/2024",
+      "repeatOn": null,
+      "timeStart": "16:00",
+      "duration": 4,
+      "datePosted": "12/11/2024",
+      "payment": {
+        "payRate": 82000,
+        "paymentMethod": "cash",
+        "payTime": "before"
+      },
+      "hirerId": "13",
+      "clientId": ["14"],
+      "status": "Đang tuyển"
+    },
+    {
+      "id": "8",
+      "title": "Đối Chiếu Số Liệu Kế Toán",
+      "description": "So sánh dữ liệu kế toán giữa hai nguồn khác nhau.",
+      "skillRequirement": ["Excel nâng cao", "Tính toán chính xác"],
+      "ageRequirement": {
+        "min": "25",
+        "max": "30"
+      },
+      "category": "Hành chính",
+      "location": "Làm việc tại văn phòng",
+      "dateStart": "20/11/2024",
+      "dateEnd": "22/11/2024",
+      "repeatOn": null,
+      "timeStart": "09:00",
+      "duration": 7,
+      "datePosted": "18/11/2024",
+      "payment": {
+        "payRate": 100000,
+        "paymentMethod": "bank transfer",
+        "payTime": "after"
+      },
+      "hirerId": "15",
+      "clientId": ["16"],
+      "status": "Đang tuyển"
+    },
+    {
+      "id": "9",
+      "title": "Xử Lý Hóa Đơn",
+      "description": "Nhập và kiểm tra thông tin hóa đơn của khách hàng.",
+      "skillRequirement": ["Excel cơ bản", "Word cơ bản"],
+      "ageRequirement": {
+        "min": "21",
+        "max": "26"
+      },
+      "category": "Hành chính",
+      "location": "Làm việc từ xa",
+      "dateStart": "25/11/2024",
+      "dateEnd": "26/11/2024",
+      "repeatOn": null,
+      "timeStart": "15:00",
+      "duration": 3,
+      "datePosted": "24/11/2024",
+      "payment": {
+        "payRate": 76000,
+        "paymentMethod": "cash",
+        "payTime": "before"
+      },
+      "hirerId": "17",
+      "clientId": ["18"],
+      "status": "Đang tuyển"
+    },
+    {
+      "id": "10",
+      "title": "Cập Nhật Hồ Sơ Nhân Viên",
+      "description": "Cập nhật và quản lý hồ sơ nhân viên trong hệ thống.",
+      "skillRequirement": ["Excel cơ bản", "Word cơ bản"],
+      "ageRequirement": {
+        "min": "23",
+        "max": "28"
+      },
+      "category": "Hành chính",
+      "location": "Làm việc từ xa",
+      "dateStart": "01/12/2024",
+      "dateEnd": "03/12/2024",
+      "repeatOn": null,
+      "timeStart": "11:00",
+      "duration": 5,
+      "datePosted": "29/11/2024",
+      "payment": {
+        "payRate": 84000,
+        "paymentMethod": "bank transfer",
+        "payTime": "after"
+      },
+      "hirerId": "19",
+      "clientId": ["20"],
+      "status": "Đang tuyển"
+    },
+    {
+      "id": "11",
+      "title": "Chỉnh Sửa Tài Liệu Word",
+      "description": "Chỉnh sửa định dạng và lỗi chính tả trong tài liệu Word.",
+      "skillRequirement": ["Word nâng cao", "Kỹ năng biên tập"],
+      "ageRequirement": {
+        "min": "19",
+        "max": "23"
+      },
+      "category": "Hành chính",
+      "location": "Làm việc tại văn phòng",
+      "dateStart": "05/12/2024",
+      "dateEnd": "06/12/2024",
+      "repeatOn": null,
+      "timeStart": "10:00",
+      "duration": 4,
+      "datePosted": "02/12/2024",
+      "payment": {
+        "payRate": 90000,
+        "paymentMethod": "cash",
+        "payTime": "after"
+      },
+      "hirerId": "21",
+      "clientId": ["22"],
+      "status": "Đang tuyển"
+    },
+    {
+      "id": "12",
+      "title": "Nhập Dữ Liệu Sản Phẩm",
+      "description": "Nhập dữ liệu sản phẩm vào hệ thống quản lý bán hàng.",
+      "skillRequirement": ["Excel cơ bản", "Kỹ năng quản lý dữ liệu"],
+      "ageRequirement": {
+        "min": "20",
+        "max": "24"
+      },
+      "category": "Hành chính",
+      "location": "Làm việc từ xa",
+      "dateStart": "10/12/2024",
+      "dateEnd": "11/12/2024",
+      "repeatOn": null,
+      "timeStart": "08:00",
+      "duration": 6,
+      "datePosted": "08/12/2024",
+      "payment": {
+        "payRate": 72000,
+        "paymentMethod": "bank transfer",
+        "payTime": "after"
+      },
+      "hirerId": "23",
+      "clientId": ["24"],
+      "status": "Đang tuyển"
+    },
+    {
+      "id": "13",
+      "title": "Kiểm Tra Dữ Liệu Khách Hàng",
+      "description": "Kiểm tra và sửa lỗi dữ liệu khách hàng trong Excel.",
+      "skillRequirement": ["Excel nâng cao", "Tỉ mỉ và chính xác"],
+      "ageRequirement": {
+        "min": "21",
+        "max": "26"
+      },
+      "category": "Hành chính",
+      "location": "Làm việc từ xa",
+      "dateStart": "15/12/2024",
+      "dateEnd": "16/12/2024",
+      "repeatOn": null,
+      "timeStart": "14:00",
+      "duration": 4,
+      "datePosted": "13/12/2024",
+      "payment": {
+        "payRate": 83000,
+        "paymentMethod": "cash",
+        "payTime": "before"
+      },
+      "hirerId": "25",
+      "clientId": ["26"],
+      "status": "Đang tuyển"
+    },
+    {
+      "id": "14",
+      "title": "Nhập Hàng Hóa Mới",
+      "description": "Cập nhật thông tin hàng hóa mới vào hệ thống quản lý kho.",
+      "skillRequirement": ["Excel cơ bản", "Word cơ bản"],
+      "ageRequirement": {
+        "min": "22",
+        "max": "27"
+      },
+      "category": "Hành chính",
+      "location": "Làm việc từ xa",
+      "dateStart": "18/12/2024",
+      "dateEnd": "19/12/2024",
+      "repeatOn": null,
+      "timeStart": "13:00",
+      "duration": 5,
+      "datePosted": "16/12/2024",
+      "payment": {
+        "payRate": 79000,
+        "paymentMethod": "bank transfer",
+        "payTime": "after"
+      },
+      "hirerId": "27",
+      "clientId": ["28"],
+      "status": "Đang tuyển"
+    },
+    {
+      "id": "15",
+      "title": "Sắp Xếp Tài Liệu",
+      "description": "Sắp xếp và chỉnh sửa tài liệu trong Word, sau đó lưu lại dưới định dạng PDF.",
+      "skillRequirement": ["Word cơ bản", "Excel cơ bản"],
+      "ageRequirement": {
+        "min": "18",
+        "max": "25"
+      },
+      "category": "Hành chính",
+      "location": "Làm việc từ xa",
+      "dateStart": "22/10/2024",
+      "dateEnd": "23/10/2024",
+      "repeatOn": null,
+      "timeStart": "19:00",
+      "duration": 3,
+      "datePosted": "21/10/2024",
+      "payment": {
+        "payRate": 80000,
+        "paymentMethod": "bank transfer",
+        "payTime": "after"
+      },
+      "hirerId": "3",
+      "clientId": ["2"],
+      "status": "Đang tuyển"
+    },
+    {
+      "id": "16",
+      "title": "Kiểm Tra Chất Lượng Dữ Liệu",
+      "description": "Kiểm tra tính chính xác của dữ liệu đã nhập vào bảng Excel và tạo báo cáo lỗi.",
+      "skillRequirement": ["Excel nâng cao", "Kiểm tra lỗi cơ bản"],
+      "ageRequirement": {
+        "min": "20",
+        "max": "30"
+      },
+      "category": "Kiểm tra chất lượng",
+      "location": "Làm việc từ xa",
+      "dateStart": "24/10/2024",
+      "dateEnd": "25/10/2024",
+      "repeatOn": null,
+      "timeStart": "21:00",
+      "duration": 4,
+      "datePosted": "23/10/2024",
+      "payment": {
+        "payRate": 90000,
+        "paymentMethod": "cash",
+        "payTime": "before"
+      },
+      "hirerId": "4",
+      "clientId": ["3"],
+      "status": "Đang tuyển"
+    },
+    {
+      "id": "17",
+      "title": "Nhập Thông Tin Khách Hàng",
+      "description": "Nhập thông tin liên hệ của khách hàng từ các phiếu điền thông tin vào hệ thống CRM.",
+      "skillRequirement": ["Word cơ bản", "Excel cơ bản", "Nhập liệu"],
+      "ageRequirement": {
+        "min": "18",
+        "max": "28"
+      },
+      "category": "Hành chính",
+      "location": "Làm việc tại văn phòng",
+      "dateStart": "26/10/2024",
+      "dateEnd": "27/10/2024",
+      "repeatOn": null,
+      "timeStart": "09:00",
+      "duration": 6,
+      "datePosted": "24/10/2024",
+      "payment": {
+        "payRate": 75000,
+        "paymentMethod": "bank transfer",
+        "payTime": "after"
+      },
+      "hirerId": "5",
+      "clientId": ["4"],
+      "status": "Đang tuyển"
+    }
+  ],
+  "user": [
+    {
+      "id": "3",
+      "role": "client",
+      "name": "Trần Minh C",
+      "age": 30,
+      "phoneNumber": "0933445566",
+      "email": "tranmc@gmail.com",
+      "skills": ["Nhập liệu", "Phục vụ", "Chăm sóc khách hàng"],
+      "location": "Hà Nội, Việt Nam",
+      "availability": "Toàn thời gian",
+      "birthDate": "18/05/1994",
+      "education": "12/12",
+      "rating": 4.6,
+      "identityCard": {
+        "identityNumber": "074200910287",
+        "placeOfIssue": "Hà Nội",
+        "dateOfIssue": "20/10/2020"
+      },
+      "description": "",
+      "status": "active"
+    },
+    {
+      "id": "4",
+      "role": "hirer",
+      "name": "Lê Thu D",
+      "location": "Đà Nẵng, Việt Nam",
+      "phoneNumber": "0911234567",
+      "email": "lethudn@gmail.com",
+      "rating": 4.4,
+      "identityCard": {
+        "identityNumber": "074200920374",
+        "placeOfIssue": "Đà Nẵng",
+        "dateOfIssue": "15/03/2021"
+      },
+      "description": "Công ty dịch vụ hỗ trợ tổ chức sự kiện.",
+      "status": "active"
+    },
+    {
+      "id": "5",
+      "role": "client",
+      "name": "Ngô Tấn E",
+      "age": 22,
+      "phoneNumber": "0922457890",
+      "email": "ngotane@gmail.com",
+      "skills": ["Phục vụ quán", "Tạp vụ", "Dọn dẹp nhà cửa"],
+      "location": "Hồ Chí Minh, Việt Nam",
+      "availability": "Bán thời gian",
+      "birthDate": "01/09/2002",
+      "education": "12/12",
+      "rating": 4.7,
+      "identityCard": {
+        "identityNumber": "074200910483",
+        "placeOfIssue": "Tp. HCM",
+        "dateOfIssue": "22/07/2021"
+      },
+      "description": "",
+      "status": "active"
+    },
+    {
+      "id": "6",
+      "role": "hirer",
+      "name": "Phan Quốc F",
+      "location": "Hà Nội, Việt Nam",
+      "phoneNumber": "0909457899",
+      "email": "phanquocf@gmail.com",
+      "rating": 4.9,
+      "identityCard": {
+        "identityNumber": "074200920572",
+        "placeOfIssue": "Hà Nội",
+        "dateOfIssue": "30/06/2021"
+      },
+      "description": "Dịch vụ bảo vệ và vệ sinh văn phòng.",
+      "status": "active"
+    },
+    {
+      "id": "7",
+      "role": "client",
+      "name": "Nguyễn Mai G",
+      "age": 26,
+      "phoneNumber": "0912345690",
+      "email": "nguyenmaig@gmail.com",
+      "skills": ["Chăm sóc cây cảnh", "Giúp việc nhà", "Sửa chữa đồ điện tử cơ bản"],
+      "location": "Đà Nẵng, Việt Nam",
+      "availability": "Bán thời gian",
+      "birthDate": "12/11/1997",
+      "education": "12/12",
+      "rating": 4.5,
+      "identityCard": {
+        "identityNumber": "074200910689",
+        "placeOfIssue": "Đà Nẵng",
+        "dateOfIssue": "15/08/2021"
+      },
+      "description": "",
+      "status": "active"
+    },
+    {
+      "id": "8",
+      "role": "hirer",
+      "name": "Bùi Thanh H",
+      "location": "Hồ Chí Minh, Việt Nam",
+      "phoneNumber": "0913567880",
+      "email": "buitanhh@gmail.com",
+      "rating": 4.8,
+      "identityCard": {
+        "identityNumber": "074200920781",
+        "placeOfIssue": "Tp. HCM",
+        "dateOfIssue": "10/12/2020"
+      },
+      "description": "Dịch vụ cung cấp lao động thời vụ cho nhà hàng.",
+      "status": "active"
+    },
+    {
+      "id": "9",
+      "role": "client",
+      "name": "Đỗ Văn I",
+      "age": 24,
+      "phoneNumber": "0903123789",
+      "email": "dovanai@gmail.com",
+      "skills": ["Sửa chữa xe máy", "Giao hàng"],
+      "location": "Hà Nội, Việt Nam",
+      "availability": "Toàn thời gian",
+      "birthDate": "19/07/2000",
+      "education": "Trung cấp",
+      "rating": 4.6,
+      "identityCard": {
+        "identityNumber": "074200930984",
+        "placeOfIssue": "Hà Nội",
+        "dateOfIssue": "05/04/2021"
+      },
+      "description": "",
+      "status": "active"
+    },
+    {
+      "id": "10",
+      "role": "hirer",
+      "name": "Lương Hà J",
+      "location": "Hải Phòng, Việt Nam",
+      "phoneNumber": "0934356789",
+      "email": "luonghaj@gmail.com",
+      "rating": 4.3,
+      "identityCard": {
+        "identityNumber": "074200920883",
+        "placeOfIssue": "Hải Phòng",
+        "dateOfIssue": "15/05/2020"
+      },
+      "description": "Doanh nghiệp vận tải hàng hóa.",
+      "status": "active"
+    },
+    {
+      "id": "11",
+      "role": "client",
+      "name": "Vũ Hồng K",
+      "age": 27,
+      "phoneNumber": "0905671234",
+      "email": "vuhongk@gmail.com",
+      "skills": ["Giao hàng", "Giúp việc gia đình"],
+      "location": "Cần Thơ, Việt Nam",
+      "availability": "Toàn thời gian",
+      "birthDate": "22/06/1996",
+      "education": "12/12",
+      "rating": 4.7,
+      "identityCard": {
+        "identityNumber": "074200910987",
+        "placeOfIssue": "Cần Thơ",
+        "dateOfIssue": "12/09/2021"
+      },
+      "description": "",
+      "status": "active"
+    },
+    {
+      "id": "12",
+      "role": "hirer",
+      "name": "Hoàng Mạnh L",
+      "location": "Hồ Chí Minh, Việt Nam",
+      "phoneNumber": "0913789567",
+      "email": "hoangmanhl@gmail.com",
+      "rating": 4.6,
+      "identityCard": {
+        "identityNumber": "074200920985",
+        "placeOfIssue": "Tp. HCM",
+        "dateOfIssue": "21/07/2021"
+      },
+      "description": "Dịch vụ sửa chữa điện lạnh.",
+      "status": "active"
+    },
+    {
+      "id": "13",
+      "role": "client",
+      "name": "Lý Quốc M",
+      "age": 29,
+      "phoneNumber": "0912678990",
+      "email": "lyquocm@gmail.com",
+      "skills": ["Phục vụ sự kiện", "Giữ trẻ"],
+      "location": "Hải Dương, Việt Nam",
+      "availability": "Bán thời gian",
+      "birthDate": "14/08/1995",
+      "education": "12/12",
+      "rating": 4.4,
+      "identityCard": {
+        "identityNumber": "074200911189",
+        "placeOfIssue": "Hải Dương",
+        "dateOfIssue": "15/03/2020"
+      },
+      "description": "",
+      "status": "active"
+    }
+  ]
 }
