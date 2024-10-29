@@ -26,7 +26,7 @@ export const userApi = apiSlice.injectEndpoints({
         method: 'GET',
       }),
       transformResponse: res => res,
-      providesTags: ['User'],
+      providesTags: ['UserDetail'],
     }),
     updateUser: build.mutation({
       query: ({ data, id }) => ({

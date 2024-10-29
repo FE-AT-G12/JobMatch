@@ -6,7 +6,7 @@ import { Outlet } from "react-router-dom";
 function Layout() {
   const [quantity, setQuantity] = useState();
   return (
-    <div className="main">
+    <div className="main" style={{overflowX: 'hidden'}}>
       <div className="header">
         {" "}
         <Header quantity={quantity} setQuantity={setQuantity} />
