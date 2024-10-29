@@ -4,6 +4,7 @@ import RegisterPage from "../page/register";
 import Layout from "../components/layout";
 import HomePage from "../page/home";
 import Job from "../page/Job/Job";
+import Profile from "../page/User/Profile";
 const routes = [
   {
     layout: Layout,
@@ -28,7 +29,11 @@ const routes = [
       {
         path: '/job',
         component: Job,
-      }
+      },
+      {
+        path: '/profile/:id',
+        component: Profile,
+      },
     ]
   },
 
