@@ -1,0 +1,149 @@
+.company {
+  .intro {
+    background: linear-gradient(to bottom, #024caa, #ffffff);
+    .slogan {
+      color: #ffffff;
+      display: flex;
+      justify-content: center;
+      margin-top: 20px;
+      font-size: 26px; // Tăng kích thước chữ để thu hút sự chú ý
+      font-weight: bold;
+      margin-left: -180px;
+    }
+    .slogan2 {
+      color: #ffffff;
+      display: flex;
+      justify-content: center;
+      font-size: 20px; // Tăng kích thước chữ để thu hút sự chú ý
+      font-weight: 500;
+      margin-left: 100px;
+    }
+    .advanced-search {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      margin-top: 20px;
+
+      .search {
+        display: flex;
+        gap: 5px;
+        background-color: #fff; // Màu nền trắng để làm nổi bật input và nút tìm kiếm
+        border-radius: 20px;
+        padding: 5px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); // Thêm shadow để làm thanh tìm kiếm nổi bật
+
+        .combined-input {
+          display: flex;
+          border-radius: 12px;
+          overflow: hidden;
+
+          input {
+            padding: 15px;
+            border: none;
+            width: 450px; // Điều chỉnh kích thước input cho hợp lý
+            font-size: 16px;
+            color: #333; // Màu chữ input
+            background-color: #fff; // Thêm màu nền nhạt cho input
+
+            &:first-child {
+              border-right: 1px solid #fff;
+            }
+
+            &:focus {
+              outline: none;
+              background-color: #fff; // Đổi màu nền khi input được focus
+            }
+          }
+
+          .button {
+            padding: 5px 15px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 20px; // Bo tròn góc cho nút tìm kiếm
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: bold; // In đậm để nút nổi bật
+            transition: background-color 0.3s ease; // Thêm hiệu ứng chuyển màu khi hover
+
+            &:hover {
+              background-color: #0056b3;
+            }
+
+            &:active {
+              background-color: #004494; // Màu khi nhấn nút
+            }
+          }
+        }
+      }
+    }
+  }
+  .company-review {
+    .intro-company {
+      display: flex;
+      justify-content: center;
+      padding: 10px 0px;
+      font-weight: bold;
+    }
+    .card-company {
+      position: relative;
+      border-radius: 20px;
+      overflow: hidden;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+
+      .company-banner {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 50%; 
+        object-fit: cover;
+        z-index: 1;
+      }
+
+      .company-info-container {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 50%;
+        background: rgba(
+          255,
+          255,
+          255,
+          0.9
+        ); 
+        display: flex;
+        align-items: center;
+        padding: 10px;
+        z-index: 2;
+      }
+
+      .company-logo {
+        position: absolute;
+        bottom: 10px; 
+        left: 10px; 
+        width: 60px;
+        height: 60px;
+        border-radius: 8px;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+        z-index: 3;
+      }
+
+      .company-info {
+        margin-left: 80px; // Offset for logo
+        display: flex;
+        flex-direction: column;
+
+        .company-name {
+          font-weight: bold;
+          color: #333;
+        }
+
+        .company-intro {
+          font-size: 0.85rem;
+          color: #666;
+        }
+      }
+    }
+  }
+}
