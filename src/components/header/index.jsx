@@ -59,7 +59,7 @@ function Header() {
               </Menu.Item>
               <Menu.Item key="4">
                 <Link
-                  to="/cong-ty"
+                  to="/company"
                   style={{ color: "black", fontWeight: "500" }}
                 >
                   Công ty

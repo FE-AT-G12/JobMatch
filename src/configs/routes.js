@@ -4,12 +4,13 @@ import RegisterPage from "../page/register";
 import Layout from "../components/layout";
 import HomePage from "../page/home";
 import Job from "../page/Job/Job";
+import Company from "../page/company";
 const routes = [
   {
     layout: Layout,
     data: [
       {
-        path: '/',
+        path: "/",
         isIndex: true,
         component: HomePage,
       },
@@ -22,16 +23,19 @@ const routes = [
         component: RegisterPage,
       },
       {
-        path: '/user',
+        path: "/user",
         component: UserTest,
       },
       {
-        path: '/job',
+        path: "/job",
         component: Job,
-      }
-    ]
+      },
+      {
+        path: "/company",
+        component: Company,
+      },
+    ],
   },
-
 ];
 
 export default routes;

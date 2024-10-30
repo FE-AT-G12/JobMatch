@@ -528,70 +528,82 @@
       "name": "Công ty Hòa Bình",
       "location": "Hà Nội",
       "salaryRange": "6 - 10 triệu",
-      "logo": "https://example.com/logo1.png"
+      "logo": "https://example.com/logo1.png",
+
+      "intro": "Công ty Hòa Bình cung cấp nhiều cơ hội việc làm hấp dẫn trong ngành viễn thông, nơi bạn có thể phát triển sự nghiệp của mình."
     },
     {
       "id": 2,
       "name": "Tập đoàn FPT",
       "location": "TP Hồ Chí Minh",
+      "coverImage": "https://cdn-new.topcv.vn/unsafe/https://static.topcv.vn/company_covers/iG4XtDpniVr6WmwXw0nc.jpg",
       "salaryRange": "10 - 20 triệu",
-      "logo": "https://example.com/logo2.png"
+      "logo": "https://static.topcv.vn/company_logos/tap-doan-fpt-5cd13caa2e2b2.jpg",
+      "intro": "Tập đoàn FPT là một trong những tập đoàn công nghệ hàng đầu, chuyên cung cấp giải pháp sáng tạo cho khách hàng."
     },
     {
       "id": 3,
       "name": "Công ty Viettel",
       "location": "Hà Nội",
       "salaryRange": "12 - 25 triệu",
-      "logo": "https://example.com/logo3.png"
+      "logo": "https://example.com/logo3.png",
+      "intro": "Công ty Viettel nổi tiếng với đội ngũ nhân viên sáng tạo, không ngừng đổi mới và cải tiến dịch vụ."
     },
     {
       "id": 4,
       "name": "Công ty VinGroup",
       "location": "Hà Nội",
       "salaryRange": "20 - 30 triệu",
-      "logo": "https://example.com/logo4.png"
+      "logo": "https://example.com/logo4.png",
+      "intro": "Công ty VinGroup là một tập đoàn đa ngành, cam kết tạo ra giá trị và cải thiện chất lượng cuộc sống cho cộng đồng."
     },
     {
       "id": 5,
       "name": "Tập đoàn Masan",
       "location": "TP Hồ Chí Minh",
       "salaryRange": "15 - 25 triệu",
-      "logo": "https://example.com/logo5.png"
+      "logo": "https://example.com/logo5.png",
+      "intro": "Tập đoàn Masan cung cấp những sản phẩm và dịch vụ chất lượng cao, mang lại giá trị cho người tiêu dùng."
     },
     {
       "id": 6,
       "name": "Công ty Bkav",
       "location": "Hà Nội",
       "salaryRange": "10 - 15 triệu",
-      "logo": "https://example.com/logo6.png"
+      "logo": "https://example.com/logo6.png",
+      "intro": "Công ty Bkav là nhà phát triển phần mềm hàng đầu, nổi bật với những sản phẩm bảo mật đáng tin cậy."
     },
     {
       "id": 7,
       "name": "Công ty Tiki",
       "location": "TP Hồ Chí Minh",
       "salaryRange": "8 - 12 triệu",
-      "logo": "https://example.com/logo7.png"
+      "logo": "https://example.com/logo7.png",
+      "intro": "Công ty Tiki nổi bật trong lĩnh vực thương mại điện tử, cung cấp trải nghiệm mua sắm trực tuyến tuyệt vời cho khách hàng."
     },
     {
       "id": 8,
       "name": "Công ty Shopee",
       "location": "TP Hồ Chí Minh",
       "salaryRange": "12 - 18 triệu",
-      "logo": "https://example.com/logo8.png"
+      "logo": "https://example.com/logo8.png",
+      "intro": "Công ty Shopee là nền tảng thương mại điện tử dẫn đầu tại Đông Nam Á, mang đến sự tiện lợi cho người tiêu dùng."
     },
     {
       "id": 9,
       "name": "Công ty Lazada",
       "location": "TP Hồ Chí Minh",
       "salaryRange": "10 - 20 triệu",
-      "logo": "https://example.com/logo9.png"
+      "logo": "https://example.com/logo9.png",
+      "intro": "Công ty Lazada cung cấp nhiều sản phẩm đa dạng, cam kết mang lại giá trị tốt nhất cho khách hàng."
     },
     {
       "id": 10,
       "name": "Công ty Zalo",
       "location": "TP Hồ Chí Minh",
       "salaryRange": "14 - 22 triệu",
-      "logo": "https://example.com/logo10.png"
+      "logo": "https://example.com/logo10.png",
+      "intro": "Công ty Zalo chuyên cung cấp ứng dụng nhắn tin và gọi điện miễn phí, nổi bật với tính năng bảo mật cao."
     }
   ]
 }
