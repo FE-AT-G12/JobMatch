@@ -1,17 +1,24 @@
-import { Spin, Alert } from 'antd';
-import { useParams } from 'react-router-dom';
-import { useGetJobDetailQuery } from '../../features/job/jobApi';
+import { Spin, Alert } from 'antd'
+import { useParams } from 'react-router-dom'
+import { useGetJobDetailQuery } from '../../features/job/jobApi'
 
 const JobAdminDetail = () => {
-  const { jobId } = useParams();
-  const { data: job, error, isLoading } = useGetJobDetailQuery(jobId);
+  const { jobId } = useParams()
+  const { data: job, error, isLoading } = useGetJobDetailQuery(jobId)
 
   if (isLoading) {
-    return <Spin tip='Loading...' />;
+    return <Spin tip='Loading...' />
   }
 
   if (error) {
-    return <Alert message='Error' description='Failed to load jobs.' type='error' showIcon />;
+    return (
+      <Alert
+        message='Error'
+        description='Failed to load jobs.'
+        type='error'
+        showIcon
+      />
+    )
   }
 
   return (
@@ -28,7 +35,7 @@ const JobAdminDetail = () => {
       <p>Payment Method: {job.payment.paymentMethod}</p>
       <p>Status: {job.status}</p>
     </div>
-  );
-};
+  )
+}
 
-export default JobAdminDetail;
+export default JobAdminDetail

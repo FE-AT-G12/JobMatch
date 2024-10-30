@@ -1,31 +1,31 @@
-import { apiSlice } from '../../apis/apiSlice';
+import { apiSlice } from '../../apis/apiSlice'
 
 export const userApi = apiSlice.injectEndpoints({
-  endpoints: build => ({
+  endpoints: (build) => ({
     getUserList: build.query({
-      query: params => ({
+      query: (params) => ({
         url: '/user',
         method: 'GET',
         params,
       }),
-      transformResponse: res => res,
+      transformResponse: (res) => res,
       providesTags: ['User'],
     }),
     createUser: build.mutation({
-      query: data => ({
+      query: (data) => ({
         url: '/user',
         method: 'POST',
         body: data,
       }),
-      transformResponse: res => res,
+      transformResponse: (res) => res,
       invalidatesTags: ['User'],
     }),
     getUserDetail: build.query({
-      query: id => ({
+      query: (id) => ({
         url: `/user/${id}`,
         method: 'GET',
       }),
-      transformResponse: res => res,
+      transformResponse: (res) => res,
       providesTags: ['UserDetail'],
     }),
     updateUser: build.mutation({
@@ -34,19 +34,19 @@ export const userApi = apiSlice.injectEndpoints({
         method: 'PUT',
         body: data,
       }),
-      transformResponse: res => res,
+      transformResponse: (res) => res,
       invalidatesTags: ['User'],
     }),
     deleteUser: build.mutation({
-      query: id => ({
+      query: (id) => ({
         url: `/user/${id}`,
         method: 'DELETE',
       }),
-      transformResponse: res => res,
+      transformResponse: (res) => res,
       invalidatesTags: ['User'],
     }),
   }),
-});
+})
 
 export const {
   useGetUserListQuery,
@@ -54,4 +54,4 @@ export const {
   useGetUserDetailQuery,
   useUpdateUserMutation,
   useDeleteUserMutation,
-} = userApi;
+} = userApi

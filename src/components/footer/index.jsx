@@ -7,7 +7,7 @@ const footerStyle = {
   left: 0,
   bottom: 0,
   width: '100%',
-};
+}
 function Footer() {
   return (
     <footer style={footerStyle}>
@@ -16,7 +16,7 @@ function Footer() {
         <p>© 2024 Job Match. All rights reserved.</p>
       </div>
     </footer>
-  );
+  )
 }
 
-export default Footer;
+export default Footer

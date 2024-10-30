@@ -1,34 +1,36 @@
-import { useState } from 'react';
-import './index.scss';
-import { SearchOutlined, EnvironmentOutlined } from '@ant-design/icons';
-import Container from '../../components/container';
-import { Card, Col, Image, Row } from 'antd';
+import { useState } from 'react'
+import './index.scss'
+import { SearchOutlined, EnvironmentOutlined } from '@ant-design/icons'
+import Container from '../../components/container'
+import { Card, Col, Image, Row } from 'antd'
 
 function HomePage() {
-  const [input1, setInput1] = useState('');
-  const [input2, setInput2] = useState('');
+  const [input1, setInput1] = useState('')
+  const [input2, setInput2] = useState('')
 
   const handleSearch = () => {
-    console.log('Tìm kiếm với:', input1, input2);
-  };
+    console.log('Tìm kiếm với:', input1, input2)
+  }
 
-  const [selectedValue, setSelectedValue] = useState('');
-  const [isOpen, setIsOpen] = useState(false);
-  const options = ['TP Hồ Chí Minh', 'Hà Nội', 'Đà Nẵng'];
+  const [selectedValue, setSelectedValue] = useState('')
+  const [isOpen, setIsOpen] = useState(false)
+  const options = ['TP Hồ Chí Minh', 'Hà Nội', 'Đà Nẵng']
 
   const toggleDropdown = () => {
-    setIsOpen(!isOpen);
-  };
+    setIsOpen(!isOpen)
+  }
 
-  const handleOptionClick = value => {
-    setSelectedValue(value);
-    setIsOpen(false);
-  };
+  const handleOptionClick = (value) => {
+    setSelectedValue(value)
+    setIsOpen(false)
+  }
 
   return (
     <div className='home'>
       <div className='search'>
-        <h1 className='slogan'>Tìm việc nhanh, kiếm tiền nhanh hơn với Job Match</h1>
+        <h1 className='slogan'>
+          Tìm việc nhanh, kiếm tiền nhanh hơn với Job Match
+        </h1>
         <div className='advanced-search'>
           <div className='search-group'>
             <div className='combined-input'>
@@ -38,7 +40,7 @@ function HomePage() {
                   type='text'
                   placeholder='Vị trí tuyển dụng'
                   value={input1}
-                  onChange={e => setInput1(e.target.value)}
+                  onChange={(e) => setInput1(e.target.value)}
                 />
               </div>
               <div className='input-with-icon'>
@@ -47,7 +49,7 @@ function HomePage() {
                   type='text'
                   placeholder='Tất cả địa điểm'
                   value={input2}
-                  onChange={e => setInput2(e.target.value)}
+                  onChange={(e) => setInput2(e.target.value)}
                 />
               </div>
               <button className='button' onClick={handleSearch}>
@@ -62,14 +64,21 @@ function HomePage() {
           <p className='title-1'>Việc làm tốt nhất</p>
           <div className='search-dropdown'>
             <div className='search-input' onClick={toggleDropdown}>
-              <p style={{ fontSize: '12px', color: '#ccc', display: 'flex' }}>Lọc theo:</p>
-              <input type='text' placeholder='Tìm kiếm' value={selectedValue} readOnly />
+              <p style={{ fontSize: '12px', color: '#ccc', display: 'flex' }}>
+                Lọc theo:
+              </p>
+              <input
+                type='text'
+                placeholder='Tìm kiếm'
+                value={selectedValue}
+                readOnly
+              />
               <span className='dropdown-icon'>&#9662;</span>{' '}
             </div>
 
             {isOpen && (
               <ul className='dropdown-menu'>
-                {options.map(option => (
+                {options.map((option) => (
                   <li key={option} onClick={() => handleOptionClick(option)}>
                     {option}
                   </li>
@@ -147,7 +156,8 @@ function HomePage() {
                 readOnly
               />
               <div className='city-name'>
-                <p style={{ margin: 0 }}>Công ty Hòa Bình Hà Nội</p> {/* Remove default margin */}
+                <p style={{ margin: 0 }}>Công ty Hòa Bình Hà Nội</p>{' '}
+                {/* Remove default margin */}
               </div>
             </Card>
           </div>
@@ -165,7 +175,7 @@ function HomePage() {
         </div>
       </Container>
     </div>
-  );
+  )
 }
 
-export default HomePage;
+export default HomePage
