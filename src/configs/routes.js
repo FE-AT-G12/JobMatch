@@ -4,6 +4,7 @@ import RegisterPage from "../page/register";
 import Layout from "../components/layout";
 import HomePage from "../page/home";
 import Job from "../page/Job/Job";
+import adminAccount from "../page/adminAccount/adminAccount";
 const routes = [
   {
     layout: Layout,
@@ -28,6 +29,10 @@ const routes = [
       {
         path: '/job',
         component: Job,
+      },
+      {
+        path: '/admin',
+        component: adminAccount,
       }
     ]
   },

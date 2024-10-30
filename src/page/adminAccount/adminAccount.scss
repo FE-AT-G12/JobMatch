@@ -1,0 +1,36 @@
+.vertical-menu{
+    height: auto;
+    border-right:"1px solid";
+;
+}
+.vertical-menu a {
+    background-color: white;
+    color: black;
+    display: block;
+    padding: 12px;
+    text-decoration: none;
+}
+
+.vertical-menu a:hover {
+    background-color: #ccc;
+}
+
+.bottom-button {
+    position: fixed;
+    bottom: 20px;
+    
+}
+
+.bottom-button button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.bottom-button button:hover {
+    background-color: #0056b3;
+}

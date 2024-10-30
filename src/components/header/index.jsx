@@ -37,14 +37,14 @@ function Header() {
               }}
             >
               <Menu.Item key="1">
-                <Link to="/" style={{ color: "black", fontWeight: "500" }}>
+                <Link to="/" style={{ color: "black", fontWeight: "500", textDecoration: "none" }}>
                   Trang chủ
                 </Link>
               </Menu.Item>
               <Menu.Item key="2">
                 <Link
                   to="/viec-lam"
-                  style={{ color: "black", fontWeight: "500" }}
+                  style={{ color: "black", fontWeight: "500", textDecoration: "none" }}
                 >
                   Việc làm
                 </Link>
@@ -52,7 +52,7 @@ function Header() {
               <Menu.Item key="3">
                 <Link
                   to="/viec-lam-cua-toi"
-                  style={{ color: "black", fontWeight: "500" }}
+                  style={{ color: "black", fontWeight: "500", textDecoration: "none" }}
                 >
                   Việc làm của tôi
                 </Link>
@@ -60,7 +60,7 @@ function Header() {
               <Menu.Item key="4">
                 <Link
                   to="/cong-ty"
-                  style={{ color: "black", fontWeight: "500" }}
+                  style={{ color: "black", fontWeight: "500", textDecoration: "none" }}
                 >
                   Công ty
                 </Link>
@@ -68,7 +68,7 @@ function Header() {
               <Menu.Item key="5">
                 <Link
                   to="/cam-nang"
-                  style={{ color: "black", fontWeight: "500" }}
+                  style={{ color: "black", fontWeight: "500", }}
                 >
                   Cẩm nang nghề nghiệp
                 </Link>
@@ -80,14 +80,15 @@ function Header() {
               className="button-group"
               style={{ display: "flex", gap: "10px" }}
             >
-              <Button className="login-home">
-                <Link to={"/login"}>Đăng nhập</Link>
+              <Button className="login-home" >
+                <Link to={"/login"} style={{ textDecoration: "none" }}>Đăng nhập</Link>
               </Button>
               <Button className="register-home" type="primary">
-                <Link to={"/register"}>Đăng ký</Link>
+                <Link to={"/register"} style={{ textDecoration: "none" }}>Đăng ký</Link>
               </Button>
               <Button className="dang-tuyen-home" type="primary">
-                Đăng tuyển việc làm
+                <Link to={"/dang-tin-tuyen-dung"} style={{ textDecoration: "none" }}> Đăng tuyển việc làm</Link>
+
               </Button>
             </div>
           </div>
