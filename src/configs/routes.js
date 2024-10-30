@@ -5,9 +5,17 @@ import Layout from "../components/layout";
 import HomePage from "../page/home";
 import Job from "../page/Job/Job";
 import adminAccount from "../page/adminAccount/adminAccount";
+import UserTest from '../page/User/UserTest'
+import LoginPage from '../page/login'
+import RegisterPage from '../page/register'
+import MainLayout from '../components/layout/MainLayout'
+import HomePage from '../page/home'
+import Job from '../page/Job/Job'
+import JobAdmin from '../page/JobAdmin/JobAdmin'
+import JobAdminDetail from '../page/JobAdmin/JobAdminDetail'
 const routes = [
   {
-    layout: Layout,
+    layout: MainLayout,
     data: [
       {
         path: '/',
@@ -15,11 +23,11 @@ const routes = [
         component: HomePage,
       },
       {
-        path: "/login",
+        path: '/login',
         component: LoginPage,
       },
       {
-        path: "/register",
+        path: '/register',
         component: RegisterPage,
       },
       {
@@ -33,10 +41,17 @@ const routes = [
       {
         path: '/admin',
         component: adminAccount,
-      }
+      },
+      {
+         path: '/jobAdmin',
+        component: JobAdmin,
+      },
+      {
+        path: '/jobAdmin/:jobId',
+        component: JobAdminDetail,
+      },
     ]
   },
+]
 
-];
-
-export default routes;
+export default routes

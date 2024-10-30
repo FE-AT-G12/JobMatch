@@ -11,7 +11,7 @@ export default function UserTest() {
     <div>
       <h1>User List</h1>
       <ul>
-        {data.map(user => (
+        {data.map((user) => (
           <li key={user.id}>{user.name}</li>
         ))}
       </ul>

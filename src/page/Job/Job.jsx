@@ -7,7 +7,7 @@ export default function Job() {
   console.log(data)
   return (
     <div>
-      {data.map(job => (
+      {data.map((job) => (
         <div key={job.id}>{job.title}</div>
       ))}
     </div>
