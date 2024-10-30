@@ -1,4 +1,4 @@
-import { ButtonDetail } from './ButtonDetail';
+import { ButtonDetail } from './ButtonDetail'
 
 export const collumn = [
   {
@@ -25,6 +25,8 @@ export const collumn = [
     title: 'Chi tiết',
     dataIndex: 'detail',
     key: 'detail',
-    render: (text, record) => <ButtonDetail record={record}>Chi tiết</ButtonDetail>,
+    render: (text, record) => (
+      <ButtonDetail record={record}>Chi tiết</ButtonDetail>
+    ),
   },
-];
+]

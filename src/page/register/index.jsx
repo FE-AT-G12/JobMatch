@@ -1,15 +1,19 @@
-import { Button, Checkbox, Col, Input, Row } from 'antd';
-import { SafetyCertificateOutlined, ChromeOutlined, UserOutlined } from '@ant-design/icons';
-import { useState } from 'react';
-import './index.scss';
-import { Link } from 'react-router-dom';
+import { Button, Checkbox, Col, Input, Row } from 'antd'
+import {
+  SafetyCertificateOutlined,
+  ChromeOutlined,
+  UserOutlined,
+} from '@ant-design/icons'
+import { useState } from 'react'
+import './index.scss'
+import { Link } from 'react-router-dom'
 
 function RegisterPage() {
-  const [isChecked, setIsChecked] = useState(false);
+  const [isChecked, setIsChecked] = useState(false)
 
-  const onChange = e => {
-    setIsChecked(e.target.checked);
-  };
+  const onChange = (e) => {
+    setIsChecked(e.target.checked)
+  }
 
   return (
     <div className='registerpage'>
@@ -17,7 +21,9 @@ function RegisterPage() {
         <Col span={18} className='register-1'>
           <div className='header'>
             <h2 className='title'>Chào mừng bạn đến với Job Match</h2>
-            <div className='caption'>Cùng tìm kiếm và nhận được các cơ hội sự nghiệp lý tưởng</div>
+            <div className='caption'>
+              Cùng tìm kiếm và nhận được các cơ hội sự nghiệp lý tưởng
+            </div>
           </div>
           <div className='register'>
             <div className='input'>
@@ -41,7 +47,9 @@ function RegisterPage() {
               <Input.Password
                 size='large'
                 placeholder='Mật khẩu'
-                prefix={<SafetyCertificateOutlined style={{ color: '#024CAA' }} />}
+                prefix={
+                  <SafetyCertificateOutlined style={{ color: '#024CAA' }} />
+                }
               />
             </div>
             <div className='input'>
@@ -49,7 +57,9 @@ function RegisterPage() {
               <Input.Password
                 size='large'
                 placeholder='Nhập lại mật khẩu'
-                prefix={<SafetyCertificateOutlined style={{ color: '#024CAA' }} />}
+                prefix={
+                  <SafetyCertificateOutlined style={{ color: '#024CAA' }} />
+                }
               />
             </div>
           </div>
@@ -68,7 +78,8 @@ function RegisterPage() {
           </div>
           <div className='accept'>
             <Checkbox onChange={onChange}>
-              Bằng việc đăng nhập bằng tài khoản mạng xã hội, tôi đã đọc và đồng ý với{' '}
+              Bằng việc đăng nhập bằng tài khoản mạng xã hội, tôi đã đọc và đồng
+              ý với{' '}
               <Link to={'/dieu-vu'} style={{ color: '#024CAA' }}>
                 Điều khoản dịch vụ
               </Link>{' '}
@@ -85,13 +96,14 @@ function RegisterPage() {
             <p className='sologan-1'>Tiếp lợi thế</p>
             <p className='sologan-1'>Nối thành công</p>
             <p className='sologan-2'>
-              Job Match - Hệ sinh thái nhân sự tiên phong ứng dụng công nghệ tại Việt Nam
+              Job Match - Hệ sinh thái nhân sự tiên phong ứng dụng công nghệ tại
+              Việt Nam
             </p>
           </div>
         </Col>
       </Row>
     </div>
-  );
+  )
 }
 
-export default RegisterPage;
+export default RegisterPage

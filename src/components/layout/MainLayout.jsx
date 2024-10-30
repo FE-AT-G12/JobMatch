@@ -1,12 +1,12 @@
-import { useState } from 'react';
-import Header from '../header';
+import { useState } from 'react'
+import Header from '../header'
 //import Footer from "../footer";
-import { Outlet } from 'react-router-dom';
-import { Layout } from 'antd';
-const { Content } = Layout;
+import { Outlet } from 'react-router-dom'
+import { Layout } from 'antd'
+const { Content } = Layout
 
 function MainLayout() {
-  const [quantity, setQuantity] = useState();
+  const [quantity, setQuantity] = useState()
   return (
     <Layout
       style={{
@@ -28,7 +28,7 @@ function MainLayout() {
         </Content>
       </Layout>
     </Layout>
-  );
+  )
 }
 
-export default MainLayout;
+export default MainLayout
