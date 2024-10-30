@@ -1,7 +1,7 @@
-import "./index.scss";
+import './index.scss'
 function Whychose() {
   return (
-    <div className="whychose">
+    <div className='whychose'>
       <h1>VÌ SAO CHỌN JOB MATCH?</h1>
       <p>
         Job Match là nền tảng tiên phong kết nối các freelancer đa độ tuổi với
@@ -26,7 +26,7 @@ function Whychose() {
         dễ dàng tìm việc trong khu vực gần bạn và kiếm thu nhập linh hoạt.
       </p>
     </div>
-  );
+  )
 }
 
-export default Whychose;
+export default Whychose

@@ -1,52 +1,52 @@
-import { apiSlice } from "../../apis/apiSlice";
+import { apiSlice } from '../../apis/apiSlice'
 
 export const companyApi = apiSlice.injectEndpoints({
   endpoints: (build) => ({
     getCompanyList: build.query({
       query: (params) => ({
-        url: "/company",
-        method: "GET",
+        url: '/company',
+        method: 'GET',
         params,
       }),
       transformResponse: (res) => res,
-      providesTags: ["Company"],
+      providesTags: ['Company'],
     }),
     createCompany: build.mutation({
       query: (data) => ({
-        url: "/company",
-        method: "POST",
+        url: '/company',
+        method: 'POST',
         body: data,
       }),
       transformResponse: (res) => res,
-      invalidatesTags: ["Company"],
+      invalidatesTags: ['Company'],
     }),
     getCompanyDetail: build.query({
       query: (id) => ({
         url: `/company/${id}`,
-        method: "GET",
+        method: 'GET',
       }),
       transformResponse: (res) => res,
-      providesTags: ["Company"],
+      providesTags: ['Company'],
     }),
     updateCompany: build.mutation({
       query: ({ data, id }) => ({
         url: `/company/${id}`,
-        method: "PUT",
+        method: 'PUT',
         body: data,
       }),
       transformResponse: (res) => res,
-      invalidatesTags: ["Company"],
+      invalidatesTags: ['Company'],
     }),
     deleteCompany: build.mutation({
       query: (id) => ({
         url: `/company/${id}`,
-        method: "DELETE",
+        method: 'DELETE',
       }),
       transformResponse: (res) => res,
-      invalidatesTags: ["Company"],
+      invalidatesTags: ['Company'],
     }),
   }),
-});
+})
 
 export const {
   useGetCompanyListQuery,
@@ -54,4 +54,4 @@ export const {
   useGetCompanyDetailQuery,
   useUpdateCompanyMutation,
   useDeleteCompanyMutation,
-} = companyApi;
+} = companyApi
