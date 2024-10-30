@@ -1,6 +1,10 @@
 import UserTest from "../page/User/UserTest";
 import LoginPage from "../page/login";
 import RegisterPage from "../page/register";
+import Layout from "../components/layout";
+import HomePage from "../page/home";
+import Job from "../page/Job/Job";
+import adminAccount from "../page/adminAccount/adminAccount";
 import HomePage from "../page/home";
 import Job from "../page/Job/Job";
 import Company from "../page/company";
@@ -38,14 +42,18 @@ const routes = [
         component: Job,
       },
       {
-        path: '/jobAdmin',
+        path: '/admin',
+        component: adminAccount,
+      },
+      {
+         path: '/jobAdmin',
         component: JobAdmin,
       },
       {
         path: '/jobAdmin/:jobId',
         component: JobAdminDetail,
       },
-    ],
+    ]
   },
 ]
 
