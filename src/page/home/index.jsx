@@ -1,12 +1,41 @@
-import { useState } from 'react'
-import './index.scss'
-import { SearchOutlined, EnvironmentOutlined } from '@ant-design/icons'
-import Container from '../../components/container'
-import { Card, Col, Image, Row } from 'antd'
+import { useEffect, useState } from "react";
+import "./index.scss";
+import { SearchOutlined, EnvironmentOutlined } from "@ant-design/icons";
+import Container from "../../components/container";
+import { Card, Carousel, Col, Image, Pagination, Row } from "antd";
+import axios from "axios";
+import Whychose from "../../components/whychosewe";
 
 function HomePage() {
-  const [input1, setInput1] = useState('')
-  const [input2, setInput2] = useState('')
+  const [input1, setInput1] = useState("");
+  const [input2, setInput2] = useState("");
+  const [job, setJob] = useState([]);
+  const [companies, setCompanies] = useState([]);
+
+  const [currentPage, setCurrentPage] = useState(1);
+  const pageSize = 9;
+
+  useEffect(() => {
+    axios
+      .get("http://localhost:3000/job")
+      .then((response) => {
+        setJob(response.data);
+      })
+      .catch((error) => {
+        console.error("Error fetching job:", error);
+      });
+  }, []);
+
+  useEffect(() => {
+    axios
+      .get("http://localhost:3000/companies")
+      .then((response) => {
+        setCompanies(response.data);
+      })
+      .catch((error) => {
+        console.error("Error fetching job:", error);
+      });
+  }, []);
 
   const handleSearch = () => {
     console.log('Tìm kiếm với:', input1, input2)
@@ -21,10 +50,16 @@ function HomePage() {
   }
 
   const handleOptionClick = (value) => {
-    setSelectedValue(value)
-    setIsOpen(false)
-  }
+    setSelectedValue(value);
+    setIsOpen(false);
+  };
+  const indexOfLastJob = currentPage * pageSize;
+  const indexOfFirstJob = indexOfLastJob - pageSize;
+  const currentJobs = job.slice(indexOfFirstJob, indexOfLastJob);
 
+  const handlePageChange = (page) => {
+    setCurrentPage(page);
+  };
   return (
     <div className='home'>
       <div className='search'>
@@ -86,81 +121,100 @@ function HomePage() {
               </ul>
             )}
           </div>
-          <div className='card-job-container'>
-            <div className='card-job'>
-              <Card
-                style={{
-                  width: '350px',
-                  height: '130px',
-                  borderRadius: '10px',
-                  overflow: 'hidden',
-                  boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)',
-                }}
-              >
-                <Row gutter={24}>
-                  <Col span={8}>
-                    <Image
-                      src='https://cdn-new.topcv.vn/unsafe/200x/https://static.topcv.vn/company_logos/K9hlB0pDtVpRC9elc14iq1SNexOr7U5B_1667203677____688db856bdf7857dea3a900a7f87a2f6.png'
-                      alt='Company Logo'
-                      style={{ borderRadius: '8px' }}
-                      readOnly
-                    />
-                  </Col>
-                  <Col span={16}>
-                    <div className='job-infor'>
-                      <p className='job-title text_ellipsis'>Bán thời gian</p>
-                      <p className='job-city text_ellipsis'>Công ty Hòa Bình</p>
-                      <div className='box-footer'>
-                        <div className='col-job-info'>
-                          <div className='salary'>
-                            <span className='text_ellipsis'>6 - 10 triệu</span>
-                          </div>
-                          <div className='address' title='Hà Nội: Ba Đình'>
-                            <span className='text_ellipsis'>Hà Nội</span>
+          <div className="card-job-container">
+            {currentJobs.map((job) => (
+              <div key={job.jobId} className="card-job">
+                <Card
+                  style={{
+                    width: "350px",
+                    height: "130px",
+                    borderRadius: "10px",
+                    overflow: "hidden",
+                    boxShadow: "0 4px 8px rgba(0, 0, 0, 0.1)",
+                  }}
+                >
+                  <Row gutter={24}>
+                    <Col span={8}>
+                      <Image
+                        src={job.companyLogo}
+                        alt="Company Logo"
+                        style={{ borderRadius: "8px" }}
+                      />
+                    </Col>
+                    <Col span={16}>
+                      <div className="job-infor">
+                        <p className="job-title text_ellipsis">{job.title}</p>
+                        <p className="job-city text_ellipsis">{job.cityjob}</p>
+                        <div className="box-footer">
+                          <div className="col-job-info">
+                            <div className="salary">
+                              <span className="text_ellipsis">
+                                {job.payment.payRate}
+                              </span>
+                            </div>
+                            <div className="address">
+                              <span className="text_ellipsis">
+                                {job.cityAddress}
+                              </span>
+                            </div>
                           </div>
                         </div>
                       </div>
-                    </div>
-                  </Col>
-                </Row>
-              </Card>
-            </div>
-          </div>
-        </div>
-        <div className='home-2'>
-          <p className='title-2'>Công ty hàng đầu</p>
-          <div className='city-card'>
-            <Card
-              className='city-card-mini'
-              style={{
-                width: '350px',
-                height: '180px',
-                borderRadius: '10px',
-                overflow: 'hidden',
-                boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)',
-                display: 'flex', // Use Flexbox
-                flexDirection: 'column', // Stack items vertically
-                justifyContent: 'center', // Center items vertically
-                alignItems: 'center', // Center items horizontally
-                textAlign: 'center', // Center text
-              }}
-            >
-              <Image
-                src='https://cdn-new.topcv.vn/unsafe/200x/https://static.topcv.vn/company_logos/K9hlB0pDtVpRC9elc14iq1SNexOr7U5B_1667203677____688db856bdf7857dea3a900a7f87a2f6.png'
-                alt='Company Logo'
-                style={{
-                  borderRadius: '8px',
-                  width: '120px',
-                  marginBottom: '10px', // Add space below the image
-                }}
-                readOnly
-              />
-              <div className='city-name'>
-                <p style={{ margin: 0 }}>Công ty Hòa Bình Hà Nội</p>{' '}
-                {/* Remove default margin */}
+                    </Col>
+                  </Row>
+                </Card>
               </div>
-            </Card>
+            ))}
           </div>
+          <Pagination
+            current={currentPage}
+            pageSize={pageSize}
+            total={job.length}
+            onChange={handlePageChange}
+            style={{
+              textAlign: "center",
+              marginTop: "20px",
+              display: "flex",
+              justifyContent: "center",
+            }}
+          />
+        </div>
+        <div className="home-2">
+          <p className="title-2">Công ty hàng đầu</p>
+          <Carousel autoplay dots={false} slidesToShow={3} slidesToScroll={1}>
+            {companies.map((company) => (
+              <div key={company.id} className="city-card">
+                <Card
+                  className="city-card-mini"
+                  style={{
+                    width: "350px",
+                    height: "200px",
+                    borderRadius: "10px",
+                    overflow: "hidden",
+                    boxShadow: "0 4px 8px rgba(0, 0, 0, 0.1)",
+                    display: "flex", // Use Flexbox
+                    flexDirection: "column", // Stack items vertically
+                    justifyContent: "center", // Center items vertically
+                    alignItems: "center", // Center items horizontally
+                    textAlign: "center", // Center text
+                  }}
+                >
+                  <Image
+                    src={company.logo}
+                    alt="Company Logo"
+                    style={{
+                      borderRadius: "8px",
+                      width: "120px",
+                      marginBottom: "10px",
+                    }}
+                  />
+                  <div className="city-name">
+                    <p style={{ margin: 0 }}>{company.name}</p>
+                  </div>
+                </Card>
+              </div>
+            ))}
+          </Carousel>
         </div>
         <div className='home-3'>
           <p className='title-3'>Thị trường việc làm</p>
@@ -172,6 +226,45 @@ function HomePage() {
               <Col span={16}></Col>
             </Row>
           </div>
+          <div className="detail-home-3"></div>
+        </div>
+        <div className="home-4">
+          <p className="title-2">Top ngành nghề nổi bật</p>
+          <div className="city-card">
+            <Card
+              className="city-card-mini"
+              style={{
+                width: "350px",
+                height: "200px",
+                borderRadius: "10px",
+                overflow: "hidden",
+                boxShadow: "0 4px 8px rgba(0, 0, 0, 0.1)",
+                display: "flex", // Use Flexbox
+                flexDirection: "column", // Stack items vertically
+                justifyContent: "center", // Center items vertically
+                alignItems: "center", // Center items horizontally
+                textAlign: "center", // Center text
+              }}
+            >
+              <Image
+                src="https://www.topcv.vn/v4/image/welcome/top-categories/it-phan-mem.png?v=2"
+                alt="Company Logo"
+                style={{
+                  borderRadius: "8px",
+                  width: "120px",
+                  marginBottom: "10px", // Add space below the image
+                }}
+                readOnly
+              />
+              <div className="city-name">
+                <p style={{ margin: 0 }}>Nhân viên bán thời gian</p>{" "}
+                {/* Remove default margin */}
+              </div>
+            </Card>
+          </div>
+        </div>
+        <div className="whychosewe">
+          <Whychose/>
         </div>
       </Container>
     </div>
