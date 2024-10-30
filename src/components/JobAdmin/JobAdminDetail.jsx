@@ -23,17 +23,21 @@ const JobAdminDetail = () => {
 
   return (
     <div>
-      <h1>{job.title}</h1>
-      <p>{job.description}</p>
-      <p>Category: {job.category}</p>
-      <p>Location: {job.location}</p>
-      <p>Start Date: {job.dateStart}</p>
-      <p>End Date: {job.dateEnd}</p>
-      <p>Time Start: {job.timeStart}</p>
-      <p>Duration: {job.duration} hours</p>
-      <p>Payment Rate: {job.payment.payRate}</p>
-      <p>Payment Method: {job.payment.paymentMethod}</p>
-      <p>Status: {job.status}</p>
+      {job && (
+        <>
+          <h1>Title: {job.data.title}</h1>
+          <p>Decription: {job.data.description}</p>
+          <p>Category: {job.data.category}</p>
+          <p>Location: {job.data.location}</p>
+          <p>Start Date: {job.data.dateStart}</p>
+          <p>End Date: {job.data.dateEnd}</p>
+          <p>Time Start: {job.data.timeStart}</p>
+          <p>Duration: {job.data.duration} hours</p>
+          <p>Payment Rate: {job.data.payment.payRate}</p>
+          <p>Payment Method: {job.data.payment.paymentMethod}</p>
+          <p>Status: {job.data.status}</p>
+        </>
+      )}
     </div>
   )
 }
