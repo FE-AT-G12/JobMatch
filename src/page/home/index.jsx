@@ -38,16 +38,16 @@ function HomePage() {
   }, []);
 
   const handleSearch = () => {
-    console.log("Tìm kiếm với:", input1, input2);
-  };
+    console.log('Tìm kiếm với:', input1, input2)
+  }
 
-  const [selectedValue, setSelectedValue] = useState("");
-  const [isOpen, setIsOpen] = useState(false);
-  const options = ["TP Hồ Chí Minh", "Hà Nội", "Đà Nẵng"];
+  const [selectedValue, setSelectedValue] = useState('')
+  const [isOpen, setIsOpen] = useState(false)
+  const options = ['TP Hồ Chí Minh', 'Hà Nội', 'Đà Nẵng']
 
   const toggleDropdown = () => {
-    setIsOpen(!isOpen);
-  };
+    setIsOpen(!isOpen)
+  }
 
   const handleOptionClick = (value) => {
     setSelectedValue(value);
@@ -61,33 +61,33 @@ function HomePage() {
     setCurrentPage(page);
   };
   return (
-    <div className="home">
-      <div className="search">
-        <h1 className="slogan">
+    <div className='home'>
+      <div className='search'>
+        <h1 className='slogan'>
           Tìm việc nhanh, kiếm tiền nhanh hơn với Job Match
         </h1>
-        <div className="advanced-search">
-          <div className="search-group">
-            <div className="combined-input">
-              <div className="input-with-icon">
-                <SearchOutlined className="input-icon" />
+        <div className='advanced-search'>
+          <div className='search-group'>
+            <div className='combined-input'>
+              <div className='input-with-icon'>
+                <SearchOutlined className='input-icon' />
                 <input
-                  type="text"
-                  placeholder="Vị trí tuyển dụng"
+                  type='text'
+                  placeholder='Vị trí tuyển dụng'
                   value={input1}
                   onChange={(e) => setInput1(e.target.value)}
                 />
               </div>
-              <div className="input-with-icon">
-                <EnvironmentOutlined className="input-icon" />
+              <div className='input-with-icon'>
+                <EnvironmentOutlined className='input-icon' />
                 <input
-                  type="text"
-                  placeholder="Tất cả địa điểm"
+                  type='text'
+                  placeholder='Tất cả địa điểm'
                   value={input2}
                   onChange={(e) => setInput2(e.target.value)}
                 />
               </div>
-              <button className="button" onClick={handleSearch}>
+              <button className='button' onClick={handleSearch}>
                 Tìm kiếm
               </button>
             </div>
@@ -95,24 +95,24 @@ function HomePage() {
         </div>
       </div>
       <Container>
-        <div className="home-1">
-          <p className="title-1">Việc làm tốt nhất</p>
-          <div className="search-dropdown">
-            <div className="search-input" onClick={toggleDropdown}>
-              <p style={{ fontSize: "12px", color: "#ccc", display: "flex" }}>
+        <div className='home-1'>
+          <p className='title-1'>Việc làm tốt nhất</p>
+          <div className='search-dropdown'>
+            <div className='search-input' onClick={toggleDropdown}>
+              <p style={{ fontSize: '12px', color: '#ccc', display: 'flex' }}>
                 Lọc theo:
               </p>
               <input
-                type="text"
-                placeholder="Tìm kiếm"
+                type='text'
+                placeholder='Tìm kiếm'
                 value={selectedValue}
                 readOnly
               />
-              <span className="dropdown-icon">&#9662;</span>{" "}
+              <span className='dropdown-icon'>&#9662;</span>{' '}
             </div>
 
             {isOpen && (
-              <ul className="dropdown-menu">
+              <ul className='dropdown-menu'>
                 {options.map((option) => (
                   <li key={option} onClick={() => handleOptionClick(option)}>
                     {option}
@@ -216,12 +216,12 @@ function HomePage() {
             ))}
           </Carousel>
         </div>
-        <div className="home-3">
-          <p className="title-3">Thị trường việc làm</p>
-          <div className="image-home-3">
+        <div className='home-3'>
+          <p className='title-3'>Thị trường việc làm</p>
+          <div className='image-home-3'>
             <Row gutter={24}>
               <Col span={8}>
-                <Image src="https://th.bing.com/th/id/OIP.YJxJDchzoC4HJLsD4lnQLgHaEK?rs=1&pid=ImgDetMain" />
+                <Image src='https://th.bing.com/th/id/OIP.YJxJDchzoC4HJLsD4lnQLgHaEK?rs=1&pid=ImgDetMain' />
               </Col>
               <Col span={16}></Col>
             </Row>
@@ -268,7 +268,7 @@ function HomePage() {
         </div>
       </Container>
     </div>
-  );
+  )
 }
 
-export default HomePage;
+export default HomePage

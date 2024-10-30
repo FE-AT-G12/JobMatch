@@ -1,239 +1,115 @@
 {
   "job": [
     {
-      "jobId": "job001",
       "title": "Nhập Dữ Liệu",
-      "cityjob": "Công ty Hòa Bình",
-      "cityAddress": "Hà Nội",
       "description": "Nhập dữ liệu từ các tài liệu đã quét vào bảng Excel.",
       "skillRequirement": ["Word cơ bản", "Excel cơ bản"],
       "ageRequirement": {
-        "min": "18",
-        "max": "20"
-      },
-      "category": "Hành chính",
-      "location": "Làm việc từ xa",
-      "dateStart": "20/10/2024",
-      "dateEnd": "21/10/2024",
-      "repeatOn": null,
-      "timeStart": "20:00",
-      "duration": 2,
-      "datePosted": "20/10/2024",
-      "payment": {
-        "payRate": "5 - 10 triệu",
-        "paymentMethod": "cash",
-        "payTime": "after"
-      },
-      "hirerId": "user002",
-      "clientId": ["user001"],
-      "status": "Đang tuyển"
-    },
-
-    {
-      "jobId": "job002",
-      "title": "Nhập Dữ Liệu",
-      "cityjob": "Công ty An Phát",
-      "cityAddress": "TP. Hồ Chí Minh",
-      "description": "Nhập dữ liệu từ các tài liệu giấy vào bảng Excel.",
-      "skillRequirement": ["Word cơ bản", "Excel cơ bản"],
-      "ageRequirement": {
-        "min": "18",
+        "min": "22",
         "max": "25"
       },
       "category": "Hành chính",
-      "location": "Làm việc tại văn phòng",
-      "dateStart": "22/10/2024",
-      "dateEnd": "23/10/2024",
-      "repeatOn": null,
-      "timeStart": "19:00",
-      "duration": 3,
-      "datePosted": "21/10/2024",
-      "payment": {
-        "payRate": "6 - 12 triệu",
-        "paymentMethod": "bank transfer",
-        "payTime": "after"
-      },
-      "hirerId": "user003",
-      "clientId": ["user001"],
-      "status": "Đang tuyển"
-    },
-    {
-      "jobId": "job003",
-      "title": "Nhập Dữ Liệu",
-      "cityjob": "Công ty Phương Nam",
-      "cityAddress": "Đà Nẵng",
-      "description": "Nhập thông tin từ các biên bản vào hệ thống.",
-      "skillRequirement": ["Excel cơ bản"],
-      "ageRequirement": {
-        "min": "20",
-        "max": "30"
-      },
-      "category": "Hành chính",
       "location": "Làm việc từ xa",
-      "dateStart": "24/10/2024",
-      "dateEnd": "25/10/2024",
-      "repeatOn": null,
-      "timeStart": "18:00",
-      "duration": 4,
-      "datePosted": "22/10/2024",
+      "dateStart": "2024-10-15",
+      "dateEnd": "2024-10-16",
+      "timeStart": "08:00",
+      "duration": 2,
+      "datePosted": "2024-10-04",
       "payment": {
-        "payRate": "7 - 13 triệu",
+        "payRate": 70000,
         "paymentMethod": "cash",
         "payTime": "after"
       },
-      "hirerId": "user004",
-      "clientId": ["user002"],
-      "status": "Đang tuyển"
+      "hirerId": "2",
+      "clientId": ["1"],
+      "status": "Đã tuyển",
+      "id": "1"
     },
     {
-      "jobId": "job004",
-      "title": "Nhập Dữ Liệu",
-      "cityjob": "Công ty Minh Tuấn",
-      "cityAddress": "Hải Phòng",
-      "description": "Nhập dữ liệu từ các bảng biểu giấy vào file điện tử.",
-      "skillRequirement": ["Word cơ bản", "Excel cơ bản"],
+      "id": "2",
+      "title": "Xử Lý Dữ Liệu",
+      "description": "Chỉnh sửa và định dạng dữ liệu từ file Word sang Excel.",
+      "skillRequirement": ["Word nâng cao", "Excel cơ bản"],
       "ageRequirement": {
-        "min": "19",
-        "max": "22"
+        "min": "21",
+        "max": "25"
       },
       "category": "Hành chính",
       "location": "Làm việc từ xa",
-      "dateStart": "26/10/2024",
-      "dateEnd": "27/10/2024",
+      "dateStart": "25/10/2024",
+      "dateEnd": "26/10/2024",
       "repeatOn": null,
-      "timeStart": "21:00",
-      "duration": 2,
+      "timeStart": "18:00",
+      "duration": 3,
       "datePosted": "23/10/2024",
       "payment": {
-        "payRate": "5 - 10 triệu",
-        "paymentMethod": "bank transfer",
-        "payTime": "after"
+        "payRate": 80000,
+        "paymentMethod": "cash",
+        "payTime": "before"
       },
-      "hirerId": "user005",
-      "clientId": ["user003"],
+      "hirerId": "3",
+      "clientId": ["4"],
       "status": "Đang tuyển"
     },
     {
-      "jobId": "job005",
-      "title": "Nhập Dữ Liệu",
-      "cityjob": "Công ty Thanh Bình",
-      "cityAddress": "Huế",
-      "description": "Nhập thông tin sản phẩm từ các tài liệu vào phần mềm quản lý.",
-      "skillRequirement": ["Word cơ bản", "Excel cơ bản"],
+      "id": "3",
+      "title": "Đánh Máy Văn Bản",
+      "description": "Đánh máy lại tài liệu từ bản viết tay vào Word.",
+      "skillRequirement": ["Word cơ bản", "Đánh máy nhanh"],
       "ageRequirement": {
         "min": "18",
-        "max": "28"
+        "max": "22"
       },
       "category": "Hành chính",
       "location": "Làm việc tại văn phòng",
       "dateStart": "28/10/2024",
-      "dateEnd": "29/10/2024",
+      "dateEnd": "28/10/2024",
       "repeatOn": null,
-      "timeStart": "20:00",
-      "duration": 3,
-      "datePosted": "24/10/2024",
+      "timeStart": "14:00",
+      "duration": 4,
+      "datePosted": "26/10/2024",
       "payment": {
-        "payRate": "6 - 11 triệu",
-        "paymentMethod": "cash",
+        "payRate": 90000,
+        "paymentMethod": "bank transfer",
         "payTime": "after"
       },
-      "hirerId": "user006",
-      "clientId": ["user004"],
+      "hirerId": "5",
+      "clientId": ["6"],
       "status": "Đang tuyển"
     },
     {
-      "jobId": "job006",
-      "title": "Nhập Dữ Liệu",
-      "cityjob": "Công ty Lê Hòa",
-      "cityAddress": "Nha Trang",
-      "description": "Nhập dữ liệu kiểm kê kho hàng vào hệ thống.",
-      "skillRequirement": ["Excel cơ bản"],
+      "id": "4",
+      "title": "Cập Nhật Dữ Liệu Khách Hàng",
+      "description": "Cập nhật thông tin khách hàng từ file cũ vào hệ thống quản lý.",
+      "skillRequirement": ["Excel cơ bản", "Kỹ năng tìm kiếm thông tin"],
       "ageRequirement": {
         "min": "20",
-        "max": "30"
+        "max": "25"
       },
       "category": "Hành chính",
       "location": "Làm việc từ xa",
       "dateStart": "30/10/2024",
-      "dateEnd": "31/10/2024",
+      "dateEnd": "01/11/2024",
       "repeatOn": null,
-      "timeStart": "18:00",
-      "duration": 4,
-      "datePosted": "25/10/2024",
+      "timeStart": "09:00",
+      "duration": 6,
+      "datePosted": "29/10/2024",
       "payment": {
-        "payRate": "7 - 12 triệu",
-        "paymentMethod": "bank transfer",
-        "payTime": "after"
-      },
-      "hirerId": "user007",
-      "clientId": ["user005"],
-      "status": "Đang tuyển"
-    },
-    {
-      "jobId": "job007",
-      "title": "Nhập Dữ Liệu",
-      "cityjob": "Công ty Ánh Dương",
-      "cityAddress": "Cần Thơ",
-      "description": "Nhập dữ liệu từ hóa đơn vào bảng Excel.",
-      "skillRequirement": ["Word cơ bản", "Excel cơ bản"],
-      "ageRequirement": {
-        "min": "18",
-        "max": "24"
-      },
-      "category": "Hành chính",
-      "location": "Làm việc tại văn phòng",
-      "dateStart": "01/11/2024",
-      "dateEnd": "02/11/2024",
-      "repeatOn": null,
-      "timeStart": "19:00",
-      "duration": 3,
-      "datePosted": "26/10/2024",
-      "payment": {
-        "payRate": "5 - 10 triệu",
+        "payRate": 85000,
         "paymentMethod": "cash",
         "payTime": "after"
       },
-      "hirerId": "user008",
-      "clientId": ["user006"],
+      "hirerId": "7",
+      "clientId": ["8"],
       "status": "Đang tuyển"
     },
     {
-      "jobId": "job008",
-      "title": "Nhập Dữ Liệu",
-      "cityjob": "Công ty Sơn Hà",
-      "cityAddress": "Vũng Tàu",
-      "description": "Nhập thông tin từ phiếu khảo sát vào hệ thống.",
-      "skillRequirement": ["Word cơ bản", "Excel cơ bản"],
+      "id": "5",
+      "title": "Kiểm Tra Dữ Liệu",
+      "description": "Kiểm tra độ chính xác của dữ liệu đã nhập vào hệ thống.",
+      "skillRequirement": ["Excel cơ bản", "Kiểm tra lỗi"],
       "ageRequirement": {
         "min": "19",
-        "max": "27"
-      },
-      "category": "Hành chính",
-      "location": "Làm việc từ xa",
-      "dateStart": "03/11/2024",
-      "dateEnd": "04/11/2024",
-      "repeatOn": null,
-      "timeStart": "20:00",
-      "duration": 2,
-      "datePosted": "27/10/2024",
-      "payment": {
-        "payRate": "6 - 11 triệu",
-        "paymentMethod": "bank transfer",
-        "payTime": "after"
-      },
-      "hirerId": "user009",
-      "clientId": ["user007"],
-      "status": "Đang tuyển"
-    },
-    {
-      "jobId": "job009",
-      "title": "Nhập Dữ Liệu",
-      "cityjob": "Công ty Việt Thành",
-      "cityAddress": "Quảng Ninh",
-      "description": "Nhập dữ liệu từ các tài liệu đã quét vào bảng Excel.",
-      "skillRequirement": ["Word cơ bản", "Excel cơ bản"],
-      "ageRequirement": {
-        "min": "18",
         "max": "23"
       },
       "category": "Hành chính",
@@ -241,78 +117,334 @@
       "dateStart": "05/11/2024",
       "dateEnd": "06/11/2024",
       "repeatOn": null,
-      "timeStart": "20:00",
-      "duration": 2,
-      "datePosted": "28/10/2024",
+      "timeStart": "10:00",
+      "duration": 3,
+      "datePosted": "01/11/2024",
       "payment": {
-        "payRate": "5 - 10 triệu",
+        "payRate": 75000,
         "paymentMethod": "cash",
         "payTime": "after"
       },
-      "hirerId": "user010",
-      "clientId": ["user008"],
+      "hirerId": "9",
+      "clientId": ["10"],
       "status": "Đang tuyển"
     },
     {
-      "jobId": "job010",
-      "title": "Nhập Dữ Liệu",
-      "cityjob": "Công ty Bảo Tín",
-      "cityAddress": "Đồng Nai",
-      "description": "Nhập thông tin từ các biểu mẫu vào file Word.",
+      "id": "6",
+      "title": "Nhập Liệu Khảo Sát",
+      "description": "Nhập dữ liệu từ các phiếu khảo sát vào Excel.",
       "skillRequirement": ["Word cơ bản", "Excel cơ bản"],
+      "ageRequirement": {
+        "min": "20",
+        "max": "24"
+      },
+      "category": "Hành chính",
+      "location": "Làm việc từ xa",
+      "dateStart": "10/11/2024",
+      "dateEnd": "12/11/2024",
+      "repeatOn": null,
+      "timeStart": "13:00",
+      "duration": 5,
+      "datePosted": "08/11/2024",
+      "payment": {
+        "payRate": 70000,
+        "paymentMethod": "bank transfer",
+        "payTime": "after"
+      },
+      "hirerId": "11",
+      "clientId": ["12"],
+      "status": "Đang tuyển"
+    },
+    {
+      "id": "7",
+      "title": "Chuyển Đổi File PDF",
+      "description": "Chuyển đổi các tài liệu PDF sang định dạng Word.",
+      "skillRequirement": ["Word cơ bản", "Kỹ năng chuyển đổi tài liệu"],
+      "ageRequirement": {
+        "min": "22",
+        "max": "27"
+      },
+      "category": "Hành chính",
+      "location": "Làm việc từ xa",
+      "dateStart": "15/11/2024",
+      "dateEnd": "16/11/2024",
+      "repeatOn": null,
+      "timeStart": "16:00",
+      "duration": 4,
+      "datePosted": "12/11/2024",
+      "payment": {
+        "payRate": 82000,
+        "paymentMethod": "cash",
+        "payTime": "before"
+      },
+      "hirerId": "13",
+      "clientId": ["14"],
+      "status": "Đang tuyển"
+    },
+    {
+      "id": "8",
+      "title": "Đối Chiếu Số Liệu Kế Toán",
+      "description": "So sánh dữ liệu kế toán giữa hai nguồn khác nhau.",
+      "skillRequirement": ["Excel nâng cao", "Tính toán chính xác"],
+      "ageRequirement": {
+        "min": "25",
+        "max": "30"
+      },
+      "category": "Hành chính",
+      "location": "Làm việc tại văn phòng",
+      "dateStart": "20/11/2024",
+      "dateEnd": "22/11/2024",
+      "repeatOn": null,
+      "timeStart": "09:00",
+      "duration": 7,
+      "datePosted": "18/11/2024",
+      "payment": {
+        "payRate": 100000,
+        "paymentMethod": "bank transfer",
+        "payTime": "after"
+      },
+      "hirerId": "15",
+      "clientId": ["16"],
+      "status": "Đang tuyển"
+    },
+    {
+      "id": "9",
+      "title": "Xử Lý Hóa Đơn",
+      "description": "Nhập và kiểm tra thông tin hóa đơn của khách hàng.",
+      "skillRequirement": ["Excel cơ bản", "Word cơ bản"],
       "ageRequirement": {
         "min": "21",
         "max": "26"
       },
       "category": "Hành chính",
       "location": "Làm việc từ xa",
-      "dateStart": "07/11/2024",
-      "dateEnd": "08/11/2024",
+      "dateStart": "25/11/2024",
+      "dateEnd": "26/11/2024",
       "repeatOn": null,
-      "timeStart": "19:00",
+      "timeStart": "15:00",
       "duration": 3,
-      "datePosted": "29/10/2024",
+      "datePosted": "24/11/2024",
       "payment": {
-        "payRate": "6 - 12 triệu",
-        "paymentMethod": "bank transfer",
-        "payTime": "after"
+        "payRate": 76000,
+        "paymentMethod": "cash",
+        "payTime": "before"
       },
-      "hirerId": "user011",
-      "clientId": ["user009"],
+      "hirerId": "17",
+      "clientId": ["18"],
       "status": "Đang tuyển"
     },
     {
-      "jobId": "job011",
-      "title": "Nhập Dữ Liệu",
-      "cityjob": "Công ty Minh Châu",
-      "cityAddress": "Bình Dương",
-      "description": "Nhập thông tin khách hàng từ file PDF vào bảng Excel.",
-      "skillRequirement": ["Word cơ bản", "Excel cơ bản"],
+      "id": "10",
+      "title": "Cập Nhật Hồ Sơ Nhân Viên",
+      "description": "Cập nhật và quản lý hồ sơ nhân viên trong hệ thống.",
+      "skillRequirement": ["Excel cơ bản", "Word cơ bản"],
       "ageRequirement": {
-        "min": "18",
-        "max": "22"
+        "min": "23",
+        "max": "28"
       },
       "category": "Hành chính",
       "location": "Làm việc từ xa",
-      "dateStart": "09/11/2024",
-      "dateEnd": "10/11/2024",
+      "dateStart": "01/12/2024",
+      "dateEnd": "03/12/2024",
       "repeatOn": null,
-      "timeStart": "20:00",
-      "duration": 2,
-      "datePosted": "30/10/2024",
+      "timeStart": "11:00",
+      "duration": 5,
+      "datePosted": "29/11/2024",
       "payment": {
-        "payRate": "5 - 10 triệu",
+        "payRate": 84000,
+        "paymentMethod": "bank transfer",
+        "payTime": "after"
+      },
+      "hirerId": "19",
+      "clientId": ["20"],
+      "status": "Đang tuyển"
+    },
+    {
+      "id": "11",
+      "title": "Chỉnh Sửa Tài Liệu Word",
+      "description": "Chỉnh sửa định dạng và lỗi chính tả trong tài liệu Word.",
+      "skillRequirement": ["Word nâng cao", "Kỹ năng biên tập"],
+      "ageRequirement": {
+        "min": "19",
+        "max": "23"
+      },
+      "category": "Hành chính",
+      "location": "Làm việc tại văn phòng",
+      "dateStart": "05/12/2024",
+      "dateEnd": "06/12/2024",
+      "repeatOn": null,
+      "timeStart": "10:00",
+      "duration": 4,
+      "datePosted": "02/12/2024",
+      "payment": {
+        "payRate": 90000,
         "paymentMethod": "cash",
         "payTime": "after"
       },
-      "hirerId": "user012",
-      "clientId": ["user010"],
+      "hirerId": "21",
+      "clientId": ["22"],
+      "status": "Đang tuyển"
+    },
+    {
+      "id": "12",
+      "title": "Nhập Dữ Liệu Sản Phẩm",
+      "description": "Nhập dữ liệu sản phẩm vào hệ thống quản lý bán hàng.",
+      "skillRequirement": ["Excel cơ bản", "Kỹ năng quản lý dữ liệu"],
+      "ageRequirement": {
+        "min": "20",
+        "max": "24"
+      },
+      "category": "Hành chính",
+      "location": "Làm việc từ xa",
+      "dateStart": "10/12/2024",
+      "dateEnd": "11/12/2024",
+      "repeatOn": null,
+      "timeStart": "08:00",
+      "duration": 6,
+      "datePosted": "08/12/2024",
+      "payment": {
+        "payRate": 72000,
+        "paymentMethod": "bank transfer",
+        "payTime": "after"
+      },
+      "hirerId": "23",
+      "clientId": ["24"],
+      "status": "Đang tuyển"
+    },
+    {
+      "id": "13",
+      "title": "Kiểm Tra Dữ Liệu Khách Hàng",
+      "description": "Kiểm tra và sửa lỗi dữ liệu khách hàng trong Excel.",
+      "skillRequirement": ["Excel nâng cao", "Tỉ mỉ và chính xác"],
+      "ageRequirement": {
+        "min": "21",
+        "max": "26"
+      },
+      "category": "Hành chính",
+      "location": "Làm việc từ xa",
+      "dateStart": "15/12/2024",
+      "dateEnd": "16/12/2024",
+      "repeatOn": null,
+      "timeStart": "14:00",
+      "duration": 4,
+      "datePosted": "13/12/2024",
+      "payment": {
+        "payRate": 83000,
+        "paymentMethod": "cash",
+        "payTime": "before"
+      },
+      "hirerId": "25",
+      "clientId": ["26"],
+      "status": "Đang tuyển"
+    },
+    {
+      "id": "14",
+      "title": "Nhập Hàng Hóa Mới",
+      "description": "Cập nhật thông tin hàng hóa mới vào hệ thống quản lý kho.",
+      "skillRequirement": ["Excel cơ bản", "Word cơ bản"],
+      "ageRequirement": {
+        "min": "22",
+        "max": "27"
+      },
+      "category": "Hành chính",
+      "location": "Làm việc từ xa",
+      "dateStart": "18/12/2024",
+      "dateEnd": "19/12/2024",
+      "repeatOn": null,
+      "timeStart": "13:00",
+      "duration": 5,
+      "datePosted": "16/12/2024",
+      "payment": {
+        "payRate": 79000,
+        "paymentMethod": "bank transfer",
+        "payTime": "after"
+      },
+      "hirerId": "27",
+      "clientId": ["28"],
+      "status": "Đang tuyển"
+    },
+    {
+      "id": "15",
+      "title": "Sắp Xếp Tài Liệu",
+      "description": "Sắp xếp và chỉnh sửa tài liệu trong Word, sau đó lưu lại dưới định dạng PDF.",
+      "skillRequirement": ["Word cơ bản", "Excel cơ bản"],
+      "ageRequirement": {
+        "min": "18",
+        "max": "25"
+      },
+      "category": "Hành chính",
+      "location": "Làm việc từ xa",
+      "dateStart": "22/10/2024",
+      "dateEnd": "23/10/2024",
+      "repeatOn": null,
+      "timeStart": "19:00",
+      "duration": 3,
+      "datePosted": "21/10/2024",
+      "payment": {
+        "payRate": 80000,
+        "paymentMethod": "bank transfer",
+        "payTime": "after"
+      },
+      "hirerId": "3",
+      "clientId": ["2"],
+      "status": "Đang tuyển"
+    },
+    {
+      "id": "16",
+      "title": "Kiểm Tra Chất Lượng Dữ Liệu",
+      "description": "Kiểm tra tính chính xác của dữ liệu đã nhập vào bảng Excel và tạo báo cáo lỗi.",
+      "skillRequirement": ["Excel nâng cao", "Kiểm tra lỗi cơ bản"],
+      "ageRequirement": {
+        "min": "20",
+        "max": "30"
+      },
+      "category": "Kiểm tra chất lượng",
+      "location": "Làm việc từ xa",
+      "dateStart": "24/10/2024",
+      "dateEnd": "25/10/2024",
+      "repeatOn": null,
+      "timeStart": "21:00",
+      "duration": 4,
+      "datePosted": "23/10/2024",
+      "payment": {
+        "payRate": 90000,
+        "paymentMethod": "cash",
+        "payTime": "before"
+      },
+      "hirerId": "4",
+      "clientId": ["3"],
+      "status": "Đang tuyển"
+    },
+    {
+      "id": "17",
+      "title": "Nhập Thông Tin Khách Hàng",
+      "description": "Nhập thông tin liên hệ của khách hàng từ các phiếu điền thông tin vào hệ thống CRM.",
+      "skillRequirement": ["Word cơ bản", "Excel cơ bản", "Nhập liệu"],
+      "ageRequirement": {
+        "min": "18",
+        "max": "28"
+      },
+      "category": "Hành chính",
+      "location": "Làm việc tại văn phòng",
+      "dateStart": "26/10/2024",
+      "dateEnd": "27/10/2024",
+      "repeatOn": null,
+      "timeStart": "09:00",
+      "duration": 6,
+      "datePosted": "24/10/2024",
+      "payment": {
+        "payRate": 75000,
+        "paymentMethod": "bank transfer",
+        "payTime": "after"
+      },
+      "hirerId": "5",
+      "clientId": ["4"],
       "status": "Đang tuyển"
     }
   ],
   "user": [
     {
-      "userId": "user003",
+      "id": "3",
       "role": "client",
       "name": "Trần Minh C",
       "age": 30,
@@ -333,7 +465,7 @@
       "status": "active"
     },
     {
-      "userId": "user004",
+      "id": "4",
       "role": "hirer",
       "name": "Lê Thu D",
       "location": "Đà Nẵng, Việt Nam",
@@ -349,7 +481,7 @@
       "status": "active"
     },
     {
-      "userId": "user005",
+      "id": "5",
       "role": "client",
       "name": "Ngô Tấn E",
       "age": 22,
@@ -370,7 +502,7 @@
       "status": "active"
     },
     {
-      "userId": "user006",
+      "id": "6",
       "role": "hirer",
       "name": "Phan Quốc F",
       "location": "Hà Nội, Việt Nam",
@@ -386,7 +518,7 @@
       "status": "active"
     },
     {
-      "userId": "user007",
+      "id": "7",
       "role": "client",
       "name": "Nguyễn Mai G",
       "age": 26,
@@ -411,7 +543,7 @@
       "status": "active"
     },
     {
-      "userId": "user008",
+      "id": "8",
       "role": "hirer",
       "name": "Bùi Thanh H",
       "location": "Hồ Chí Minh, Việt Nam",
@@ -427,7 +559,7 @@
       "status": "active"
     },
     {
-      "userId": "user009",
+      "id": "9",
       "role": "client",
       "name": "Đỗ Văn I",
       "age": 24,
@@ -448,7 +580,7 @@
       "status": "active"
     },
     {
-      "userId": "user010",
+      "id": "10",
       "role": "hirer",
       "name": "Lương Hà J",
       "location": "Hải Phòng, Việt Nam",
@@ -464,7 +596,7 @@
       "status": "active"
     },
     {
-      "userId": "user011",
+      "id": "11",
       "role": "client",
       "name": "Vũ Hồng K",
       "age": 27,
@@ -485,7 +617,7 @@
       "status": "active"
     },
     {
-      "userId": "user012",
+      "id": "12",
       "role": "hirer",
       "name": "Hoàng Mạnh L",
       "location": "Hồ Chí Minh, Việt Nam",
@@ -501,7 +633,7 @@
       "status": "active"
     },
     {
-      "userId": "user013",
+      "id": "13",
       "role": "client",
       "name": "Lý Quốc M",
       "age": 29,
@@ -520,90 +652,6 @@
       },
       "description": "",
       "status": "active"
-    }
-  ],
-  "companies": [
-    {
-      "id": 1,
-      "name": "Công ty Hòa Bình",
-      "location": "Hà Nội",
-      "salaryRange": "6 - 10 triệu",
-      "logo": "https://example.com/logo1.png",
-
-      "intro": "Công ty Hòa Bình cung cấp nhiều cơ hội việc làm hấp dẫn trong ngành viễn thông, nơi bạn có thể phát triển sự nghiệp của mình."
-    },
-    {
-      "id": 2,
-      "name": "Tập đoàn FPT",
-      "location": "TP Hồ Chí Minh",
-      "coverImage": "https://cdn-new.topcv.vn/unsafe/https://static.topcv.vn/company_covers/iG4XtDpniVr6WmwXw0nc.jpg",
-      "salaryRange": "10 - 20 triệu",
-      "logo": "https://static.topcv.vn/company_logos/tap-doan-fpt-5cd13caa2e2b2.jpg",
-      "intro": "Tập đoàn FPT là một trong những tập đoàn công nghệ hàng đầu, chuyên cung cấp giải pháp sáng tạo cho khách hàng."
-    },
-    {
-      "id": 3,
-      "name": "Công ty Viettel",
-      "location": "Hà Nội",
-      "salaryRange": "12 - 25 triệu",
-      "logo": "https://example.com/logo3.png",
-      "intro": "Công ty Viettel nổi tiếng với đội ngũ nhân viên sáng tạo, không ngừng đổi mới và cải tiến dịch vụ."
-    },
-    {
-      "id": 4,
-      "name": "Công ty VinGroup",
-      "location": "Hà Nội",
-      "salaryRange": "20 - 30 triệu",
-      "logo": "https://example.com/logo4.png",
-      "intro": "Công ty VinGroup là một tập đoàn đa ngành, cam kết tạo ra giá trị và cải thiện chất lượng cuộc sống cho cộng đồng."
-    },
-    {
-      "id": 5,
-      "name": "Tập đoàn Masan",
-      "location": "TP Hồ Chí Minh",
-      "salaryRange": "15 - 25 triệu",
-      "logo": "https://example.com/logo5.png",
-      "intro": "Tập đoàn Masan cung cấp những sản phẩm và dịch vụ chất lượng cao, mang lại giá trị cho người tiêu dùng."
-    },
-    {
-      "id": 6,
-      "name": "Công ty Bkav",
-      "location": "Hà Nội",
-      "salaryRange": "10 - 15 triệu",
-      "logo": "https://example.com/logo6.png",
-      "intro": "Công ty Bkav là nhà phát triển phần mềm hàng đầu, nổi bật với những sản phẩm bảo mật đáng tin cậy."
-    },
-    {
-      "id": 7,
-      "name": "Công ty Tiki",
-      "location": "TP Hồ Chí Minh",
-      "salaryRange": "8 - 12 triệu",
-      "logo": "https://example.com/logo7.png",
-      "intro": "Công ty Tiki nổi bật trong lĩnh vực thương mại điện tử, cung cấp trải nghiệm mua sắm trực tuyến tuyệt vời cho khách hàng."
-    },
-    {
-      "id": 8,
-      "name": "Công ty Shopee",
-      "location": "TP Hồ Chí Minh",
-      "salaryRange": "12 - 18 triệu",
-      "logo": "https://example.com/logo8.png",
-      "intro": "Công ty Shopee là nền tảng thương mại điện tử dẫn đầu tại Đông Nam Á, mang đến sự tiện lợi cho người tiêu dùng."
-    },
-    {
-      "id": 9,
-      "name": "Công ty Lazada",
-      "location": "TP Hồ Chí Minh",
-      "salaryRange": "10 - 20 triệu",
-      "logo": "https://example.com/logo9.png",
-      "intro": "Công ty Lazada cung cấp nhiều sản phẩm đa dạng, cam kết mang lại giá trị tốt nhất cho khách hàng."
-    },
-    {
-      "id": 10,
-      "name": "Công ty Zalo",
-      "location": "TP Hồ Chí Minh",
-      "salaryRange": "14 - 22 triệu",
-      "logo": "https://example.com/logo10.png",
-      "intro": "Công ty Zalo chuyên cung cấp ứng dụng nhắn tin và gọi điện miễn phí, nổi bật với tính năng bảo mật cao."
     }
   ]
 }

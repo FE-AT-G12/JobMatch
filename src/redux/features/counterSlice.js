@@ -1,19 +1,19 @@
-import { createSlice } from "@reduxjs/toolkit";
+import { createSlice } from '@reduxjs/toolkit'
 
 export const counterSlice = createSlice({
-  name: "user",
+  name: 'user',
   initialState: {
     user: null,
   },
   reducers: {
     login: (state, actions) => {
-      state.user = actions.payload;
+      state.user = actions.payload
     },
     logout: (state) => {
-      state.user = null;
+      state.user = null
     },
   },
-});
+})
 
 export const {
   login,
@@ -22,6 +22,6 @@ export const {
   clearProduct,
   setDiamond,
   clearDiamond,
-} = counterSlice.actions;
-export const selectUser = (store) => store.user.user;
-export default counterSlice.reducer;
+} = counterSlice.actions
+export const selectUser = (store) => store.user.user
+export default counterSlice.reducer
