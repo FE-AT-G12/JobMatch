@@ -283,7 +283,7 @@ export default function ButtonUpdate() {
               <Select
                 style={{ width: '100%' }}
                 placeholder='Select status'
-                defaultValue={job.status}
+                defaultValue={job?.status}
               >
                 <Select.Option value={'Đã tuyển'}>Đã tuyển</Select.Option>
                 <Select.Option value={'Đang tuyển'}>Đang tuyển</Select.Option>
