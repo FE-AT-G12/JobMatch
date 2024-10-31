@@ -6,8 +6,9 @@ import {
   useGetJobDetailQuery,
 } from '../../features/job/jobApi'
 import { validateDate, getCurrentDate } from '../../utils/DateFunction'
+import { EditOutlined } from '@ant-design/icons'
 import JobForm from './JobForm'
-export default function ButtonUpdate() {
+export default function JobUpdateButton() {
   const { jobId } = useParams()
   const [loading, setLoading] = useState(false)
   const { data: job, error, isLoading } = useGetJobDetailQuery(jobId)
@@ -25,12 +26,21 @@ export default function ButtonUpdate() {
   const handleUpdate = async (values) => {
     setLoading(true)
     try {
-      await updateJob({ data: values, id: jobId })
+      const result = await updateJob({ data: values, id: jobId })
       setIsModalVisible(false)
-      notification.success({
-        message: 'Cập nhật công việc thành công!',
-        description: 'Công việc của bạn đã được cập nhật thành công.',
-      })
+      if (result.error) {
+        notification.error({
+          message: 'Cập nhật công việc thất bại!',
+          description: 'Đã xảy ra lỗi khi cập nhật công việc.',
+          showProgress: true,
+        })
+      } else {
+        notification.success({
+          message: 'Cập nhật công việc thành công!',
+          description: 'Công việc đã được cập nhật thành công.',
+          showProgress: true,
+        })
+      }
     } catch (error) {
       notification.error({
         message: 'Cập nhật công việc thất bại!',
@@ -44,8 +54,12 @@ export default function ButtonUpdate() {
   return (
     <div>
       <div>
-        <Button type='primary' onClick={handleUpdateClick}>
-          Update
+        <Button
+          type='primary'
+          onClick={handleUpdateClick}
+          icon={<EditOutlined />}
+        >
+          Cập nhật
         </Button>
       </div>
       <div>

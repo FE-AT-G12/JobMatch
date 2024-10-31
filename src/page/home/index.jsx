@@ -26,16 +26,16 @@ function HomePage() {
       })
   }, [])
 
-  useEffect(() => {
-    axios
-      .get('http://localhost:3000/companies')
-      .then((response) => {
-        setCompanies(response.data)
-      })
-      .catch((error) => {
-        console.error('Error fetching job:', error)
-      })
-  }, [])
+  // useEffect(() => {
+  //   axios
+  //     .get('http://localhost:3000/companies')
+  //     .then((response) => {
+  //       setCompanies(response.data)
+  //     })
+  //     .catch((error) => {
+  //       console.error('Error fetching job:', error)
+  //     })
+  // }, [])
 
   const handleSearch = () => {
     console.log('Tìm kiếm với:', input1, input2)
@@ -56,7 +56,6 @@ function HomePage() {
   const indexOfLastJob = currentPage * pageSize
   const indexOfFirstJob = indexOfLastJob - pageSize
   const currentJobs = job.slice(indexOfFirstJob, indexOfLastJob)
-
   const handlePageChange = (page) => {
     setCurrentPage(page)
   }
@@ -123,7 +122,7 @@ function HomePage() {
           </div>
           <div className='card-job-container'>
             {currentJobs.map((job) => (
-              <div key={job.jobId} className='card-job'>
+              <div key={job.data.jobId} className='card-job'>
                 <Card
                   style={{
                     width: '350px',
@@ -136,25 +135,29 @@ function HomePage() {
                   <Row gutter={24}>
                     <Col span={8}>
                       <Image
-                        src={job.companyLogo}
+                        src={job.data.companyLogo}
                         alt='Company Logo'
                         style={{ borderRadius: '8px' }}
                       />
                     </Col>
                     <Col span={16}>
                       <div className='job-infor'>
-                        <p className='job-title text_ellipsis'>{job.title}</p>
-                        <p className='job-city text_ellipsis'>{job.cityjob}</p>
+                        <p className='job-title text_ellipsis'>
+                          {job.data.title}
+                        </p>
+                        <p className='job-city text_ellipsis'>
+                          {job.data.cityjob}
+                        </p>
                         <div className='box-footer'>
                           <div className='col-job-info'>
                             <div className='salary'>
                               <span className='text_ellipsis'>
-                                {job.payment.payRate}
+                                {job.data.payment.payRate}
                               </span>
                             </div>
                             <div className='address'>
                               <span className='text_ellipsis'>
-                                {job.cityAddress}
+                                {job.data.cityAddress}
                               </span>
                             </div>
                           </div>

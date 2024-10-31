@@ -19,6 +19,7 @@ function MainLayout() {
         <Content style={{ margin: '', overflow: 'initial' }}>
           <div
             style={{
+              marginTop: 24,
               paddingLeft: 100,
               paddingRight: 100,
             }}

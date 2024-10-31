@@ -2,42 +2,15 @@
   "job": [
     {
       "data": {
-        "title": "Label data",
-        "description": "Label các dữ liệu cho sẵn",
-        "skillRequirement": ["Word cơ bản", "Excel cơ bản"],
-        "ageRequirement": {
-          "min": "22",
-          "max": "25"
-        },
-        "category": "Hành chính",
-        "location": "Thành phố Hồ Chí Minh",
-        "dateStart": "2024-10-15",
-        "dateEnd": "2024-10-16",
-        "timeStart": "08:00",
-        "duration": 2,
-        "datePosted": "2024-10-04",
-        "payment": {
-          "payRate": 70000,
-          "paymentMethod": "cash",
-          "payTime": "after"
-        },
-        "hirerId": "2",
-        "clientId": ["1"],
-        "status": "Đã tuyển"
-      },
-      "id": "1"
-    },
-    {
-      "data": {
-        "title": "Ăn cướp",
-        "description": "Ăn cướp",
-        "skillRequirement": ["Trộm đồ", "Cạy khóa"],
+        "title": "Gõ word",
+        "description": "Gõ word",
+        "skillRequirement": ["Gõ word"],
         "ageRequirement": {
           "min": "18",
           "max": "30"
         },
-        "category": "Phi pháp",
-        "location": "Nhà người dân",
+        "category": "Văn phòng",
+        "location": "Tại nhà",
         "dateStart": "2024-10-31",
         "dateEnd": "2025-10-31",
         "timeStart": "09:30",
