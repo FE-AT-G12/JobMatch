@@ -1,6 +1,6 @@
 import { Button, Layout, Menu } from 'antd'
 import { Link } from 'react-router-dom'
-import './index.scss'
+import './Header.scss'
 
 const { Header: AntHeader } = Layout
 

@@ -1,36 +1,28 @@
 import { SearchOutlined } from '@ant-design/icons'
-import './index.scss'
-import { useEffect, useState } from 'react'
+import './Company.scss'
+import { useState } from 'react'
 import { Card, Col, Image, Row } from 'antd'
-import axios from 'axios'
+import { useGetCompanyListQuery } from '../../features/company/companyApi'
 import Container from '../../components/container'
 import Whychose from '../../components/whychosewe'
 
 function Company() {
   const [input, setInput] = useState('')
-  const [companies, setCompanies] = useState([])
+  const { data: companies = [], error, isLoading } = useGetCompanyListQuery()
 
   const handleSearch = () => {
     console.log('Tìm kiếm với:', input)
   }
 
-  useEffect(() => {
-    axios
-      .get('http://localhost:3000/companies')
-      .then((response) => {
-        setCompanies(response.data)
-      })
-      .catch((error) => {
-        console.error('Error fetching companies:', error)
-      })
-  }, [])
+  if (isLoading) return <div>Loading...</div>
+  if (error) return <div>Error: {error.message}</div>
 
   return (
     <div className='company'>
       <div className='intro'>
         <Row gutter={24}>
           <Col span={16}>
-            <h1 className='slogan'>Khám phá 100+ công ty nổi bậc</h1>
+            <h1 className='slogan'>Khám phá 100+ công ty nổi bật</h1>
             <h2 className='slogan2'>
               Tra cứu thông tin công ty và tìm kiếm nơi làm việc tốt nhất dành
               cho bạn
@@ -80,6 +72,7 @@ function Company() {
                       overflow: 'hidden',
                       position: 'relative',
                       boxShadow: '0 4px 12px rgba(0, 0, 0, 0.15)',
+                      marginBottom: '15px',
                     }}
                   >
                     {/* Banner positioned absolutely */}
@@ -87,14 +80,35 @@ function Company() {
                       src={company.coverImage}
                       alt='Company Banner'
                       className='company-banner'
+                      style={{
+                        width: '350px',
+                        height: '150px',
+                        objectFit: 'cover',
+                      }}
                     />
 
                     {/* Logo and Details positioned at the bottom */}
-                    <div className='company-info-container'>
+                    <div
+                      className='company-info-container'
+                      style={{
+                        position: 'absolute',
+                        bottom: '0',
+                        left: '0',
+                        right: '0',
+                        padding: '10px',
+                        background: 'rgba(255, 255, 255, 0.9)',
+                      }}
+                    >
                       <Image
                         src={company.logo}
                         alt='Company Logo'
                         className='company-logo'
+                        style={{
+                          width: '50px',
+                          height: '50px',
+                          borderRadius: '8px',
+                          marginBottom: '5px',
+                        }}
                       />
                       <div className='company-info'>
                         <p className='company-name'>{company.name}</p>
