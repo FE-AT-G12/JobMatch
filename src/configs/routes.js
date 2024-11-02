@@ -8,6 +8,7 @@ import UserTest from '../page/User/UserTest'
 import MainLayout from '../components/layout/MainLayout'
 import JobAdmin from '../page/JobAdmin/JobAdmin'
 import JobAdminDetail from '../page/JobAdmin/JobAdminDetail'
+import Profile from "../page/User/Profile"
 const routes = [
   {
     layout: MainLayout,
@@ -28,6 +29,10 @@ const routes = [
       {
         path: '/user',
         component: UserTest,
+      },
+      {
+        path: '/profile/:id',
+        component: Profile,
       },
       {
         path: '/job',
