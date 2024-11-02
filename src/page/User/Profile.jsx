@@ -1,13 +1,18 @@
 import React from 'react'
 import AccountProfile from '../../components/accountProfile/AccountProfile'
-import { useParams, useSearchParams } from 'react-router-dom'
+import { useNavigate, useParams, useSearchParams } from 'react-router-dom'
 import { useGetUserDetailQuery } from '../../features/user/userApi'
 import { Col, Row, Space } from 'antd'
 import CustomLoading from '../../components/Loading/Loading'
+import { useSelector } from 'react-redux'
 
 function Profile() {
   const { id } = useParams()
-  console.log(id)
+  const user = useSelector(state => state.user.user)
+  const nav = useNavigate()
+  if(user.userId !== id){
+    nav('/')
+  }
 
   const { data, isLoading, isError, isSuccess } = useGetUserDetailQuery(id)
   console.log(data)

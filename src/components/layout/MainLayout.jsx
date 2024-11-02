@@ -18,10 +18,6 @@ function MainLayout() {
       <Layout>
         <Content style={{ margin: '', overflow: 'initial' }}>
           <div
-            style={{
-              paddingLeft: 100,
-              paddingRight: 100,
-            }}
           >
             <Outlet />
           </div>
