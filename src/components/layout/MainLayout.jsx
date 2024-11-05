@@ -1,8 +1,9 @@
 import { useState } from 'react'
-import Header from '../header'
 //import Footer from "../footer";
 import { Outlet } from 'react-router-dom'
 import { Layout } from 'antd'
+import Header from '../header/Header'
+
 const { Content } = Layout
 
 function MainLayout() {
@@ -19,7 +20,6 @@ function MainLayout() {
         <Content style={{ margin: '', overflow: 'initial' }}>
           <div
             style={{
-              marginTop: 24,
               paddingLeft: 100,
               paddingRight: 100,
             }}
