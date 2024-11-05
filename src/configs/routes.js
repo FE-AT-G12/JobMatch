@@ -1,13 +1,13 @@
 import LoginPage from '../page/login'
 import adminAccount from '../page/adminAccount/adminAccount'
 import RegisterPage from '../page/register'
-import HomePage from '../page/home'
 import Job from '../page/Job/Job'
-import Company from '../page/company'
 import UserTest from '../page/User/UserTest'
 import MainLayout from '../components/layout/MainLayout'
 import JobAdmin from '../page/JobAdmin/JobAdmin'
 import JobAdminDetail from '../page/JobAdmin/JobAdminDetail'
+import HomePage from '../page/home/Home'
+import Company from '../page/company/Company'
 const routes = [
   {
     layout: MainLayout,
@@ -24,6 +24,10 @@ const routes = [
       {
         path: '/register',
         component: RegisterPage,
+      },
+      {
+        path: '/company',
+        component: Company,
       },
       {
         path: '/user',
