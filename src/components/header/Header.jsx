@@ -1,10 +1,21 @@
 import { Button, Layout, Menu } from 'antd'
-import { Link } from 'react-router-dom'
+
+import { Link, useNavigate } from 'react-router-dom'
 import './Header.scss'
+import { useDispatch, useSelector } from 'react-redux'
+import { logout } from '../../redux/features/userSlice'
 
 const { Header: AntHeader } = Layout
 
 function Header() {
+  const user = useSelector((state) => state.user.user)
+  const dispatch = useDispatch()
+  const nav = useNavigate()
+  const handleLogout = () => {
+    console.log(user)
+    dispatch(logout())
+  }
+
   return (
     <div className='header'>
       <Layout>
@@ -80,15 +91,26 @@ function Header() {
               className='button-group'
               style={{ display: 'flex', gap: '10px' }}
             >
-              <Button className='login-home'>
-                <Link to={'/login'}>Đăng nhập</Link>
-              </Button>
-              <Button className='register-home' type='primary'>
-                <Link to={'/register'}>Đăng ký</Link>
-              </Button>
-              <Button className='dang-tuyen-home' type='primary'>
-                Đăng tuyển việc làm
-              </Button>
+              {!user ? (
+                <>
+                  <Button className='login-home'>
+                    <Link to={'/login'}>Đăng nhập</Link>
+                  </Button>
+                  <Button className='register-home' type='primary'>
+                    <Link to={'/register'}>Đăng ký</Link>
+                  </Button>
+                  <Button className='dang-tuyen-home' type='primary'>
+                    Đăng tuyển việc làm
+                  </Button>
+                </>
+              ) : (
+                <>
+                  <Button onClick={handleLogout}>Đăng xuất</Button>
+                  <Button onClick={() => nav(`/profile/${user.userId}`)}>
+                    Trang cá nhân
+                  </Button>
+                </>
+              )}
             </div>
           </div>
         </AntHeader>
