@@ -23,6 +23,7 @@ function MainLayout() {
           //   paddingLeft: 100,
           //   paddingRight: 100,
           // }}
+
           >
             <Outlet />
           </div>

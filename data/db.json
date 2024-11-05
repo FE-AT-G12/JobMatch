@@ -271,27 +271,31 @@
       "id": "10"
     }
   ],
-  "user": [
+ "user": [
     {
-      "id": "3",
-      "role": "client",
       "name": "Trần Minh C",
-      "age": 30,
       "phoneNumber": "0933445566",
       "email": "tranmc@gmail.com",
-      "skills": ["Nhập liệu", "Phục vụ", "Chăm sóc khách hàng"],
-      "location": "Hà Nội, Việt Nam",
-      "availability": "Toàn thời gian",
-      "birthDate": "18/05/1994",
-      "education": "12/12",
-      "rating": 4.6,
+      "role": "client",
+      "identityNumber": "074200910287",
+      "placeOfIssue": "Hà Nội",
+      "dateOfIssue": "2020-10-12T17:00:00.000Z",
+      "birthDate": "1994-05-18",
+      "education": "9",
+      "skills": [
+        "Nhập liệu",
+        "Phục vụ",
+        "Chăm sóc khách hàng",
+        "Dọn dẹp vệ sinh"
+      ],
+      "description": "Cực chuyên nghiệp",
       "identityCard": {
         "identityNumber": "074200910287",
         "placeOfIssue": "Hà Nội",
-        "dateOfIssue": "20/10/2020"
+        "dateOfIssue": "2020-10-13"
       },
-      "description": "",
-      "status": "active"
+      "id": "3",
+      "password": "96cae35ce8a9b0244178bf28e4966c2ce1b8385723a96a6b838858cdd6ca0a1e" 
     },
     {
       "id": "4",
@@ -307,7 +311,8 @@
         "dateOfIssue": "15/03/2021"
       },
       "description": "Công ty dịch vụ hỗ trợ tổ chức sự kiện.",
-      "status": "active"
+      "status": "active",
+      "password": "96cae35ce8a9b0244178bf28e4966c2ce1b8385723a96a6b838858cdd6ca0a1e"
     },
     {
       "id": "5",
@@ -316,7 +321,11 @@
       "age": 22,
       "phoneNumber": "0922457890",
       "email": "ngotane@gmail.com",
-      "skills": ["Phục vụ quán", "Tạp vụ", "Dọn dẹp nhà cửa"],
+      "skills": [
+        "Phục vụ quán",
+        "Tạp vụ",
+        "Dọn dẹp nhà cửa"
+      ],
       "location": "Hồ Chí Minh, Việt Nam",
       "availability": "Bán thời gian",
       "birthDate": "01/09/2002",
@@ -328,7 +337,8 @@
         "dateOfIssue": "22/07/2021"
       },
       "description": "",
-      "status": "active"
+      "status": "active",
+      "password": "96cae35ce8a9b0244178bf28e4966c2ce1b8385723a96a6b838858cdd6ca0a1e"
     },
     {
       "id": "6",
@@ -344,7 +354,8 @@
         "dateOfIssue": "30/06/2021"
       },
       "description": "Dịch vụ bảo vệ và vệ sinh văn phòng.",
-      "status": "active"
+      "status": "active",
+      "password": "96cae35ce8a9b0244178bf28e4966c2ce1b8385723a96a6b838858cdd6ca0a1e"
     },
     {
       "id": "7",
@@ -369,7 +380,8 @@
         "dateOfIssue": "15/08/2021"
       },
       "description": "",
-      "status": "active"
+      "status": "active",
+      "password": "96cae35ce8a9b0244178bf28e4966c2ce1b8385723a96a6b838858cdd6ca0a1e"
     },
     {
       "id": "8",
@@ -385,7 +397,8 @@
         "dateOfIssue": "10/12/2020"
       },
       "description": "Dịch vụ cung cấp lao động thời vụ cho nhà hàng.",
-      "status": "active"
+      "status": "active",
+      "password": "96cae35ce8a9b0244178bf28e4966c2ce1b8385723a96a6b838858cdd6ca0a1e"
     },
     {
       "id": "9",
@@ -394,7 +407,10 @@
       "age": 24,
       "phoneNumber": "0903123789",
       "email": "dovanai@gmail.com",
-      "skills": ["Sửa chữa xe máy", "Giao hàng"],
+      "skills": [
+        "Sửa chữa xe máy",
+        "Giao hàng"
+      ],
       "location": "Hà Nội, Việt Nam",
       "availability": "Toàn thời gian",
       "birthDate": "19/07/2000",
@@ -406,7 +422,8 @@
         "dateOfIssue": "05/04/2021"
       },
       "description": "",
-      "status": "active"
+      "status": "active",
+      "password": "96cae35ce8a9b0244178bf28e4966c2ce1b8385723a96a6b838858cdd6ca0a1e"
     },
     {
       "id": "10",
@@ -422,7 +439,8 @@
         "dateOfIssue": "15/05/2020"
       },
       "description": "Doanh nghiệp vận tải hàng hóa.",
-      "status": "active"
+      "status": "active",
+      "password": "96cae35ce8a9b0244178bf28e4966c2ce1b8385723a96a6b838858cdd6ca0a1e"
     },
     {
       "id": "11",
@@ -431,7 +449,10 @@
       "age": 27,
       "phoneNumber": "0905671234",
       "email": "vuhongk@gmail.com",
-      "skills": ["Giao hàng", "Giúp việc gia đình"],
+      "skills": [
+        "Giao hàng",
+        "Giúp việc gia đình"
+      ],
       "location": "Cần Thơ, Việt Nam",
       "availability": "Toàn thời gian",
       "birthDate": "22/06/1996",
@@ -443,7 +464,8 @@
         "dateOfIssue": "12/09/2021"
       },
       "description": "",
-      "status": "active"
+      "status": "active",
+      "password": "96cae35ce8a9b0244178bf28e4966c2ce1b8385723a96a6b838858cdd6ca0a1e"
     },
     {
       "id": "12",
@@ -459,7 +481,8 @@
         "dateOfIssue": "21/07/2021"
       },
       "description": "Dịch vụ sửa chữa điện lạnh.",
-      "status": "active"
+      "status": "active",
+      "password": "96cae35ce8a9b0244178bf28e4966c2ce1b8385723a96a6b838858cdd6ca0a1e"
     },
     {
       "id": "13",
@@ -468,7 +491,10 @@
       "age": 29,
       "phoneNumber": "0912678990",
       "email": "lyquocm@gmail.com",
-      "skills": ["Phục vụ sự kiện", "Giữ trẻ"],
+      "skills": [
+        "Phục vụ sự kiện",
+        "Giữ trẻ"
+      ],
       "location": "Hải Dương, Việt Nam",
       "availability": "Bán thời gian",
       "birthDate": "14/08/1995",
@@ -480,7 +506,8 @@
         "dateOfIssue": "15/03/2020"
       },
       "description": "",
-      "status": "active"
+      "status": "active",
+      "password": "96cae35ce8a9b0244178bf28e4966c2ce1b8385723a96a6b838858cdd6ca0a1e"
     }
   ],
   "company": [
@@ -576,4 +603,5 @@
       "intro": "Công ty Zalo chuyên cung cấp ứng dụng nhắn tin và gọi điện miễn phí, nổi bật với tính năng bảo mật cao."
     }
   ]
+
 }
