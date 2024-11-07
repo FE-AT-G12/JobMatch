@@ -10,7 +10,10 @@ import JobAdminDetail from '../page/JobAdmin/JobAdminDetail'
 import HomePage from '../page/home/Home'
 import Company from '../page/company/Company'
 
-import Profile from "../page/User/Profile"
+import Profile from '../page/User/Profile'
+import JobPost from '../page/Job/JobPost'
+import { Outlet } from 'react-router-dom'
+import SimpleLayout from '../components/layout/SimpleLayout'
 
 const routes = [
   {
@@ -20,14 +23,6 @@ const routes = [
         path: '/',
         isIndex: true,
         component: HomePage,
-      },
-      {
-        path: '/login',
-        component: LoginPage,
-      },
-      {
-        path: '/register',
-        component: RegisterPage,
       },
       {
         path: '/company',
@@ -46,6 +41,10 @@ const routes = [
         component: Job,
       },
       {
+        path: '/job/post',
+        component: JobPost,
+      },
+      {
         path: '/admin',
         component: adminAccount,
       },
@@ -59,6 +58,19 @@ const routes = [
       },
     ],
   },
+  {
+    layout: SimpleLayout,
+    data: [
+      {
+        path: '/login',
+        component: LoginPage,
+      },
+      {
+        path: '/register',
+        component: RegisterPage,
+      },
+    ]
+  }
 ]
 
 export default routes
