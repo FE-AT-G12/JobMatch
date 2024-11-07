@@ -14,6 +14,7 @@ function Header() {
   const handleLogout = () => {
     console.log(user)
     dispatch(logout())
+    nav('/login')
   }
 
   return (
@@ -97,7 +98,7 @@ function Header() {
                     <Link to={'/login'}>Đăng nhập</Link>
                   </Button>
                   <Button className='register-home' type='primary'>
-                    <Link to={'/register'}>Đăng ký</Link>
+                    <Link to={'/register?role=client'}>Đăng ký</Link>
                   </Button>
                   <Button className='dang-tuyen-home' type='primary'>
                     Đăng tuyển việc làm

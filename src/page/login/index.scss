@@ -1,5 +1,7 @@
 .loginpage {
+  min-height: 100vh;
   .login-1 {
+    height: 100%;
     padding: 100px 200px;
     .header {
       .title {
@@ -84,23 +86,28 @@
     }
   }
 
-  .backgroud {
+  .background {
+    min-height: 100vh;
     background-color: #d9d9d9;
+    background-image: url('/public/6333776.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: multiply;
     .sologan{
         padding: 250px 0px;
         margin-left: 10px;
         .sologan-1{
             display: flex;
             justify-content: flex-start;
-            font-size: 36px;
-            color: #024caa;
+            font-size: 40px;
+            color: black;
             font-weight: 600;
         }
         .sologan-2{
             display: flex;
             justify-content: flex-start;
             font-size: 16px;
-            color: #024caa;
+            color: #fff;
             font-weight: 400;
             margin-top: 30px;
         }
