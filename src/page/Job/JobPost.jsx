@@ -14,7 +14,6 @@ function JobPost() {
     data: user,
     isLoading,
     isError,
-    isSuccess,
   } = useGetUserDetailQuery(userId)
   if (isLoading) {
     return <CustomLoading />

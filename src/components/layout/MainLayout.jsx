@@ -16,19 +16,9 @@ function MainLayout() {
       }}
     >
       <Header quantity={quantity} setQuantity={setQuantity} />
-      <Layout>
-        <Content style={{ margin: '', overflow: 'initial' }}>
-          <div
-          // style={{
-          //   paddingLeft: 100,
-          //   paddingRight: 100,
-          // }}
-
-          >
-            <Outlet />
-          </div>
-        </Content>
-      </Layout>
+      <Content style={{ margin: '', overflow: 'initial' }}>
+        <Outlet />
+      </Content>
     </Layout>
   )
 }

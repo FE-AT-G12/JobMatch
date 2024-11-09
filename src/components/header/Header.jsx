@@ -1,121 +1,70 @@
-import { Button, Layout, Menu } from 'antd'
-
+import React, { useState } from 'react'
+import {
+  Layout,
+  Menu,
+} from 'antd'
 import { Link, useNavigate } from 'react-router-dom'
-import './Header.scss'
 import { useDispatch, useSelector } from 'react-redux'
 import { logout } from '../../redux/features/userSlice'
+import './Header.scss'
+import { headerItems } from './data'
+import HeaderButtonGroup from './HeaderButtonGroup'
 
 const { Header: AntHeader } = Layout
 
 function Header() {
   const user = useSelector((state) => state.user.user)
+  console.log(user)
+
   const dispatch = useDispatch()
   const nav = useNavigate()
+  const [current, setCurrent] = useState('1')
+  
   const handleLogout = () => {
     console.log(user)
     dispatch(logout())
     nav('/login')
   }
 
+  const handleMenuClick = (e) => {
+    setCurrent(e.key)
+  }
+
   return (
     <div className='header'>
-      <Layout>
-        <AntHeader style={{ backgroundColor: 'white', padding: '0 50px' }}>
-          <div
-            className='header-content'
-            style={{
-              display: 'flex',
-              justifyContent: 'space-between',
-              alignItems: 'center',
-            }}
-          >
-            {/* Logo */}
-            <div
-              className='logo'
-              style={{ color: 'black', fontSize: '20px', fontWeight: 'bold' }}
-            >
-              Job Match
-            </div>
+        <AntHeader
+          style={{
+            backgroundColor: 'white',
+            padding: '0 40px',
+            position: 'fixed',
+            top: 0,
+            zIndex: 1,
+            width: '100%',
+            display: 'flex',
+            alignItems: 'center',
+          }}
+        >
+          {/* Logo */}
+          <Link style={{ width: '140px', marginRight: 16 }} to={'/'}>
+            <img
+              src='/public/logo.png'
+              style={{ width: '100%', height: '100%' }}
+              alt=''
+            />
+          </Link>
 
-            {/* Menu */}
-            <Menu
-              mode='horizontal'
-              defaultSelectedKeys={['1']}
-              style={{
-                backgroundColor: 'white',
-                borderBottom: 'none',
-                color: 'black',
-                flex: 1,
-              }}
-            >
-              <Menu.Item key='1'>
-                <Link to='/' style={{ color: 'black', fontWeight: '500' }}>
-                  Trang chủ
-                </Link>
-              </Menu.Item>
-              <Menu.Item key='2'>
-                <Link
-                  to='/viec-lam'
-                  style={{ color: 'black', fontWeight: '500' }}
-                >
-                  Việc làm
-                </Link>
-              </Menu.Item>
-              <Menu.Item key='3'>
-                <Link
-                  to='/viec-lam-cua-toi'
-                  style={{ color: 'black', fontWeight: '500' }}
-                >
-                  Việc làm của tôi
-                </Link>
-              </Menu.Item>
-              <Menu.Item key='4'>
-                <Link
-                  to='/company'
-                  style={{ color: 'black', fontWeight: '500' }}
-                >
-                  Công ty
-                </Link>
-              </Menu.Item>
-              <Menu.Item key='5'>
-                <Link
-                  to='/cam-nang'
-                  style={{ color: 'black', fontWeight: '500' }}
-                >
-                  Cẩm nang nghề nghiệp
-                </Link>
-              </Menu.Item>
-            </Menu>
+          {/* Menu */}
+          <Menu
+            mode='horizontal'
+            selectedKeys={[current]}
+            onClick={handleMenuClick}
+            items={headerItems}
+            className='header__menu'
+          />
 
-            {/* Buttons */}
-            <div
-              className='button-group'
-              style={{ display: 'flex', gap: '10px' }}
-            >
-              {!user ? (
-                <>
-                  <Button className='login-home'>
-                    <Link to={'/login'}>Đăng nhập</Link>
-                  </Button>
-                  <Button className='register-home' type='primary'>
-                    <Link to={'/register?role=client'}>Đăng ký</Link>
-                  </Button>
-                  <Button className='dang-tuyen-home' type='primary'>
-                    Đăng tuyển việc làm
-                  </Button>
-                </>
-              ) : (
-                <>
-                  <Button onClick={handleLogout}>Đăng xuất</Button>
-                  <Button onClick={() => nav(`/profile/${user.userId}`)}>
-                    Trang cá nhân
-                  </Button>
-                </>
-              )}
-            </div>
-          </div>
+          {/* Buttons */}
+          <HeaderButtonGroup user={user} handleLogout={handleLogout}/>
         </AntHeader>
-      </Layout>
     </div>
   )
 }
