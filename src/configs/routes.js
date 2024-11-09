@@ -12,7 +12,6 @@ import Company from '../page/company/Company'
 
 import Profile from '../page/User/Profile'
 import JobPost from '../page/Job/JobPost'
-import { Outlet } from 'react-router-dom'
 import SimpleLayout from '../components/layout/SimpleLayout'
 
 const routes = [
@@ -35,6 +34,7 @@ const routes = [
       {
         path: '/profile/:id',
         component: Profile,
+        role: ['client', 'hirer']
       },
       {
         path: '/job',
@@ -43,18 +43,22 @@ const routes = [
       {
         path: '/job/post',
         component: JobPost,
+        role: ['hirer']
       },
       {
         path: '/admin',
         component: adminAccount,
+        role: ['admin']
       },
       {
         path: '/jobAdmin',
         component: JobAdmin,
+        role: ['admin']
       },
       {
         path: '/jobAdmin/:jobId',
         component: JobAdminDetail,
+        role: ['admin']
       },
     ],
   },
