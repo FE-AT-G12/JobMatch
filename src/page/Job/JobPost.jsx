@@ -24,7 +24,7 @@ function JobPost() {
 
   return (
     <div
-      style={{ width: '100%', minHeight: '100vh', backgroundColor: '#F0F0F0' }}
+      style={{ width: '100%', minHeight: '100vh', backgroundColor: '#f5f5f5' }}
     >
       <Row style={{ width: '100%', marginTop: '35px' }}>
         <Col span={10} offset={7}>

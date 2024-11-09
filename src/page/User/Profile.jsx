@@ -15,7 +15,7 @@ function Profile() {
   }
 
   const { data, isLoading, isError, isSuccess } = useGetUserDetailQuery(id)
-  console.log(data)
+ 
   if (isLoading) {
     return <CustomLoading />
   }

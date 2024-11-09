@@ -24,7 +24,7 @@ function HeaderButtonGroup({ user, handleLogout }) {
     boxShadow: token.boxShadowSecondary,
     width: 300,
   }
-  const items = profileItems(user.userId, handleLogout)
+  const items = profileItems(user?.userId, handleLogout)
   return (
     <>
       <Flex className='button-group'>

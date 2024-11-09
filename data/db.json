@@ -429,6 +429,29 @@
       },
       "hirerId": "4",
       "status": "Đang tuyển"
+    },
+    {
+      "id": "c34e",
+      "title": "Chuyển đồ dọn nhà",
+      "description": "Chuyển các nội thất sang nhà mới",
+      "ageRequirement": {
+        "min": 18
+      },
+      "category": "Dọn dẹp vệ sinh",
+      "location": "123 Hoàng Diệu",
+      "dateStart": "2024-11-09",
+      "dateEnd": "2024-11-10",
+      "timeStart": "08:00",
+      "timeEnd": "20:00",
+      "datePosted": "2024-11-09 14:04:58",
+      "payment": {
+        "payRate": 40000,
+        "paymentMethod": "transfer",
+        "payTime": "after"
+      },
+      "hirerId": "4",
+      "clientId": null,
+      "status": "Đang tuyển"
     }
   ],
   "user": [
