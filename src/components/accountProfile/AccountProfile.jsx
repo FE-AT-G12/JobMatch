@@ -21,7 +21,7 @@ const AccountProfile = ({ user }) => {
   const [form] = Form.useForm()
   const [updateUser, { isSuccess }] = useUpdateUserMutation()
   const onFinish = async (values) => {
-    console.log(values)
+ 
 
     // Prepare the updated user data
     const updatedData = {

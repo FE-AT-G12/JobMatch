@@ -13,6 +13,7 @@ import Company from '../page/company/Company'
 import Profile from '../page/User/Profile'
 import JobPost from '../page/Job/JobPost'
 import SimpleLayout from '../components/layout/SimpleLayout'
+import JobPostedListPage from '../page/Job/JobPostedListPage'
 
 const routes = [
   {
@@ -46,6 +47,11 @@ const routes = [
         role: ['hirer']
       },
       {
+        path: '/job/my-posted-job',
+        component: JobPostedListPage,
+        role: ['hirer']
+      },
+      {
         path: '/admin',
         component: adminAccount,
         role: ['admin']
@@ -58,7 +64,7 @@ const routes = [
       {
         path: '/jobAdmin/:jobId',
         component: JobAdminDetail,
-        role: ['admin']
+        role: ['admin', 'hirer']
       },
     ],
   },

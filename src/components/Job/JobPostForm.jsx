@@ -41,7 +41,7 @@ function JobPostForm() {
   const hirer = useSelector(selectUser)
 
   const handleSubmit = async (values) => {
-    console.log(values)
+
     //prepare data
     const job = {
       title: values.title,
@@ -69,7 +69,7 @@ function JobPostForm() {
       clientId: null,
       status: 'Đang tuyển',
     }
-    console.log(job)
+   
     try {
       await createJob(job)
       message.success('Đăng tuyển công việc thành công!')

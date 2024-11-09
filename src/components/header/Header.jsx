@@ -14,14 +14,14 @@ const { Header: AntHeader } = Layout
 
 function Header() {
   const user = useSelector((state) => state.user.user)
-  console.log(user)
+
 
   const dispatch = useDispatch()
   const nav = useNavigate()
   const [current, setCurrent] = useState('1')
   
   const handleLogout = () => {
-    console.log(user)
+
     dispatch(logout())
     nav('/login')
   }
