@@ -5,16 +5,20 @@ import { useGetUserDetailQuery } from '../../features/user/userApi'
 import CustomLoading from '../../components/Loading/Loading'
 import { Col, Row } from 'antd'
 import JobHirerInfo from '../../components/Job/JobHirerInfo'
-import JobPostForm from '../../components/Job/JobPostForm'
+import JobUpdateForm from '../../components/Job/JobUpdateForm'
+import { useGetJobDetailQuery } from '../../features/job/jobApi'
+import { useParams } from 'react-router-dom'
 
-function JobPost() {
+function JobUpdatePage() {
+  const {id} = useParams()
   const { userId } = useSelector(selectUser)
+  const {data, isLoading: jobLoading} = useGetJobDetailQuery(id)
   const {
     data: user,
     isLoading,
     isError,
   } = useGetUserDetailQuery(userId)
-  if (isLoading) {
+  if (isLoading || jobLoading) {
     return <CustomLoading />
   }
   if (isError) {
@@ -28,11 +32,11 @@ function JobPost() {
       <Row style={{ width: '100%', marginTop: '35px' }}>
         <Col span={10} offset={7}>
           <JobHirerInfo user={user} />
-          <JobPostForm />
+          <JobUpdateForm job={data} />
         </Col>
       </Row>
     </div>
   )
 }
 
-export default JobPost
+export default JobUpdatePage

@@ -17,7 +17,11 @@ export const jobApi = apiSlice.injectEndpoints({
         url: `/job?hirerId=${hirerId}`,
         method: 'GET',
       }),
-      transformResponse: (res) => res,
+      transformResponse: (res) => {
+        return res.sort(
+          (a, b) => new Date(b.datePosted) - new Date(a.datePosted)
+        )
+      },
       providesTags: ['Job'],
     }),
     createJob: build.mutation({
@@ -38,7 +42,7 @@ export const jobApi = apiSlice.injectEndpoints({
       providesTags: ['Job'],
     }),
     updateJob: build.mutation({
-      query: ({ data, id }) => ({
+      query: ({id, data}) => ({
         url: `/job/${id}`,
         method: 'PUT',
         body: data,
@@ -57,14 +61,11 @@ export const jobApi = apiSlice.injectEndpoints({
   }),
 })
 
-
-
-
 export const {
   useGetJobListQuery,
   useCreateJobMutation,
   useGetJobDetailQuery,
   useUpdateJobMutation,
   useDeleteJobMutation,
-  useGetJobListByHirerIdQuery
+  useGetJobListByHirerIdQuery,
 } = jobApi

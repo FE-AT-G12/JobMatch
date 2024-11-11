@@ -136,6 +136,7 @@
       "id": "4"
     },
     {
+      "id": "be78",
       "title": "Nhập Liệu Khách Hàng",
       "description": "Nhập dữ liệu khách hàng từ các biểu mẫu vào hệ thống CRM.",
       "skillRequirement": [
@@ -146,6 +147,11 @@
         "min": "22",
         "max": "29"
       },
+      "payment": {
+        "payRate": 75000,
+        "paymentMethod": "cash",
+        "payTime": "after"
+      },
       "cityjob": "Công ty Dịch Vụ",
       "cityAddress": "Hồ Chí Minh",
       "category": "Dịch vụ khách hàng",
@@ -155,7 +161,8 @@
       "timeStart": "08:00",
       "duration": 2,
       "datePosted": "2024-10-08",
-      "id": "be78"
+      "hirerId": "2",
+      "status": "Đã tuyển"
     },
     {
       "id": "5879",
@@ -452,6 +459,282 @@
       "hirerId": "4",
       "clientId": null,
       "status": "Đang tuyển"
+    },
+    {
+      "title": "Phụ giúp nội trợ khác ",
+      "description": "Giúp việc nhà cho gia điền 666",
+      "skillRequirement": [
+        "Nấu ăn"
+      ],
+      "ageRequirement": {
+        "min": 30
+      },
+      "repeatOn": [
+        "Thứ 2",
+        "Thứ 4",
+        "Thứ 6"
+      ],
+      "category": "Dọn dẹp vệ sinh",
+      "location": "32, Hoang Van Thu, Trần Phú, Thành phố Hà Giang, Tỉnh Hà Giang 20152, Việt Nam",
+      "cityAddress": "Thành phố Hà Giang",
+      "dateStart": "2024-11-12",
+      "dateEnd": "2024-11-13",
+      "timeStart": "08:00",
+      "timeEnd": "12:00",
+      "datePosted": "2024-11-10 18:50:47",
+      "payment": {
+        "payRate": 100000,
+        "paymentMethod": "transfer",
+        "payTime": "before"
+      },
+      "hirerId": "8",
+      "clientId": null,
+      "status": "Đang tuyển",
+      "dateUpdated": "2024-11-11 16:14:43",
+      "id": "5e8a"
+    },
+    {
+      "id": "176a",
+      "title": "123",
+      "description": "123",
+      "skillRequirement": [
+        "123"
+      ],
+      "ageRequirement": {
+        "min": 123,
+        "max": 1233
+      },
+      "repeatOn": [
+        "Thứ 3",
+        "Thứ 2",
+        "Thứ 4"
+      ],
+      "category": "Dọn dẹp vệ sinh",
+      "location": "123, Tân Lập, Hà Phong, Thành phố Hạ Long, Tỉnh Quảng Ninh 01040, Việt Nam",
+      "dateStart": "2024-11-19",
+      "dateEnd": "2024-11-23",
+      "timeStart": "05:00",
+      "timeEnd": "11:00",
+      "datePosted": "2024-11-11 14:57:34",
+      "payment": {
+        "payRate": 12333,
+        "paymentMethod": "cash",
+        "payTime": "before"
+      },
+      "hirerId": "8",
+      "clientId": null,
+      "status": "Đang tuyển"
+    },
+    {
+      "id": "27a2",
+      "title": "123",
+      "description": "123",
+      "skillRequirement": [
+        "123"
+      ],
+      "ageRequirement": {
+        "min": 123,
+        "max": 1233
+      },
+      "repeatOn": [
+        "Thứ 3",
+        "Thứ 2",
+        "Thứ 4"
+      ],
+      "category": "Dọn dẹp vệ sinh",
+      "location": "123, Tân Lập, Hà Phong, Thành phố Hạ Long, Tỉnh Quảng Ninh 01040, Việt Nam",
+      "dateStart": "2024-11-19",
+      "dateEnd": "2024-11-23",
+      "timeStart": "05:00",
+      "timeEnd": "11:00",
+      "datePosted": "2024-11-11 14:57:46",
+      "payment": {
+        "payRate": 12333,
+        "paymentMethod": "cash",
+        "payTime": "before"
+      },
+      "hirerId": "8",
+      "clientId": null,
+      "status": "Đang tuyển"
+    },
+    {
+      "id": "76f4"
+    },
+    {
+      "id": "bbbd",
+      "title": "123",
+      "description": "123",
+      "skillRequirement": [
+        "123"
+      ],
+      "ageRequirement": {
+        "min": 123,
+        "max": 1233
+      },
+      "repeatOn": [
+        "Thứ 3",
+        "Thứ 4"
+      ],
+      "category": "Dọn dẹp vệ sinh",
+      "location": "123, Hoang Van Thu, Trần Phú, Thành phố Hà Giang, Tỉnh Hà Giang 20152, Việt Nam",
+      "dateStart": "2024-11-12",
+      "dateEnd": "2024-11-29",
+      "timeStart": "02:02",
+      "timeEnd": "11:02",
+      "datePosted": "2024-11-11 15:04:47",
+      "payment": {
+        "payRate": 12333,
+        "paymentMethod": "transfer",
+        "payTime": "before"
+      },
+      "hirerId": "8",
+      "clientId": null,
+      "status": "Đang tuyển"
+    },
+    {
+      "id": "2907",
+      "title": "123",
+      "description": "123",
+      "ageRequirement": {
+        "min": 123,
+        "max": 1233
+      },
+      "repeatOn": [
+        "Thứ 3"
+      ],
+      "category": "Dọn dẹp vệ sinh",
+      "location": "123, An Dương Vương, Quận 5, Thành phố Hồ Chí Minh, 73000, Việt Nam",
+      "dateStart": "2024-11-19",
+      "dateEnd": "2024-11-22",
+      "timeStart": "02:00",
+      "timeEnd": "21:00",
+      "datePosted": "2024-11-11 15:11:10",
+      "payment": {
+        "payRate": 333333,
+        "paymentMethod": "cash",
+        "payTime": "before"
+      },
+      "hirerId": "8",
+      "clientId": null,
+      "status": "Đang tuyển"
+    },
+    {
+      "id": "914c",
+      "title": "123",
+      "description": "123",
+      "ageRequirement": {
+        "min": 123,
+        "max": 1233
+      },
+      "repeatOn": [
+        "Thứ 3"
+      ],
+      "category": "Dọn dẹp vệ sinh",
+      "dateStart": "2024-11-19",
+      "dateEnd": "2024-11-22",
+      "timeStart": "02:00",
+      "timeEnd": "21:00",
+      "datePosted": "2024-11-11 15:13:23",
+      "payment": {
+        "payRate": 333333,
+        "paymentMethod": "cash",
+        "payTime": "before"
+      },
+      "hirerId": "8",
+      "clientId": null,
+      "status": "Đang tuyển"
+    },
+    {
+      "id": "1327",
+      "title": "123",
+      "description": "123",
+      "skillRequirement": [
+        "123"
+      ],
+      "ageRequirement": {
+        "min": 123,
+        "max": 333
+      },
+      "repeatOn": [
+        "Thứ 4"
+      ],
+      "category": "Dọn dẹp vệ sinh",
+      "location": "143, An Dương, Quận Tây Hồ, Hà Nội, 10266, Việt Nam",
+      "cityAddress": "Hà Nội",
+      "dateStart": "2024-11-12",
+      "dateEnd": "2024-11-21",
+      "timeStart": "00:04",
+      "timeEnd": "04:04",
+      "datePosted": "2024-11-11 15:13:55",
+      "payment": {
+        "payRate": 123333,
+        "paymentMethod": "transfer",
+        "payTime": "after"
+      },
+      "hirerId": "8",
+      "clientId": null,
+      "status": "Đang tuyển"
+    },
+    {
+      "id": "a4d7"
+    },
+    {
+      "title": "333333",
+      "description": "123",
+      "skillRequirement": [
+        "213"
+      ],
+      "ageRequirement": {
+        "min": 321,
+        "max": 123
+      },
+      "repeatOn": [
+        "Thứ 4"
+      ],
+      "category": "Dọn dẹp vệ sinh",
+      "location": "22, An Điềm, Quận 5, Thành phố Hồ Chí Minh, 73000, Việt Nam",
+      "dateStart": "2024-11-05",
+      "dateEnd": "2024-11-21",
+      "timeStart": "05:00",
+      "timeEnd": "12:07",
+      "datePosted": "2024-11-11 15:17:48",
+      "payment": {
+        "payRate": 332333,
+        "paymentMethod": "cash",
+        "payTime": "before"
+      },
+      "hirerId": "8",
+      "clientId": null,
+      "status": "Đang tuyển",
+      "dateUpdated": "2024-11-11 16:03:56",
+      "id": "fb67"
+    },
+    {
+      "title": "gg wp",
+      "description": "gg",
+      "skillRequirement": [
+        "gg",
+        "wp"
+      ],
+      "ageRequirement": {},
+      "category": "Dọn dẹp vệ sinh",
+      "location": "55, Nguyễn Văn Đậu, Quận Bình Thạnh, Thành phố Hồ Chí Minh, 72317, Việt Nam",
+      "cityAddress": "Thành phố Hồ Chí Minh",
+      "dateStart": "2024-11-11",
+      "dateEnd": "2024-11-12",
+      "timeStart": "02:00",
+      "timeEnd": "05:00",
+      "datePosted": "2024-11-11 16:15:55",
+      "payment": {
+        "payRate": 80000,
+        "paymentMethod": "cash",
+        "payTime": "before"
+      },
+      "hirerId": "8",
+      "clientId": null,
+      "status": "Đang tuyển",
+      "dateUpdated": "2024-11-11 16:18:18",
+      "id": "5218"
     }
   ],
   "user": [
