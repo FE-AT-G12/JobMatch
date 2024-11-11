@@ -14,6 +14,8 @@ import Profile from '../page/User/Profile'
 import JobPost from '../page/Job/JobPost'
 import SimpleLayout from '../components/layout/SimpleLayout'
 import JobPostedListPage from '../page/Job/JobPostedListPage'
+import JobUpdateForm from '../components/Job/JobUpdateForm'
+import JobUpdatePage from '../page/Job/JobUpdatePage'
 
 const routes = [
   {
@@ -42,6 +44,10 @@ const routes = [
         component: Job,
       },
       {
+        path: '/job/:id',
+        component: JobUpdatePage,
+      },
+      {
         path: '/job/post',
         component: JobPost,
         role: ['hirer']
@@ -64,7 +70,7 @@ const routes = [
       {
         path: '/jobAdmin/:jobId',
         component: JobAdminDetail,
-        role: ['admin', 'hirer']
+        role: ['admin']
       },
     ],
   },

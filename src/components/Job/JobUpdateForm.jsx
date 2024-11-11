@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 
 import {
   Button,
@@ -12,7 +12,6 @@ import {
   DatePicker,
   TimePicker,
 } from 'antd'
-import { useCreateJobMutation } from '../../features/job/jobApi'
 import {
   dateJsToStringFormatter,
   timeJsToStringFormatter,
@@ -20,23 +19,18 @@ import {
 const { Title, Text } = Typography
 const { RangePicker } = DatePicker
 import dayjs from 'dayjs'
-import { useSelector } from 'react-redux'
-import { selectUser } from '../../redux/features/userSlice'
-import ModalLoading from '../Loading/ModalLoading'
 import { dayOfWeek } from '../../constant'
 import AutocompleteAddress from '../AutoCompleteAddress/AutocompleteAddress'
+import { useUpdateJobMutation } from '../../features/job/jobApi'
 
 const Require = () => <span style={{ color: 'red' }}>*</span>
-function JobPostForm() {
-  const [form] = Form.useForm();
-
-  const [createJob, { isLoading }] =
-    useCreateJobMutation()
-  const hirer = useSelector(selectUser)
+function JobUpdateForm({ job }) {
+  const [updateJob] = useUpdateJobMutation()
+  const [form] = Form.useForm()
 
   const handleSubmit = async (values) => {
-    //prepare data
-    const job = {
+    // Prepare data
+    const updatedJob = {
       title: values.title,
       description: values.description,
       skillRequirement: values.skillRequirement,
@@ -45,35 +39,55 @@ function JobPostForm() {
         max: values.maxAge,
       },
       repeatOn: values.repeatOn,
-      //Category
-      category: 'Dọn dẹp vệ sinh',
-      location: values.location.location,
-      cityAddress: values.location.cityAddress,
+      category: 'Dọn dẹp vệ sinh', // Static value
+      location: values.location.location || job.location,
+      cityAddress: values.location.cityAddress || job.cityAddress,
       dateStart: dateJsToStringFormatter(values.date[0]),
       dateEnd: dateJsToStringFormatter(values.date[1]),
       timeStart: timeJsToStringFormatter(values.time[0]),
       timeEnd: timeJsToStringFormatter(values.time[1]),
-      datePosted: dayjs().format('YYYY-MM-DD HH:mm:ss'),
+      datePosted: job.datePosted,
       payment: {
         payRate: values.payRate,
         paymentMethod: values.paymentMethod,
         payTime: values.payTime,
       },
-      hirerId: hirer.userId,
-      clientId: null,
+      hirerId: job.hirerId,
+      clientId: job.clientId,
       status: 'Đang tuyển',
+      dateUpdated: dayjs().format('YYYY-MM-DD HH:mm:ss'),
     }
+
     try {
-      await createJob(job)
-      message.success('Đăng tuyển công việc thành công!')
+      await updateJob({ id: job.id, data: updatedJob })
+      message.success('Cập nhật công việc thành công!')
     } catch (error) {
-      message.error('Đăng tuyển công việc thất bại!')
+      message.error('Cập nhật công việc thất bại!')
     }
   }
+
   return (
     <>
-      {isLoading && <ModalLoading />}
-      <Form form={form} onFinish={handleSubmit} layout='vertical' style={{ marginTop: 30 }}>
+      <Form
+        form={form}
+        onFinish={handleSubmit}
+        layout='vertical'
+        initialValues={{
+          title: job.title,
+          description: job.description,
+          skillRequirement: job.skillRequirement,
+          minAge: job.ageRequirement?.min,
+          maxAge: job.ageRequirement?.max,
+          repeatOn: job.repeatOn,
+          location: job.location,
+          date: [dayjs(job.dateStart), dayjs(job.dateEnd)],
+          time: [dayjs(job.timeStart, 'HH:mm'), dayjs(job.timeEnd, 'HH:mm')],
+          payRate: job.payment?.payRate,
+          paymentMethod: job.payment?.paymentMethod,
+          payTime: job.payment?.payTime,
+        }}
+        style={{ marginTop: 30 }}
+      >
         <div
           style={{
             padding: '24px 24px 50px 24px',
@@ -140,8 +154,7 @@ function JobPostForm() {
             style={{ marginTop: 30 }}
             rules={[{ required: true, message: 'Vui lòng nhập địa điểm' }]}
           >
-            {/* Location */}
-            <AutocompleteAddress form={form}/>
+            <AutocompleteAddress form={form} />
           </Form.Item>
           <Flex gap={50}>
             <Form.Item
@@ -177,8 +190,7 @@ function JobPostForm() {
               rules={[{ required: true, message: 'Vui lòng nhập giờ bắt đầu' }]}
             >
               <TimePicker.RangePicker
-                needConfirm={false}
-                placeholder='Nhập giờ'
+                placeholder='Nhập giờ bắt đầu'
                 size='middle'
                 format='HH:mm'
               />
@@ -228,14 +240,8 @@ function JobPostForm() {
               <Select
                 placeholder='Hình thức thanh toán'
                 options={[
-                  {
-                    label: 'Tiền mặt',
-                    value: 'cash',
-                  },
-                  {
-                    label: 'Chuyển khoản',
-                    value: 'transfer',
-                  },
+                  { label: 'Tiền mặt', value: 'cash' },
+                  { label: 'Chuyển khoản', value: 'transfer' },
                 ]}
               />
             </Form.Item>
@@ -252,24 +258,34 @@ function JobPostForm() {
               <Select
                 placeholder='Thời gian thanh toán'
                 options={[
-                  {
-                    label: 'Trả trước',
-                    value: 'before',
-                  },
-                  {
-                    label: 'Trả sau',
-                    value: 'after',
-                  },
+                  { label: 'Trả trước', value: 'before' },
+                  { label: 'Trả sau', value: 'after' },
                 ]}
               />
             </Form.Item>
           </Flex>
         </div>
         <Form.Item>
+          <Form.Item>
+            <Button
+              style={{
+                width: '100%',
+                marginTop: '24px',
+                padding: '25px 0',
+                textAlign: 'center',
+                borderRadius: '20px',
+              }}
+              htmlType='reset'
+              variant='text'
+            >
+              <div style={{ fontSize: '20px', fontWeight: '600' }}>
+                Hủy thay đổi
+              </div>
+            </Button>
+          </Form.Item>
           <Button
             style={{
               width: '100%',
-              marginTop: '24px',
               padding: '25px 0',
               color: '#fff',
               backgroundColor: '#024CAA',
@@ -278,9 +294,7 @@ function JobPostForm() {
             }}
             htmlType='submit'
           >
-            <div style={{ fontSize: '20px', fontWeight: '600' }}>
-              Đăng tuyển ngay
-            </div>
+            <div style={{ fontSize: '20px', fontWeight: '600' }}>Cập nhật</div>
           </Button>
         </Form.Item>
       </Form>
@@ -288,4 +302,4 @@ function JobPostForm() {
   )
 }
 
-export default JobPostForm
+export default JobUpdateForm
