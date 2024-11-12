@@ -1,30 +1,53 @@
+@import '/src/main';
 .header {
-  .logo {
-    float: left;
-    font-size: 24px;
-    font-weight: bold;
-  }
-
-  .ant-menu-horizontal {
-    line-height: 64px; /* Căn chỉnh các item menu */
+  margin-bottom: 64.11px;
+  &__menu {
+    background-color: 'white';
+    color: 'black';
+    flex: 1;
   }
 
   .ant-menu-item {
-    font-size: 16px; /* Kích thước chữ của các item */
+    color: #333;
+    font-weight: 500;
+    border-bottom: none;
+    font-size: 16px;
+    border-bottom: none !important;
+    &::after {
+      border-bottom: none !important;
+    }
+    &:hover {
+      border-bottom: none !important;
+    }
+    &:hover::after {
+      border-bottom: none !important;
+    }
+  }
+
+  &__recruit {
+    text-align: right;
+    font-weight: 500;
+    cursor: pointer;
+    transition: .3s;
+    &:hover{
+      color: $primary;
+    }
   }
   .button-group {
     .login-home {
-      color: #024caa;
+      color: $primary;
       font-weight: 600;
-      border: none;
+      border: 1px solid $primary;
+      background-color: transparent;
     }
 
     .register-home {
-      background-color: #024caa;
+      background-color: $primary;
       font-weight: 600;
     }
+
     .register-home:hover {
-      background-color: #024caa;
+      background-color: $primary;
     }
 
     .dang-tuyen-home {
@@ -32,8 +55,12 @@
       color: white;
       font-weight: 600;
     }
+
     .dang-tuyen-home:hover {
       background-color: black;
     }
+  }
+  &__username{
+    color: $primary !important;
   }
 }

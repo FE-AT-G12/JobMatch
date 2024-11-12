@@ -55,10 +55,10 @@
   ],
   "user": [
     {
+      "id": "3",
       "name": "Trần Minh C",
       "phoneNumber": "0933445566",
       "email": "tranmc@gmail.com",
-      "role": "client",
       "identityNumber": "074200910287",
       "placeOfIssue": "Hà Nội",
       "dateOfIssue": "2020-10-12T17:00:00.000Z",
@@ -76,7 +76,7 @@
         "placeOfIssue": "Hà Nội",
         "dateOfIssue": "2020-10-13"
       },
-      "id": "3",
+      "role": "client",
       "password": "96cae35ce8a9b0244178bf28e4966c2ce1b8385723a96a6b838858cdd6ca0a1e"
     },
     {
@@ -282,6 +282,50 @@
       "description": "",
       "status": "active",
       "password": "96cae35ce8a9b0244178bf28e4966c2ce1b8385723a96a6b838858cdd6ca0a1e"
+    },
+    {
+      "id": "10c7",
+      "name": "Huỳnh Minh Long",
+      "email": "long@gmail.com",
+      "password": "96cae35ce8a9b0244178bf28e4966c2ce1b8385723a96a6b838858cdd6ca0a1e",
+      "role": "client"
+    },
+    {
+      "name": "Minh Long Huỳnh",
+      "email": "long1@gmail.com",
+      "identityNumber": "074200910287",
+      "placeOfIssue": "Hà Nội",
+      "dateOfIssue": "2024-11-18T17:00:00.000Z",
+      "birthDate": "2024-11-04",
+      "education": "6",
+      "description": "dadada",
+      "identityCard": {
+        "identityNumber": "074200910287",
+        "placeOfIssue": "Hà Nội",
+        "dateOfIssue": "2024-11-19"
+      },
+      "id": "de11"
+    },
+    {
+      "id": "3f0b",
+      "name": "Huỳnh Minh Long",
+      "email": "heeeee@gmail.com",
+      "password": "96cae35ce8a9b0244178bf28e4966c2ce1b8385723a96a6b838858cdd6ca0a1e",
+      "role": "client"
+    },
+    {
+      "id": "bf3b",
+      "name": "Huỳnh Minh Long",
+      "email": "123123@gmail.com",
+      "password": "96cae35ce8a9b0244178bf28e4966c2ce1b8385723a96a6b838858cdd6ca0a1e",
+      "role": "client"
+    },
+    {
+      "id": "4960",
+      "name": "Huỳnh Minh Long",
+      "email": "123123123@gmail.com",
+      "password": "96cae35ce8a9b0244178bf28e4966c2ce1b8385723a96a6b838858cdd6ca0a1e",
+      "role": "client"
     }
   ],
   "company": [

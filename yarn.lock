@@ -434,6 +434,16 @@
   dependencies:
     levn "^0.4.1"
 
+"@geoapify/geocoder-autocomplete@^2.1.0":
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/@geoapify/geocoder-autocomplete/-/geocoder-autocomplete-2.1.0.tgz#709900081e5fad6a886e1c9dce4c3f593c92ec2b"
+  integrity sha512-E1uX3haIp9OD13sScEr+UqT5GRTv0K2ldZzsb44sHaXrk9B5C6GVxsuH0QYdt8hjNNXfUdAXUp3YJomS9O0RAQ==
+
+"@geoapify/react-geocoder-autocomplete@^2.0.1":
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/@geoapify/react-geocoder-autocomplete/-/react-geocoder-autocomplete-2.0.1.tgz#f187cf56a327eefd421641d5b64def205453a12a"
+  integrity sha512-1kFDhKSugGjieG1FSVzQCNOwNMYMsRbwIeKBLVuP2YaKzbmAxwYuJa1QdMcuQXvM0kbSLntlQ2bZfZ2Wqqr8DQ==
+
 "@humanwhocodes/module-importer@^1.0.1":
   version "1.0.1"
   resolved "https://registry.npmjs.org/@humanwhocodes/module-importer/-/module-importer-1.0.1.tgz"
