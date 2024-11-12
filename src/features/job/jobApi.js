@@ -1,3 +1,4 @@
+import { createSelector } from '@reduxjs/toolkit'
 import { apiSlice } from '../../apis/apiSlice'
 
 export const jobApi = apiSlice.injectEndpoints({
@@ -9,6 +10,18 @@ export const jobApi = apiSlice.injectEndpoints({
         params,
       }),
       transformResponse: (res) => res,
+      providesTags: ['Job'],
+    }),
+    getJobListByHirerId: build.query({
+      query: (hirerId) => ({
+        url: `/job?hirerId=${hirerId}`,
+        method: 'GET',
+      }),
+      transformResponse: (res) => {
+        return res.sort(
+          (a, b) => new Date(b.datePosted) - new Date(a.datePosted)
+        )
+      },
       providesTags: ['Job'],
     }),
     createJob: build.mutation({
@@ -29,10 +42,10 @@ export const jobApi = apiSlice.injectEndpoints({
       providesTags: ['Job'],
     }),
     updateJob: build.mutation({
-      query: ({ data, id }) => ({
+      query: ({id, data}) => ({
         url: `/job/${id}`,
         method: 'PUT',
-        body: data,
+        body: { data, id }, // Wrap data inside another object with a data key
       }),
       transformResponse: (res) => res,
       invalidatesTags: ['Job'],
@@ -54,4 +67,5 @@ export const {
   useGetJobDetailQuery,
   useUpdateJobMutation,
   useDeleteJobMutation,
+  useGetJobListByHirerIdQuery,
 } = jobApi

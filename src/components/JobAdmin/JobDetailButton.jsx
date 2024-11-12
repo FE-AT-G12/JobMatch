@@ -1,7 +1,7 @@
 import { Button } from 'antd'
 import { useNavigate } from 'react-router-dom'
 // eslint-disable-next-line react/prop-types
-export const ButtonDetail = ({ record }) => {
+export const JobDetailButton = ({ record }) => {
   const nav = useNavigate()
 
   const handleDetailClick = () => {

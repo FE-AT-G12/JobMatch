@@ -1,4 +1,4 @@
-import { Button, Checkbox, Col, Input, Row, Form, message } from 'antd'
+import { Button, Checkbox, Col, Input, Row, Form, message, Flex } from 'antd'
 import { SafetyCertificateOutlined, ChromeOutlined } from '@ant-design/icons'
 import { useState } from 'react'
 import './index.scss'
@@ -21,8 +21,10 @@ function LoginPage() {
   const onSubmit = async ({ email, password }) => {
     if (data) {
       const hashedPass = await hashPassword(password)
-      const user = data.find(user => user.email === email && user.password === hashedPass)
-      
+      const user = data.find(
+        (user) => user.email === email && user.password === hashedPass
+      )
+
       if (!user) {
         // Display the error message when the user is not found
         message.error('Email hoặc mật khẩu sai')
@@ -32,7 +34,7 @@ function LoginPage() {
           role: user.role,
           userId: user.id,
           email: user.email,
-          name: user.name
+          name: user.name,
         }
         dispatch(login(userInfo))
         localStorage.setItem('user', JSON.stringify(userInfo))
@@ -43,11 +45,20 @@ function LoginPage() {
 
   return (
     <div className='loginpage'>
-      <Row>
-        <Col span={18} className='login-1'>
+      <Row style={{ height: '100%' }}>
+        <Col span={12} offset={3} className='login-1'>
+          <Link to={'/'}>
+            <img
+              src='/public/logo.png'
+              alt=''
+              width={200}
+              style={{ marginBottom: '60px', marginLeft: '-80px' }}
+            />
+          </Link>
+
           <Form onFinish={onSubmit}>
             <div className='header'>
-              <h2 className='title'>Chào mừng bạn đến với Job Match</h2>
+              <h2 className='title'>Chào mừng bạn đã quay trở lại</h2>
               <div className='caption'>
                 Cùng tìm kiếm và nhận được các cơ hội sự nghiệp lý tưởng
               </div>
@@ -55,8 +66,12 @@ function LoginPage() {
             <div className='login'>
               <div className='input'>
                 <p style={{ marginBottom: '10px' }}>Email</p>
-                <Form.Item name='email' rules={[{ required: true, message: 'Vui lòng nhập email' }]}>
+                <Form.Item
+                  name='email'
+                  rules={[{ required: true, message: 'Vui lòng nhập email' }]}
+                >
                   <Input
+                    style={{ height: 45 }}
                     size='large'
                     placeholder='Email'
                     prefix={<ChromeOutlined style={{ color: '#024CAA' }} />}
@@ -65,11 +80,19 @@ function LoginPage() {
               </div>
               <div className='input'>
                 <p style={{ marginBottom: '10px' }}>Password</p>
-                <Form.Item name='password' rules={[{ required: true, message: 'Vui lòng nhập mật khẩu' }]}>
+                <Form.Item
+                  name='password'
+                  rules={[
+                    { required: true, message: 'Vui lòng nhập mật khẩu' },
+                  ]}
+                >
                   <Input.Password
+                    style={{ height: 45 }}
                     size='large'
                     placeholder='Password'
-                    prefix={<SafetyCertificateOutlined style={{ color: '#024CAA' }} />}
+                    prefix={
+                      <SafetyCertificateOutlined style={{ color: '#024CAA' }} />
+                    }
                   />
                 </Form.Item>
               </div>
@@ -86,11 +109,12 @@ function LoginPage() {
                   type='primary'
                   htmlType='submit'
                   block
+                  style={{height: '40px', fontWeight: 600, fontSize: '16px'}}
                 >
                   Đăng nhập
                 </Button>
               </Form.Item>
-              <div className='or-login'>Hoặc đăng nhập bằng</div>
+              {/* <div className='or-login'>Hoặc đăng nhập bằng</div>
               <Button
                 className='button-login-gg'
                 type='primary'
@@ -98,10 +122,10 @@ function LoginPage() {
                 style={{
                   opacity: isChecked ? 1 : 0.5,
                   pointerEvents: isChecked ? 'auto' : 'none',
-                }} 
+                }}
               >
                 <ChromeOutlined /> Google
-              </Button>
+              </Button> */}
             </div>
             <div className='accept'>
               <Checkbox onChange={onChange}>
@@ -111,30 +135,21 @@ function LoginPage() {
                   Điều khoản dịch vụ
                 </Link>{' '}
                 và{' '}
-                <Link to={'/chinh-sach'} style={{ color: '#00b14f' }}>
+                <Link to={'/chinh-sach'} style={{ color: '#024CAA' }}>
                   Chính sách bảo mật
                 </Link>{' '}
                 của Job Match
               </Checkbox>
             </div>
             <div className='register-account'>
-              Bạn chưa có tài khoản?{' '}
-              <Link to={'/register'} style={{ color: '#024CAA' }}>
+              Bạn chưa có tài khoản?
+              <Link to={'/register?role=client'} style={{ color: '#024CAA' }}>
                 Đăng ký ngay
               </Link>
             </div>
           </Form>
         </Col>
-        <Col span={6} className='backgroud'>
-          <div className='sologan'>
-            <p className='sologan-1'>Tiếp lợi thế</p>
-            <p className='sologan-1'>Nối thành công</p>
-            <p className='sologan-2'>
-              Job Match - Hệ sinh thái nhân sự tiên phong ứng dụng công nghệ tại
-              Việt Nam
-            </p>
-          </div>
-        </Col>
+        <Col span={8} offset={1} className='background'></Col>
       </Row>
     </div>
   )

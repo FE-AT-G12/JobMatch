@@ -1,5 +1,4 @@
 import { useGetJobListQuery } from '../../features/job/jobApi'
-
 export default function Job() {
   const { data, error, isLoading } = useGetJobListQuery()
   if (isLoading) return <div>Loading...</div>
