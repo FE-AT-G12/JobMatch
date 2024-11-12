@@ -1,6 +1,7 @@
 {
   "job": [
     {
+      "id": "5ac8",
       "data": {
         "title": "Gõ word",
         "description": "Gõ word",
@@ -23,271 +24,36 @@
         "hirerId": "1",
         "clientId": ["1"],
         "status": "Đang tuyển"
-      },
-      "cityjob": "Công ty Hòa Bình",
-      "cityAddress": "Hà Nội",
-      "category": "Hành chính",
-      "location": "Làm việc từ xa",
-      "dateStart": "2024-10-15",
-      "dateEnd": "2024-10-16",
-      "timeStart": "08:00",
-      "duration": 2,
-      "datePosted": "2024-10-04",
-      "payment": {
-        "payRate": 70000,
-        "paymentMethod": "cash",
-        "payTime": "after"
-      },
-      "hirerId": "2",
-      "clientId": ["1"],
-      "status": "Đã tuyển",
-      "id": "1"
+      }
     },
     {
-      "title": "Nhập Dữ Liệu Kế Toán",
-      "description": "Nhập thông tin hóa đơn vào hệ thống.",
-      "skillRequirement": ["Kế toán cơ bản", "Excel"],
-      "ageRequirement": {
-        "min": "23",
-        "max": "30"
-      },
-      "cityjob": "Công ty Tài Chính",
-      "cityAddress": "Hồ Chí Minh",
-      "category": "Tài chính",
-      "location": "Tại văn phòng",
-      "dateStart": "2024-11-01",
-      "dateEnd": "2024-11-02",
-      "timeStart": "09:00",
-      "duration": 2,
-      "datePosted": "2024-10-10",
-      "payment": {
-        "payRate": 80000,
-        "paymentMethod": "bank transfer",
-        "payTime": "after"
-      },
-      "hirerId": "3",
-      "clientId": ["1", "3"],
-      "status": "Đang tuyển",
-      "id": "2"
-    },
-    {
-      "title": "Dịch Thuật Tài Liệu",
-      "description": "Dịch các tài liệu từ tiếng Anh sang tiếng Việt.",
-      "skillRequirement": ["Ngoại ngữ", "Kỹ năng viết"],
-      "ageRequirement": {
-        "min": "25",
-        "max": "35"
-      },
-      "cityjob": "Công ty Ngôn Ngữ",
-      "cityAddress": "Đà Nẵng",
-      "category": "Biên dịch",
-      "location": "Làm việc từ xa",
-      "dateStart": "2024-10-20",
-      "dateEnd": "2024-10-25",
-      "timeStart": "08:00",
-      "duration": 5,
-      "datePosted": "2024-10-05",
-      "payment": {
-        "payRate": 100000,
-        "paymentMethod": "bank transfer",
-        "payTime": "after"
-      },
-      "hirerId": "4",
-      "clientId": ["2"],
-      "status": "Đang tuyển",
-      "id": "3"
-    },
-    {
-      "title": "Soạn Thảo Văn Bản",
-      "description": "Soạn thảo và chỉnh sửa tài liệu nội bộ.",
-      "skillRequirement": ["Word", "Kỹ năng viết"],
-      "ageRequirement": {
-        "min": "20",
-        "max": "28"
-      },
-      "cityjob": "Công ty Tư Vấn",
-      "cityAddress": "Hà Nội",
-      "category": "Hành chính",
-      "location": "Tại văn phòng",
-      "dateStart": "2024-11-05",
-      "dateEnd": "2024-11-06",
-      "timeStart": "08:00",
-      "duration": 2,
-      "datePosted": "2024-10-12",
-      "payment": {
-        "payRate": 75000,
-        "paymentMethod": "cash",
-        "payTime": "after"
-      },
-      "hirerId": "5",
-      "clientId": ["4"],
-      "status": "Đã tuyển",
-      "id": "4"
-    },
-    {
-      "title": "Nhập Liệu Khách Hàng",
-      "description": "Nhập dữ liệu khách hàng từ các biểu mẫu vào hệ thống CRM.",
-      "skillRequirement": ["Excel", "Kỹ năng quản lý"],
-      "ageRequirement": {
-        "min": "22",
-        "max": "29"
-      },
-      "cityjob": "Công ty Dịch Vụ",
-      "cityAddress": "Hồ Chí Minh",
-      "category": "Dịch vụ khách hàng",
-      "location": "Làm việc từ xa",
-      "dateStart": "2024-10-22",
-      "dateEnd": "2024-10-23",
-      "timeStart": "08:00",
-      "duration": 2,
-      "datePosted": "2024-10-08",
-      "payment": {
-        "payRate": 70000,
-        "paymentMethod": "cash",
-        "payTime": "after"
-      },
-      "hirerId": "6",
-      "clientId": ["3", "5"],
-      "status": "Đang tuyển",
-      "id": "5"
-    },
-    {
-      "title": "Phân Tích Dữ Liệu",
-      "description": "Phân tích dữ liệu bán hàng và tạo báo cáo.",
-      "skillRequirement": ["Excel nâng cao", "Phân tích dữ liệu"],
-      "ageRequirement": {
-        "min": "24",
-        "max": "32"
-      },
-      "cityjob": "Công ty Phân Tích",
-      "cityAddress": "Hà Nội",
-      "category": "Phân tích",
-      "location": "Tại văn phòng",
-      "dateStart": "2024-10-28",
-      "dateEnd": "2024-10-29",
-      "timeStart": "08:00",
-      "duration": 2,
-      "datePosted": "2024-10-15",
-      "payment": {
-        "payRate": 90000,
-        "paymentMethod": "bank transfer",
-        "payTime": "after"
-      },
-      "hirerId": "7",
-      "clientId": ["6"],
-      "status": "Đã tuyển",
-      "id": "6"
-    },
-    {
-      "title": "Kiểm Tra Chất Lượng",
-      "description": "Kiểm tra chất lượng sản phẩm trước khi đóng gói.",
-      "skillRequirement": ["Chú ý chi tiết", "Kỹ năng giám sát"],
-      "ageRequirement": {
-        "min": "23",
-        "max": "40"
-      },
-      "cityjob": "Công ty Sản Xuất",
-      "cityAddress": "Hà Nội",
-      "category": "Sản xuất",
-      "location": "Tại văn phòng",
-      "dateStart": "2024-11-10",
-      "dateEnd": "2024-11-11",
-      "timeStart": "08:00",
-      "duration": 2,
-      "datePosted": "2024-10-20",
-      "payment": {
-        "payRate": 85000,
-        "paymentMethod": "cash",
-        "payTime": "after"
-      },
-      "hirerId": "8",
-      "clientId": ["7"],
-      "status": "Đang tuyển",
-      "id": "7"
-    },
-    {
-      "title": "Chăm Sóc Khách Hàng",
-      "description": "Hỗ trợ khách hàng qua điện thoại và email.",
-      "skillRequirement": ["Kỹ năng giao tiếp", "Excel"],
-      "ageRequirement": {
-        "min": "21",
-        "max": "28"
-      },
-      "cityjob": "Công ty Chăm Sóc",
-      "cityAddress": "Hồ Chí Minh",
-      "category": "Dịch vụ khách hàng",
-      "location": "Làm việc từ xa",
-      "dateStart": "2024-10-30",
-      "dateEnd": "2024-10-31",
-      "timeStart": "08:00",
-      "duration": 2,
-      "datePosted": "2024-10-22",
-      "payment": {
-        "payRate": 60000,
-        "paymentMethod": "bank transfer",
-        "payTime": "after"
-      },
-      "hirerId": "9",
-      "clientId": ["8"],
-      "status": "Đã tuyển",
-      "id": "8"
-    },
-    {
-      "title": "Viết Nội Dung Quảng Cáo",
-      "description": "Viết nội dung quảng cáo cho sản phẩm mới.",
-      "skillRequirement": ["Marketing", "Kỹ năng viết"],
-      "ageRequirement": {
-        "min": "24",
-        "max": "35"
-      },
-      "cityjob": "Công ty Quảng Cáo",
-      "cityAddress": "Hà Nội",
-      "category": "Marketing",
-      "location": "Làm việc từ xa",
-      "dateStart": "2024-11-03",
-      "dateEnd": "2024-11-04",
-      "timeStart": "08:00",
-      "duration": 2,
-      "datePosted": "2024-10-23",
-      "payment": {
-        "payRate": 95000,
-        "paymentMethod": "cash",
-        "payTime": "after"
-      },
-      "hirerId": "10",
-      "clientId": ["9"],
-      "status": "Đang tuyển",
-      "id": "9"
-    },
-    {
-      "title": "Tạo Dữ Liệu Báo Cáo",
-      "description": "Tổng hợp dữ liệu và tạo báo cáo tháng.",
-      "skillRequirement": ["Excel", "Kỹ năng quản lý"],
-      "ageRequirement": {
-        "min": "22",
-        "max": "30"
-      },
-      "cityjob": "Công ty Thống Kê",
-      "cityAddress": "Hồ Chí Minh",
-      "category": "Thống kê",
-      "location": "Tại văn phòng",
-      "dateStart": "2024-11-07",
-      "dateEnd": "2024-11-08",
-      "timeStart": "08:00",
-      "duration": 2,
-      "datePosted": "2024-10-24",
-      "payment": {
-        "payRate": 80000,
-        "paymentMethod": "bank transfer",
-        "payTime": "after"
-      },
-      "hirerId": "11",
-      "clientId": ["10"],
-      "status": "Đã tuyển",
-      "id": "10"
+      "id": "5acd",
+      "data": {
+        "title": "Test",
+        "description": "Test",
+        "skillRequirement": ["Test"],
+        "ageRequirement": {
+          "min": "10",
+          "max": "11"
+        },
+        "category": "Lasater Flowers",
+        "location": "Thành phố Hồ Chí Minh",
+        "dateStart": "2024-11-14",
+        "dateEnd": "2024-12-07",
+        "timeStart": "23:12",
+        "duration": "1",
+        "payment": {
+          "payRate": "1",
+          "paymentMethod": "1",
+          "payTime": "1"
+        },
+        "hirerId": "1",
+        "clientId": ["1"],
+        "status": "Đang tuyển"
+      }
     }
   ],
- "user": [
+  "user": [
     {
       "name": "Trần Minh C",
       "phoneNumber": "0933445566",
@@ -311,7 +77,7 @@
         "dateOfIssue": "2020-10-13"
       },
       "id": "3",
-      "password": "96cae35ce8a9b0244178bf28e4966c2ce1b8385723a96a6b838858cdd6ca0a1e" 
+      "password": "96cae35ce8a9b0244178bf28e4966c2ce1b8385723a96a6b838858cdd6ca0a1e"
     },
     {
       "id": "4",
@@ -326,6 +92,7 @@
         "placeOfIssue": "Đà Nẵng",
         "dateOfIssue": "15/03/2021"
       },
+      "birthDate": "1994-05-18",
       "description": "Công ty dịch vụ hỗ trợ tổ chức sự kiện.",
       "status": "active",
       "password": "96cae35ce8a9b0244178bf28e4966c2ce1b8385723a96a6b838858cdd6ca0a1e"
@@ -337,11 +104,7 @@
       "age": 22,
       "phoneNumber": "0922457890",
       "email": "ngotane@gmail.com",
-      "skills": [
-        "Phục vụ quán",
-        "Tạp vụ",
-        "Dọn dẹp nhà cửa"
-      ],
+      "skills": ["Phục vụ quán", "Tạp vụ", "Dọn dẹp nhà cửa"],
       "location": "Hồ Chí Minh, Việt Nam",
       "availability": "Bán thời gian",
       "birthDate": "01/09/2002",
@@ -369,6 +132,7 @@
         "placeOfIssue": "Hà Nội",
         "dateOfIssue": "30/06/2021"
       },
+      "birthDate": "1994-05-18",
       "description": "Dịch vụ bảo vệ và vệ sinh văn phòng.",
       "status": "active",
       "password": "96cae35ce8a9b0244178bf28e4966c2ce1b8385723a96a6b838858cdd6ca0a1e"
@@ -412,6 +176,7 @@
         "placeOfIssue": "Tp. HCM",
         "dateOfIssue": "10/12/2020"
       },
+      "birthDate": "1994-05-18",
       "description": "Dịch vụ cung cấp lao động thời vụ cho nhà hàng.",
       "status": "active",
       "password": "96cae35ce8a9b0244178bf28e4966c2ce1b8385723a96a6b838858cdd6ca0a1e"
@@ -423,10 +188,7 @@
       "age": 24,
       "phoneNumber": "0903123789",
       "email": "dovanai@gmail.com",
-      "skills": [
-        "Sửa chữa xe máy",
-        "Giao hàng"
-      ],
+      "skills": ["Sửa chữa xe máy", "Giao hàng"],
       "location": "Hà Nội, Việt Nam",
       "availability": "Toàn thời gian",
       "birthDate": "19/07/2000",
@@ -454,6 +216,7 @@
         "placeOfIssue": "Hải Phòng",
         "dateOfIssue": "15/05/2020"
       },
+      "birthDate": "1994-05-18",
       "description": "Doanh nghiệp vận tải hàng hóa.",
       "status": "active",
       "password": "96cae35ce8a9b0244178bf28e4966c2ce1b8385723a96a6b838858cdd6ca0a1e"
@@ -465,10 +228,7 @@
       "age": 27,
       "phoneNumber": "0905671234",
       "email": "vuhongk@gmail.com",
-      "skills": [
-        "Giao hàng",
-        "Giúp việc gia đình"
-      ],
+      "skills": ["Giao hàng", "Giúp việc gia đình"],
       "location": "Cần Thơ, Việt Nam",
       "availability": "Toàn thời gian",
       "birthDate": "22/06/1996",
@@ -496,6 +256,7 @@
         "placeOfIssue": "Tp. HCM",
         "dateOfIssue": "21/07/2021"
       },
+      "birthDate": "1994-05-18",
       "description": "Dịch vụ sửa chữa điện lạnh.",
       "status": "active",
       "password": "96cae35ce8a9b0244178bf28e4966c2ce1b8385723a96a6b838858cdd6ca0a1e"
@@ -507,10 +268,7 @@
       "age": 29,
       "phoneNumber": "0912678990",
       "email": "lyquocm@gmail.com",
-      "skills": [
-        "Phục vụ sự kiện",
-        "Giữ trẻ"
-      ],
+      "skills": ["Phục vụ sự kiện", "Giữ trẻ"],
       "location": "Hải Dương, Việt Nam",
       "availability": "Bán thời gian",
       "birthDate": "14/08/1995",
@@ -528,17 +286,16 @@
   ],
   "company": [
     {
-      "id": 1,
+      "id": "1",
       "name": "Công ty Hòa Bình",
       "coverImage": "https://cdn-new.topcv.vn/unsafe/https://static.topcv.vn/company_covers/iG4XtDpniVr6WmwXw0nc.jpg",
       "location": "Hà Nội",
       "salaryRange": "6 - 10 triệu",
       "logo": "https://example.com/logo1.png",
-
       "intro": "Công ty Hòa Bình cung cấp nhiều cơ hội việc làm hấp dẫn trong ngành viễn thông, nơi bạn có thể phát triển sự nghiệp của mình."
     },
     {
-      "id": 2,
+      "id": "2",
       "name": "Tập đoàn FPT",
       "location": "TP Hồ Chí Minh",
       "coverImage": "https://cdn-new.topcv.vn/unsafe/https://static.topcv.vn/company_covers/iG4XtDpniVr6WmwXw0nc.jpg",
@@ -547,7 +304,7 @@
       "intro": "Tập đoàn FPT là một trong những tập đoàn công nghệ hàng đầu, chuyên cung cấp giải pháp sáng tạo cho khách hàng."
     },
     {
-      "id": 3,
+      "id": "3",
       "name": "Công ty Viettel",
       "location": "Hà Nội",
       "coverImage": "https://cdn-new.topcv.vn/unsafe/https://static.topcv.vn/company_covers/iG4XtDpniVr6WmwXw0nc.jpg",
@@ -556,7 +313,7 @@
       "intro": "Công ty Viettel nổi tiếng với đội ngũ nhân viên sáng tạo, không ngừng đổi mới và cải tiến dịch vụ."
     },
     {
-      "id": 4,
+      "id": "4",
       "name": "Công ty VinGroup",
       "location": "Hà Nội",
       "coverImage": "https://cdn-new.topcv.vn/unsafe/https://static.topcv.vn/company_covers/iG4XtDpniVr6WmwXw0nc.jpg",
@@ -565,7 +322,7 @@
       "intro": "Công ty VinGroup là một tập đoàn đa ngành, cam kết tạo ra giá trị và cải thiện chất lượng cuộc sống cho cộng đồng."
     },
     {
-      "id": 5,
+      "id": "5",
       "name": "Tập đoàn Masan",
       "location": "TP Hồ Chí Minh",
       "coverImage": "https://cdn-new.topcv.vn/unsafe/https://static.topcv.vn/company_covers/iG4XtDpniVr6WmwXw0nc.jpg",
@@ -574,7 +331,7 @@
       "intro": "Tập đoàn Masan cung cấp những sản phẩm và dịch vụ chất lượng cao, mang lại giá trị cho người tiêu dùng."
     },
     {
-      "id": 6,
+      "id": "6",
       "name": "Công ty Bkav",
       "location": "Hà Nội",
       "coverImage": "https://cdn-new.topcv.vn/unsafe/https://static.topcv.vn/company_covers/iG4XtDpniVr6WmwXw0nc.jpg",
@@ -583,7 +340,7 @@
       "intro": "Công ty Bkav là nhà phát triển phần mềm hàng đầu, nổi bật với những sản phẩm bảo mật đáng tin cậy."
     },
     {
-      "id": 7,
+      "id": "7",
       "name": "Công ty Tiki",
       "location": "TP Hồ Chí Minh",
       "coverImage": "https://cdn-new.topcv.vn/unsafe/https://static.topcv.vn/company_covers/iG4XtDpniVr6WmwXw0nc.jpg",
@@ -592,7 +349,7 @@
       "intro": "Công ty Tiki nổi bật trong lĩnh vực thương mại điện tử, cung cấp trải nghiệm mua sắm trực tuyến tuyệt vời cho khách hàng."
     },
     {
-      "id": 8,
+      "id": "8",
       "name": "Công ty Shopee",
       "location": "TP Hồ Chí Minh",
       "coverImage": "https://cdn-new.topcv.vn/unsafe/https://static.topcv.vn/company_covers/iG4XtDpniVr6WmwXw0nc.jpg",
@@ -601,7 +358,7 @@
       "intro": "Công ty Shopee là nền tảng thương mại điện tử dẫn đầu tại Đông Nam Á, mang đến sự tiện lợi cho người tiêu dùng."
     },
     {
-      "id": 9,
+      "id": "9",
       "name": "Công ty Lazada",
       "location": "TP Hồ Chí Minh",
       "salaryRange": "10 - 20 triệu",
@@ -610,7 +367,7 @@
       "intro": "Công ty Lazada cung cấp nhiều sản phẩm đa dạng, cam kết mang lại giá trị tốt nhất cho khách hàng."
     },
     {
-      "id": 10,
+      "id": "10",
       "name": "Công ty Zalo",
       "location": "TP Hồ Chí Minh",
       "coverImage": "https://cdn-new.topcv.vn/unsafe/https://static.topcv.vn/company_covers/iG4XtDpniVr6WmwXw0nc.jpg",
@@ -619,5 +376,4 @@
       "intro": "Công ty Zalo chuyên cung cấp ứng dụng nhắn tin và gọi điện miễn phí, nổi bật với tính năng bảo mật cao."
     }
   ]
-
 }

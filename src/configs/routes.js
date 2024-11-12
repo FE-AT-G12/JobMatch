@@ -10,7 +10,7 @@ import JobAdminDetail from '../page/JobAdmin/JobAdminDetail'
 import HomePage from '../page/home/Home'
 import Company from '../page/company/Company'
 
-import Profile from "../page/User/Profile"
+import Profile from '../page/User/Profile'
 
 const routes = [
   {

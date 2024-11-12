@@ -21,8 +21,10 @@ function LoginPage() {
   const onSubmit = async ({ email, password }) => {
     if (data) {
       const hashedPass = await hashPassword(password)
-      const user = data.find(user => user.email === email && user.password === hashedPass)
-      
+      const user = data.find(
+        (user) => user.email === email && user.password === hashedPass
+      )
+
       if (!user) {
         // Display the error message when the user is not found
         message.error('Email hoặc mật khẩu sai')
@@ -32,7 +34,7 @@ function LoginPage() {
           role: user.role,
           userId: user.id,
           email: user.email,
-          name: user.name
+          name: user.name,
         }
         dispatch(login(userInfo))
         localStorage.setItem('user', JSON.stringify(userInfo))
@@ -55,7 +57,10 @@ function LoginPage() {
             <div className='login'>
               <div className='input'>
                 <p style={{ marginBottom: '10px' }}>Email</p>
-                <Form.Item name='email' rules={[{ required: true, message: 'Vui lòng nhập email' }]}>
+                <Form.Item
+                  name='email'
+                  rules={[{ required: true, message: 'Vui lòng nhập email' }]}
+                >
                   <Input
                     size='large'
                     placeholder='Email'
@@ -65,11 +70,18 @@ function LoginPage() {
               </div>
               <div className='input'>
                 <p style={{ marginBottom: '10px' }}>Password</p>
-                <Form.Item name='password' rules={[{ required: true, message: 'Vui lòng nhập mật khẩu' }]}>
+                <Form.Item
+                  name='password'
+                  rules={[
+                    { required: true, message: 'Vui lòng nhập mật khẩu' },
+                  ]}
+                >
                   <Input.Password
                     size='large'
                     placeholder='Password'
-                    prefix={<SafetyCertificateOutlined style={{ color: '#024CAA' }} />}
+                    prefix={
+                      <SafetyCertificateOutlined style={{ color: '#024CAA' }} />
+                    }
                   />
                 </Form.Item>
               </div>
@@ -98,7 +110,7 @@ function LoginPage() {
                 style={{
                   opacity: isChecked ? 1 : 0.5,
                   pointerEvents: isChecked ? 'auto' : 'none',
-                }} 
+                }}
               >
                 <ChromeOutlined /> Google
               </Button>
