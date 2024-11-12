@@ -10,6 +10,7 @@
           "min": "18",
           "max": "30"
         },
+        "repeateOn": ["Thứ 2", "Thứ 3", "Thứ 4", "Thứ 5", "Thứ 6"],
         "category": "Văn phòng",
         "location": "Tại nhà",
         "dateStart": "2024-10-31",
@@ -22,7 +23,8 @@
           "payTime": "Sau khi thành công"
         },
         "hirerId": "1",
-        "clientId": ["1"],
+        "clientId": ["5", "4"],
+        "clientApplyId": ["3"],
         "status": "Đang tuyển"
       }
     },
@@ -36,6 +38,7 @@
           "min": "10",
           "max": "11"
         },
+        "repeateOn": ["Thứ 2", "Thứ 3", "Thứ 4", "Thứ 5", "Thứ 6"],
         "category": "Lasater Flowers",
         "location": "Thành phố Hồ Chí Minh",
         "dateStart": "2024-11-14",
@@ -48,15 +51,41 @@
           "payTime": "1"
         },
         "hirerId": "1",
-        "clientId": ["1"],
+        "clientId": ["5", "4"],
+        "clientApplyId": ["3"],
         "status": "Đang tuyển"
       }
     }
   ],
   "user": [
     {
-      "id": "3",
+      "id": "1",
       "name": "Trần Minh C",
+      "phoneNumber": "0933445566",
+      "email": "tranmc@gmail.com",
+      "identityNumber": "074200910287",
+      "placeOfIssue": "Hà Nội",
+      "dateOfIssue": "2020-10-12T17:00:00.000Z",
+      "birthDate": "1994-05-18",
+      "education": "9",
+      "skills": [
+        "Nhập liệu",
+        "Phục vụ",
+        "Chăm sóc khách hàng",
+        "Dọn dẹp vệ sinh"
+      ],
+      "description": "Cực chuyên nghiệp",
+      "identityCard": {
+        "identityNumber": "074200910287",
+        "placeOfIssue": "Hà Nội",
+        "dateOfIssue": "2020-10-13"
+      },
+      "role": "client",
+      "password": "96cae35ce8a9b0244178bf28e4966c2ce1b8385723a96a6b838858cdd6ca0a1e"
+    },
+    {
+      "id": "3",
+      "name": "Trần Minh Vua",
       "phoneNumber": "0933445566",
       "email": "tranmc@gmail.com",
       "identityNumber": "074200910287",
@@ -305,27 +334,6 @@
         "dateOfIssue": "2024-11-19"
       },
       "id": "de11"
-    },
-    {
-      "id": "3f0b",
-      "name": "Huỳnh Minh Long",
-      "email": "heeeee@gmail.com",
-      "password": "96cae35ce8a9b0244178bf28e4966c2ce1b8385723a96a6b838858cdd6ca0a1e",
-      "role": "client"
-    },
-    {
-      "id": "bf3b",
-      "name": "Huỳnh Minh Long",
-      "email": "123123@gmail.com",
-      "password": "96cae35ce8a9b0244178bf28e4966c2ce1b8385723a96a6b838858cdd6ca0a1e",
-      "role": "client"
-    },
-    {
-      "id": "4960",
-      "name": "Huỳnh Minh Long",
-      "email": "123123123@gmail.com",
-      "password": "96cae35ce8a9b0244178bf28e4966c2ce1b8385723a96a6b838858cdd6ca0a1e",
-      "role": "client"
     }
   ],
   "company": [
