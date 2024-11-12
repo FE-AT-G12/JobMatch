@@ -12,7 +12,7 @@ import {
 } from 'antd'
 import { PlusOutlined } from '@ant-design/icons'
 import dayjs from 'dayjs'
-import { dateFormatter } from '../../utils/DayFormater'
+import { dateFormatter } from '../../utils/DateFunction'
 import { useUpdateUserMutation } from '../../features/user/userApi'
 
 const { Option } = Select

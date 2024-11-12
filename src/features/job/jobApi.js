@@ -45,7 +45,7 @@ export const jobApi = apiSlice.injectEndpoints({
       query: ({id, data}) => ({
         url: `/job/${id}`,
         method: 'PUT',
-        body: data,
+        body: { data, id }, // Wrap data inside another object with a data key
       }),
       transformResponse: (res) => res,
       invalidatesTags: ['Job'],

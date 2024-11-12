@@ -8,9 +8,9 @@ import { useSelector } from 'react-redux'
 
 function Profile() {
   const { id } = useParams()
-  const user = useSelector(state => state.user.user)
+  const user = useSelector((state) => state.user.user)
   const nav = useNavigate()
-  if(user.userId !== id){
+  if (user.userId !== id) {
     nav('/')
   }
 
