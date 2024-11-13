@@ -67,20 +67,22 @@ const JobCard = ({ job, idx }) => {
         <Flex vertical style={{ flexGrow: 1 }}>
           <Flex vertical>
             <Flex justify='space-between'>
-              <Typography.Title style={{marginBottom: 2}} level={4}>{job.title}</Typography.Title>
+              <Typography.Title style={{ marginBottom: 2 }} level={4}>
+                {job.title}
+              </Typography.Title>
               {jobStatus(job.status)}
             </Flex>
             <Typography.Text style={{ color: '#888', marginBottom: 8 }}>
-              {job.clientApplyId.length === 0 ? 'Chưa có ứng viên' : `Đã có ${job.clientApplyId.length} người ứng tuyển`}
+              {job.clientApplyId.length === 0
+                ? 'Chưa có ứng viên'
+                : `Đã có ${job.clientApplyId.length} người ứng tuyển`}
             </Typography.Text>
             <Typography.Text style={{ color: '#888' }}>
               {Boolean(user) ? (
                 <>
                   {' '}
-              
                   <Tag color='lime'>
-                    Từ {" "}
-                    {moneyFormatter(job.payment.payRate)}
+                    Từ {moneyFormatter(job.payment.payRate)}
                   </Tag>
                 </>
               ) : (

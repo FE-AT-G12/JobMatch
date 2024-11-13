@@ -6,7 +6,7 @@ export const dateFormatter = (date) => {
 }
 
 export const dateFromDbToString = (date) => {
-  if(date.includes(":")) return dayjs(date).format('DD-MM-YYYY HH:mm:ss')
+  if (date.includes(':')) return dayjs(date).format('DD-MM-YYYY HH:mm:ss')
   return dayjs(date).format('DD-MM-YYYY')
 }
 

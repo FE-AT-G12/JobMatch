@@ -73,9 +73,9 @@ export default function JobDetailClient() {
       </Col>
       {/* Job Detail Section */}
       <Col span={10} offset={4} style={{ marginTop: '-60px', borderRadius: 8 }}>
-        <JobDetail handleApplyJob={handleModal} job={job} user={user}/>
+        <JobDetail handleApplyJob={handleModal} job={job} user={user} />
         <Col span={24} style={{ borderRadius: 8, padding: 0, marginTop: 32 }}>
-          <JobDescription handleApplyJob={handleModal} job={job} user={user}/>
+          <JobDescription handleApplyJob={handleModal} job={job} user={user} />
         </Col>
       </Col>
 
@@ -89,17 +89,19 @@ export default function JobDetailClient() {
         }}
       >
         <Card bordered={false}>
-          <Typography.Title level={3}>Thông tin nhà tuyển dụng</Typography.Title>
+          <Typography.Title level={3}>
+            Thông tin nhà tuyển dụng
+          </Typography.Title>
           <Divider />
           {hirer && (
             <>
-              <Flex gap={20} align="start">
+              <Flex gap={20} align='start'>
                 <img
                   src={hirer?.avatar || '/public/blank-avt.jpg'}
                   width={83}
                   height={83}
                   style={{ borderRadius: '100%' }}
-                  alt="hirer Avatar"
+                  alt='hirer Avatar'
                 />
                 <div>
                   <Typography.Title level={3}>{hirer.name}</Typography.Title>
