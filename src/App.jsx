@@ -4,7 +4,6 @@ import PermissionCheck from './components/Permission/PermissionCheck'
 import NotFound from './components/NotFound/NotFound'
 
 function App() {
-  
   return (
     <Routes>
       {routes.map((route, i) => {
@@ -28,7 +27,7 @@ function App() {
           </Route>
         )
       })}
-      <Route path='*' element={<NotFound/>}/>
+      <Route path='*' element={<NotFound />} />
     </Routes>
   )
 }

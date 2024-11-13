@@ -9,11 +9,7 @@ import JobPostForm from '../../components/Job/JobPostForm'
 
 function JobPost() {
   const { userId } = useSelector(selectUser)
-  const {
-    data: user,
-    isLoading,
-    isError,
-  } = useGetUserDetailQuery(userId)
+  const { data: user, isLoading, isError } = useGetUserDetailQuery(userId)
   if (isLoading) {
     return <CustomLoading />
   }

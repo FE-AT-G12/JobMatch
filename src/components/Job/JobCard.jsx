@@ -14,10 +14,9 @@ import { calculateTimeSincePosted } from '../../utils/DayFormater'
 import { Link } from 'react-router-dom'
 
 const JobCard = ({ job, idx }) => {
-  console.log({job});
-  
-  
-  if(!job) return "hehe"
+  console.log({ job })
+
+  if (!job) return 'hehe'
   const jobStatus = (status) => {
     switch (status) {
       case 'Đã tuyển':
@@ -81,21 +80,22 @@ const JobCard = ({ job, idx }) => {
             </Tag>
           </Space>
           <Link to={`/job/${job.id}`}>
-          <button
-            style={{
-              width: 150,
-              padding: '10px 0',
-              backgroundColor: '#024caa',
-              color: '#fff',
-              textAlign: 'center',
-              borderRadius: 10,
-              fontSize: 16,
-              fontWeight: 500,
-              alignSelf: 'end',
-            }}
-          >
-            Xem chi tiết
-          </button></Link>
+            <button
+              style={{
+                width: 150,
+                padding: '10px 0',
+                backgroundColor: '#024caa',
+                color: '#fff',
+                textAlign: 'center',
+                borderRadius: 10,
+                fontSize: 16,
+                fontWeight: 500,
+                alignSelf: 'end',
+              }}
+            >
+              Xem chi tiết
+            </button>
+          </Link>
         </Flex>
       </Flex>
     </Flex>

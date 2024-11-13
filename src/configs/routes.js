@@ -37,7 +37,7 @@ const routes = [
       {
         path: '/profile/:id',
         component: Profile,
-        role: ['client', 'hirer']
+        role: ['client', 'hirer'],
       },
       {
         path: '/job',
@@ -50,27 +50,27 @@ const routes = [
       {
         path: '/job/post',
         component: JobPost,
-        role: ['hirer']
+        role: ['hirer'],
       },
       {
         path: '/job/my-posted-job',
         component: JobPostedListPage,
-        role: ['hirer']
+        role: ['hirer'],
       },
       {
         path: '/admin',
         component: adminAccount,
-        role: ['admin']
+        role: ['admin'],
       },
       {
         path: '/jobAdmin',
         component: JobAdmin,
-        role: ['admin']
+        role: ['admin'],
       },
       {
         path: '/jobAdmin/:jobId',
         component: JobAdminDetail,
-        role: ['admin']
+        role: ['admin'],
       },
     ],
   },
@@ -85,8 +85,8 @@ const routes = [
         path: '/register',
         component: RegisterPage,
       },
-    ]
-  }
+    ],
+  },
 ]
 
 export default routes

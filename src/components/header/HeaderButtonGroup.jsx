@@ -60,7 +60,7 @@ function HeaderButtonGroup({ user, handleLogout }) {
                   Bạn là nhà tuyển dụng?
                 </Typography.Text>
                 <Typography.Text className='header__recruit'>
-                  <Link style={{color: '#024caa'}} to='/job/post' >
+                  <Link style={{ color: '#024caa' }} to='/job/post'>
                     Đăng tuyển ngay <DoubleRightOutlined />
                   </Link>
                 </Typography.Text>
@@ -85,7 +85,9 @@ function HeaderButtonGroup({ user, handleLogout }) {
                           </Typography.Title>
                           <Typography.Text>
                             <span style={{ color: '#999999' }}>
-                              {user.role === 'client' ? "Mã ứng viên: ": 'Mã nhà tuyển dụng: '}
+                              {user.role === 'client'
+                                ? 'Mã ứng viên: '
+                                : 'Mã nhà tuyển dụng: '}
                             </span>
                             <span>#{user?.userId}</span>
                           </Typography.Text>

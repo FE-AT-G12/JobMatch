@@ -12,7 +12,9 @@ function JobHirerInfo({ user }) {
         email: user.email,
         identityNumber: user.identityCard.identityNumber,
         placeOfIssue: user.identityCard.placeOfIssue,
-        dateOfIssue: user.identityCard.dateOfIssue && dateFormatter(user.identityCard.dateOfIssue),
+        dateOfIssue:
+          user.identityCard.dateOfIssue &&
+          dateFormatter(user.identityCard.dateOfIssue),
         birthDate: user.birthDate && dateFormatter(user.birthDate),
       }}
     >

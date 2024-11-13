@@ -1,0 +1,26 @@
+{
+      "id": "5ac8",
+      "title": "Gõ word",
+      "description": "Gõ word",
+      "skillRequirement": ["Gõ word"],
+      "ageRequirement": {
+        "min": "18",
+        "max": "30"
+      },
+      "repeateOn": ["Thứ 2", "Thứ 3", "Thứ 4", "Thứ 5", "Thứ 6"],
+      "category": "Văn phòng",
+      "location": "Tại nhà",
+      "dateStart": "2024-10-31",
+      "dateEnd": "2025-10-31",
+      "timeStart": "09:30",
+      "duration": "8",
+      "payment": {
+        "payRate": "200",
+        "paymentMethod": "Tiền mặt",
+        "payTime": "Sau khi thành công"
+      },
+      "hirerId": "1",
+      "clientId": ["5", "4"],
+      "clientApplyId": ["3"],
+      "status": "Đang tuyển"
+    }

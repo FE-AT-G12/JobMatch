@@ -109,7 +109,7 @@ function LoginPage() {
                   type='primary'
                   htmlType='submit'
                   block
-                  style={{height: '40px', fontWeight: 600, fontSize: '16px'}}
+                  style={{ height: '40px', fontWeight: 600, fontSize: '16px' }}
                 >
                   Đăng nhập
                 </Button>
