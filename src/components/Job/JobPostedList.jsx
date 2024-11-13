@@ -1,4 +1,14 @@
-import { Button, Col, Flex, Image, Result, Row, Select, Typography } from 'antd'
+import {
+  Badge,
+  Button,
+  Col,
+  Flex,
+  Image,
+  Result,
+  Row,
+  Select,
+  Typography,
+} from 'antd'
 import React, { useEffect, useState } from 'react'
 import EmptyJobList from './EmptyJobList'
 import JobCard from './JobCard'
@@ -56,7 +66,11 @@ function JobPostedList({ jobs }) {
         {!jobList.length && !jobStatus ? (
           <EmptyJobList />
         ) : jobList.length !== 0 ? (
-          jobList.map((job, idx) => <JobCard job={job} idx={idx} />)
+          jobList.map((job, idx) => (
+           
+              <JobCard job={job} idx={idx} />
+      
+          ))
         ) : (
           <Result
             status='404'

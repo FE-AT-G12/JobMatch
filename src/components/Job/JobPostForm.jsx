@@ -43,23 +43,23 @@ function JobPostForm() {
         min: values.minAge,
         max: values.maxAge,
       },
-      repeatOn: values.repeatOn,
+      repeatOn: values.repeatOn || [],
       //Category
       category: 'Dọn dẹp vệ sinh',
-      location: values.location.location,
-      cityAddress: values.location.cityAddress,
+      location: values.location,
       dateStart: dateJsToStringFormatter(values.date[0]),
       dateEnd: dateJsToStringFormatter(values.date[1]),
       timeStart: timeJsToStringFormatter(values.time[0]),
       timeEnd: timeJsToStringFormatter(values.time[1]),
-      datePosted: dayjs().format('YYYY-MM-DD HH:mm:ss'),
       payment: {
         payRate: values.payRate,
         paymentMethod: values.paymentMethod,
         payTime: values.payTime,
       },
       hirerId: hirer.userId,
-      clientId: null,
+      clientId: [],
+      clientApplyId: [],
+      datePosted: dayjs().format('YYYY-MM-DD HH:mm:ss'),
       status: 'Đang tuyển',
     }
     try {

@@ -58,6 +58,15 @@ export const jobApi = apiSlice.injectEndpoints({
       transformResponse: (res) => res,
       invalidatesTags: ['Job'],
     }),
+    clientApplyJob: build.mutation({
+      query: ({id, body}) => ({
+        url: `/job/${id}`,
+        method: 'PATCH',
+        body: body
+      }),
+      transformResponse: (res) => res,
+      invalidatesTags: ['Job'],
+    }),
   }),
 })
 
@@ -68,4 +77,5 @@ export const {
   useUpdateJobMutation,
   useDeleteJobMutation,
   useGetJobListByHirerIdQuery,
+  useClientApplyJobMutation
 } = jobApi
