@@ -10,14 +10,10 @@ import { useGetJobDetailQuery } from '../../features/job/jobApi'
 import { useParams } from 'react-router-dom'
 
 function JobUpdatePage() {
-  const {id} = useParams()
+  const { id } = useParams()
   const { userId } = useSelector(selectUser)
-  const {data, isLoading: jobLoading} = useGetJobDetailQuery(id)
-  const {
-    data: user,
-    isLoading,
-    isError,
-  } = useGetUserDetailQuery(userId)
+  const { data, isLoading: jobLoading } = useGetJobDetailQuery(id)
+  const { data: user, isLoading, isError } = useGetUserDetailQuery(userId)
   if (isLoading || jobLoading) {
     return <CustomLoading />
   }

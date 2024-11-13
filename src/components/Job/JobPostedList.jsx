@@ -6,8 +6,7 @@ import JobCard from './JobCard'
 function JobPostedList({ jobs }) {
   const [jobStatus, setJobStatus] = useState(undefined)
   const [jobList, setJobList] = useState(jobs)
-  
-  
+
   useEffect(() => {
     jobStatus
       ? setJobList(jobs.filter((job) => job.status === jobStatus))
@@ -54,7 +53,7 @@ function JobPostedList({ jobs }) {
           />
         </Flex>
 
-        {(!jobList.length && !jobStatus) ? (
+        {!jobList.length && !jobStatus ? (
           <EmptyJobList />
         ) : jobList.length !== 0 ? (
           jobList.map((job, idx) => <JobCard job={job} idx={idx} />)

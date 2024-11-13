@@ -28,10 +28,9 @@ import AutocompleteAddress from '../AutoCompleteAddress/AutocompleteAddress'
 
 const Require = () => <span style={{ color: 'red' }}>*</span>
 function JobPostForm() {
-  const [form] = Form.useForm();
+  const [form] = Form.useForm()
 
-  const [createJob, { isLoading }] =
-    useCreateJobMutation()
+  const [createJob, { isLoading }] = useCreateJobMutation()
   const hirer = useSelector(selectUser)
 
   const handleSubmit = async (values) => {
@@ -73,7 +72,12 @@ function JobPostForm() {
   return (
     <>
       {isLoading && <ModalLoading />}
-      <Form form={form} onFinish={handleSubmit} layout='vertical' style={{ marginTop: 30 }}>
+      <Form
+        form={form}
+        onFinish={handleSubmit}
+        layout='vertical'
+        style={{ marginTop: 30 }}
+      >
         <div
           style={{
             padding: '24px 24px 50px 24px',
@@ -141,7 +145,7 @@ function JobPostForm() {
             rules={[{ required: true, message: 'Vui lòng nhập địa điểm' }]}
           >
             {/* Location */}
-            <AutocompleteAddress form={form}/>
+            <AutocompleteAddress form={form} />
           </Form.Item>
           <Flex gap={50}>
             <Form.Item

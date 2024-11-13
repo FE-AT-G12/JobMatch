@@ -16,14 +16,26 @@ const JobAdminDetail = () => {
     return <Spin tip='Loading...' />
   }
 
-  const userHirer = users ? users.find((user) => user.id === job.data.hirerId) : null
+  const userHirer = users
+    ? users.find((user) => user.id === job.data.hirerId)
+    : null
   const userNameHirer = userHirer ? userHirer.name : 'Unknown User'
 
-  const userClients = users ? users.filter((user) => job.data.clientId.includes(user.id)) : []
-  const userNamesClients = userClients.length > 0 ? userClients.map((user) => user.name).join(', ') : 'Unknown Users'
+  const userClients = users
+    ? users.filter((user) => job.data.clientId.includes(user.id))
+    : []
+  const userNamesClients =
+    userClients.length > 0
+      ? userClients.map((user) => user.name).join(', ')
+      : 'Unknown Users'
 
-  const userApplyClients = users ? users.filter((user) => job.data.clientApplyId.includes(user.id)) : []
-  const userNamesApplyClients = userApplyClients.length > 0 ? userApplyClients.map((user) => user.name).join(', ') : 'Unknown Users'
+  const userApplyClients = users
+    ? users.filter((user) => job.data.clientApplyId.includes(user.id))
+    : []
+  const userNamesApplyClients =
+    userApplyClients.length > 0
+      ? userApplyClients.map((user) => user.name).join(', ')
+      : 'Unknown Users'
 
   if (isLoading) {
     return <Spin tip='Loading...' />
@@ -58,8 +70,7 @@ const JobAdminDetail = () => {
             <div>
               <Title level={1}>{job.data.title}</Title>
               <div style={{ marginBottom: '10px' }}>
-                <Text strong>Miêu tả:</Text>{' '}
-                <Text>{job.data.description}</Text>
+                <Text strong>Miêu tả:</Text> <Text>{job.data.description}</Text>
               </div>
               <div style={{ marginBottom: '10px' }}>
                 <Text strong>Danh mục:</Text> <Text>{job.data.category}</Text>
@@ -103,8 +114,7 @@ const JobAdminDetail = () => {
                 <Text strong>Trạng thái:</Text> <Text>{job.data.status}</Text>
               </div>
               <div style={{ marginBottom: '10px' }}>
-                <Text strong>Người tạo:</Text>{' '}
-                <Text>{userNameHirer}</Text>
+                <Text strong>Người tạo:</Text> <Text>{userNameHirer}</Text>
               </div>
               <div style={{ marginBottom: '10px' }}>
                 <Text strong>Người đã ứng tuyển thành công:</Text>{' '}
@@ -115,10 +125,12 @@ const JobAdminDetail = () => {
                 <Text>{userNamesApplyClients}</Text>
               </div>
             </div>
-            <div style={{
-              display: 'flex',
-              justifyContent: 'flex-end'
-            }}>
+            <div
+              style={{
+                display: 'flex',
+                justifyContent: 'flex-end',
+              }}
+            >
               <DeleteJobButton />
             </div>
           </Card>

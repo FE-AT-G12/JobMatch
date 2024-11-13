@@ -42,7 +42,7 @@ export const jobApi = apiSlice.injectEndpoints({
       providesTags: ['Job'],
     }),
     updateJob: build.mutation({
-      query: ({id, data}) => ({
+      query: ({ id, data }) => ({
         url: `/job/${id}`,
         method: 'PUT',
         body: { data, id }, // Wrap data inside another object with a data key
