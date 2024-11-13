@@ -1,8 +1,13 @@
 import dayjs from 'dayjs'
 export const dateFormatter = (date) => {
-  const [day, month, year] = date.split('/')
+  const [day, month, year] = date.split(/[-\/]/)
   const formatDate = `${year}-${month}-${day}`
   return dayjs(formatDate)
+}
+
+export const dateFromDbToString = (date) => {
+  if(date.includes(":")) return dayjs(date).format('DD-MM-YYYY HH:mm:ss')
+  return dayjs(date).format('DD-MM-YYYY')
 }
 
 export const dateJsToStringFormatter = (date) => {

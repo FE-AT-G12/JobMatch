@@ -2,7 +2,6 @@ import dayjs from 'dayjs'
 export const dateFormatter = (date) => {
   const [day, month, year] = date.split(/[-\/]/)
   const formatDate = `${year}-${month}-${day}`
-
   return dayjs(formatDate)
 }
 
@@ -12,7 +11,6 @@ export const validateDate = (_, value) => {
   }
   return Promise.resolve()
 }
-
 // Get the current date in yyyy-mm-dd format
 export const getCurrentDate = () => {
   const today = new Date()

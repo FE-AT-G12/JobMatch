@@ -13,7 +13,7 @@ export const headerItems = [
   {
     label: (
       <div className='header__item'>
-        <Link to='/viec-lam'>Việc làm</Link>
+        <Link to='/job'>Việc làm</Link>
       </div>
     ),
     key: '2',

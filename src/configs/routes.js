@@ -1,7 +1,6 @@
 import LoginPage from '../page/login'
 import adminAccount from '../page/adminAccount/adminAccount'
 import RegisterPage from '../page/register'
-import Job from '../page/Job/Job'
 import UserTest from '../page/User/UserTest'
 import MainLayout from '../components/layout/MainLayout'
 import JobAdmin from '../page/JobAdmin/JobAdmin'
@@ -14,8 +13,10 @@ import Profile from '../page/User/Profile'
 import JobPost from '../page/Job/JobPost'
 import SimpleLayout from '../components/layout/SimpleLayout'
 import JobPostedListPage from '../page/Job/JobPostedListPage'
-import JobUpdateForm from '../components/Job/JobUpdateForm'
+
 import JobUpdatePage from '../page/Job/JobUpdatePage'
+import JobBrowsePage from '../page/Job/JobBrowsePage'
+import JobDetailClient from '../page/Job/JobDetailClient'
 
 const routes = [
   {
@@ -41,10 +42,14 @@ const routes = [
       },
       {
         path: '/job',
-        component: Job,
+        component: JobBrowsePage,
       },
       {
         path: '/job/:id',
+        component: JobDetailClient,
+      },
+      {
+        path: '/job/my-posted-job/:id',
         component: JobUpdatePage,
       },
       {
