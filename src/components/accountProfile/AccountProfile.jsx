@@ -10,9 +10,7 @@ import {
   message,
   InputNumber,
 } from 'antd'
-import { PlusOutlined } from '@ant-design/icons'
-import dayjs from 'dayjs'
-import { dateFormatter } from '../../utils/DateFunction'
+import { dateFormatter } from '../../utils/DayFormater'
 import { useUpdateUserMutation } from '../../features/user/userApi'
 
 const { Option } = Select
