@@ -38,7 +38,11 @@ function LoginPage() {
         }
         dispatch(login(userInfo))
         localStorage.setItem('user', JSON.stringify(userInfo))
-        nav('/')
+        if (user.role === 'admin') {
+          nav('/admin')
+        } else {
+          nav('/')
+        }
       }
     }
   }

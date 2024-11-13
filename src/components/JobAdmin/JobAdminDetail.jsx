@@ -16,13 +16,11 @@ const JobAdminDetail = () => {
     return <Spin tip='Loading...' />
   }
 
-  const userHirer = users
-    ? users.find((user) => user.id === job.data.hirerId)
-    : null
+  const userHirer = users ? users.find((user) => user.id === job.hirerId) : null
   const userNameHirer = userHirer ? userHirer.name : 'Unknown User'
 
   const userClients = users
-    ? users.filter((user) => job.data.clientId.includes(user.id))
+    ? users.filter((user) => job.clientId.includes(user.id))
     : []
   const userNamesClients =
     userClients.length > 0
@@ -30,7 +28,7 @@ const JobAdminDetail = () => {
       : 'Unknown Users'
 
   const userApplyClients = users
-    ? users.filter((user) => job.data.clientApplyId.includes(user.id))
+    ? users.filter((user) => job.clientApplyId.includes(user.id))
     : []
   const userNamesApplyClients =
     userApplyClients.length > 0
@@ -52,6 +50,12 @@ const JobAdminDetail = () => {
     )
   }
 
+  const formatDuration = (duration) => {
+    const hours = Math.floor(duration)
+    const minutes = Math.round((duration - hours) * 60)
+    return `${hours} giờ ${minutes} phút`
+  }
+
   return (
     <div
       style={{
@@ -68,50 +72,49 @@ const JobAdminDetail = () => {
             }}
           >
             <div>
-              <Title level={1}>{job.data.title}</Title>
+              <Title level={1}>{job.title}</Title>
               <div style={{ marginBottom: '10px' }}>
-                <Text strong>Miêu tả:</Text> <Text>{job.data.description}</Text>
+                <Text strong>Miêu tả:</Text> <Text>{job.description}</Text>
               </div>
               <div style={{ marginBottom: '10px' }}>
-                <Text strong>Danh mục:</Text> <Text>{job.data.category}</Text>
+                <Text strong>Danh mục:</Text> <Text>{job.category}</Text>
               </div>
               <div style={{ marginBottom: '10px' }}>
-                <Text strong>Vị trí:</Text> <Text>{job.data.location}</Text>
+                <Text strong>Vị trí:</Text> <Text>{job.location}</Text>
               </div>
               <div style={{ marginBottom: '10px' }}>
                 <Text strong>Ngày bắt đầu:</Text>{' '}
-                <Text>{moment(job.data.dateStart).format('DD/MM/YYYY')}</Text>
+                <Text>{moment(job.dateStart).format('DD/MM/YYYY')}</Text>
               </div>
               <div style={{ marginBottom: '10px' }}>
                 <Text strong>Ngày kết thúc:</Text>
-                <Text>{moment(job.data.dateEnd).format('DD/MM/YYYY')}</Text>
+                <Text>{moment(job.dateEnd).format('DD/MM/YYYY')}</Text>
               </div>
               <div style={{ marginBottom: '10px' }}>
                 <Text strong>Thời gian bắt đầu:</Text>{' '}
-                <Text>{job.data.timeStart}</Text>
+                <Text>{job.timeStart}</Text>
               </div>
               <div style={{ marginBottom: '10px' }}>
                 <Text strong>Thời lượng làm việc:</Text>{' '}
-                <Text>{job.data.duration} hours</Text>
+                <Text>{formatDuration(job.duration)}</Text>
               </div>
               <div style={{ marginBottom: '10px' }}>
                 <Text strong>Làm việc vào:</Text>{' '}
-                {job.data.repeateOn ? (
-                  <Text>{job.data.repeateOn.join(', ')}</Text>
+                {job.repeateOn ? (
+                  <Text>{job.repeateOn.join(', ')}</Text>
                 ) : (
                   <Text>Không</Text>
                 )}
               </div>
               <div style={{ marginBottom: '10px' }}>
-                <Text strong>Lương:</Text>{' '}
-                <Text>{job.data.payment.payRate}</Text>
+                <Text strong>Lương:</Text> <Text>{job.payment.payRate}</Text>
               </div>
               <div style={{ marginBottom: '10px' }}>
                 <Text strong>Thanh toán bằng:</Text>{' '}
-                <Text>{job.data.payment.paymentMethod}</Text>
+                <Text>{job.payment.paymentMethod}</Text>
               </div>
               <div style={{ marginBottom: '10px' }}>
-                <Text strong>Trạng thái:</Text> <Text>{job.data.status}</Text>
+                <Text strong>Trạng thái:</Text> <Text>{job.status}</Text>
               </div>
               <div style={{ marginBottom: '10px' }}>
                 <Text strong>Người tạo:</Text> <Text>{userNameHirer}</Text>

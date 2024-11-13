@@ -6,7 +6,7 @@ export const JobDetailButton = ({ record }) => {
 
   const handleDetailClick = () => {
     // eslint-disable-next-line react/prop-types
-    nav(`/jobAdmin/${record.id}`)
+    nav(`/admin/job/${record.id}`)
   }
 
   return (

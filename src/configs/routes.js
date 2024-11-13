@@ -5,16 +5,18 @@ import UserTest from '../page/User/UserTest'
 import MainLayout from '../components/layout/MainLayout'
 import JobAdmin from '../page/JobAdmin/JobAdmin'
 import JobAdminDetail from '../page/JobAdmin/JobAdminDetail'
-
+import AdminLayout from '../components/layout/AdminLayout'
+import Admin from '../components/Admin/Admin'
 import HomePage from '../page/home/Home'
 import Company from '../page/company/Company'
-
+import BlogAdmin from '../page/BlogAdmin/BlogAdmin'
 import Profile from '../page/User/Profile'
 import JobPost from '../page/Job/JobPost'
 import SimpleLayout from '../components/layout/SimpleLayout'
 import JobPostedListPage from '../page/Job/JobPostedListPage'
 
 import JobUpdatePage from '../page/Job/JobUpdatePage'
+import BlogAdminDetail from '../page/BlogAdmin/BlogAdminDetail'
 import JobBrowsePage from '../page/Job/JobBrowsePage'
 import JobDetailClient from '../page/Job/JobDetailClient'
 
@@ -62,21 +64,6 @@ const routes = [
         component: JobPostedListPage,
         role: ['hirer'],
       },
-      {
-        path: '/admin',
-        component: adminAccount,
-        role: ['admin'],
-      },
-      {
-        path: '/jobAdmin',
-        component: JobAdmin,
-        role: ['admin'],
-      },
-      {
-        path: '/jobAdmin/:jobId',
-        component: JobAdminDetail,
-        role: ['admin'],
-      },
     ],
   },
   {
@@ -89,6 +76,41 @@ const routes = [
       {
         path: '/register',
         component: RegisterPage,
+      },
+    ],
+  },
+  {
+    layout: AdminLayout,
+    data: [
+      {
+        path: '/admin',
+        component: Admin,
+        role: ['admin'],
+      },
+      {
+        path: '/admin/account',
+        component: adminAccount,
+        role: ['admin'],
+      },
+      {
+        path: '/admin/job',
+        component: JobAdmin,
+        role: ['admin'],
+      },
+      {
+        path: '/admin/job/:jobId',
+        component: JobAdminDetail,
+        role: ['admin'],
+      },
+      {
+        path: '/admin/blog',
+        component: BlogAdmin,
+        role: ['admin'],
+      },
+      {
+        path: '/admin/blog/:blogId',
+        component: BlogAdminDetail,
+        role: ['admin'],
       },
     ],
   },

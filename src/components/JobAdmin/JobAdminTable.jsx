@@ -6,7 +6,7 @@ const JobAdminTable = () => {
   const { data, error, isLoading } = useGetJobListQuery()
   const dataWithIndex = data?.map((job, index) => ({
     id: job.id,
-    ...job.data,
+    ...job,
     index: index + 1,
   }))
 
