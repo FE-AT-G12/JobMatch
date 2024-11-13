@@ -9,10 +9,7 @@ const AutocompleteAddress = ({ form }) => {
   function onPlaceSelect(value) {
     console.log({ value })
     if (value) {
-      form.setFieldValue('location', {
-        location: value.properties.formatted,
-        cityAddress: value.properties.city,
-      })
+      form.setFieldValue('location', value.properties.formatted)
     }
   }
   const location = form.getFieldValue('location')
@@ -24,7 +21,7 @@ const AutocompleteAddress = ({ form }) => {
         placeSelect={onPlaceSelect}
         countryCodes={'vn'}
         lang='vi'
-        value={location?.location || location}
+        value={location || ""}
       />
     </GeoapifyContext>
   )
