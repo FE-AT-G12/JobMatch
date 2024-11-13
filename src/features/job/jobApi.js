@@ -42,7 +42,7 @@ export const jobApi = apiSlice.injectEndpoints({
       providesTags: ['Job'],
     }),
     updateJob: build.mutation({
-      query: ({id, data}) => ({
+      query: ({ id, data }) => ({
         url: `/job/${id}`,
         method: 'PUT',
         body: { data, id }, // Wrap data inside another object with a data key
@@ -58,6 +58,15 @@ export const jobApi = apiSlice.injectEndpoints({
       transformResponse: (res) => res,
       invalidatesTags: ['Job'],
     }),
+    clientApplyJob: build.mutation({
+      query: ({ id, body }) => ({
+        url: `/job/${id}`,
+        method: 'PATCH',
+        body: body,
+      }),
+      transformResponse: (res) => res,
+      invalidatesTags: ['Job'],
+    }),
   }),
 })
 
@@ -68,4 +77,5 @@ export const {
   useUpdateJobMutation,
   useDeleteJobMutation,
   useGetJobListByHirerIdQuery,
+  useClientApplyJobMutation,
 } = jobApi

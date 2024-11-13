@@ -28,10 +28,9 @@ import AutocompleteAddress from '../AutoCompleteAddress/AutocompleteAddress'
 
 const Require = () => <span style={{ color: 'red' }}>*</span>
 function JobPostForm() {
-  const [form] = Form.useForm();
+  const [form] = Form.useForm()
 
-  const [createJob, { isLoading }] =
-    useCreateJobMutation()
+  const [createJob, { isLoading }] = useCreateJobMutation()
   const hirer = useSelector(selectUser)
 
   const handleSubmit = async (values) => {
@@ -44,23 +43,23 @@ function JobPostForm() {
         min: values.minAge,
         max: values.maxAge,
       },
-      repeatOn: values.repeatOn,
+      repeatOn: values.repeatOn || [],
       //Category
       category: 'Dọn dẹp vệ sinh',
-      location: values.location.location,
-      cityAddress: values.location.cityAddress,
+      location: values.location,
       dateStart: dateJsToStringFormatter(values.date[0]),
       dateEnd: dateJsToStringFormatter(values.date[1]),
       timeStart: timeJsToStringFormatter(values.time[0]),
       timeEnd: timeJsToStringFormatter(values.time[1]),
-      datePosted: dayjs().format('YYYY-MM-DD HH:mm:ss'),
       payment: {
         payRate: values.payRate,
         paymentMethod: values.paymentMethod,
         payTime: values.payTime,
       },
       hirerId: hirer.userId,
-      clientId: null,
+      clientId: [],
+      clientApplyId: [],
+      datePosted: dayjs().format('YYYY-MM-DD HH:mm:ss'),
       status: 'Đang tuyển',
     }
     try {
@@ -73,7 +72,12 @@ function JobPostForm() {
   return (
     <>
       {isLoading && <ModalLoading />}
-      <Form form={form} onFinish={handleSubmit} layout='vertical' style={{ marginTop: 30 }}>
+      <Form
+        form={form}
+        onFinish={handleSubmit}
+        layout='vertical'
+        style={{ marginTop: 30 }}
+      >
         <div
           style={{
             padding: '24px 24px 50px 24px',
@@ -141,7 +145,7 @@ function JobPostForm() {
             rules={[{ required: true, message: 'Vui lòng nhập địa điểm' }]}
           >
             {/* Location */}
-            <AutocompleteAddress form={form}/>
+            <AutocompleteAddress form={form} />
           </Form.Item>
           <Flex gap={50}>
             <Form.Item

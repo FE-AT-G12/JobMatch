@@ -38,7 +38,11 @@ function LoginPage() {
         }
         dispatch(login(userInfo))
         localStorage.setItem('user', JSON.stringify(userInfo))
-        nav('/')
+        if (user.role === 'admin') {
+          nav('/admin')
+        } else {
+          nav('/')
+        }
       }
     }
   }
@@ -109,7 +113,7 @@ function LoginPage() {
                   type='primary'
                   htmlType='submit'
                   block
-                  style={{height: '40px', fontWeight: 600, fontSize: '16px'}}
+                  style={{ height: '40px', fontWeight: 600, fontSize: '16px' }}
                 >
                   Đăng nhập
                 </Button>

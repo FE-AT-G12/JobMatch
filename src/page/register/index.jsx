@@ -20,13 +20,12 @@ function RegisterPage() {
   }
   const [searchParam] = useSearchParams()
   const role = searchParam.get('role')
-  useEffect(()=> {
-    if(role !== "hirer" && role !== "client"){
-      nav("/register?role=client")
+  useEffect(() => {
+    if (role !== 'hirer' && role !== 'client') {
+      nav('/register?role=client')
     }
   }, [role, searchParam])
-  
-  
+
   const { data } = useGetUserListQuery()
 
   const onSubmit = async ({ email, password, confirmPassword, name }) => {
@@ -44,7 +43,7 @@ function RegisterPage() {
     }
     try {
       const hashedPassword = await hashPassword(password)
-      if(role !== 'client' && role !== 'hirer'){
+      if (role !== 'client' && role !== 'hirer') {
         nav('/register?role=client')
         message.error('Đăng kí tài khoản thất bại. Chức vụ không hợp lệ')
         return
@@ -72,7 +71,10 @@ function RegisterPage() {
 
           <Form onFinish={onSubmit}>
             <div className='header'>
-              <h2 className='title'>Đăng ký tài khoản {role === 'client' ? "người lao động" : "nhà tuyển dụng"}</h2>
+              <h2 className='title'>
+                Đăng ký tài khoản{' '}
+                {role === 'client' ? 'người lao động' : 'nhà tuyển dụng'}
+              </h2>
               <div className='caption'>
                 Cùng tham gia để tìm kiếm cơ hội sự nghiệp lý tưởng
               </div>

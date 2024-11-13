@@ -6,11 +6,11 @@ import { useGetJobListByHirerIdQuery } from '../../features/job/jobApi'
 import CustomLoading from '../../components/Loading/Loading'
 function JobPostedListPage() {
   const user = useSelector(selectUser)
-  const { data ,isLoading, isError } = useGetJobListByHirerIdQuery(user.userId)
+  const { data, isLoading, isError } = useGetJobListByHirerIdQuery(user.userId)
   if (isLoading) {
     return <CustomLoading />
   }
-  if(isError){
+  if (isError) {
     return 'Có lỗi xảy ra'
   }
   return <JobPostedList jobs={data} />

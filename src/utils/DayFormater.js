@@ -1,8 +1,13 @@
 import dayjs from 'dayjs'
 export const dateFormatter = (date) => {
-  const [day, month, year] = date.split('/')
+  const [day, month, year] = date.split(/[-\/]/)
   const formatDate = `${year}-${month}-${day}`
   return dayjs(formatDate)
+}
+
+export const dateFromDbToString = (date) => {
+  if (date.includes(':')) return dayjs(date).format('DD-MM-YYYY HH:mm:ss')
+  return dayjs(date).format('DD-MM-YYYY')
 }
 
 export const dateJsToStringFormatter = (date) => {
@@ -21,19 +26,19 @@ export const timeJsToStringFormatter = (time) => {
 }
 
 export const calculateTimeSincePosted = (postedDate) => {
-  const currentDate = new Date(); // Get current date and time
-  const postedTime = new Date(postedDate); // Convert the posted date string to a Date object
-  
-  const diffInMilliseconds = currentDate - postedTime; // Calculate the difference in milliseconds
-  const diffInMinutes = Math.floor(diffInMilliseconds / (1000 * 60));
-  const diffInHours = Math.floor(diffInMilliseconds / (1000 * 60 * 60));
-  const diffInDays = Math.floor(diffInMilliseconds / (1000 * 60 * 60 * 24));
+  const currentDate = new Date() // Get current date and time
+  const postedTime = new Date(postedDate) // Convert the posted date string to a Date object
+
+  const diffInMilliseconds = currentDate - postedTime // Calculate the difference in milliseconds
+  const diffInMinutes = Math.floor(diffInMilliseconds / (1000 * 60))
+  const diffInHours = Math.floor(diffInMilliseconds / (1000 * 60 * 60))
+  const diffInDays = Math.floor(diffInMilliseconds / (1000 * 60 * 60 * 24))
 
   if (diffInMinutes < 60) {
-    return `${diffInMinutes} phút trước`; // If less than 60 minutes, return minutes
+    return `${diffInMinutes} phút trước` // If less than 60 minutes, return minutes
   } else if (diffInHours < 24) {
-    return `${diffInHours} giờ trước`; // If less than 24 hours, return hours
+    return `${diffInHours} giờ trước` // If less than 24 hours, return hours
   } else {
-    return `${diffInDays} ngày trước`; // If more than 24 hours, return days
+    return `${diffInDays} ngày trước` // If more than 24 hours, return days
   }
-};
+}

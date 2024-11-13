@@ -1,7 +1,91 @@
 import React from 'react'
-
-export default function JobDetail() {
+import { Card, Row, Col, Button, Tag, Typography, Flex } from 'antd'
+import {
+  EnvironmentOutlined,
+  MoneyCollectOutlined,
+  SendOutlined,
+  UserOutlined,
+} from '@ant-design/icons'
+import { moneyFormatter } from '../../utils/moneyFormatter'
+import { getCityByAddress } from '../../utils/getCity'
+import { ageRequirement } from '../../utils/ageRequirement'
+import { dateFromDbToString } from '../../utils/DayFormater'
+import { Link } from 'react-router-dom'
+export default function JobDetail({ job, handleApplyJob, user }) {
   return (
-    <div>JobDetail</div>
+    <>
+      <Card bordered={false}>
+        <Row>
+          <Col span={24}>
+            <Typography.Title level={3}>{job?.title}</Typography.Title>
+          </Col>
+          <Col span={24}>
+            <Row gutter={[16, 16]} style={{ marginTop: 16 }}>
+              <Col span={8}>
+                <MoneyCollectOutlined
+                  style={{ color: '#024caa', fontSize: 18 }}
+                />
+                <Typography.Text style={{ marginLeft: 8, fontSize: 16 }}>
+                  Mức lương
+                </Typography.Text>
+                <div style={{ fontWeight: 600, fontSize: 16 }}>
+                  {moneyFormatter(job.payment.payRate)}
+                </div>
+              </Col>
+              <Col span={8}>
+                <EnvironmentOutlined
+                  style={{ color: '#024caa', fontSize: 18 }}
+                />
+                <span style={{ marginLeft: 8, fontSize: 16 }}>Địa điểm</span>
+                <div style={{ fontWeight: 600, fontSize: 16 }}>
+                  {getCityByAddress(job.location)}
+                </div>
+              </Col>
+              <Col span={8}>
+                <UserOutlined style={{ color: '#024caa', fontSize: 18 }} />
+                <span style={{ marginLeft: 8, fontSize: 16 }}>Độ tuổi</span>
+                <div style={{ fontWeight: 600, fontSize: 16 }}>
+                  {ageRequirement(job.ageRequirement)}
+                </div>
+              </Col>
+            </Row>
+          </Col>
+          <Col span={24}>
+            <div style={{ marginTop: 16, color: '#666' }}>
+              Đã đăng vào:{' '}
+              <span style={{ fontWeight: 600 }}>
+                {dateFromDbToString(job.datePosted)}
+              </span>
+            </div>
+          </Col>
+          <Col span={24}>
+            <Flex style={{ marginTop: 16 }} wrap gap={16}>
+              {user ? (
+                <Button
+                  onClick={handleApplyJob}
+                  type='primary'
+                  style={{ backgroundColor: '#024caa', flex: 1 }}
+                  size='large'
+                >
+                  <SendOutlined /> Ứng tuyển ngay
+                </Button>
+              ) : (
+                <Link to='/login'>
+                  <Button
+                    onClick={handleApplyJob}
+                    type='primary'
+                    style={{ backgroundColor: '#024caa', flex: 1 }}
+                    size='large'
+                  >
+                    <SendOutlined /> Bạn cần đăng nhập để ứng tuyển
+                  </Button>
+                </Link>
+              )}
+              <Button size='large'>Lưu</Button>
+            </Flex>
+          </Col>
+        </Row>
+      </Card>
+    </>
   )
 }

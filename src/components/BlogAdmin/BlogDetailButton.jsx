@@ -1,12 +1,12 @@
 import { Button } from 'antd'
 import { useNavigate } from 'react-router-dom'
 // eslint-disable-next-line react/prop-types
-export const JobDetailButton = ({ record }) => {
+export const BlogDetailButton = ({ record }) => {
   const nav = useNavigate()
 
   const handleDetailClick = () => {
     // eslint-disable-next-line react/prop-types
-    nav(`/admin/job/${record.id}`)
+    nav(`/admin/blog/${record.id}`)
   }
 
   return (
