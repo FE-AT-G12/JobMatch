@@ -21,7 +21,7 @@ const AutocompleteAddress = ({ form }) => {
         placeSelect={onPlaceSelect}
         countryCodes={'vn'}
         lang='vi'
-        value={location || ""}
+        value={location || ''}
       />
     </GeoapifyContext>
   )

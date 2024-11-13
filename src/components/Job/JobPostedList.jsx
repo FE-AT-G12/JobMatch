@@ -66,11 +66,7 @@ function JobPostedList({ jobs }) {
         {!jobList.length && !jobStatus ? (
           <EmptyJobList />
         ) : jobList.length !== 0 ? (
-          jobList.map((job, idx) => (
-           
-              <JobCard job={job} idx={idx} />
-      
-          ))
+          jobList.map((job, idx) => <JobCard job={job} idx={idx} />)
         ) : (
           <Result
             status='404'

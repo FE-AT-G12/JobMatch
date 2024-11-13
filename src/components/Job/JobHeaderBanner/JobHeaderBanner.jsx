@@ -1,7 +1,6 @@
 import React from 'react'
 import './JobHeaderBanner.css' // Import the CSS file
 
-
 const JobHeaderBanner = () => {
   return (
     <div className='search-banner-container'>
