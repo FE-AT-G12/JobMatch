@@ -126,9 +126,7 @@ function HandbookDetail() {
                     <li key={index}>{item}</li>
                   ))
                 ) : (
-                  <p>
-                    {selectedHandbook.describe_2}
-                  </p>
+                  <p>{selectedHandbook.describe_2}</p>
                 )}
               </ul>
             </div>

@@ -4,13 +4,20 @@
       "id": "5ac8",
       "title": "Gõ word",
       "description": "Gõ word",
-      "skillRequirement": ["Gõ word"],
+      "skillRequirement": [
+        "Gõ word"
+      ],
       "ageRequirement": {
         "min": "18",
-
         "max": "30"
       },
-      "repeatOn": ["Thứ 2", "Thứ 3", "Thứ 4", "Thứ 5", "Thứ 6"],
+      "repeatOn": [
+        "Thứ 2",
+        "Thứ 3",
+        "Thứ 4",
+        "Thứ 5",
+        "Thứ 6"
+      ],
       "category": "Văn phòng",
       "location": "Tại nhà",
       "dateStart": "2024-10-31",
@@ -23,8 +30,14 @@
         "payTime": "Sau khi thành công"
       },
       "hirerId": "1",
-      "clientId": ["5", "4"],
-      "clientApplyId": ["3", "1"],
+      "clientId": [
+        "5",
+        "4"
+      ],
+      "clientApplyId": [
+        "3",
+        "1"
+      ],
       "datePosted": "2024-02-10 12:20:43",
       "status": "Đang tuyển"
     },
@@ -32,13 +45,18 @@
       "id": "c7ce",
       "title": "333",
       "description": "3312312312",
-      "skillRequirement": ["1231233", "33"],
+      "skillRequirement": [
+        "1231233",
+        "33"
+      ],
       "ageRequirement": {
         "min": 22,
         "max": 23
-
       },
-      "repeatOn": ["Thứ 3", "Thứ 2"],
+      "repeatOn": [
+        "Thứ 3",
+        "Thứ 2"
+      ],
       "category": "Dọn dẹp vệ sinh",
       "location": "12, Hoang Dieu, Thắng Lợi, Thành phố Kon Tum, Tỉnh Kon Tum, Việt Nam",
       "dateStart": "2024-11-13",
@@ -52,7 +70,10 @@
       },
       "hirerId": "4",
       "clientId": [],
-      "clientApplyId": ["3", "5"],
+      "clientApplyId": [
+        "3",
+        "5"
+      ],
       "datePosted": "2024-11-13 17:32:41",
       "status": "Đang tuyển"
     }
@@ -133,7 +154,11 @@
       "age": 22,
       "phoneNumber": "0922457890",
       "email": "ngotane@gmail.com",
-      "skills": ["Phục vụ quán", "Tạp vụ", "Dọn dẹp nhà cửa"],
+      "skills": [
+        "Phục vụ quán",
+        "Tạp vụ",
+        "Dọn dẹp nhà cửa"
+      ],
       "location": "Hồ Chí Minh, Việt Nam",
       "availability": "Bán thời gian",
       "birthDate": "01/09/2002",
@@ -217,7 +242,10 @@
       "age": 24,
       "phoneNumber": "0903123789",
       "email": "dovanai@gmail.com",
-      "skills": ["Sửa chữa xe máy", "Giao hàng"],
+      "skills": [
+        "Sửa chữa xe máy",
+        "Giao hàng"
+      ],
       "location": "Hà Nội, Việt Nam",
       "availability": "Toàn thời gian",
       "birthDate": "19/07/2000",
@@ -257,7 +285,10 @@
       "age": 27,
       "phoneNumber": "0905671234",
       "email": "vuhongk@gmail.com",
-      "skills": ["Giao hàng", "Giúp việc gia đình"],
+      "skills": [
+        "Giao hàng",
+        "Giúp việc gia đình"
+      ],
       "location": "Cần Thơ, Việt Nam",
       "availability": "Toàn thời gian",
       "birthDate": "22/06/1996",
@@ -297,7 +328,10 @@
       "age": 29,
       "phoneNumber": "0912678990",
       "email": "lyquocm@gmail.com",
-      "skills": ["Phục vụ sự kiện", "Giữ trẻ"],
+      "skills": [
+        "Phục vụ sự kiện",
+        "Giữ trẻ"
+      ],
       "location": "Hải Dương, Việt Nam",
       "availability": "Bán thời gian",
       "birthDate": "14/08/1995",
@@ -338,7 +372,7 @@
   ],
   "company": [
     {
-      "id": 1,
+      "id": "1",
       "name": "Công ty Hòa Bình",
       "coverImage": "https://cdn-new.topcv.vn/unsafe/https://static.topcv.vn/company_covers/iG4XtDpniVr6WmwXw0nc.jpg",
       "location": "Hà Nội",
@@ -353,7 +387,7 @@
       "intro": "Công ty Hòa Bình cung cấp nhiều cơ hội việc làm hấp dẫn trong ngành viễn thông, nơi bạn có thể phát triển sự nghiệp của mình."
     },
     {
-      "id": 2,
+      "id": "2",
       "name": "Tập đoàn FPT",
       "coverImage": "https://cdn-new.topcv.vn/unsafe/https://static.topcv.vn/company_covers/iG4XtDpniVr6WmwXw0nc.jpg",
       "location": "TP Hồ Chí Minh",
@@ -368,7 +402,7 @@
       "intro": "Tập đoàn FPT là một trong những tập đoàn công nghệ hàng đầu, chuyên cung cấp giải pháp sáng tạo cho khách hàng."
     },
     {
-      "id": 3,
+      "id": "3",
       "name": "Công ty Viettel",
       "coverImage": "https://cdn-new.topcv.vn/unsafe/https://static.topcv.vn/company_covers/iG4XtDpniVr6WmwXw0nc.jpg",
       "location": "Hà Nội",
@@ -383,7 +417,7 @@
       "intro": "Công ty Viettel nổi tiếng với đội ngũ nhân viên sáng tạo, không ngừng đổi mới và cải tiến dịch vụ."
     },
     {
-      "id": 4,
+      "id": "4",
       "name": "Công ty VinGroup",
       "coverImage": "https://cdn-new.topcv.vn/unsafe/https://static.topcv.vn/company_covers/iG4XtDpniVr6WmwXw0nc.jpg",
       "location": "Hà Nội",
@@ -398,7 +432,7 @@
       "intro": "Công ty VinGroup là một tập đoàn đa ngành, cam kết tạo ra giá trị và cải thiện chất lượng cuộc sống cho cộng đồng."
     },
     {
-      "id": 5,
+      "id": "5",
       "name": "Tập đoàn Masan",
       "coverImage": "https://cdn-new.topcv.vn/unsafe/https://static.topcv.vn/company_covers/iG4XtDpniVr6WmwXw0nc.jpg",
       "location": "TP Hồ Chí Minh",
@@ -413,7 +447,7 @@
       "intro": "Tập đoàn Masan cung cấp những sản phẩm và dịch vụ chất lượng cao, mang lại giá trị cho người tiêu dùng."
     },
     {
-      "id": 6,
+      "id": "6",
       "name": "Công ty Bkav",
       "coverImage": "https://cdn-new.topcv.vn/unsafe/https://static.topcv.vn/company_covers/iG4XtDpniVr6WmwXw0nc.jpg",
       "location": "Hà Nội",
@@ -428,7 +462,7 @@
       "intro": "Công ty Bkav là nhà phát triển phần mềm hàng đầu, nổi bật với những sản phẩm bảo mật đáng tin cậy."
     },
     {
-      "id": 7,
+      "id": "7",
       "name": "Tập đoàn Trung Nguyên",
       "coverImage": "https://cdn-new.topcv.vn/unsafe/https://static.topcv.vn/company_covers/iG4XtDpniVr6WmwXw0nc.jpg",
       "location": "TP Hồ Chí Minh",
@@ -443,7 +477,7 @@
       "intro": "Công ty Trung Nguyên mang lại những sản phẩm cà phê chất lượng cao, nổi tiếng tại thị trường Việt Nam và quốc tế."
     },
     {
-      "id": 8,
+      "id": "8",
       "name": "Công ty Điện lực EVN",
       "coverImage": "https://cdn-new.topcv.vn/unsafe/https://static.topcv.vn/company_covers/iG4XtDpniVr6WmwXw0nc.jpg",
       "location": "Hà Nội",
@@ -458,7 +492,7 @@
       "intro": "EVN là nơi cung cấp điện năng lớn nhất tại Việt Nam, với các dự án phát triển năng lượng bền vững."
     },
     {
-      "id": 9,
+      "id": "9",
       "name": "Công ty Cổ phần Vinamilk",
       "coverImage": "https://cdn-new.topcv.vn/unsafe/https://static.topcv.vn/company_covers/iG4XtDpniVr6WmwXw0nc.jpg",
       "location": "TP Hồ Chí Minh",
@@ -473,7 +507,7 @@
       "intro": "Vinamilk cam kết nâng cao sức khỏe và dinh dưỡng của người tiêu dùng thông qua các sản phẩm chất lượng."
     },
     {
-      "id": 10,
+      "id": "10",
       "name": "Ngân hàng Vietcombank",
       "coverImage": "https://cdn-new.topcv.vn/unsafe/https://static.topcv.vn/company_covers/iG4XtDpniVr6WmwXw0nc.jpg",
       "location": "Hà Nội",
@@ -488,145 +522,6 @@
       "intro": "Vietcombank là ngân hàng uy tín với nhiều dịch vụ tài chính hàng đầu tại Việt Nam và quốc tế."
     }
   ],
-  "handbook": [
-    {
-      "id": "hb1",
-      "imghandbook": "https://cdn-new.topcv.vn/unsafe/300x/https://static.topcv.vn/cms/TESTER.jpg664db9c7d9e9d.jpg",
-      "title": "Tester là gì? Những kỹ năng cần có ở một Tester chuyên nghiệp",
-      "small_title_1": "Tester là gì và nhiệm vụ của một tester là gì?",
-      "small_title_2": "TOP 04 kỹ năng trong công việc không thể thiếu cho Tester",
-      "small_title_3": "04 kỹ năng mềm cần có ở một Tester",
-      "small_title_4": "Tình hình tuyển dụng Tester ở Việt Nam",
-      "describe_1": "Tester là những người kiểm tra chất lượng phần mềm, phát hiện ra các lỗi, sai sót hay bất cứ vấn đề nào có thể ảnh hưởng đến chất lượng phần mềm. Tùy từng công ty mà tester sẽ có nhiều mảng như QA, QC, đặc biệt là Manual Tester và Automation Tester. Manual Tester là người kiểm thử phần mềm một cách thủ công, không yêu cầu cao về kiến thức lập trình nhưng đòi hỏi bạn phải rành test manual, có đam mê và tư duy tốt. Tester sẽ đảm bảo chất lượng các phần mềm và thực hiện các công tác kiểm tra lỗi trước khi giao kết quả cuối cùng cho khách hàng.",
-      "describe_2": [
-        "Hiểu biết về phần mềm, nguyên tắc và phương pháp kiểm thử",
-        "Chú ý đến chi tiết",
-        "Cập nhật và ứng dụng công nghệ mới",
-        "Kỹ năng soạn thảo báo cáo lỗi"
-      ],
-      "describe_3": [
-        "Kỹ năng phân tích",
-        "Kỹ năng học hỏi",
-        "Kỹ năng giao tiếp",
-        "Kỹ năng làm việc nhóm"
-      ],
-      "describe_4": "Hiện nay, nhu cầu tuyển dụng Tester tại Việt Nam đang tăng cao, chủ yếu do sự phát triển mạnh mẽ của ngành công nghệ thông tin và các yêu cầu về chất lượng phần mềm ngày càng khắt khe. Các công ty từ startup đến doanh nghiệp lớn đều cần đội ngũ Tester để đảm bảo sản phẩm không có lỗi trước khi ra mắt. Các vai trò phổ biến trong lĩnh vực này bao gồm từ Junior Tester đến Senior Tester, cũng như các vị trí chuyên về kiểm thử tự động (automation testing) để tối ưu hóa quy trình kiểm thử và nâng cao hiệu suất."
-    },
-    {
-      "id": "hb2",
-      "imghandbook": "https://cdn-new.topcv.vn/unsafe/300x/https://static.topcv.vn/cms/cong-tac-vien-viet-bai-1_result.png600454831eae1.png",
-      "title": "Part-time Writer là gì? Những kỹ năng cần có ở một Writer chuyên nghiệp",
-      "small_title_1": "Part-time Writer là gì và nhiệm vụ của một part-time writer là gì?",
-      "small_title_2": "TOP 04 kỹ năng trong công việc không thể thiếu cho Writer",
-      "small_title_3": "04 kỹ năng mềm cần có ở một Writer",
-      "small_title_4": "Tình hình tuyển dụng Part-time Writer ở Việt Nam",
-      "describe_1": "Part-time Writer là những người viết nội dung cho các loại hình truyền thông như blog, website, báo chí hoặc mạng xã hội. Công việc của một part-time writer có thể bao gồm việc viết bài PR, bài đánh giá sản phẩm, bài hướng dẫn, hoặc thậm chí viết sách điện tử. Công việc này đòi hỏi khả năng sáng tạo cao, kiến thức vững về lĩnh vực viết, và khả năng nghiên cứu, tìm kiếm thông tin nhanh chóng. Các writer cần phải nắm bắt được nhu cầu của độc giả và tạo ra nội dung hấp dẫn, dễ hiểu.",
-      "describe_2": [
-        "Kỹ năng viết tốt",
-        "Khả năng nghiên cứu, tìm kiếm thông tin",
-        "Kiến thức về SEO và tối ưu hóa nội dung",
-        "Kỹ năng biên tập và chỉnh sửa nội dung"
-      ],
-      "describe_3": [
-        "Kỹ năng sáng tạo",
-        "Kỹ năng làm việc độc lập",
-        "Kỹ năng giao tiếp",
-        "Kỹ năng quản lý thời gian"
-      ],
-      "describe_4": "Hiện nay, nhu cầu tuyển dụng Part-time Writer tại Việt Nam đang gia tăng mạnh mẽ nhờ vào sự phát triển của thị trường nội dung số. Các công ty, thương hiệu, và nền tảng trực tuyến đang tìm kiếm các writer có thể tạo ra nội dung chất lượng để thu hút khách hàng và nâng cao thương hiệu. Các vị trí phổ biến bao gồm từ Junior Writer đến Senior Content Creator, và các writer chuyên về SEO hoặc viết cho các kênh truyền thông xã hội."
-    },
-    {
-      "id": "hb3",
-      "imghandbook": "https://cdn-new.topcv.vn/unsafe/300x/https://static.topcv.vn/cms/nhan-vien-xuat-nhap-khau-la-gi-thumb.jpg6389b5272289c.jpg",
-      "title": "Part-time Designer là gì? Những kỹ năng cần có ở một Designer chuyên nghiệp",
-      "small_title_1": "Part-time Designer là gì và nhiệm vụ của một part-time designer là gì?",
-      "small_title_2": "TOP 04 kỹ năng trong công việc không thể thiếu cho Designer",
-      "small_title_3": "04 kỹ năng mềm cần có ở một Designer",
-      "small_title_4": "Tình hình tuyển dụng Part-time Designer ở Việt Nam",
-      "describe_1": "Part-time Designer là những người thiết kế các sản phẩm đồ họa như logo, banner, poster, và các ấn phẩm truyền thông cho các công ty, tổ chức hoặc cá nhân. Công việc này yêu cầu người designer phải có sự sáng tạo và kiến thức về mỹ thuật, thiết kế, và các công cụ thiết kế chuyên nghiệp như Adobe Photoshop, Illustrator hoặc Figma. Các designer có thể làm việc theo dự án và thường xuyên phải hoàn thành các yêu cầu thiết kế nhanh chóng và hiệu quả.",
-      "describe_2": [
-        "Kỹ năng sử dụng phần mềm thiết kế",
-        "Kỹ năng sáng tạo và tư duy nghệ thuật",
-        "Kiến thức về thiết kế trải nghiệm người dùng (UX/UI)",
-        "Khả năng tạo dựng các bản trình bày và giao diện đẹp mắt"
-      ],
-      "describe_3": [
-        "Kỹ năng làm việc nhóm",
-        "Kỹ năng giao tiếp và thuyết phục",
-        "Kỹ năng quản lý thời gian",
-        "Kỹ năng giải quyết vấn đề sáng tạo"
-      ],
-      "describe_4": "Tại Việt Nam, nhu cầu tuyển dụng Part-time Designer đang tăng lên nhờ sự phát triển của các dự án kinh doanh trực tuyến và thị trường quảng cáo trực tuyến. Các công ty, từ các startup đến các thương hiệu lớn, đều cần các designer tài năng để xây dựng hình ảnh thương hiệu. Các vị trí tuyển dụng phổ biến trong lĩnh vực này bao gồm các designer junior, senior, và các chuyên gia thiết kế UX/UI."
-    }
-  ],
-  "marketjob": [
-    {
-      "id": "mk1",
-      "title": "Một số gợi ý việc làm tiếng Trung lương cao mới nhất",
-      "imgmarket": "https://cdn-new.topcv.vn/unsafe/300x/https://static.topcv.vn/cms/vi%E1%BB%87c%20l%C3%A0m%20ti%E1%BA%BFng%20trung%2004.jpg607c515e8adcc.jpg",
-      "describe": "Nhu cầu tìm kiếm ứng viên tiếng trung ngày càng nhiều khiến các nhân sự tiếng Trung chưa bao giờ thiếu việc làm. Dưới đây hãy cùng JobMatch tìm hiểu một số việc làm tiếng",
-      "small_title_1": "Biên phiên dịch tiếng Trung bán thời gian",
-      "small_title_2": "Giáo viên tiếng Trung bán thời gian",
-      "small_title_3": "Nhân viên thu mua (tiếng Trung)",
-      "small_title_4": "Tìm việc làm tiếng Trung ở đâu?",
-      "describe_1": [
-        "Biên phiên dịch tiếng Trung là một vị trí thích hợp cho những bạn muốn làm việc trong môi trường công sở. Tại công việc này bạn thường xuyên làm việc tại văn phòng và chỉ ra ngoài khi gặp đối tác hoặc đi công tác theo yêu cầu. ",
-        "Những bạn biên phiên dịch có một niềm đam mê về ngôn ngữ văn hóa tiếng trung. Phiên dịch viên là người chịu trách nhiệm truyền tải ngôn ngữ nói từ tiếng Trung sang tiếng Việt và ngược lại. Thu nhập của phiên dịch viên sẽ tính theo số giờ làm việc hoặc ngày làm việc. Để làm được công việc này bạn phải có kỹ năng nghe cả hai ngôn ngữ cũng như một trí nhớ phi thường. "
-      ],
-      "describe_2": [
-        "Đi cùng với nhu cầu về nhân sự biết tiếng Trung thì rất nhiều bạn trẻ mong muốn được học ngôn ngữ này để có nhiều cơ hội việc làm hơn. Hiện nay, có rất nhiều trung tâm, trường học mở khóa đào tạo tiếng Trung với lượng học sinh, sinh viên tham gia khá đông. Bởi vậy, nhiều trung tâm cũng thường xuyên đăng tải tin tức tuyển dụng thêm giáo viên tiếng Trung để đáp ứng nhu cầu đào tạo. ",
-        "Giáo viên tiếng Trung là người truyền lửa và tiếp thêm tri thức cho học viên trong việc học tiếng Trung. Họ không chỉ giúp việc giao tiếp tiếng Trung trở nên dễ dàng hơn mà còn giúp người học hiểu văn hóa và ngôn ngữ này. Công việc của một giáo viên tiếng Trung thông thường sẽ cần chuẩn bị giáo án để có thể dạy cho học viên và thực hiện bài giảng tốt nhất khi lên lớp. Bên cạnh đó, giáo viên tiếng Trung cần còn phải thực hiện các bài kiểm tra đánh giá năng lực cũng như mức độ tiến bộ của người học để từ đó có biện pháp thích hợp để điều chỉnh kế hoạch giảng dạy. "
-      ],
-      "describe_3": [
-        "Nhân viên thu mua tiếng Trung là người sẽ chịu trách nhiệm trong toàn bộ hoạt động thu thập hay mua bán hàng hóa dịch vụ của doanh nghiệp. Quá trình thu mua trong doanh nghiệp sẽ bao gồm công tác chuẩn bị và xem xét những nhu cầu, tiếp nhận và thanh toán các chi phí của hoạt động. ",
-        "Mức lương của nhân viên thu mua hiện dao động từ 5-8 triệu đồng/tháng tùy thuộc vào từng năng lực của ứng viên. Ngoài mức lương cơ bản thì vị trí này cũng được hưởng các đãi ngộ, lương thưởng theo quy định của nhà nước và công ty. "
-      ]
-    },
-    {
-      "id": "mk2",
-      "title": "Công việc part-time cho nhân viên marketing lương cao nhất",
-      "imgmarket": "https://cdn-new.topcv.vn/unsafe/300x/https://static.topcv.vn/cms/c%E1%BB%99ng%20t%C3%A1c%20vi%C3%AAn%20b%C3%A1n%20h%C3%A0ng%20online%201.jpg617221f63842e.jpg",
-      "describe": "Nhân viên marketing part-time đang là công việc được yêu thích nhờ vào sự linh hoạt và cơ hội học hỏi trong ngành marketing. Dưới đây là một số công việc marketing part-time phù hợp với các bạn sinh viên và người tìm kiếm công việc linh hoạt.",
-      "small_title_1": "Nhân viên Marketing Digital",
-      "small_title_2": "Nhân viên Content Marketing",
-      "small_title_3": "Nhân viên SEO Part-time",
-      "small_title_4": "Làm việc tại đâu để tìm việc marketing part-time?",
-      "describe_1": [
-        "Nhân viên Marketing Digital part-time có nhiệm vụ quản lý các chiến dịch marketing trực tuyến trên các nền tảng như Facebook, Google Ads, và Instagram. Công việc này yêu cầu kỹ năng về truyền thông số và phân tích dữ liệu, nhưng bạn sẽ có nhiều cơ hội học hỏi về các công cụ marketing hiệu quả.",
-        "Thu nhập của nhân viên marketing digital thường được tính theo dự án hoặc theo giờ làm việc. Với kỹ năng tốt và hiệu quả công việc cao, thu nhập có thể đạt từ 6-10 triệu đồng/tháng."
-      ],
-      "describe_2": [
-        "Content Marketing là công việc phù hợp cho những ai có đam mê viết lách và sáng tạo nội dung. Nhân viên Content Marketing thường xuyên xây dựng bài viết cho blog, trang web, và các kênh social media để tăng cường sự hiện diện của thương hiệu. Công việc này yêu cầu sự sáng tạo và khả năng nắm bắt xu hướng.",
-        "Với khối lượng công việc không quá nặng và mức lương từ 5-8 triệu đồng/tháng, công việc Content Marketing là lựa chọn lý tưởng cho những ai muốn kết hợp việc học và làm."
-      ],
-      "describe_3": [
-        "SEO part-time là công việc giúp tối ưu hóa website, giúp website của doanh nghiệp dễ dàng tìm thấy trên các công cụ tìm kiếm như Google. Các nhân viên SEO cần có khả năng nghiên cứu từ khóa, tối ưu hóa bài viết, và cải thiện thứ hạng trang web.",
-        "Mức lương cho công việc SEO part-time dao động từ 5-7 triệu đồng/tháng, tùy thuộc vào mức độ kinh nghiệm và kết quả công việc."
-      ]
-    },
-    {
-      "id": "mk2",
-      "title": "Công việc part-time nhân viên chăm sóc khách hàng lương cao",
-      "imgmarket": "https://cdn-new.topcv.vn/unsafe/300x/https://static.topcv.vn/cms/viec-lam-remote-topcv.jpeg63089789ef78f.jpg",
-      "describe": "Nhân viên chăm sóc khách hàng (Customer Service) part-time là một công việc phù hợp cho những ai yêu thích giao tiếp và giúp đỡ khách hàng. Công việc này không yêu cầu kinh nghiệm quá nhiều và có thể làm việc từ xa hoặc tại văn phòng.",
-      "small_title_1": "Nhân viên Chăm sóc khách hàng qua điện thoại",
-      "small_title_2": "Nhân viên Chăm sóc khách hàng qua chat",
-      "small_title_3": "Nhân viên hỗ trợ khách hàng qua email",
-      "small_title_4": "Tìm việc chăm sóc khách hàng part-time ở đâu?",
-      "describe_1": [
-        "Nhân viên chăm sóc khách hàng qua điện thoại là công việc phổ biến trong ngành dịch vụ. Công việc này bao gồm trả lời các cuộc gọi, giải quyết thắc mắc, và hỗ trợ khách hàng trong việc giải quyết các vấn đề liên quan đến sản phẩm hoặc dịch vụ của công ty.",
-        "Thu nhập của nhân viên chăm sóc khách hàng qua điện thoại thường từ 5-7 triệu đồng/tháng, tùy thuộc vào thời gian làm việc và mức độ hiệu quả trong công việc."
-      ],
-      "describe_2": [
-        "Nhân viên chăm sóc khách hàng qua chat là công việc hỗ trợ khách hàng trực tuyến qua các nền tảng chat, website hoặc các ứng dụng nhắn tin. Công việc này đòi hỏi kỹ năng giao tiếp nhanh chóng và khả năng giải quyết vấn đề hiệu quả.",
-        "Thu nhập cho công việc này cũng tương tự như công việc qua điện thoại, dao động từ 5-8 triệu đồng/tháng, tùy theo khối lượng công việc và công ty tuyển dụng."
-      ],
-      "describe_3": [
-        "Công việc hỗ trợ khách hàng qua email là công việc giúp khách hàng giải quyết vấn đề và yêu cầu hỗ trợ thông qua thư điện tử. Nhân viên cần phải có khả năng viết lách tốt và phản hồi nhanh chóng các yêu cầu từ khách hàng.",
-        "Mức lương cho công việc hỗ trợ khách hàng qua email từ 5-7 triệu đồng/tháng, và công việc này thường có tính linh hoạt cao, thích hợp cho sinh viên hoặc người có thời gian rảnh."
-      ]
-    }
-  ],
   "blog": [
     {
       "id": "1",
@@ -637,7 +532,9 @@
         "https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Flag_of_Vietnam.svg/1200px-Flag_of_Vietnam.svg.png"
       ],
       "author": "Nguyễn Văn A",
-      "datePosted": "2024-10-31 09:30:00"
+      "datePosted": "2024-10-31 09:30:00",
+      "category": "Hỗ trợ người dùng",
+      "content": "Hello world"
     },
     {
       "id": "2",
@@ -649,7 +546,8 @@
         "https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Flag_of_Vietnam.svg/1200px-Flag_of_Vietnam.svg.png"
       ],
       "author": "Nguyễn Văn A",
-      "datePosted": "2024-10-31 09:30:00"
+      "datePosted": "2024-10-31 09:30:00",
+      "category": "Hỗ trợ người dùng"
     },
     {
       "id": "3",
@@ -660,7 +558,35 @@
         "https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Flag_of_Vietnam.svg/1200px-Flag_of_Vietnam.svg.png"
       ],
       "author": "Nguyễn Văn A",
-      "datePosted": "2024-10-31 09:30:00"
+      "datePosted": "2024-10-31 09:30:00",
+      "category": "Hỗ trợ người dùng",
+      "content": "Hello world"
+    },
+    {
+      "id": "f3da",
+      "title": "123",
+      "description": "123",
+      "category": "123",
+      "thumbnail": [
+        "https://images.spiderum.com/sp-images/e36d1ac0881111e8a064db40c24d444a.jpg",
+        "https://images.spiderum.com/sp-images/e36d1ac0881111e8a064db40c24d444a.jpg",
+        "https://images.spiderum.com/sp-images/e36d1ac0881111e8a064db40c24d444a.jpg"
+      ],
+      "content": "<p>123</p>",
+      "datePosted": "2024-11-14 18:29:58",
+      "author": "Lương Hà J"
+    },
+    {
+      "id": "6f4a",
+      "title": "123",
+      "description": "123",
+      "category": "123",
+      "thumbnail": [
+        "https://images.spiderum.com/sp-images/e36d1ac0881111e8a064db40c24d444a.jpg"
+      ],
+      "content": "<p>123</p>",
+      "datePosted": "2024-11-14 18:33:24",
+      "author": "Lương Hà J"
     }
   ],
   "city": [

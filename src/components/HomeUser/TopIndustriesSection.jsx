@@ -64,7 +64,7 @@ function TopIndustriesSection() {
           marginTop: '20px',
           display: 'flex',
           justifyContent: 'center',
-          marginBottom: '20px'
+          marginBottom: '20px',
         }}
       />
     </div>

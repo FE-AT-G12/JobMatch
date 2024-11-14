@@ -63,7 +63,9 @@ function TopCompaniesSection() {
                   }}
                 />
                 <div className='city-name'>
-                  <p style={{ margin: 0, textDecoration: 'none' }}>{company.name}</p>
+                  <p style={{ margin: 0, textDecoration: 'none' }}>
+                    {company.name}
+                  </p>
                 </div>
               </Card>
             </Link>

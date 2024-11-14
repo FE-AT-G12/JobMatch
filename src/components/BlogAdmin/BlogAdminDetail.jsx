@@ -12,7 +12,16 @@ export default function BlogAdminDetail() {
   return (
     <div>
       <h1>{data.title}</h1>
-      <p>{data.thumbnail}</p>
+      <p>{data.description}</p>
+      <p>{data.category}</p>
+      <div>
+        {data.thumbnail.map((url, index) => (
+          <img key={index} src={url} alt={`thumbnail-${index}`} style={{ height: '100px', marginRight: '10px' }} />
+        ))}
+      </div>
+      <div dangerouslySetInnerHTML={{ __html: data.content }} />
+      <p>{data.datePosted}</p>
+      <p>{data.author}</p>
     </div>
   )
 }
