@@ -34,7 +34,7 @@ function Header() {
               className='logo'
               style={{ color: 'black', fontSize: '20px', fontWeight: 'bold' }}
             >
-              Job Match
+              <img src='/public/logo.png' width={'100px'} height={'25%'} />
             </div>
 
             {/* Menu */}
@@ -79,7 +79,7 @@ function Header() {
               </Menu.Item>
               <Menu.Item key='5'>
                 <Link
-                  to='/cam-nang'
+                  to='/hand-book'
                   style={{ color: 'black', fontWeight: '500' }}
                 >
                   Cẩm nang nghề nghiệp

@@ -3,21 +3,14 @@
     {
       "title": "Nhập Dữ Liệu",
       "description": "Nhập dữ liệu từ các tài liệu đã quét vào bảng Excel.",
-      "skillRequirement": [
-        "Word cơ bản",
-        "Excel cơ bản"
-      ],
+      "skillRequirement": ["Word cơ bản", "Excel cơ bản"],
       "ageRequirement": {
         "min": "22",
         "max": "25"
       },
       "cityjob": "Công ty Hòa Bình",
       "cityAddress": "Hà Nội",
-      "repeatOn": [
-        "Thứ 2",
-        "Thứ 3",
-        "Chủ Nhật"
-      ],
+      "repeatOn": ["Thứ 2", "Thứ 3", "Chủ Nhật"],
       "category": "Hành chính",
       "location": "Làm việc từ xa",
       "dateStart": "2024-10-15",
@@ -32,19 +25,14 @@
         "payTime": "after"
       },
       "hirerId": "2",
-      "clientId": [
-        "1"
-      ],
+      "clientId": ["1"],
       "status": "Đã tuyển",
       "id": "1"
     },
     {
       "title": "Nhập Dữ Liệu Kế Toán",
       "description": "Nhập thông tin hóa đơn vào hệ thống.",
-      "skillRequirement": [
-        "Kế toán cơ bản",
-        "Excel"
-      ],
+      "skillRequirement": ["Kế toán cơ bản", "Excel"],
       "ageRequirement": {
         "min": "23",
         "max": "30"
@@ -64,20 +52,14 @@
         "payTime": "after"
       },
       "hirerId": "3",
-      "clientId": [
-        "1",
-        "3"
-      ],
+      "clientId": ["1", "3"],
       "status": "Đang tuyển",
       "id": "2"
     },
     {
       "title": "Dịch Thuật Tài Liệu",
       "description": "Dịch các tài liệu từ tiếng Anh sang tiếng Việt.",
-      "skillRequirement": [
-        "Ngoại ngữ",
-        "Kỹ năng viết"
-      ],
+      "skillRequirement": ["Ngoại ngữ", "Kỹ năng viết"],
       "ageRequirement": {
         "min": "25",
         "max": "35"
@@ -97,19 +79,14 @@
         "payTime": "after"
       },
       "hirerId": "4",
-      "clientId": [
-        "2"
-      ],
+      "clientId": ["2"],
       "status": "Đang tuyển",
       "id": "3"
     },
     {
       "title": "Soạn Thảo Văn Bản",
       "description": "Soạn thảo và chỉnh sửa tài liệu nội bộ.",
-      "skillRequirement": [
-        "Word",
-        "Kỹ năng viết"
-      ],
+      "skillRequirement": ["Word", "Kỹ năng viết"],
       "ageRequirement": {
         "min": "20",
         "max": "28"
@@ -129,19 +106,14 @@
         "payTime": "after"
       },
       "hirerId": "5",
-      "clientId": [
-        "4"
-      ],
+      "clientId": ["4"],
       "status": "Đã tuyển",
       "id": "4"
     },
     {
       "title": "Nhập Liệu Khách Hàng",
       "description": "Nhập dữ liệu khách hàng từ các biểu mẫu vào hệ thống CRM.",
-      "skillRequirement": [
-        "Excel",
-        "Kỹ năng quản lý"
-      ],
+      "skillRequirement": ["Excel", "Kỹ năng quản lý"],
       "ageRequirement": {
         "min": "22",
         "max": "29"
@@ -161,9 +133,7 @@
       "id": "5879",
       "title": "Tổng dọn vệ sinh nhà cửa",
       "description": "Tổng dọn vệ sinh nhà cửa\n- 2 phòng ngủ.\n- 2 nhà vệ sinh.\n\n",
-      "skillRequirement": [
-        "Lau dọn"
-      ],
+      "skillRequirement": ["Lau dọn"],
       "ageRequirement": {
         "min": 18,
         "max": 55
@@ -181,19 +151,13 @@
         "payTime": "after"
       },
       "hirerId": "6",
-      "clientId": [
-        "3",
-        "5"
-      ],
+      "clientId": ["3", "5"],
       "status": "Đang tuyển"
     },
     {
       "title": "Phân Tích Dữ Liệu",
       "description": "Phân tích dữ liệu bán hàng và tạo báo cáo.",
-      "skillRequirement": [
-        "Excel nâng cao",
-        "Phân tích dữ liệu"
-      ],
+      "skillRequirement": ["Excel nâng cao", "Phân tích dữ liệu"],
       "ageRequirement": {
         "min": "24",
         "max": "32"
@@ -213,19 +177,14 @@
         "payTime": "after"
       },
       "hirerId": "7",
-      "clientId": [
-        "6"
-      ],
+      "clientId": ["6"],
       "status": "Đã tuyển",
       "id": "6"
     },
     {
       "title": "Kiểm Tra Chất Lượng",
       "description": "Kiểm tra chất lượng sản phẩm trước khi đóng gói.",
-      "skillRequirement": [
-        "Chú ý chi tiết",
-        "Kỹ năng giám sát"
-      ],
+      "skillRequirement": ["Chú ý chi tiết", "Kỹ năng giám sát"],
       "ageRequirement": {
         "min": "23",
         "max": "40"
@@ -245,19 +204,14 @@
         "payTime": "after"
       },
       "hirerId": "8",
-      "clientId": [
-        "7"
-      ],
+      "clientId": ["7"],
       "status": "Đang tuyển",
       "id": "7"
     },
     {
       "title": "Chăm Sóc Khách Hàng",
       "description": "Hỗ trợ khách hàng qua điện thoại và email.",
-      "skillRequirement": [
-        "Kỹ năng giao tiếp",
-        "Excel"
-      ],
+      "skillRequirement": ["Kỹ năng giao tiếp", "Excel"],
       "ageRequirement": {
         "min": "21",
         "max": "28"
@@ -277,19 +231,14 @@
         "payTime": "after"
       },
       "hirerId": "9",
-      "clientId": [
-        "8"
-      ],
+      "clientId": ["8"],
       "status": "Đã tuyển",
       "id": "8"
     },
     {
       "title": "Viết Nội Dung Quảng Cáo",
       "description": "Viết nội dung quảng cáo cho sản phẩm mới.",
-      "skillRequirement": [
-        "Marketing",
-        "Kỹ năng viết"
-      ],
+      "skillRequirement": ["Marketing", "Kỹ năng viết"],
       "ageRequirement": {
         "min": "24",
         "max": "35"
@@ -309,19 +258,14 @@
         "payTime": "after"
       },
       "hirerId": "10",
-      "clientId": [
-        "9"
-      ],
+      "clientId": ["9"],
       "status": "Đang tuyển",
       "id": "9"
     },
     {
       "title": "Tạo Dữ Liệu Báo Cáo",
       "description": "Tổng hợp dữ liệu và tạo báo cáo tháng.",
-      "skillRequirement": [
-        "Excel",
-        "Kỹ năng quản lý"
-      ],
+      "skillRequirement": ["Excel", "Kỹ năng quản lý"],
       "ageRequirement": {
         "min": "22",
         "max": "30"
@@ -341,9 +285,7 @@
         "payTime": "after"
       },
       "hirerId": "11",
-      "clientId": [
-        "10"
-      ],
+      "clientId": ["10"],
       "status": "Đã tuyển",
       "id": "10"
     },
@@ -351,9 +293,7 @@
       "id": "07be",
       "title": "Tổng dọn vệ sinh nhà cửa",
       "description": "Tổng dọn vệ sinh nhà cửa\n- 2 phòng ngủ.\n- 2 nhà vệ sinh.\n\n",
-      "skillRequirement": [
-        "Lau dọn"
-      ],
+      "skillRequirement": ["Lau dọn"],
       "ageRequirement": {
         "min": 18,
         "max": null
@@ -378,15 +318,9 @@
       "id": "9798",
       "title": "123",
       "description": "123",
-      "skillRequirement": [
-        "123"
-      ],
+      "skillRequirement": ["123"],
       "ageRequirement": {},
-      "repeatOn": [
-        "Thứ 5",
-        "Thứ 4",
-        "Thứ 3"
-      ],
+      "repeatOn": ["Thứ 5", "Thứ 4", "Thứ 3"],
       "category": "Dọn dẹp vệ sinh",
       "location": "123",
       "dateStart": "2024-11-11",
@@ -406,15 +340,9 @@
       "id": "2f12",
       "title": "123",
       "description": "123",
-      "skillRequirement": [
-        "123"
-      ],
+      "skillRequirement": ["123"],
       "ageRequirement": {},
-      "repeatOn": [
-        "Thứ 5",
-        "Thứ 4",
-        "Thứ 3"
-      ],
+      "repeatOn": ["Thứ 5", "Thứ 4", "Thứ 3"],
       "category": "Dọn dẹp vệ sinh",
       "location": "123",
       "dateStart": "2024-11-11",
@@ -480,11 +408,7 @@
       "age": 22,
       "phoneNumber": "0922457890",
       "email": "ngotane@gmail.com",
-      "skills": [
-        "Phục vụ quán",
-        "Tạp vụ",
-        "Dọn dẹp nhà cửa"
-      ],
+      "skills": ["Phục vụ quán", "Tạp vụ", "Dọn dẹp nhà cửa"],
       "location": "Hồ Chí Minh, Việt Nam",
       "availability": "Bán thời gian",
       "birthDate": "01/09/2002",
@@ -566,10 +490,7 @@
       "age": 24,
       "phoneNumber": "0903123789",
       "email": "dovanai@gmail.com",
-      "skills": [
-        "Sửa chữa xe máy",
-        "Giao hàng"
-      ],
+      "skills": ["Sửa chữa xe máy", "Giao hàng"],
       "location": "Hà Nội, Việt Nam",
       "availability": "Toàn thời gian",
       "birthDate": "19/07/2000",
@@ -608,10 +529,7 @@
       "age": 27,
       "phoneNumber": "0905671234",
       "email": "vuhongk@gmail.com",
-      "skills": [
-        "Giao hàng",
-        "Giúp việc gia đình"
-      ],
+      "skills": ["Giao hàng", "Giúp việc gia đình"],
       "location": "Cần Thơ, Việt Nam",
       "availability": "Toàn thời gian",
       "birthDate": "22/06/1996",
@@ -650,10 +568,7 @@
       "age": 29,
       "phoneNumber": "0912678990",
       "email": "lyquocm@gmail.com",
-      "skills": [
-        "Phục vụ sự kiện",
-        "Giữ trẻ"
-      ],
+      "skills": ["Phục vụ sự kiện", "Giữ trẻ"],
       "location": "Hải Dương, Việt Nam",
       "availability": "Bán thời gian",
       "birthDate": "14/08/1995",
@@ -715,94 +630,293 @@
   ],
   "company": [
     {
-      "id": "1",
+      "id": 1,
       "name": "Công ty Hòa Bình",
       "coverImage": "https://cdn-new.topcv.vn/unsafe/https://static.topcv.vn/company_covers/iG4XtDpniVr6WmwXw0nc.jpg",
       "location": "Hà Nội",
+      "address": "Số 8, đường Lê Đức Thọ, Mỹ Đình, Nam Từ Liêm, Hà Nội, Việt Nam",
+      "ggmap": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3723.934509094577!2d105.7696749!3d21.0353063!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31345578f16604ad%3A0x6ab690f51d795d8!2zOCDEkC4gTMOqIMSQ4bupYyBUaOG7jSwgTeG7uSDEkMOsbmgsIE5hbSBU4burIExpw6ptLCBIw6AgTuG7mWkgMTAwMDA!5e0!3m2!1sen!2s!4v1731311111660!5m2!1sen!2s",
       "salaryRange": "6 - 10 triệu",
       "logo": "https://example.com/logo1.png",
+      "http": "https://hbcg.vn/",
+      "employee": "500+",
+      "follow": "1234",
+      "infor": "Công ty Hòa Bình là một công ty hàng đầu thế giới của Mỹ trong lĩnh vực dịch vụ chăm sóc khách hàng có mặt ở trên 44 quốc gia với tổng số nhân sự lên tới trên 250.000 nhân viên...",
       "intro": "Công ty Hòa Bình cung cấp nhiều cơ hội việc làm hấp dẫn trong ngành viễn thông, nơi bạn có thể phát triển sự nghiệp của mình."
     },
     {
-      "id": "2",
+      "id": 2,
       "name": "Tập đoàn FPT",
-      "location": "TP Hồ Chí Minh",
       "coverImage": "https://cdn-new.topcv.vn/unsafe/https://static.topcv.vn/company_covers/iG4XtDpniVr6WmwXw0nc.jpg",
+      "location": "TP Hồ Chí Minh",
+      "address": "Số 29B-31B-33B, Đường Tôn Đức Thắng, Phường Bến Nghé, Quận 1, TP Hồ Chí Minh, Việt Nam",
+      "ggmap": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.368611405107!2d106.7050079!3d10.7830543!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752f4be76d4d8b%3A0x15861e490957b852!2zMjkgxJAuIFTDtG4gxJDhu6ljIFRo4bqvbmcsIELhur9uIE5naMOpLCBRdeG6rW4gMSwgSOG7kyBDaMOtIE1pbmg!5e0!3m2!1sen!2s!4v1731311245542!5m2!1sen!2s",
       "salaryRange": "10 - 20 triệu",
+      "http": "https://fptsoftware.com/",
+      "employee": "500+",
+      "follow": "1234",
       "logo": "https://static.topcv.vn/company_logos/tap-doan-fpt-5cd13caa2e2b2.jpg",
+      "infor": "Tập đoàn FPT là một công ty hàng đầu thế giới của Mỹ trong lĩnh vực dịch vụ chăm sóc khách hàng có mặt ở trên 44 quốc gia với tổng số nhân sự lên tới trên 250.000 nhân viên...",
       "intro": "Tập đoàn FPT là một trong những tập đoàn công nghệ hàng đầu, chuyên cung cấp giải pháp sáng tạo cho khách hàng."
     },
     {
-      "id": "3",
+      "id": 3,
       "name": "Công ty Viettel",
-      "location": "Hà Nội",
       "coverImage": "https://cdn-new.topcv.vn/unsafe/https://static.topcv.vn/company_covers/iG4XtDpniVr6WmwXw0nc.jpg",
+      "location": "Hà Nội",
+      "address": "Số 1, Trần Hữu Dực, Mỹ Đình, Nam Từ Liêm, Hà Nội, Việt Nam",
+      "ggmap": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3724.120587204399!2d105.76452527608865!3d21.027860480621257!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x313454bb260fe93f%3A0xc150adef4d4c3023!2zMSBQLlRy4bqnbiBI4buvdSBE4buxYywgTeG7uSDEkMOsbmgsIE5hbSBU4burIExpw6ptLCBIw6AgTuG7mWksIFZpZXRuYW0!5e0!3m2!1sen!2s!4v1731311308384!5m2!1sen!2s",
       "salaryRange": "12 - 25 triệu",
       "logo": "https://example.com/logo3.png",
+      "http": "https://viettel.com.vn/",
+      "employee": "20000+",
+      "follow": "3456",
+      "infor": "Viettel là nhà cung cấp dịch vụ viễn thông lớn nhất tại Việt Nam, không ngừng phát triển và đổi mới với sứ mệnh nâng cao giá trị cuộc sống và kinh doanh bền vững.",
       "intro": "Công ty Viettel nổi tiếng với đội ngũ nhân viên sáng tạo, không ngừng đổi mới và cải tiến dịch vụ."
     },
     {
-      "id": "4",
+      "id": 4,
       "name": "Công ty VinGroup",
-      "location": "Hà Nội",
       "coverImage": "https://cdn-new.topcv.vn/unsafe/https://static.topcv.vn/company_covers/iG4XtDpniVr6WmwXw0nc.jpg",
+      "location": "Hà Nội",
+      "address": "Số 7, Đường Bằng Lăng, Khu đô thị Vinhomes Riverside, Long Biên, Hà Nội, Việt Nam",
+      "ggmap": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3723.525003983693!2d105.90586837608922!3d21.051683580603523!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135a9a656ff0afb%3A0xeee181b87c36e946!2zNyBC4bqxbmcgTMSDbmcsIFZp4buHdCBIxrBuZywgTG9uZyBCacOqbiwgSMOgIE7hu5lpLCBWaWV0bmFt!5e0!3m2!1sen!2s!4v1731311365508!5m2!1sen!2s",
       "salaryRange": "20 - 30 triệu",
       "logo": "https://example.com/logo4.png",
+      "http": "https://vingroup.net/",
+      "employee": "40000+",
+      "follow": "4567",
+      "infor": "VinGroup là tập đoàn đa ngành lớn nhất Việt Nam, hoạt động trong các lĩnh vực bất động sản, bán lẻ, y tế, giáo dục, công nghệ và sản xuất ô tô. Cam kết tạo ra giá trị cho cộng đồng và phát triển bền vững.",
       "intro": "Công ty VinGroup là một tập đoàn đa ngành, cam kết tạo ra giá trị và cải thiện chất lượng cuộc sống cho cộng đồng."
     },
     {
-      "id": "5",
+      "id": 5,
       "name": "Tập đoàn Masan",
-      "location": "TP Hồ Chí Minh",
       "coverImage": "https://cdn-new.topcv.vn/unsafe/https://static.topcv.vn/company_covers/iG4XtDpniVr6WmwXw0nc.jpg",
+      "location": "TP Hồ Chí Minh",
+      "address": "Số 54A, Nguyễn Chí Thanh, Phường 16, Quận 11, TP Hồ Chí Minh, Việt Nam",
+      "ggmap": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.73267193861!2d106.64464857591733!3d10.755074289392438!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752e8c1930a7cf%3A0x2d5c168738f18f3d!2zMTM3LzU0QSDEkC4gTmd1eeG7hW4gQ2jDrSBUaGFuaCwgUGjGsOG7nW5nIDE2LCBRdeG6rW4gMTEsIEjhu5MgQ2jDrSBNaW5oLCBWaWV0bmFt!5e0!3m2!1sen!2s!4v1731311390180!5m2!1sen!2s",
       "salaryRange": "15 - 25 triệu",
       "logo": "https://example.com/logo5.png",
+      "http": "https://masan.com/",
+      "employee": "7000+",
+      "follow": "5678",
+      "infor": "Tập đoàn Masan là nhà sản xuất và cung cấp thực phẩm hàng đầu Việt Nam, với danh mục sản phẩm đa dạng từ thực phẩm, hàng tiêu dùng nhanh cho đến các giải pháp công nghệ và chuỗi bán lẻ.",
       "intro": "Tập đoàn Masan cung cấp những sản phẩm và dịch vụ chất lượng cao, mang lại giá trị cho người tiêu dùng."
     },
     {
-      "id": "6",
+      "id": 6,
       "name": "Công ty Bkav",
-      "location": "Hà Nội",
       "coverImage": "https://cdn-new.topcv.vn/unsafe/https://static.topcv.vn/company_covers/iG4XtDpniVr6WmwXw0nc.jpg",
+      "location": "Hà Nội",
+      "address": "Tòa nhà Bkav, Đường Lê Thái Tổ, Khu Đô Thị Bắc Linh Đàm, Hoàng Mai, Hà Nội, Việt Nam",
+      "ggmap": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3724.270524622276!2d105.78470707608848!3d21.021858980625755!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ab522b350a07%3A0xfbcee2caa4669f7!2sBKAV%20Group!5e0!3m2!1sen!2s!4v1731311461758!5m2!1sen!2s",
       "salaryRange": "10 - 15 triệu",
       "logo": "https://example.com/logo6.png",
+      "http": "https://bkav.com.vn/",
+      "employee": "2000+",
+      "follow": "6789",
+      "infor": "Bkav là công ty hàng đầu tại Việt Nam về lĩnh vực công nghệ bảo mật, phát triển các sản phẩm và dịch vụ phần mềm nhằm bảo vệ người dùng và doanh nghiệp.",
       "intro": "Công ty Bkav là nhà phát triển phần mềm hàng đầu, nổi bật với những sản phẩm bảo mật đáng tin cậy."
     },
     {
-      "id": "7",
-      "name": "Công ty Tiki",
-      "location": "TP Hồ Chí Minh",
+      "id": 7,
+      "name": "Tập đoàn Trung Nguyên",
       "coverImage": "https://cdn-new.topcv.vn/unsafe/https://static.topcv.vn/company_covers/iG4XtDpniVr6WmwXw0nc.jpg",
-      "salaryRange": "8 - 12 triệu",
+      "location": "TP Hồ Chí Minh",
+      "address": "Số 82, Đường Nguyễn Du, Phường Bến Nghé, Quận 1, TP Hồ Chí Minh, Việt Nam",
+      "ggmap": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.3900138868407!2d106.69865687591758!3d10.781411389367637!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752f49c9e82475%3A0xcf5d2c37b63f35c3!2zODIgxJAuIE5ndXnhu4VuIER1LCBC4bq_biBOZ2jDqSwgUXXhuq1uIDEsIEjhu5MgQ2jDrSBNaW5oLCBWaWV0bmFt!5e0!3m2!1sen!2s!4v1731311488037!5m2!1sen!2s",
+      "salaryRange": "8 - 18 triệu",
       "logo": "https://example.com/logo7.png",
-      "intro": "Công ty Tiki nổi bật trong lĩnh vực thương mại điện tử, cung cấp trải nghiệm mua sắm trực tuyến tuyệt vời cho khách hàng."
+      "http": "https://trungnguyenlegend.com/",
+      "employee": "3000+",
+      "follow": "2345",
+      "infor": "Tập đoàn Trung Nguyên là công ty hàng đầu trong lĩnh vực sản xuất và kinh doanh cà phê tại Việt Nam.",
+      "intro": "Công ty Trung Nguyên mang lại những sản phẩm cà phê chất lượng cao, nổi tiếng tại thị trường Việt Nam và quốc tế."
     },
     {
-      "id": "8",
-      "name": "Công ty Shopee",
-      "location": "TP Hồ Chí Minh",
+      "id": 8,
+      "name": "Công ty Điện lực EVN",
       "coverImage": "https://cdn-new.topcv.vn/unsafe/https://static.topcv.vn/company_covers/iG4XtDpniVr6WmwXw0nc.jpg",
-      "salaryRange": "12 - 18 triệu",
-      "logo": "https://example.com/logo8.png",
-      "intro": "Công ty Shopee là nền tảng thương mại điện tử dẫn đầu tại Đông Nam Á, mang đến sự tiện lợi cho người tiêu dùng."
-    },
-    {
-      "id": "9",
-      "name": "Công ty Lazada",
-      "location": "TP Hồ Chí Minh",
+      "location": "Hà Nội",
+      "address": "Số 11, Cửa Bắc, Ba Đình, Hà Nội, Việt Nam",
+      "ggmap": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3723.6974318348407!2d105.84104257608895!3d21.044789180608603!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135abb05a30af69%3A0x3293633d90cdc3b!2zRVZOIFR3aW4gVG93ZXIsIDExIEPhu61hIELhuq9jLCBUcsO6YyBC4bqhY2gsIEJhIMSQw6xuaCwgSMOgIE7hu5lpLCBWaWV0bmFt!5e0!3m2!1sen!2s!4v1731311514995!5m2!1sen!2s",
       "salaryRange": "10 - 20 triệu",
-      "coverImage": "https://cdn-new.topcv.vn/unsafe/https://static.topcv.vn/company_covers/iG4XtDpniVr6WmwXw0nc.jpg",
-      "logo": "https://example.com/logo9.png",
-      "intro": "Công ty Lazada cung cấp nhiều sản phẩm đa dạng, cam kết mang lại giá trị tốt nhất cho khách hàng."
+      "logo": "https://example.com/logo8.png",
+      "http": "https://evn.com.vn/",
+      "employee": "10000+",
+      "follow": "4567",
+      "infor": "EVN là Tập đoàn Điện lực Quốc gia Việt Nam, đảm bảo cung cấp điện cho mọi người dân trên cả nước.",
+      "intro": "EVN là nơi cung cấp điện năng lớn nhất tại Việt Nam, với các dự án phát triển năng lượng bền vững."
     },
     {
-      "id": "10",
-      "name": "Công ty Zalo",
-      "location": "TP Hồ Chí Minh",
+      "id": 9,
+      "name": "Công ty Cổ phần Vinamilk",
       "coverImage": "https://cdn-new.topcv.vn/unsafe/https://static.topcv.vn/company_covers/iG4XtDpniVr6WmwXw0nc.jpg",
-      "salaryRange": "14 - 22 triệu",
+      "location": "TP Hồ Chí Minh",
+      "address": "Số 10, Tân Trào, Phường Tân Phú, Quận 7, TP Hồ Chí Minh, Việt Nam",
+      "ggmap": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3920.064215014333!2d106.72130067591706!3d10.729530689416412!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3175251468360895%3A0x9f2ee1d17e5fff38!2zVmluYW1pbGsgVG93ZXIsIDEwIFTDom4gVHLDoG8sIFTDom4gUGjDuiwgUXXhuq1uIDcsIEjhu5MgQ2jDrSBNaW5oLCBWaWV0bmFt!5e0!3m2!1sen!2s!4v1731311545024!5m2!1sen!2s",
+      "salaryRange": "12 - 22 triệu",
+      "logo": "https://example.com/logo9.png",
+      "http": "https://vinamilk.com.vn/",
+      "employee": "6000+",
+      "follow": "7890",
+      "infor": "Vinamilk là công ty sản xuất và phân phối sữa lớn nhất Việt Nam, cung cấp các sản phẩm dinh dưỡng chất lượng cao.",
+      "intro": "Vinamilk cam kết nâng cao sức khỏe và dinh dưỡng của người tiêu dùng thông qua các sản phẩm chất lượng."
+    },
+    {
+      "id": 10,
+      "name": "Ngân hàng Vietcombank",
+      "coverImage": "https://cdn-new.topcv.vn/unsafe/https://static.topcv.vn/company_covers/iG4XtDpniVr6WmwXw0nc.jpg",
+      "location": "Hà Nội",
+      "address": "Số 198, Trần Quang Khải, Hoàn Kiếm, Hà Nội, Việt Nam",
+      "ggmap": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3724.116064588044!2d105.85521787608866!3d21.028041480621212!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135abfee7e82285%3A0x73aa8edd58df2b04!2zMTk4IMSQLiBUcuG6p24gUXVhbmcgS2jhuqNpLCBMw70gVGjDoWkgVOG7lSwgSG_DoG4gS2nhur9tLCBIw6AgTuG7mWkgMTAwMDAwLCBWaWV0bmFt!5e0!3m2!1sen!2s!4v1731311577217!5m2!1sen!2s",
+      "salaryRange": "15 - 30 triệu",
       "logo": "https://example.com/logo10.png",
-      "intro": "Công ty Zalo chuyên cung cấp ứng dụng nhắn tin và gọi điện miễn phí, nổi bật với tính năng bảo mật cao."
+      "http": "https://vietcombank.com.vn/",
+      "employee": "15000+",
+      "follow": "12345",
+      "infor": "Vietcombank là một trong những ngân hàng lớn nhất Việt Nam, cung cấp dịch vụ tài chính chất lượng và đa dạng.",
+      "intro": "Vietcombank là ngân hàng uy tín với nhiều dịch vụ tài chính hàng đầu tại Việt Nam và quốc tế."
+    }
+  ],
+  "handbook": [
+    {
+      "id": "hb1",
+      "imghandbook": "https://cdn-new.topcv.vn/unsafe/300x/https://static.topcv.vn/cms/TESTER.jpg664db9c7d9e9d.jpg",
+      "title": "Tester là gì? Những kỹ năng cần có ở một Tester chuyên nghiệp",
+      "small_title_1": "Tester là gì và nhiệm vụ của một tester là gì?",
+      "small_title_2": "TOP 04 kỹ năng trong công việc không thể thiếu cho Tester",
+      "small_title_3": "04 kỹ năng mềm cần có ở một Tester",
+      "small_title_4": "Tình hình tuyển dụng Tester ở Việt Nam",
+      "describe_1": "Tester là những người kiểm tra chất lượng phần mềm, phát hiện ra các lỗi, sai sót hay bất cứ vấn đề nào có thể ảnh hưởng đến chất lượng phần mềm. Tùy từng công ty mà tester sẽ có nhiều mảng như QA, QC, đặc biệt là Manual Tester và Automation Tester. Manual Tester là người kiểm thử phần mềm một cách thủ công, không yêu cầu cao về kiến thức lập trình nhưng đòi hỏi bạn phải rành test manual, có đam mê và tư duy tốt. Tester sẽ đảm bảo chất lượng các phần mềm và thực hiện các công tác kiểm tra lỗi trước khi giao kết quả cuối cùng cho khách hàng.",
+      "describe_2": [
+        "Hiểu biết về phần mềm, nguyên tắc và phương pháp kiểm thử",
+        "Chú ý đến chi tiết",
+        "Cập nhật và ứng dụng công nghệ mới",
+        "Kỹ năng soạn thảo báo cáo lỗi"
+      ],
+      "describe_3": [
+        "Kỹ năng phân tích",
+        "Kỹ năng học hỏi",
+        "Kỹ năng giao tiếp",
+        "Kỹ năng làm việc nhóm"
+      ],
+      "describe_4": "Hiện nay, nhu cầu tuyển dụng Tester tại Việt Nam đang tăng cao, chủ yếu do sự phát triển mạnh mẽ của ngành công nghệ thông tin và các yêu cầu về chất lượng phần mềm ngày càng khắt khe. Các công ty từ startup đến doanh nghiệp lớn đều cần đội ngũ Tester để đảm bảo sản phẩm không có lỗi trước khi ra mắt. Các vai trò phổ biến trong lĩnh vực này bao gồm từ Junior Tester đến Senior Tester, cũng như các vị trí chuyên về kiểm thử tự động (automation testing) để tối ưu hóa quy trình kiểm thử và nâng cao hiệu suất."
+    },
+    {
+      "id": "hb2",
+      "imghandbook": "https://cdn-new.topcv.vn/unsafe/300x/https://static.topcv.vn/cms/cong-tac-vien-viet-bai-1_result.png600454831eae1.png",
+      "title": "Part-time Writer là gì? Những kỹ năng cần có ở một Writer chuyên nghiệp",
+      "small_title_1": "Part-time Writer là gì và nhiệm vụ của một part-time writer là gì?",
+      "small_title_2": "TOP 04 kỹ năng trong công việc không thể thiếu cho Writer",
+      "small_title_3": "04 kỹ năng mềm cần có ở một Writer",
+      "small_title_4": "Tình hình tuyển dụng Part-time Writer ở Việt Nam",
+      "describe_1": "Part-time Writer là những người viết nội dung cho các loại hình truyền thông như blog, website, báo chí hoặc mạng xã hội. Công việc của một part-time writer có thể bao gồm việc viết bài PR, bài đánh giá sản phẩm, bài hướng dẫn, hoặc thậm chí viết sách điện tử. Công việc này đòi hỏi khả năng sáng tạo cao, kiến thức vững về lĩnh vực viết, và khả năng nghiên cứu, tìm kiếm thông tin nhanh chóng. Các writer cần phải nắm bắt được nhu cầu của độc giả và tạo ra nội dung hấp dẫn, dễ hiểu.",
+      "describe_2": [
+        "Kỹ năng viết tốt",
+        "Khả năng nghiên cứu, tìm kiếm thông tin",
+        "Kiến thức về SEO và tối ưu hóa nội dung",
+        "Kỹ năng biên tập và chỉnh sửa nội dung"
+      ],
+      "describe_3": [
+        "Kỹ năng sáng tạo",
+        "Kỹ năng làm việc độc lập",
+        "Kỹ năng giao tiếp",
+        "Kỹ năng quản lý thời gian"
+      ],
+      "describe_4": "Hiện nay, nhu cầu tuyển dụng Part-time Writer tại Việt Nam đang gia tăng mạnh mẽ nhờ vào sự phát triển của thị trường nội dung số. Các công ty, thương hiệu, và nền tảng trực tuyến đang tìm kiếm các writer có thể tạo ra nội dung chất lượng để thu hút khách hàng và nâng cao thương hiệu. Các vị trí phổ biến bao gồm từ Junior Writer đến Senior Content Creator, và các writer chuyên về SEO hoặc viết cho các kênh truyền thông xã hội."
+    },
+    {
+      "id": "hb3",
+      "imghandbook": "https://cdn-new.topcv.vn/unsafe/300x/https://static.topcv.vn/cms/nhan-vien-xuat-nhap-khau-la-gi-thumb.jpg6389b5272289c.jpg",
+      "title": "Part-time Designer là gì? Những kỹ năng cần có ở một Designer chuyên nghiệp",
+      "small_title_1": "Part-time Designer là gì và nhiệm vụ của một part-time designer là gì?",
+      "small_title_2": "TOP 04 kỹ năng trong công việc không thể thiếu cho Designer",
+      "small_title_3": "04 kỹ năng mềm cần có ở một Designer",
+      "small_title_4": "Tình hình tuyển dụng Part-time Designer ở Việt Nam",
+      "describe_1": "Part-time Designer là những người thiết kế các sản phẩm đồ họa như logo, banner, poster, và các ấn phẩm truyền thông cho các công ty, tổ chức hoặc cá nhân. Công việc này yêu cầu người designer phải có sự sáng tạo và kiến thức về mỹ thuật, thiết kế, và các công cụ thiết kế chuyên nghiệp như Adobe Photoshop, Illustrator hoặc Figma. Các designer có thể làm việc theo dự án và thường xuyên phải hoàn thành các yêu cầu thiết kế nhanh chóng và hiệu quả.",
+      "describe_2": [
+        "Kỹ năng sử dụng phần mềm thiết kế",
+        "Kỹ năng sáng tạo và tư duy nghệ thuật",
+        "Kiến thức về thiết kế trải nghiệm người dùng (UX/UI)",
+        "Khả năng tạo dựng các bản trình bày và giao diện đẹp mắt"
+      ],
+      "describe_3": [
+        "Kỹ năng làm việc nhóm",
+        "Kỹ năng giao tiếp và thuyết phục",
+        "Kỹ năng quản lý thời gian",
+        "Kỹ năng giải quyết vấn đề sáng tạo"
+      ],
+      "describe_4": "Tại Việt Nam, nhu cầu tuyển dụng Part-time Designer đang tăng lên nhờ sự phát triển của các dự án kinh doanh trực tuyến và thị trường quảng cáo trực tuyến. Các công ty, từ các startup đến các thương hiệu lớn, đều cần các designer tài năng để xây dựng hình ảnh thương hiệu. Các vị trí tuyển dụng phổ biến trong lĩnh vực này bao gồm các designer junior, senior, và các chuyên gia thiết kế UX/UI."
+    }
+  ],
+  "marketjob": [
+    {
+      "id": "mk1",
+      "title": "Một số gợi ý việc làm tiếng Trung lương cao mới nhất",
+      "imgmarket": "https://cdn-new.topcv.vn/unsafe/300x/https://static.topcv.vn/cms/vi%E1%BB%87c%20l%C3%A0m%20ti%E1%BA%BFng%20trung%2004.jpg607c515e8adcc.jpg",
+      "describe": "Nhu cầu tìm kiếm ứng viên tiếng trung ngày càng nhiều khiến các nhân sự tiếng Trung chưa bao giờ thiếu việc làm. Dưới đây hãy cùng JobMatch tìm hiểu một số việc làm tiếng",
+      "small_title_1": "Biên phiên dịch tiếng Trung bán thời gian",
+      "small_title_2": "Giáo viên tiếng Trung bán thời gian",
+      "small_title_3": "Nhân viên thu mua (tiếng Trung)",
+      "small_title_4": "Tìm việc làm tiếng Trung ở đâu?",
+      "describe_1": [
+        "Biên phiên dịch tiếng Trung là một vị trí thích hợp cho những bạn muốn làm việc trong môi trường công sở. Tại công việc này bạn thường xuyên làm việc tại văn phòng và chỉ ra ngoài khi gặp đối tác hoặc đi công tác theo yêu cầu. ",
+        "Những bạn biên phiên dịch có một niềm đam mê về ngôn ngữ văn hóa tiếng trung. Phiên dịch viên là người chịu trách nhiệm truyền tải ngôn ngữ nói từ tiếng Trung sang tiếng Việt và ngược lại. Thu nhập của phiên dịch viên sẽ tính theo số giờ làm việc hoặc ngày làm việc. Để làm được công việc này bạn phải có kỹ năng nghe cả hai ngôn ngữ cũng như một trí nhớ phi thường. "
+      ],
+      "describe_2": [
+        "Đi cùng với nhu cầu về nhân sự biết tiếng Trung thì rất nhiều bạn trẻ mong muốn được học ngôn ngữ này để có nhiều cơ hội việc làm hơn. Hiện nay, có rất nhiều trung tâm, trường học mở khóa đào tạo tiếng Trung với lượng học sinh, sinh viên tham gia khá đông. Bởi vậy, nhiều trung tâm cũng thường xuyên đăng tải tin tức tuyển dụng thêm giáo viên tiếng Trung để đáp ứng nhu cầu đào tạo. ",
+        "Giáo viên tiếng Trung là người truyền lửa và tiếp thêm tri thức cho học viên trong việc học tiếng Trung. Họ không chỉ giúp việc giao tiếp tiếng Trung trở nên dễ dàng hơn mà còn giúp người học hiểu văn hóa và ngôn ngữ này. Công việc của một giáo viên tiếng Trung thông thường sẽ cần chuẩn bị giáo án để có thể dạy cho học viên và thực hiện bài giảng tốt nhất khi lên lớp. Bên cạnh đó, giáo viên tiếng Trung cần còn phải thực hiện các bài kiểm tra đánh giá năng lực cũng như mức độ tiến bộ của người học để từ đó có biện pháp thích hợp để điều chỉnh kế hoạch giảng dạy. "
+      ],
+      "describe_3": [
+        "Nhân viên thu mua tiếng Trung là người sẽ chịu trách nhiệm trong toàn bộ hoạt động thu thập hay mua bán hàng hóa dịch vụ của doanh nghiệp. Quá trình thu mua trong doanh nghiệp sẽ bao gồm công tác chuẩn bị và xem xét những nhu cầu, tiếp nhận và thanh toán các chi phí của hoạt động. ",
+        "Mức lương của nhân viên thu mua hiện dao động từ 5-8 triệu đồng/tháng tùy thuộc vào từng năng lực của ứng viên. Ngoài mức lương cơ bản thì vị trí này cũng được hưởng các đãi ngộ, lương thưởng theo quy định của nhà nước và công ty. "
+      ]
+    },
+    {
+      "id": "mk2",
+      "title": "Công việc part-time cho nhân viên marketing lương cao nhất",
+      "imgmarket": "https://cdn-new.topcv.vn/unsafe/300x/https://static.topcv.vn/cms/c%E1%BB%99ng%20t%C3%A1c%20vi%C3%AAn%20b%C3%A1n%20h%C3%A0ng%20online%201.jpg617221f63842e.jpg",
+      "describe": "Nhân viên marketing part-time đang là công việc được yêu thích nhờ vào sự linh hoạt và cơ hội học hỏi trong ngành marketing. Dưới đây là một số công việc marketing part-time phù hợp với các bạn sinh viên và người tìm kiếm công việc linh hoạt.",
+      "small_title_1": "Nhân viên Marketing Digital",
+      "small_title_2": "Nhân viên Content Marketing",
+      "small_title_3": "Nhân viên SEO Part-time",
+      "small_title_4": "Làm việc tại đâu để tìm việc marketing part-time?",
+      "describe_1": [
+        "Nhân viên Marketing Digital part-time có nhiệm vụ quản lý các chiến dịch marketing trực tuyến trên các nền tảng như Facebook, Google Ads, và Instagram. Công việc này yêu cầu kỹ năng về truyền thông số và phân tích dữ liệu, nhưng bạn sẽ có nhiều cơ hội học hỏi về các công cụ marketing hiệu quả.",
+        "Thu nhập của nhân viên marketing digital thường được tính theo dự án hoặc theo giờ làm việc. Với kỹ năng tốt và hiệu quả công việc cao, thu nhập có thể đạt từ 6-10 triệu đồng/tháng."
+      ],
+      "describe_2": [
+        "Content Marketing là công việc phù hợp cho những ai có đam mê viết lách và sáng tạo nội dung. Nhân viên Content Marketing thường xuyên xây dựng bài viết cho blog, trang web, và các kênh social media để tăng cường sự hiện diện của thương hiệu. Công việc này yêu cầu sự sáng tạo và khả năng nắm bắt xu hướng.",
+        "Với khối lượng công việc không quá nặng và mức lương từ 5-8 triệu đồng/tháng, công việc Content Marketing là lựa chọn lý tưởng cho những ai muốn kết hợp việc học và làm."
+      ],
+      "describe_3": [
+        "SEO part-time là công việc giúp tối ưu hóa website, giúp website của doanh nghiệp dễ dàng tìm thấy trên các công cụ tìm kiếm như Google. Các nhân viên SEO cần có khả năng nghiên cứu từ khóa, tối ưu hóa bài viết, và cải thiện thứ hạng trang web.",
+        "Mức lương cho công việc SEO part-time dao động từ 5-7 triệu đồng/tháng, tùy thuộc vào mức độ kinh nghiệm và kết quả công việc."
+      ]
+    },
+    {
+      "id": "mk2",
+      "title": "Công việc part-time nhân viên chăm sóc khách hàng lương cao",
+      "imgmarket": "https://cdn-new.topcv.vn/unsafe/300x/https://static.topcv.vn/cms/viec-lam-remote-topcv.jpeg63089789ef78f.jpg",
+      "describe": "Nhân viên chăm sóc khách hàng (Customer Service) part-time là một công việc phù hợp cho những ai yêu thích giao tiếp và giúp đỡ khách hàng. Công việc này không yêu cầu kinh nghiệm quá nhiều và có thể làm việc từ xa hoặc tại văn phòng.",
+      "small_title_1": "Nhân viên Chăm sóc khách hàng qua điện thoại",
+      "small_title_2": "Nhân viên Chăm sóc khách hàng qua chat",
+      "small_title_3": "Nhân viên hỗ trợ khách hàng qua email",
+      "small_title_4": "Tìm việc chăm sóc khách hàng part-time ở đâu?",
+      "describe_1": [
+        "Nhân viên chăm sóc khách hàng qua điện thoại là công việc phổ biến trong ngành dịch vụ. Công việc này bao gồm trả lời các cuộc gọi, giải quyết thắc mắc, và hỗ trợ khách hàng trong việc giải quyết các vấn đề liên quan đến sản phẩm hoặc dịch vụ của công ty.",
+        "Thu nhập của nhân viên chăm sóc khách hàng qua điện thoại thường từ 5-7 triệu đồng/tháng, tùy thuộc vào thời gian làm việc và mức độ hiệu quả trong công việc."
+      ],
+      "describe_2": [
+        "Nhân viên chăm sóc khách hàng qua chat là công việc hỗ trợ khách hàng trực tuyến qua các nền tảng chat, website hoặc các ứng dụng nhắn tin. Công việc này đòi hỏi kỹ năng giao tiếp nhanh chóng và khả năng giải quyết vấn đề hiệu quả.",
+        "Thu nhập cho công việc này cũng tương tự như công việc qua điện thoại, dao động từ 5-8 triệu đồng/tháng, tùy theo khối lượng công việc và công ty tuyển dụng."
+      ],
+      "describe_3": [
+        "Công việc hỗ trợ khách hàng qua email là công việc giúp khách hàng giải quyết vấn đề và yêu cầu hỗ trợ thông qua thư điện tử. Nhân viên cần phải có khả năng viết lách tốt và phản hồi nhanh chóng các yêu cầu từ khách hàng.",
+        "Mức lương cho công việc hỗ trợ khách hàng qua email từ 5-7 triệu đồng/tháng, và công việc này thường có tính linh hoạt cao, thích hợp cho sinh viên hoặc người có thời gian rảnh."
+      ]
     }
   ]
 }

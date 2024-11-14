@@ -12,8 +12,10 @@ import Company from '../page/company/Company'
 
 import Profile from '../page/User/Profile'
 import JobPost from '../page/Job/JobPost'
-import { Outlet } from 'react-router-dom'
 import SimpleLayout from '../components/layout/SimpleLayout'
+import CompanyDetail from '../page/Company/CompanyDetail'
+import HandbookUser from '../page/HandbookUser/HandbookUser'
+import HandbookD from '../page/HandbookUser/HandbookD'
 
 const routes = [
   {
@@ -27,6 +29,18 @@ const routes = [
       {
         path: '/company',
         component: Company,
+      },
+      {
+        path: '/companyDetail/:id',
+        component: CompanyDetail,
+      },
+      {
+        path: '/hand-book',
+        component: HandbookUser,
+      },
+      {
+        path: '/handbook-detail/:id',
+        component: HandbookD,
       },
       {
         path: '/user',
@@ -69,8 +83,8 @@ const routes = [
         path: '/register',
         component: RegisterPage,
       },
-    ]
-  }
+    ],
+  },
 ]
 
 export default routes
