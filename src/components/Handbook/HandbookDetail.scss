@@ -1,0 +1,55 @@
+.handbook-detail-all {
+  display: flex;
+  justify-content: space-between;
+  .card-detail-handbook {
+    .describe-1,
+    .describe-small-1,
+    .img-describe,
+    .describe-small-2,
+    .describe-small-3 {
+      margin-top: 30px;
+      p {
+        font-size: 18px;
+        line-height: 1.5;
+      }
+      ul {
+        font-size: 18px;
+      }
+    }
+
+    .marketjob-image {
+      width: 100%;
+      height: auto;
+      max-width: 600px;
+      display: block;
+      margin: 0 auto;
+    }
+  }
+}
+.card-detail-handbook {
+  width: 78%;
+}
+
+.card-find-job {
+  margin-top: 30px;
+  width: 22%;
+}
+
+.ant-collapse-content-box {
+  background: #cccccc;
+}
+
+.link-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: black;
+  font-size: 18px;
+
+  p {
+    margin: 0;
+  }
+}
+a {
+  text-decoration: none;
+}

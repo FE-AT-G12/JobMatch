@@ -13,6 +13,11 @@ import BlogAdmin from '../page/BlogAdmin/BlogAdmin'
 import Profile from '../page/User/Profile'
 import JobPost from '../page/Job/JobPost'
 import SimpleLayout from '../components/layout/SimpleLayout'
+
+import CompanyDetail from '../page/Company/CompanyDetail'
+import HandbookUser from '../page/HandbookUser/HandbookUser'
+import HandbookD from '../page/HandbookUser/HandbookD'
+
 import JobPostedListPage from '../page/Job/JobPostedListPage'
 
 import JobUpdatePage from '../page/Job/JobUpdatePage'
@@ -32,6 +37,18 @@ const routes = [
       {
         path: '/company',
         component: Company,
+      },
+      {
+        path: '/companyDetail/:id',
+        component: CompanyDetail,
+      },
+      {
+        path: '/hand-book',
+        component: HandbookUser,
+      },
+      {
+        path: '/handbook-detail/:id',
+        component: HandbookD,
       },
       {
         path: '/user',
@@ -79,6 +96,7 @@ const routes = [
       },
     ],
   },
+
   {
     layout: AdminLayout,
     data: [

@@ -37,7 +37,7 @@ export const headerItems = [
   {
     label: (
       <div className='header__item'>
-        <Link to='/cam-nang'>Cẩm nang nghề nghiệp</Link>
+        <Link to='/hand-book'>Cẩm nang nghề nghiệp</Link>
       </div>
     ),
     key: '5',

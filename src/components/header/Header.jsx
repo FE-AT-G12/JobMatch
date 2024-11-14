@@ -57,6 +57,7 @@ function Header() {
           className='header__menu'
         />
 
+
         {/* Buttons */}
         <HeaderButtonGroup user={user} handleLogout={handleLogout} />
       </AntHeader>

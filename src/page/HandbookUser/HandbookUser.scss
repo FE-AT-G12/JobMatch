@@ -1,0 +1,21 @@
+.baner-handbook {
+  background: linear-gradient(to bottom, #024caa 70%, #ffffff 100%);
+  padding: 20px; // Thêm khoảng đệm nếu cần
+
+  .intro {
+    .intro-1 {
+      display: flex;
+      justify-content: center;
+      font-size: 30px;
+      color: #ffffff;
+      font-weight: bold;
+    }
+
+    .intro-handbook {
+      display: flex;
+      justify-content: center;
+      color: #fff;
+      text-align: center;
+    }
+  }
+}
