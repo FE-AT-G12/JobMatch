@@ -23,9 +23,6 @@ function HandbookD() {
         <div>
           <HandbookDetail />
         </div>
-        <div>
-          <Whychose />
-        </div>
       </Container>
     </div>
   )

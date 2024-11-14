@@ -26,7 +26,6 @@ function HandbookUser() {
         <div className='handbook-2'>
           <Jobmarket />
         </div>
-        <Whychose />
       </Container>
     </div>
   )

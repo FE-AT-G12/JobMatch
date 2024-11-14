@@ -76,13 +76,7 @@
       }
     }
   }
-  .card-job-container {
-    display: flex;
-    flex-wrap: wrap; /* Allow items to wrap to new lines */
-    gap: 0; /* Remove gap between the job cards */
-    margin-top: 20px;
-    justify-content: flex-start; /* Align items to the left */
-  }
+
 
   .card-job {
     background-color: #dcebf6; // Background color

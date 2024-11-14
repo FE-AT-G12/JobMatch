@@ -10,8 +10,6 @@ import {
   message,
   InputNumber,
 } from 'antd'
-import { PlusOutlined } from '@ant-design/icons'
-import dayjs from 'dayjs'
 import { dateFormatter } from '../../utils/DayFormater'
 import { useUpdateUserMutation } from '../../features/user/userApi'
 
@@ -21,8 +19,6 @@ const AccountProfile = ({ user }) => {
   const [form] = Form.useForm()
   const [updateUser, { isSuccess }] = useUpdateUserMutation()
   const onFinish = async (values) => {
-    console.log(values)
-
     // Prepare the updated user data
     const updatedData = {
       ...values,
@@ -55,7 +51,9 @@ const AccountProfile = ({ user }) => {
           email: user.email,
           identityNumber: user?.identityCard?.identityNumber,
           placeOfIssue: user?.identityCard?.placeOfIssue,
-          dateOfIssue: user.identityCard?.dateOfIssue && dateFormatter(user.identityCard.dateOfIssue),
+          dateOfIssue:
+            user.identityCard?.dateOfIssue &&
+            dateFormatter(user.identityCard.dateOfIssue),
           birthDate: user.birthDate && dateFormatter(user.birthDate),
           education: user?.education,
           skills: user?.skills,
@@ -117,10 +115,15 @@ const AccountProfile = ({ user }) => {
           >
             <Input placeholder='Họ và tên' />
           </Form.Item>
-          <Form.Item label='Số điện thoại' name='phoneNumber'
-          rules={[{ required: true, message: 'Vui nhập số điện thoại!' }]}
+          <Form.Item
+            label='Số điện thoại'
+            name='phoneNumber'
+            rules={[{ required: true, message: 'Vui nhập số điện thoại!' }]}
           >
-            <InputNumber style={{width: '100%'}} placeholder='Số điện thoại' />
+            <InputNumber
+              style={{ width: '100%' }}
+              placeholder='Số điện thoại'
+            />
           </Form.Item>
           <Form.Item
             label='Email'
@@ -142,13 +145,17 @@ const AccountProfile = ({ user }) => {
           >
             <Input placeholder='Số CCCD/CMND' />
           </Form.Item>
-          <Form.Item label='Nơi cấp' name='placeOfIssue'
-          rules={[{ required: true, message: 'Vui lòng nhập nơi cấp' }]}
+          <Form.Item
+            label='Nơi cấp'
+            name='placeOfIssue'
+            rules={[{ required: true, message: 'Vui lòng nhập nơi cấp' }]}
           >
             <Input placeholder='Nơi cấp' />
           </Form.Item>
-          <Form.Item label='Ngày cấp' name='dateOfIssue'
-          rules={[{ required: true, message: 'Vui lòng chọn ngày cấp!' }]}
+          <Form.Item
+            label='Ngày cấp'
+            name='dateOfIssue'
+            rules={[{ required: true, message: 'Vui lòng chọn ngày cấp!' }]}
           >
             <DatePicker
               format='DD-MM-YYYY'

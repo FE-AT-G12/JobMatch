@@ -1,5 +1,7 @@
 import { Route, Routes, useNavigate } from 'react-router-dom'
 import routes from './configs/routes'
+import PermissionCheck from './components/Permission/PermissionCheck'
+import NotFound from './components/NotFound/NotFound'
 
 function App() {
   return (
@@ -14,13 +16,18 @@ function App() {
                 <Route
                   key={item.path}
                   path={item.path}
-                  element={<Component />}
+                  element={
+                    <PermissionCheck protectedRole={item.role}>
+                      <Component />
+                    </PermissionCheck>
+                  }
                 />
               )
             })}
           </Route>
         )
       })}
+      <Route path='*' element={<NotFound />} />
     </Routes>
   )
 }

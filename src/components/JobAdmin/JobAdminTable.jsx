@@ -5,6 +5,7 @@ import { collumn } from './data'
 const JobAdminTable = () => {
   const { data, error, isLoading } = useGetJobListQuery()
   const dataWithIndex = data?.map((job, index) => ({
+    id: job.id,
     ...job,
     index: index + 1,
   }))

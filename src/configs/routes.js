@@ -1,21 +1,29 @@
 import LoginPage from '../page/login'
 import adminAccount from '../page/adminAccount/adminAccount'
 import RegisterPage from '../page/register'
-import Job from '../page/Job/Job'
 import UserTest from '../page/User/UserTest'
 import MainLayout from '../components/layout/MainLayout'
 import JobAdmin from '../page/JobAdmin/JobAdmin'
 import JobAdminDetail from '../page/JobAdmin/JobAdminDetail'
-
+import AdminLayout from '../components/layout/AdminLayout'
+import Admin from '../components/Admin/Admin'
 import HomePage from '../page/home/Home'
 import Company from '../page/company/Company'
-
+import BlogAdmin from '../page/BlogAdmin/BlogAdmin'
 import Profile from '../page/User/Profile'
 import JobPost from '../page/Job/JobPost'
 import SimpleLayout from '../components/layout/SimpleLayout'
+
 import CompanyDetail from '../page/Company/CompanyDetail'
 import HandbookUser from '../page/HandbookUser/HandbookUser'
 import HandbookD from '../page/HandbookUser/HandbookD'
+
+import JobPostedListPage from '../page/Job/JobPostedListPage'
+
+import JobUpdatePage from '../page/Job/JobUpdatePage'
+import BlogAdminDetail from '../page/BlogAdmin/BlogAdminDetail'
+import JobBrowsePage from '../page/Job/JobBrowsePage'
+import JobDetailClient from '../page/Job/JobDetailClient'
 
 const routes = [
   {
@@ -49,26 +57,29 @@ const routes = [
       {
         path: '/profile/:id',
         component: Profile,
+        role: ['client', 'hirer'],
       },
       {
         path: '/job',
-        component: Job,
+        component: JobBrowsePage,
+      },
+      {
+        path: '/job/:id',
+        component: JobDetailClient,
+      },
+      {
+        path: '/job/my-posted-job/:id',
+        component: JobUpdatePage,
       },
       {
         path: '/job/post',
         component: JobPost,
+        role: ['hirer'],
       },
       {
-        path: '/admin',
-        component: adminAccount,
-      },
-      {
-        path: '/jobAdmin',
-        component: JobAdmin,
-      },
-      {
-        path: '/jobAdmin/:jobId',
-        component: JobAdminDetail,
+        path: '/job/my-posted-job',
+        component: JobPostedListPage,
+        role: ['hirer'],
       },
     ],
   },
@@ -82,6 +93,42 @@ const routes = [
       {
         path: '/register',
         component: RegisterPage,
+      },
+    ],
+  },
+
+  {
+    layout: AdminLayout,
+    data: [
+      {
+        path: '/admin',
+        component: Admin,
+        role: ['admin'],
+      },
+      {
+        path: '/admin/account',
+        component: adminAccount,
+        role: ['admin'],
+      },
+      {
+        path: '/admin/job',
+        component: JobAdmin,
+        role: ['admin'],
+      },
+      {
+        path: '/admin/job/:jobId',
+        component: JobAdminDetail,
+        role: ['admin'],
+      },
+      {
+        path: '/admin/blog',
+        component: BlogAdmin,
+        role: ['admin'],
+      },
+      {
+        path: '/admin/blog/:blogId',
+        component: BlogAdminDetail,
+        role: ['admin'],
       },
     ],
   },

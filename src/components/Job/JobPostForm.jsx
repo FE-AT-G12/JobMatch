@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 import {
   Button,
@@ -14,7 +14,6 @@ import {
 } from 'antd'
 import { useCreateJobMutation } from '../../features/job/jobApi'
 import {
-  dateFormatter,
   dateJsToStringFormatter,
   timeJsToStringFormatter,
 } from '../../utils/DayFormater'
@@ -24,24 +23,17 @@ import dayjs from 'dayjs'
 import { useSelector } from 'react-redux'
 import { selectUser } from '../../redux/features/userSlice'
 import ModalLoading from '../Loading/ModalLoading'
+import { dayOfWeek } from '../../constant'
+import AutocompleteAddress from '../AutoCompleteAddress/AutocompleteAddress'
 
-const dayOfWeek = [
-  { label: 'Thứ 2', value: 'Thứ 2' },
-  { label: 'Thứ 3', value: 'Thứ 3' },
-  { label: 'Thứ 4', value: 'Thứ 4' },
-  { label: 'Thứ 5', value: 'Thứ 5' },
-  { label: 'Thứ 6', value: 'Thứ 6' },
-  { label: 'Thứ 7', value: 'Thứ 7' },
-  { label: 'Chủ Nhật', value: 'Chủ Nhật' },
-]
 const Require = () => <span style={{ color: 'red' }}>*</span>
 function JobPostForm() {
-  const [createJob, { isLoading, isError, isSuccess, error }] =
-    useCreateJobMutation()
+  const [form] = Form.useForm()
+
+  const [createJob, { isLoading }] = useCreateJobMutation()
   const hirer = useSelector(selectUser)
 
   const handleSubmit = async (values) => {
-    console.log(values)
     //prepare data
     const job = {
       title: values.title,
@@ -51,7 +43,7 @@ function JobPostForm() {
         min: values.minAge,
         max: values.maxAge,
       },
-      repeatOn: values.repeatOn,
+      repeatOn: values.repeatOn || [],
       //Category
       category: 'Dọn dẹp vệ sinh',
       location: values.location,
@@ -59,17 +51,17 @@ function JobPostForm() {
       dateEnd: dateJsToStringFormatter(values.date[1]),
       timeStart: timeJsToStringFormatter(values.time[0]),
       timeEnd: timeJsToStringFormatter(values.time[1]),
-      datePosted: dayjs().format('YYYY-MM-DD HH:mm:ss'),
       payment: {
         payRate: values.payRate,
         paymentMethod: values.paymentMethod,
         payTime: values.payTime,
       },
       hirerId: hirer.userId,
-      clientId: null,
+      clientId: [],
+      clientApplyId: [],
+      datePosted: dayjs().format('YYYY-MM-DD HH:mm:ss'),
       status: 'Đang tuyển',
     }
-    console.log(job)
     try {
       await createJob(job)
       message.success('Đăng tuyển công việc thành công!')
@@ -77,11 +69,15 @@ function JobPostForm() {
       message.error('Đăng tuyển công việc thất bại!')
     }
   }
-
   return (
     <>
       {isLoading && <ModalLoading />}
-      <Form onFinish={handleSubmit} layout='vertical' style={{ marginTop: 30 }}>
+      <Form
+        form={form}
+        onFinish={handleSubmit}
+        layout='vertical'
+        style={{ marginTop: 30 }}
+      >
         <div
           style={{
             padding: '24px 24px 50px 24px',
@@ -148,7 +144,8 @@ function JobPostForm() {
             style={{ marginTop: 30 }}
             rules={[{ required: true, message: 'Vui lòng nhập địa điểm' }]}
           >
-            <Input placeholder='Nhập địa chỉ nơi làm việc' />
+            {/* Location */}
+            <AutocompleteAddress form={form} />
           </Form.Item>
           <Flex gap={50}>
             <Form.Item
@@ -185,7 +182,7 @@ function JobPostForm() {
             >
               <TimePicker.RangePicker
                 needConfirm={false}
-                placeholder='Nhập giờ bắt đầu'
+                placeholder='Nhập giờ'
                 size='middle'
                 format='HH:mm'
               />

@@ -121,7 +121,6 @@ function Company() {
             </Row>
           </div>
         </div>
-        <Whychose />
       </Container>
     </div>
   )

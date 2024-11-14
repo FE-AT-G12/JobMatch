@@ -4,6 +4,7 @@ import Container from '../container'
 import './Detail.scss'
 import { Card, Row, Col, Avatar, Divider, Image, Button } from 'antd'
 import { useGetCompanyListQuery } from '../../features/company/companyApi'
+import { useGetJobListQuery } from '../../features/job/jobApi' // Import job API hook
 import {
   EnvironmentOutlined,
   EyeOutlined,
@@ -13,31 +14,31 @@ import {
 } from '@ant-design/icons'
 import Whychose from '../whychosewe'
 
-
-const jobsData = [
-  {
-    title: 'Nhập Dữ Liệu',
-    cityjob: 'Công ty Hòa Bình',
-    cityAddress: 'Hà Nội',
-    payment: { payRate: 70000 },
-    companyLogo: 'company-logo.jpg',
-    description: 'Nhập dữ liệu từ các tài liệu đã quét vào bảng Excel.',
-    id: '1',
-  },
-]
-
 function ComDetail() {
-  const { id } = useParams() // Get the company ID from the URL
-  const { data: companies = [], error, isLoading } = useGetCompanyListQuery()
+  const { id } = useParams()
+  const {
+    data: companies = [],
+    error: companyError,
+    isLoading: companyLoading,
+  } = useGetCompanyListQuery()
+  const {
+    data: jobList = [],
+    error: jobError,
+    isLoading: jobLoading,
+  } = useGetJobListQuery()
 
-  if (isLoading) return <div>Loading...</div>
-  if (error) return <div>Error: {error.message}</div>
+  // Handle loading states for both company and job data
+  if (companyLoading || jobLoading) return <div>Loading...</div>
+  if (companyError || jobError)
+    return <div>Error: {companyError?.message || jobError?.message}</div>
 
+  // Find the company by ID
   const company = companies.find((company) => company.id == parseInt(id))
 
   if (!company) return <div>Company not found</div>
 
-  const currentJobs = jobsData.filter((job) => job.cityjob === company.name)
+  // Filter jobs that match the company's name (or any other relevant condition)
+  const currentJobs = jobList.filter((job) => job.cityjob === company.name)
 
   return (
     <div className='company-detail'>
@@ -239,7 +240,10 @@ function ComDetail() {
                 <ReadOutlined style={{ marginRight: '8px' }} />
                 Xem bản đồ
               </p>
-              <div className='google-map' style={{display: 'flex',justifyContent: 'center'}}>
+              <div
+                className='google-map'
+                style={{ display: 'flex', justifyContent: 'center' }}
+              >
                 <iframe
                   src={company.ggmap}
                   width={280}
@@ -253,7 +257,6 @@ function ComDetail() {
             </Card>
           </div>
         </div>
-        <Whychose />
       </Container>
     </div>
   )
