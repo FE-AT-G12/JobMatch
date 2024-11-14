@@ -4,20 +4,12 @@
       "id": "5ac8",
       "title": "Gõ word",
       "description": "Gõ word",
-      "skillRequirement": [
-        "Gõ word"
-      ],
+      "skillRequirement": ["Gõ word"],
       "ageRequirement": {
         "min": "18",
         "max": "30"
       },
-      "repeatOn": [
-        "Thứ 2",
-        "Thứ 3",
-        "Thứ 4",
-        "Thứ 5",
-        "Thứ 6"
-      ],
+      "repeatOn": ["Thứ 2", "Thứ 3", "Thứ 4", "Thứ 5", "Thứ 6"],
       "category": "Văn phòng",
       "location": "Tại nhà",
       "dateStart": "2024-10-31",
@@ -30,14 +22,8 @@
         "payTime": "Sau khi thành công"
       },
       "hirerId": "1",
-      "clientId": [
-        "5",
-        "4"
-      ],
-      "clientApplyId": [
-        "3",
-        "1"
-      ],
+      "clientId": ["5", "4"],
+      "clientApplyId": ["3", "1"],
       "datePosted": "2024-02-10 12:20:43",
       "status": "Đang tuyển"
     },
@@ -45,18 +31,12 @@
       "id": "c7ce",
       "title": "333",
       "description": "3312312312",
-      "skillRequirement": [
-        "1231233",
-        "33"
-      ],
+      "skillRequirement": ["1231233", "33"],
       "ageRequirement": {
         "min": 22,
         "max": 23
       },
-      "repeatOn": [
-        "Thứ 3",
-        "Thứ 2"
-      ],
+      "repeatOn": ["Thứ 3", "Thứ 2"],
       "category": "Dọn dẹp vệ sinh",
       "location": "12, Hoang Dieu, Thắng Lợi, Thành phố Kon Tum, Tỉnh Kon Tum, Việt Nam",
       "dateStart": "2024-11-13",
@@ -70,10 +50,7 @@
       },
       "hirerId": "4",
       "clientId": [],
-      "clientApplyId": [
-        "3",
-        "5"
-      ],
+      "clientApplyId": ["3", "5"],
       "datePosted": "2024-11-13 17:32:41",
       "status": "Đang tuyển"
     }
@@ -154,11 +131,7 @@
       "age": 22,
       "phoneNumber": "0922457890",
       "email": "ngotane@gmail.com",
-      "skills": [
-        "Phục vụ quán",
-        "Tạp vụ",
-        "Dọn dẹp nhà cửa"
-      ],
+      "skills": ["Phục vụ quán", "Tạp vụ", "Dọn dẹp nhà cửa"],
       "location": "Hồ Chí Minh, Việt Nam",
       "availability": "Bán thời gian",
       "birthDate": "01/09/2002",
@@ -242,10 +215,7 @@
       "age": 24,
       "phoneNumber": "0903123789",
       "email": "dovanai@gmail.com",
-      "skills": [
-        "Sửa chữa xe máy",
-        "Giao hàng"
-      ],
+      "skills": ["Sửa chữa xe máy", "Giao hàng"],
       "location": "Hà Nội, Việt Nam",
       "availability": "Toàn thời gian",
       "birthDate": "19/07/2000",
@@ -285,10 +255,7 @@
       "age": 27,
       "phoneNumber": "0905671234",
       "email": "vuhongk@gmail.com",
-      "skills": [
-        "Giao hàng",
-        "Giúp việc gia đình"
-      ],
+      "skills": ["Giao hàng", "Giúp việc gia đình"],
       "location": "Cần Thơ, Việt Nam",
       "availability": "Toàn thời gian",
       "birthDate": "22/06/1996",
@@ -328,10 +295,7 @@
       "age": 29,
       "phoneNumber": "0912678990",
       "email": "lyquocm@gmail.com",
-      "skills": [
-        "Phục vụ sự kiện",
-        "Giữ trẻ"
-      ],
+      "skills": ["Phục vụ sự kiện", "Giữ trẻ"],
       "location": "Hải Dương, Việt Nam",
       "availability": "Bán thời gian",
       "birthDate": "14/08/1995",
@@ -524,69 +488,14 @@
   ],
   "blog": [
     {
-      "id": "1",
-      "title": "Bí quyết tìm việc làm hiệu quả",
-      "description": "Nếu bạn đang tìm kiếm việc làm, hãy tham khảo bài viết sau để có những bí quyết tìm việc hiệu quả nhất.",
-      "thumbnail": [
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Flag_of_Vietnam.svg/1200px-Flag_of_Vietnam.svg.png",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Flag_of_Vietnam.svg/1200px-Flag_of_Vietnam.svg.png"
-      ],
-      "author": "Nguyễn Văn A",
-      "datePosted": "2024-10-31 09:30:00",
-      "category": "Hỗ trợ người dùng",
-      "content": "Hello world"
-    },
-    {
-      "id": "2",
-      "title": "Cách viết CV ấn tượng",
-      "description": "Viết CV ấn tượng là bước quan trọng giúp bạn nổi bật trong mắt nhà tuyển dụng. Hãy tham khảo bài viết sau để có những mẹo viết CV hiệu quả.",
-      "content": "Hello world",
-      "thumbnail": [
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Flag_of_Vietnam.svg/1200px-Flag_of_Vietnam.svg.png",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Flag_of_Vietnam.svg/1200px-Flag_of_Vietnam.svg.png"
-      ],
-      "author": "Nguyễn Văn A",
-      "datePosted": "2024-10-31 09:30:00",
-      "category": "Hỗ trợ người dùng"
-    },
-    {
-      "id": "3",
-      "title": "Cách phỏng vấn thành công",
-      "description": "Phỏng vấn là cơ hội để bạn thể hiện bản thân và chứng minh khả năng của mình. Hãy tham khảo bài viết sau để có những mẹo phỏng vấn thành công.",
-      "thumbnail": [
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Flag_of_Vietnam.svg/1200px-Flag_of_Vietnam.svg.png",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Flag_of_Vietnam.svg/1200px-Flag_of_Vietnam.svg.png"
-      ],
-      "author": "Nguyễn Văn A",
-      "datePosted": "2024-10-31 09:30:00",
-      "category": "Hỗ trợ người dùng",
-      "content": "Hello world"
-    },
-    {
-      "id": "f3da",
-      "title": "123",
-      "description": "123",
-      "category": "123",
-      "thumbnail": [
-        "https://images.spiderum.com/sp-images/e36d1ac0881111e8a064db40c24d444a.jpg",
-        "https://images.spiderum.com/sp-images/e36d1ac0881111e8a064db40c24d444a.jpg",
-        "https://images.spiderum.com/sp-images/e36d1ac0881111e8a064db40c24d444a.jpg"
-      ],
-      "content": "<p>123</p>",
+      "title": "http://localhost:5173/admin/blog/ace3",
+      "description": "http://localhost:5173/admin/blog/ace3",
+      "category": "http://localhost:5173/admin/blog/ace3",
+      "thumbnail": "https://cdnphoto.dantri.com.vn/xn9ZshQvl2QESOp81cQJRGttUus=/zoom/1200_630/2021/06/09/cho-crop-1623207709056.jpeg",
+      "content": "<p>http://localhost:5173/admin/blog/ace3</p>",
+      "author": "Lương Hà J",
       "datePosted": "2024-11-14 18:29:58",
-      "author": "Lương Hà J"
-    },
-    {
-      "id": "6f4a",
-      "title": "123",
-      "description": "123",
-      "category": "123",
-      "thumbnail": [
-        "https://images.spiderum.com/sp-images/e36d1ac0881111e8a064db40c24d444a.jpg"
-      ],
-      "content": "<p>123</p>",
-      "datePosted": "2024-11-14 18:33:24",
-      "author": "Lương Hà J"
+      "id": "ace3"
     }
   ],
   "city": [

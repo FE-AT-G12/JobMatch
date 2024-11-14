@@ -2,6 +2,7 @@ import React from 'react'
 import { useParams } from 'react-router-dom'
 import { useGetBlogDetailQuery } from '../../features/blog/blogApi'
 import { Spin } from 'antd'
+import BlogUpdateButton from './BlogUpdateButton'
 export default function BlogAdminDetail() {
   const { blogId } = useParams()
   const { data, error, isLoading } = useGetBlogDetailQuery(blogId)
@@ -15,13 +16,16 @@ export default function BlogAdminDetail() {
       <p>{data.description}</p>
       <p>{data.category}</p>
       <div>
-        {data.thumbnail.map((url, index) => (
-          <img key={index} src={url} alt={`thumbnail-${index}`} style={{ height: '100px', marginRight: '10px' }} />
-        ))}
+        <img
+          src={data.thumbnail}
+          style={{ height: '100px', marginRight: '10px' }}
+        />
       </div>
       <div dangerouslySetInnerHTML={{ __html: data.content }} />
       <p>{data.datePosted}</p>
       <p>{data.author}</p>
+
+      <BlogUpdateButton initialValues={data} />
     </div>
   )
 }

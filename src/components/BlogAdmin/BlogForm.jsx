@@ -1,16 +1,23 @@
-import React, { useState, useRef } from 'react'
+import React, { useState, useRef, useEffect } from 'react'
 import { Form, Input, Button } from 'antd'
 import ReactQuill from 'react-quill'
 import 'react-quill/dist/quill.snow.css'
 import './BlogForm.css'
+
 export default function BlogForm({
   handleCancel,
   handleSubmit,
   initialValues,
+  style,
 }) {
   const [form] = Form.useForm()
   const [quillValue, setQuillValue] = useState(initialValues?.content || '')
   const reactQuillRef = useRef(null)
+
+  useEffect(() => {
+    form.resetFields()
+    setQuillValue(initialValues?.content || '')
+  }, [initialValues, form])
 
   const onCancel = () => {
     form.resetFields()
@@ -18,7 +25,12 @@ export default function BlogForm({
   }
 
   return (
-    <Form form={form} initialValues={initialValues} onFinish={handleSubmit}>
+    <Form
+      form={form}
+      initialValues={initialValues}
+      onFinish={handleSubmit}
+      style={style}
+    >
       <Form.Item
         label='Tiêu đề'
         name='title'
@@ -53,15 +65,11 @@ export default function BlogForm({
               if (!value) {
                 return Promise.resolve()
               }
-              const urls = value.split('\n').map((url) => url.trim())
-              const urlPattern =
-                /^(https?:\/\/)?([\da-z.-]+)\.([a-z.]{2,6})([/\w .-]*)*\/?$/
-              for (let url of urls) {
-                if (!urlPattern.test(url)) {
-                  return Promise.reject(
-                    new Error('Hãy nhập link hình ảnh hợp lệ')
-                  )
-                }
+              const urlPattern = /(https?:\/\/[^\s]+)/g
+              if (!urlPattern.test(value.trim())) {
+                return Promise.reject(
+                  new Error('Hãy nhập link hình ảnh hợp lệ')
+                )
               }
               return Promise.resolve()
             },
@@ -69,12 +77,12 @@ export default function BlogForm({
         ]}
         className='form-item'
       >
-        <Input.TextArea placeholder='Nhập link hình ảnh, mỗi link một dòng' />
+        <Input placeholder='Nhập link hình ảnh' />
       </Form.Item>
       <Form.Item
         label='Nội dung'
         name='content'
-        rules={[{ required: true, message: 'Hãy nhập nội dung' }]}
+        rules={[{ required: true, message: 'Hãy nhập nội dung!' }]}
         className='form-item'
       >
         <ReactQuill
@@ -124,21 +132,11 @@ export default function BlogForm({
         />
       </Form.Item>
       <Form.Item>
-        <div
-          style={{
-            display: 'flex',
-            justifyContent: 'space-between',
-            marginTop: '20px',
-          }}
-        >
-          <Button type='primary' danger onClick={onCancel} size='large'>
+        <div className='addFormButton'>
+          <Button type='primary' danger onClick={onCancel}>
             Hủy
           </Button>
-          <Button
-            type='primary'
-            htmlType='submit'
-            size='large'
-          >
+          <Button type='primary' htmlType='submit'>
             Cập nhật
           </Button>
         </div>
