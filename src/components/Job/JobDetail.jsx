@@ -11,13 +11,20 @@ import { getCityByAddress } from '../../utils/getCity'
 import { ageRequirement } from '../../utils/ageRequirement'
 import { dateFromDbToString } from '../../utils/DayFormater'
 import { Link } from 'react-router-dom'
-export default function JobDetail({ job, handleApplyJob, user }) {
+import JobStatusTag from './JobStatusTag'
+
+export default function JobDetail({ job, handleApplyJob, user, notShowBtn }) {
   return (
     <>
       <Card bordered={false}>
         <Row>
           <Col span={24}>
-            <Typography.Title level={3}>{job?.title}</Typography.Title>
+            <Flex align='start' justify='space-between'>
+              <Typography.Title level={3}>{job?.title}</Typography.Title>
+              <Typography.Text level={3}>
+                <JobStatusTag status={job.status} />
+              </Typography.Text>
+            </Flex>
           </Col>
           <Col span={24}>
             <Row gutter={[16, 16]} style={{ marginTop: 16 }}>
@@ -58,17 +65,19 @@ export default function JobDetail({ job, handleApplyJob, user }) {
               </span>
             </div>
           </Col>
-          <Col span={24}>
+          <Col span={24} style={{display: notShowBtn ? 'none': 'block'}}>
             <Flex style={{ marginTop: 16 }} wrap gap={16}>
               {user ? (
-                <Button
-                  onClick={handleApplyJob}
-                  type='primary'
-                  style={{ backgroundColor: '#024caa', flex: 1 }}
-                  size='large'
-                >
-                  <SendOutlined /> Ứng tuyển ngay
-                </Button>
+                user.role == 'client' && (
+                  <Button
+                    onClick={handleApplyJob}
+                    type='primary'
+                    style={{ backgroundColor: '#024caa', flex: 1 }}
+                    size='large'
+                  >
+                    <SendOutlined /> Ứng tuyển ngay
+                  </Button>
+                )
               ) : (
                 <Link to='/login'>
                   <Button
@@ -81,7 +90,7 @@ export default function JobDetail({ job, handleApplyJob, user }) {
                   </Button>
                 </Link>
               )}
-              <Button size='large'>Lưu</Button>
+              {user?.role == 'client' && <Button size='large'>Lưu</Button>}
             </Flex>
           </Col>
         </Row>
