@@ -30,6 +30,6 @@ const baseQueryWithRetry = retry(baseQueryWithReauth, { maxRetries: 1 })
 export const apiSlice = createApi({
   reducerPath: 'api',
   baseQuery: baseQueryWithRetry,
-  tagTypes: ['job', 'user'],
+  tagTypes: ['Job', 'User'],
   endpoints: () => ({}),
 })

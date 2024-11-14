@@ -94,7 +94,7 @@ const JobDescription = ({ job, handleApplyJob, user }) => {
         </li>
       </ul>
       {user ? (
-        <Button
+        user.role == 'client' && <Button
           type='primary'
           style={{ backgroundColor: '#024caa', flex: 1 }}
           size='large'
