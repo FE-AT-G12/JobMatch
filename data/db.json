@@ -431,21 +431,34 @@
       "id": "1",
       "title": "Bí quyết tìm việc làm hiệu quả",
       "description": "Nếu bạn đang tìm kiếm việc làm, hãy tham khảo bài viết sau để có những bí quyết tìm việc hiệu quả nhất.",
-      "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Flag_of_Vietnam.svg/1200px-Flag_of_Vietnam.svg.png",
+      "thumbnail": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Flag_of_Vietnam.svg/1200px-Flag_of_Vietnam.svg.png",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Flag_of_Vietnam.svg/1200px-Flag_of_Vietnam.svg.png"
+      ],
+      "author": "Nguyễn Văn A",
       "datePosted": "2024-10-31 09:30:00"
     },
     {
       "id": "2",
       "title": "Cách viết CV ấn tượng",
       "description": "Viết CV ấn tượng là bước quan trọng giúp bạn nổi bật trong mắt nhà tuyển dụng. Hãy tham khảo bài viết sau để có những mẹo viết CV hiệu quả.",
-      "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Flag_of_Vietnam.svg/1200px-Flag_of_Vietnam.svg.png",
+      "content": "Hello world",
+      "thumbnail": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Flag_of_Vietnam.svg/1200px-Flag_of_Vietnam.svg.png",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Flag_of_Vietnam.svg/1200px-Flag_of_Vietnam.svg.png"
+      ],
+      "author": "Nguyễn Văn A",
       "datePosted": "2024-10-31 09:30:00"
     },
     {
       "id": "3",
       "title": "Cách phỏng vấn thành công",
       "description": "Phỏng vấn là cơ hội để bạn thể hiện bản thân và chứng minh khả năng của mình. Hãy tham khảo bài viết sau để có những mẹo phỏng vấn thành công.",
-      "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Flag_of_Vietnam.svg/1200px-Flag_of_Vietnam.svg.png",
+      "thumbnail": [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Flag_of_Vietnam.svg/1200px-Flag_of_Vietnam.svg.png",
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Flag_of_Vietnam.svg/1200px-Flag_of_Vietnam.svg.png"
+      ],
+      "author": "Nguyễn Văn A",
       "datePosted": "2024-10-31 09:30:00"
     }
   ],

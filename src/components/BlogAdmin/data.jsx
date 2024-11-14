@@ -22,7 +22,7 @@ export const collumn = [
     dataIndex: 'thumbnail',
     key: 'image',
     render: (thumbnail) => (
-      <img src={thumbnail} alt='thumbnail' style={{ width: '50px' }} />
+      <img src={thumbnail[0]} alt='thumbnail' style={{ width: '50px' }} />
     ),
   },
   {
