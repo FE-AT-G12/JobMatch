@@ -20,6 +20,11 @@ export const dataItems = [
   {
     key: '4',
     icon: <BarChartOutlined />,
+    label: <Link to='/admin/company'>Company</Link>,
+  },
+  {
+    key: '5',
+    icon: <BarChartOutlined />,
     label: <Link to='/admin/blog'>Blog</Link>,
   },
 ]

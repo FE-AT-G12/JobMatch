@@ -31,6 +31,7 @@
       },
       "hirerId": "1",
       "clientId": [
+
         "3cad",
         "023a"
       ],
@@ -142,6 +143,7 @@
       "identityCard": {
         "identityNumber": "074200920374",
         "placeOfIssue": "Đà Nẵng",
+
         "dateOfIssue": "2020-10-13"
       },
       "id": "4",
@@ -162,6 +164,7 @@
       "email": "long@gmail.com",
       "password": "96cae35ce8a9b0244178bf28e4966c2ce1b8385723a96a6b838858cdd6ca0a1e",
       "role": "client",
+
       "phoneNumber": 394388330,
       "identityCard": {
         "identityNumber": "074200910287",
@@ -178,6 +181,7 @@
       "email": "hirer@gmail.com",
       "password": "96cae35ce8a9b0244178bf28e4966c2ce1b8385723a96a6b838858cdd6ca0a1e",
       "role": "hirer",
+
       "phoneNumber": 394388330,
       "identityCard": {
         "identityNumber": "074200910287",
