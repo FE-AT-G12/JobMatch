@@ -54,10 +54,12 @@ const AccountProfile = ({ user }) => {
           email: user.email,
           identityNumber: user?.identityCard?.identityNumber,
           placeOfIssue: user?.identityCard?.placeOfIssue,
-          dateOfIssue:
-            user.identityCard?.dateOfIssue ?
-            dayjs(user.identityCard.dateOfIssue, 'YYYY-MM-DD'): null,
-          birthDate: user.birthDate ? dayjs(user.birthDate, 'YYYY-MM-DD') : null,
+          dateOfIssue: user.identityCard?.dateOfIssue
+            ? dayjs(user.identityCard.dateOfIssue, 'YYYY-MM-DD')
+            : null,
+          birthDate: user.birthDate
+            ? dayjs(user.birthDate, 'YYYY-MM-DD')
+            : null,
           education: user?.education,
           skills: user?.skills,
           description: user?.description,
@@ -160,10 +162,7 @@ const AccountProfile = ({ user }) => {
             name='dateOfIssue'
             rules={[{ required: true, message: 'Vui lòng chọn ngày cấp!' }]}
           >
-            <DatePicker
-              placeholder='Chọn ngày cấp'
-              style={{ width: '100%' }}
-            />
+            <DatePicker placeholder='Chọn ngày cấp' style={{ width: '100%' }} />
           </Form.Item>
         </div>
 
@@ -178,7 +177,6 @@ const AccountProfile = ({ user }) => {
             <DatePicker
               placeholder='Chọn ngày sinh'
               style={{ width: '100%' }}
-
             />
           </Form.Item>
           <Form.Item

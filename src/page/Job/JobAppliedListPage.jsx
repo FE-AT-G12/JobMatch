@@ -14,9 +14,10 @@ function JobAppliedListPage() {
     return 'Có lỗi xảy ra'
   }
   if (isSuccess) {
-    let clientJobs = data.filter((job) =>
-      job.clientApplyId.some((id) => id === user.userId) ||
-    job.clientId.some((id) => id === user.userId)
+    let clientJobs = data.filter(
+      (job) =>
+        job.clientApplyId.some((id) => id === user.userId) ||
+        job.clientId.some((id) => id === user.userId)
     )
     return <JobAppliedList jobs={clientJobs} userId={user.userId} />
   }

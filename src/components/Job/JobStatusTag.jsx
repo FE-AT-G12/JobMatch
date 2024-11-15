@@ -1,7 +1,6 @@
 import { Tag } from 'antd'
 import React from 'react'
 
-
 function JobStatusTag({ status }) {
   switch (status) {
     case 'Đã tuyển':

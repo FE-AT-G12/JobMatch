@@ -65,7 +65,7 @@ export default function JobDetail({ job, handleApplyJob, user, notShowBtn }) {
               </span>
             </div>
           </Col>
-          <Col span={24} style={{display: notShowBtn ? 'none': 'block'}}>
+          <Col span={24} style={{ display: notShowBtn ? 'none' : 'block' }}>
             <Flex style={{ marginTop: 16 }} wrap gap={16}>
               {user ? (
                 user.role == 'client' && (

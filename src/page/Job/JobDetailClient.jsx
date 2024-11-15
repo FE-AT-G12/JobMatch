@@ -34,8 +34,8 @@ export default function JobDetailClient() {
   const { data: hirer } = useGetUserDetailQuery(job?.hirerId, {
     skip: !job?.hirerId,
   })
-  const {data: client} = useGetUserDetailQuery(user?.userId, {
-    skip: !user?.userId
+  const { data: client } = useGetUserDetailQuery(user?.userId, {
+    skip: !user?.userId,
   })
 
   const [applyJob, { isLoading: isApplying }] = useClientApplyJobMutation()
@@ -54,9 +54,12 @@ export default function JobDetailClient() {
     ) {
       nav(`/profile/${client.id}`)
       message.warning('Bạn cần cập nhật thông tin để ứng tuyển')
-      return 
+      return
     }
-    if (job.clientApplyId.some((id) => user.userId === id) || job.clientId.some((id) => user.userId === id)) {
+    if (
+      job.clientApplyId.some((id) => user.userId === id) ||
+      job.clientId.some((id) => user.userId === id)
+    ) {
       message.error('Bạn đã ứng tuyển việc này rồi !')
       setOpen(false)
       return

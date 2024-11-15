@@ -32,7 +32,7 @@ export const userApi = apiSlice.injectEndpoints({
       query: ({ data, id }) => ({
         url: `/user/${id}`,
         method: 'PATCH',
-        body: data ,
+        body: data,
       }),
       transformResponse: (res) => res,
       invalidatesTags: ['User', 'UserDetail'],

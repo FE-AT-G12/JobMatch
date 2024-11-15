@@ -72,12 +72,12 @@ const routes = [
       {
         path: '/job/my-posted-job/:id',
         component: JobUpdatePage,
-        role: ['hirer']
+        role: ['hirer'],
       },
       {
         path: '/job/my-posted-job/:id/candidate-list',
         component: JobCandidateListPage,
-        role: ['hirer']
+        role: ['hirer'],
       },
       {
         path: '/job/post',

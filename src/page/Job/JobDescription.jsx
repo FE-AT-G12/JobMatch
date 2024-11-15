@@ -94,14 +94,16 @@ const JobDescription = ({ job, handleApplyJob, user }) => {
         </li>
       </ul>
       {user ? (
-        user.role == 'client' && <Button
-          type='primary'
-          style={{ backgroundColor: '#024caa', flex: 1 }}
-          size='large'
-          onClick={handleApplyJob}
-        >
-          Ứng tuyển ngay
-        </Button>
+        user.role == 'client' && (
+          <Button
+            type='primary'
+            style={{ backgroundColor: '#024caa', flex: 1 }}
+            size='large'
+            onClick={handleApplyJob}
+          >
+            Ứng tuyển ngay
+          </Button>
+        )
       ) : (
         <Link to='/login'>
           <Button

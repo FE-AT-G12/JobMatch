@@ -1,5 +1,15 @@
 import React, { useState } from 'react'
-import { Card, Avatar, Row, Col, Typography, Rate, Button, Modal, message } from 'antd'
+import {
+  Card,
+  Avatar,
+  Row,
+  Col,
+  Typography,
+  Rate,
+  Button,
+  Modal,
+  message,
+} from 'antd'
 import {
   MailOutlined,
   PhoneOutlined,
@@ -14,8 +24,7 @@ import { useUpdateJobMutation } from '../../features/job/jobApi'
 
 const { Title, Text } = Typography
 
-function JobUserAppliedList({ clientId, setKey, job, notShowBtn }) {    
-    
+function JobUserAppliedList({ clientId, setKey, job, notShowBtn }) {
   const { data: client, isLoading } = useGetUserDetailQuery(clientId)
   const [open, setOpen] = useState(false)
   const [updateJob] = useUpdateJobMutation()
@@ -40,17 +49,15 @@ function JobUserAppliedList({ clientId, setKey, job, notShowBtn }) {
     const applyId = [...job.clientApplyId]
 
     const data = {
-        clientApplyId: applyId.filter(id => id !== clientId),
-        clientId: [...job.clientId, clientId]
+      clientApplyId: applyId.filter((id) => id !== clientId),
+      clientId: [...job.clientId, clientId],
     }
-    console.log(data);
-    
+    console.log(data)
+
     try {
-        await updateJob({id: job.id, data})
-        message.success('Duyệt ứng viên thành công !')
-    } catch (error) {
-        
-    }
+      await updateJob({ id: job.id, data })
+      message.success('Duyệt ứng viên thành công !')
+    } catch (error) {}
   }
 
   return (
@@ -85,17 +92,19 @@ function JobUserAppliedList({ clientId, setKey, job, notShowBtn }) {
                   <Typography.Text>Chưa có nhận xét !</Typography.Text>
                 )}
 
-                {!notShowBtn && <Button
-                  size='large'
-                  style={{
-                    backgroundColor: '#024caa',
-                    color: 'white',
-                    width: 'auto',
-                  }}
-                  onClick={() => setOpen(true)}
-                >
-                  Duyệt
-                </Button>}
+                {!notShowBtn && (
+                  <Button
+                    size='large'
+                    style={{
+                      backgroundColor: '#024caa',
+                      color: 'white',
+                      width: 'auto',
+                    }}
+                    onClick={() => setOpen(true)}
+                  >
+                    Duyệt
+                  </Button>
+                )}
               </div>
             </Col>
 

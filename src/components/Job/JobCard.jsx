@@ -89,7 +89,7 @@ const JobCard = ({ job, idx }) => {
                   Danh sách ứng viên
                 </Button>
               </Link>
-            )}  
+            )}
             <Link
               to={
                 pathName.includes('my-posted-job')
