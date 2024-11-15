@@ -24,6 +24,9 @@ import JobUpdatePage from '../page/Job/JobUpdatePage'
 import BlogAdminDetail from '../page/BlogAdmin/BlogAdminDetail'
 import JobBrowsePage from '../page/Job/JobBrowsePage'
 import JobDetailClient from '../page/Job/JobDetailClient'
+import CompanyAdmin from '../page/CompanyAdmin/CompanyAdmin'
+import CompanyAdDetail from '../page/CompanyAdmin/CompanyAdDetail'
+import CompanyAdd from '../components/CompanyAdmin/CompanyAdd'
 
 const routes = [
   {
@@ -118,6 +121,21 @@ const routes = [
       {
         path: '/admin/job/:jobId',
         component: JobAdminDetail,
+        role: ['admin'],
+      },
+      {
+        path: '/admin/company',
+        component: CompanyAdmin,
+        role: ['admin'],
+      },
+      {
+        path: '/admin/companyadd',
+        component: CompanyAdd,
+        role: ['admin'],
+      },
+      {
+        path: '/admin/company/:id',
+        component: CompanyAdDetail,
         role: ['admin'],
       },
       {
