@@ -12,7 +12,7 @@ import {
 } from 'antd'
 import { dateFormatter } from '../../utils/DayFormater'
 import { useUpdateUserMutation } from '../../features/user/userApi'
-
+import dayjs from 'dayjs'
 const { Option } = Select
 
 const AccountProfile = ({ user }) => {
@@ -21,14 +21,17 @@ const AccountProfile = ({ user }) => {
   const onFinish = async (values) => {
     // Prepare the updated user data
     const updatedData = {
-      ...values,
+      name: values.name,
+      phoneNumber: values.phoneNumber,
+      email: values.email,
       identityCard: {
         identityNumber: values.identityNumber,
         placeOfIssue: values.placeOfIssue,
         dateOfIssue: values.dateOfIssue.format('YYYY-MM-DD'),
       },
+      education: values?.education,
       birthDate: values.birthDate && values.birthDate.format('YYYY-MM-DD'),
-      skills: values.skills,
+      skills: values.skills || [],
       description: values.description,
     }
 
@@ -52,9 +55,9 @@ const AccountProfile = ({ user }) => {
           identityNumber: user?.identityCard?.identityNumber,
           placeOfIssue: user?.identityCard?.placeOfIssue,
           dateOfIssue:
-            user.identityCard?.dateOfIssue &&
-            dateFormatter(user.identityCard.dateOfIssue),
-          birthDate: user.birthDate && dateFormatter(user.birthDate),
+            user.identityCard?.dateOfIssue ?
+            dayjs(user.identityCard.dateOfIssue, 'YYYY-MM-DD'): null,
+          birthDate: user.birthDate ? dayjs(user.birthDate, 'YYYY-MM-DD') : null,
           education: user?.education,
           skills: user?.skills,
           description: user?.description,
@@ -82,7 +85,7 @@ const AccountProfile = ({ user }) => {
                 src={user?.avatar || '/public/blank-avt.jpg'}
                 width={83}
                 height={83}
-                style={{ borderRadius: '100%' }}
+                style={{ borderRadius: '100%', objectFit: 'cover' }}
                 alt='User Avatar'
               />
               <div>
@@ -158,7 +161,6 @@ const AccountProfile = ({ user }) => {
             rules={[{ required: true, message: 'Vui lòng chọn ngày cấp!' }]}
           >
             <DatePicker
-              format='DD-MM-YYYY'
               placeholder='Chọn ngày cấp'
               style={{ width: '100%' }}
             />
@@ -176,7 +178,7 @@ const AccountProfile = ({ user }) => {
             <DatePicker
               placeholder='Chọn ngày sinh'
               style={{ width: '100%' }}
-              format='DD/MM/YYYY'
+
             />
           </Form.Item>
           <Form.Item

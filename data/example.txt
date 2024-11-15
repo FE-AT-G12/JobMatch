@@ -24,3 +24,29 @@
       "clientApplyId": ["3"],
       "status": "Đang tuyển"
     }
+
+
+     {
+      "id": "3",
+      "name": "Trần Minh Vua",
+      "phoneNumber": "0933445566",
+      "email": "tranmc@gmail.com",
+      "identityNumber": "074200910287",
+      "placeOfIssue": "Hà Nội",
+      "birthDate": "1994-05-18",
+      "education": "9",
+      "skills": [
+        "Nhập liệu",
+        "Phục vụ",
+        "Chăm sóc khách hàng",
+        "Dọn dẹp vệ sinh"
+      ],
+      "description": "Cực chuyên nghiệp",
+      "identityCard": {
+        "identityNumber": "074200910287",
+        "placeOfIssue": "Hà Nội",
+        "dateOfIssue": "2020-10-13"
+      },
+      "role": "client",
+      "password": "96cae35ce8a9b0244178bf28e4966c2ce1b8385723a96a6b838858cdd6ca0a1e"
+    },

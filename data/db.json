@@ -4,12 +4,20 @@
       "id": "5ac8",
       "title": "Gõ word",
       "description": "Gõ word",
-      "skillRequirement": ["Gõ word"],
+      "skillRequirement": [
+        "Gõ word"
+      ],
       "ageRequirement": {
         "min": "18",
         "max": "30"
       },
-      "repeatOn": ["Thứ 2", "Thứ 3", "Thứ 4", "Thứ 5", "Thứ 6"],
+      "repeatOn": [
+        "Thứ 2",
+        "Thứ 3",
+        "Thứ 4",
+        "Thứ 5",
+        "Thứ 6"
+      ],
       "category": "Văn phòng",
       "location": "Tại nhà",
       "dateStart": "2024-10-31",
@@ -22,8 +30,11 @@
         "payTime": "Sau khi thành công"
       },
       "hirerId": "1",
-      "clientId": ["5", "4"],
-      "clientApplyId": ["3", "1"],
+      "clientId": [
+        "3cad",
+        "023a"
+      ],
+      "clientApplyId": [],
       "datePosted": "2024-02-10 12:20:43",
       "status": "Đang tuyển"
     },
@@ -31,17 +42,23 @@
       "id": "c7ce",
       "title": "333",
       "description": "3312312312",
-      "skillRequirement": ["1231233", "33"],
+      "skillRequirement": [
+        "1231233",
+        "33"
+      ],
       "ageRequirement": {
         "min": 22,
         "max": 23
       },
-      "repeatOn": ["Thứ 3", "Thứ 2"],
+      "repeatOn": [
+        "Thứ 3",
+        "Thứ 2"
+      ],
       "category": "Dọn dẹp vệ sinh",
       "location": "12, Hoang Dieu, Thắng Lợi, Thành phố Kon Tum, Tỉnh Kon Tum, Việt Nam",
-      "dateStart": "2024-11-13",
-      "dateEnd": "2024-11-15",
-      "timeStart": "04:00",
+      "dateStart": "2024-11-10",
+      "dateEnd": "2024-11-21",
+      "timeStart": "06:00",
       "timeEnd": "07:00",
       "payment": {
         "payRate": 33333,
@@ -50,9 +67,44 @@
       },
       "hirerId": "4",
       "clientId": [],
-      "clientApplyId": ["3", "5"],
+      "clientApplyId": [
+        "3",
+        "5"
+      ],
       "datePosted": "2024-11-13 17:32:41",
-      "status": "Đang tuyển"
+      "status": "Đang tuyển",
+      "dateUpdated": "2024-11-14 14:44:41"
+    },
+    {
+      "id": "cfdd",
+      "title": "Đóng vai quần chúng",
+      "description": "Đóng vai quần chúng cho phim heo Peppa",
+      "ageRequirement": {
+        "min": 12
+      },
+      "repeatOn": [
+        "Thứ 2"
+      ],
+      "category": "Dọn dẹp vệ sinh",
+      "location": "13, Công Chúa Ngọc Hân, Quận 11, Thành phố Hồ Chí Minh, 72415, Việt Nam",
+      "dateStart": "2024-11-19",
+      "dateEnd": "2024-11-20",
+      "timeStart": "21:00",
+      "timeEnd": "23:00",
+      "payment": {
+        "payRate": 40000,
+        "paymentMethod": "cash",
+        "payTime": "after"
+      },
+      "hirerId": "5994",
+      "clientId": [
+        "3cad",
+        "023a"
+      ],
+      "clientApplyId": [],
+      "datePosted": "2024-11-14 16:07:40",
+      "status": "Đang tuyển",
+      "dateUpdated": "2024-11-14 22:41:20"
     }
   ],
   "user": [
@@ -61,9 +113,6 @@
       "name": "Trần Minh C",
       "phoneNumber": "0933445566",
       "email": "tranmc@gmail.com",
-      "identityNumber": "074200910287",
-      "placeOfIssue": "Hà Nội",
-      "dateOfIssue": "2020-10-12T17:00:00.000Z",
       "birthDate": "1994-05-18",
       "education": "9",
       "skills": [
@@ -78,260 +127,85 @@
         "placeOfIssue": "Hà Nội",
         "dateOfIssue": "2020-10-13"
       },
-      "role": "client",
-      "password": "96cae35ce8a9b0244178bf28e4966c2ce1b8385723a96a6b838858cdd6ca0a1e"
-    },
-    {
-      "id": "3",
-      "name": "Trần Minh Vua",
-      "phoneNumber": "0933445566",
-      "email": "tranmc@gmail.com",
-      "identityNumber": "074200910287",
-      "placeOfIssue": "Hà Nội",
-      "dateOfIssue": "2020-10-12T17:00:00.000Z",
-      "birthDate": "1994-05-18",
-      "education": "9",
-      "skills": [
-        "Nhập liệu",
-        "Phục vụ",
-        "Chăm sóc khách hàng",
-        "Dọn dẹp vệ sinh"
-      ],
-      "description": "Cực chuyên nghiệp",
-      "identityCard": {
-        "identityNumber": "074200910287",
-        "placeOfIssue": "Hà Nội",
-        "dateOfIssue": "2020-10-13"
-      },
-      "role": "client",
-      "password": "96cae35ce8a9b0244178bf28e4966c2ce1b8385723a96a6b838858cdd6ca0a1e"
-    },
-    {
-      "id": "4",
       "role": "hirer",
-      "name": "Lê Thu D",
-      "location": "Đà Nẵng, Việt Nam",
+      "password": "96cae35ce8a9b0244178bf28e4966c2ce1b8385723a96a6b838858cdd6ca0a1e",
+      "avatar": "data:image/jpeg;base64,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"
+    },
+    {
+      "name": "Lê Thu Duyê",
       "phoneNumber": "0911234567",
+      "role": "hirer",
       "email": "lethudn@gmail.com",
-      "rating": 4.4,
+      "birthDate": "2020-10-13",
+      "education": "12",
+      "description": "Công ty dịch vụ hỗ trợ tổ chức sự kiện.",
       "identityCard": {
         "identityNumber": "074200920374",
         "placeOfIssue": "Đà Nẵng",
-        "dateOfIssue": "15/03/2021"
+        "dateOfIssue": "2020-10-13"
       },
-      "birthDate": "1994-05-18",
-      "description": "Công ty dịch vụ hỗ trợ tổ chức sự kiện.",
-      "status": "active",
-      "password": "96cae35ce8a9b0244178bf28e4966c2ce1b8385723a96a6b838858cdd6ca0a1e"
+      "id": "4",
+      "password": "96cae35ce8a9b0244178bf28e4966c2ce1b8385723a96a6b838858cdd6ca0a1e",
+      "dateOfIssue": "2020-10-12T17:00:00.000Z"
     },
     {
-      "id": "5",
-      "role": "client",
-      "name": "Ngô Tấn E",
-      "age": 22,
-      "phoneNumber": "0922457890",
-      "email": "ngotane@gmail.com",
-      "skills": ["Phục vụ quán", "Tạp vụ", "Dọn dẹp nhà cửa"],
-      "location": "Hồ Chí Minh, Việt Nam",
-      "availability": "Bán thời gian",
-      "birthDate": "01/09/2002",
-      "education": "12/12",
-      "rating": 4.7,
-      "identityCard": {
-        "identityNumber": "074200910483",
-        "placeOfIssue": "Tp. HCM",
-        "dateOfIssue": "22/07/2021"
-      },
-      "description": "",
-      "status": "active",
-      "password": "96cae35ce8a9b0244178bf28e4966c2ce1b8385723a96a6b838858cdd6ca0a1e"
-    },
-    {
-      "id": "6",
-      "role": "hirer",
-      "name": "Phan Quốc F",
-      "location": "Hà Nội, Việt Nam",
-      "phoneNumber": "0909457899",
-      "email": "phanquocf@gmail.com",
-      "rating": 4.9,
-      "identityCard": {
-        "identityNumber": "074200920572",
-        "placeOfIssue": "Hà Nội",
-        "dateOfIssue": "30/06/2021"
-      },
-      "birthDate": "1994-05-18",
-      "description": "Dịch vụ bảo vệ và vệ sinh văn phòng.",
-      "status": "active",
-      "password": "96cae35ce8a9b0244178bf28e4966c2ce1b8385723a96a6b838858cdd6ca0a1e"
-    },
-    {
-      "id": "7",
-      "role": "client",
-      "name": "Nguyễn Mai G",
-      "age": 26,
-      "phoneNumber": "0912345690",
-      "email": "nguyenmaig@gmail.com",
-      "skills": [
-        "Chăm sóc cây cảnh",
-        "Giúp việc nhà",
-        "Sửa chữa đồ điện tử cơ bản"
-      ],
-      "location": "Đà Nẵng, Việt Nam",
-      "availability": "Bán thời gian",
-      "birthDate": "12/11/1997",
-      "education": "12/12",
-      "rating": 4.5,
-      "identityCard": {
-        "identityNumber": "074200910689",
-        "placeOfIssue": "Đà Nẵng",
-        "dateOfIssue": "15/08/2021"
-      },
-      "description": "",
-      "status": "active",
-      "password": "96cae35ce8a9b0244178bf28e4966c2ce1b8385723a96a6b838858cdd6ca0a1e"
-    },
-    {
-      "id": "8",
-      "role": "hirer",
-      "name": "Bùi Thanh H",
-      "location": "Hồ Chí Minh, Việt Nam",
-      "phoneNumber": "0913567880",
-      "email": "buitanhh@gmail.com",
-      "rating": 4.8,
-      "identityCard": {
-        "identityNumber": "074200920781",
-        "placeOfIssue": "Tp. HCM",
-        "dateOfIssue": "10/12/2020"
-      },
-      "birthDate": "1994-05-18",
-      "description": "Dịch vụ cung cấp lao động thời vụ cho nhà hàng.",
-      "status": "active",
-      "password": "96cae35ce8a9b0244178bf28e4966c2ce1b8385723a96a6b838858cdd6ca0a1e"
-    },
-    {
-      "id": "9",
-      "role": "client",
-      "name": "Đỗ Văn I",
-      "age": 24,
-      "phoneNumber": "0903123789",
-      "email": "dovanai@gmail.com",
-      "skills": ["Sửa chữa xe máy", "Giao hàng"],
-      "location": "Hà Nội, Việt Nam",
-      "availability": "Toàn thời gian",
-      "birthDate": "19/07/2000",
-      "education": "Trung cấp",
-      "rating": 4.6,
-      "identityCard": {
-        "identityNumber": "074200930984",
-        "placeOfIssue": "Hà Nội",
-        "dateOfIssue": "05/04/2021"
-      },
-      "description": "",
-      "status": "active",
-      "password": "96cae35ce8a9b0244178bf28e4966c2ce1b8385723a96a6b838858cdd6ca0a1e"
-    },
-    {
-      "id": "10",
+      "name": "Admin",
       "role": "admin",
-      "name": "Lương Hà J",
-      "location": "Hải Phòng, Việt Nam",
-      "phoneNumber": "0934356789",
-      "email": "luonghaj@gmail.com",
-      "rating": 4.3,
-      "identityCard": {
-        "identityNumber": "074200920883",
-        "placeOfIssue": "Hải Phòng",
-        "dateOfIssue": "15/05/2020"
-      },
-      "birthDate": "1994-05-18",
-      "description": "Doanh nghiệp vận tải hàng hóa.",
-      "status": "active",
-      "password": "96cae35ce8a9b0244178bf28e4966c2ce1b8385723a96a6b838858cdd6ca0a1e"
+      "email": "admin@gmail.com",
+      "id": "5",
+      "password": "96cae35ce8a9b0244178bf28e4966c2ce1b8385723a96a6b838858cdd6ca0a1e",
+      "dateOfIssue": "2020-10-12T17:00:00.000Z"
     },
     {
-      "id": "11",
-      "role": "client",
-      "name": "Vũ Hồng K",
-      "age": 27,
-      "phoneNumber": "0905671234",
-      "email": "vuhongk@gmail.com",
-      "skills": ["Giao hàng", "Giúp việc gia đình"],
-      "location": "Cần Thơ, Việt Nam",
-      "availability": "Toàn thời gian",
-      "birthDate": "22/06/1996",
-      "education": "12/12",
-      "rating": 4.7,
-      "identityCard": {
-        "identityNumber": "074200910987",
-        "placeOfIssue": "Cần Thơ",
-        "dateOfIssue": "12/09/2021"
-      },
-      "description": "",
-      "status": "active",
-      "password": "96cae35ce8a9b0244178bf28e4966c2ce1b8385723a96a6b838858cdd6ca0a1e"
-    },
-    {
-      "id": "12",
-      "role": "hirer",
-      "name": "Hoàng Mạnh L",
-      "location": "Hồ Chí Minh, Việt Nam",
-      "phoneNumber": "0913789567",
-      "email": "hoangmanhl@gmail.com",
-      "rating": 4.6,
-      "identityCard": {
-        "identityNumber": "074200920985",
-        "placeOfIssue": "Tp. HCM",
-        "dateOfIssue": "21/07/2021"
-      },
-      "birthDate": "1994-05-18",
-      "description": "Dịch vụ sửa chữa điện lạnh.",
-      "status": "active",
-      "password": "96cae35ce8a9b0244178bf28e4966c2ce1b8385723a96a6b838858cdd6ca0a1e"
-    },
-    {
-      "id": "13",
-      "role": "client",
-      "name": "Lý Quốc M",
-      "age": 29,
-      "phoneNumber": "0912678990",
-      "email": "lyquocm@gmail.com",
-      "skills": ["Phục vụ sự kiện", "Giữ trẻ"],
-      "location": "Hải Dương, Việt Nam",
-      "availability": "Bán thời gian",
-      "birthDate": "14/08/1995",
-      "education": "12/12",
-      "rating": 4.4,
-      "identityCard": {
-        "identityNumber": "074200911189",
-        "placeOfIssue": "Hải Dương",
-        "dateOfIssue": "15/03/2020"
-      },
-      "description": "",
-      "status": "active",
-      "password": "96cae35ce8a9b0244178bf28e4966c2ce1b8385723a96a6b838858cdd6ca0a1e"
-    },
-    {
-      "id": "10c7",
-      "name": "Huỳnh Minh Long",
+      "id": "023a",
+      "name": "Huynh Minh Long",
       "email": "long@gmail.com",
       "password": "96cae35ce8a9b0244178bf28e4966c2ce1b8385723a96a6b838858cdd6ca0a1e",
-      "role": "client"
-    },
-    {
-      "name": "Minh Long Huỳnh",
-      "email": "long1@gmail.com",
-      "identityNumber": "074200910287",
-      "placeOfIssue": "Hà Nội",
-      "dateOfIssue": "2024-11-18T17:00:00.000Z",
-      "birthDate": "2024-11-04",
-      "education": "6",
-      "description": "dadada",
+      "role": "client",
+      "phoneNumber": 394388330,
       "identityCard": {
         "identityNumber": "074200910287",
-        "placeOfIssue": "Hà Nội",
+        "placeOfIssue": "Hồ Chí Minh",
         "dateOfIssue": "2024-11-19"
       },
-      "id": "de11"
+      "education": "12",
+      "birthDate": "2024-11-13",
+      "skills": []
+    },
+    {
+      "id": "5994",
+      "name": "Huynh Minh Long",
+      "email": "hirer@gmail.com",
+      "password": "96cae35ce8a9b0244178bf28e4966c2ce1b8385723a96a6b838858cdd6ca0a1e",
+      "role": "hirer",
+      "phoneNumber": 394388330,
+      "identityCard": {
+        "identityNumber": "074200910287",
+        "placeOfIssue": "Hồ Chí Minh",
+        "dateOfIssue": "2024-10-29"
+      },
+      "education": "4",
+      "birthDate": "2024-11-13",
+      "skills": [],
+      "description": "wow"
+    },
+    {
+      "id": "3cad",
+      "name": "Huynh Minh Long",
+      "email": "client@gmail.com",
+      "password": "96cae35ce8a9b0244178bf28e4966c2ce1b8385723a96a6b838858cdd6ca0a1e",
+      "role": "client",
+      "phoneNumber": 394388330,
+      "identityCard": {
+        "identityNumber": "074200910287",
+        "placeOfIssue": "Hồ Chí Minh",
+        "dateOfIssue": "2024-11-12"
+      },
+      "education": "3",
+      "birthDate": "2024-11-04",
+      "skills": [],
+      "rating": 5,
+      "avatar": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxMSEBUQEhIVFRUWFRUVFRUVFxgXFRUWFRcWFxcVFRUYHSggGBolHRUVITEhJSkrLi4uFx8zODMtNygtLisBCgoKDg0OGBAQGi0mHyUtLS0tKy8tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLf/AABEIALcBEwMBIgACEQEDEQH/xAAbAAACAwEBAQAAAAAAAAAAAAAAAQMEBQIGB//EADQQAAEDAgUCBAUEAgMBAQAAAAEAAhEDIQQSMUFRBWFxgZGhEyKx0fAGMsHhQvEjUmKSFf/EABkBAQADAQEAAAAAAAAAAAAAAAABAgQDBf/EACIRAAICAgICAwEBAAAAAAAAAAABAhEDIRIxBEETUWFxIv/aAAwDAQACEQMRAD8AqoQhbzzQKSEIAQhCASaSEIGkUIQCQhCAEk0kIBNJBQkEIUFfFNaJKq5JEqLfRYhBWeMXmk6D83Ugrjc+qp8qOnwstoCgZiBMShmLYZIcDBg+KtzRX45fRYhJIvGqM49dFPJFeL+hohcl4TDgpsimBSTQpAJISQAhCEA0ihJACSaEBZlJCcISJOUiEIAKScIhAKUShCASaIQhASuUyuS5QTVjTB7KtWxjG/uMKg/rrAdCQqPJFezpHFJ+jXcVGaio0urMcLLOrdQcHHXKCYjc+eyrLKl0Wjhb7NHGYy5vAGvjwFh1seXGYgc7qnXxpc421uQqz699fzsss5ORrhBRRcxeNLhA0A99fGdFH8Z8XudjP0gKAO31UwfO0W12H5Zc2zskTU8Y4ZZAMi8TaR/5Kv4THGYgAcx7FZVUFozXvYz/ADCjoYgz/wBiot9oniumeww+JaRaJmDsPFTMqjSPPuvL0a7hsfKbSrLcZYgGYO0/VWWZrsq/HT6N91URcDuUqLxMQslmLvHOn9cqehjt9SLEnRdY5k3s4T8dpOjZCJVanigTBIHHcKwCtikn0YZRcewKS6hKFYqKUShCEiQnCSEBKEkISWUJwkgApJwiEAkShCAEJwghAKVw94GpUdTENBykieN1VxDg+wI1uedLLPlzqCNOHxpTezvFY0NaSL2leVxHW3l1zY6fa6vdRfkPEtMgzppfhefrxI4220j2WT5ZTNvwRxqjrE1S6RJnmbFRNqHLvbf+FxSMTOhB9dvPRWCC4AZhrpePNAOjUMbg/WBv5qvUxTjALp2XdUQdd7fnmoqVIzaPNEGdN1B1nTdcvfc2t2haLelPyyPe6pV8K5tzb6KFJMlwkvQqOIm5FufupGVhms687nUa7qBlgIIi+06pUhlOa17Xvxz4qaITNNgD6Ty0mQb2m3jp+FU2fuDcwA5sP6U2HcWOuRBAkD8ubp1MKCHPbBuTb7b6qnR1eyRwLhAdvMzFlaoO5yi0E3v491Rw9Ysm0g87X1V3I17SGEAEtOW+Yuj7qkjpBJk1CMs+86HspjEzeBaBvKrUmw0aGO/CnpuaQCRckjgciVW2i7jZZp1WkZb3MzN5jW5WtgiDccRJ1P5/KyWOZlgjTcW9Few+Ia0ECPU38bWWvDkSe6PP8jE61ZpShcU3AixXa3p2ea1TEkuoSIUgUpJoAQCQnCEBOhATQCQmUkAITQgOVFiKhEBokmY481M48rMxFZ0n5xqYDRciBafNcM+TjH9NHjYuct9HNaXElwaABbc2Jm8eCz8UJl0EMFzFrAXI8xPmp34ghjmiXHWdSDZYmPfLS4OMkCWG0aCAF5TfJntRioo4e6XBrnuLuRfcQPSfQLPrGXEmbWJNjvY8bq9QwjGta45iTcxbQxAPKjxbgTncP3XN976rpF7OU02rKQpEmOfbf0VhpAacuot6Xld4Gq2YcDlMgkbSZt7J4umWk6GxuNHSYsNt1ZvdFFHVlbDUC4wNdObn/a9L0boEaiZuoug4T5myNl7/AAWHAAss+TI26RrxYoxVtGS3otoFvzhQY79L5wb/AM+y9pRoBSOpCFRJ9nRyT1R8Q6x0t+HdGx3jRZ7xa0+n5Oi+k/q3Ah7TaV87d8jrDQjX80grRiyWtmXNiSdroMFUl+V0BtpJGwOn1Vmg7LUMCWkuIPtBVats8AgDQ8m1u6sOqh7WyJfq7KIEaARvb6qzKRLraEtJ8/LsoWtgWjv56WU2CqyMsx2M/wAaGVaq0riRGgn213XK60d1G1aKlGuMuUgiJvyeJU7toM8xsf5VTE0sp354tz9FNhKojLERoZteZnv/AGoa9kp+mSPefUROkacrsVgLn8C4qAW2Fu8f2onMa4XPcDdWirKTdG1gqwFp13/lazCvP9PofNJvoTBtrp6L0QA2C9Lx00jyPJcXLQJFMpLSZRITskUAkIQhBYQnKSEghEpygEuapIaSNfCfabrpNH0E6Zl4nEVScrAW5iQCacgDLq4OsLzuDf1qVKJBEu0k+f7jE7X9luVKsa8H2BKx8TiY+cQZGhgxMnXtC8zy9OrtnreHtXVIzcXig2acn5odItl+W3iZWYacu+Ylxm83JPf83Vl5kxqbGfslhm56mWxG5221i9pWVaNkneiQUz8Bs5YzEm/zSCLdtVjYkfMYOtmjcDaY/Lra6hXDYY0RHbXx/N1kYvDRUABu6NwQC7aRa3sr4ymVekT4DD/K0EAy6db354sCbq5i6RJaA2BIPkQLpNokuLGknLDZBF4sZPCVas7NlaZi1xrbdRdsulSN7odG4O3K9nhcvK8FhOmPfAdics/4tH4VbZg30HT8UOjbQ+Y1C4tLuztb6o+l0IIF1HjMfRpAl7g0d1jfp3FfFFjsVl9ayl/zkkTIH2U8kV4Nsj6r+o6DiWsY5xOgiJ79l4jrTW5w7I5kyCHCLxqDoV6tn6pw1AOYGtbAzaSSJiZkZjPEqh1XqlPEMcwEB2wgtd/8uuFdLi7orfK48kefo021KWQ5iQPlDRaSTLiqYxJbFMkQARmIkxMnKTvfVT0a7qb/AJTqZ29+QrHVqJcCbTIsBbmABt38V0vdM506tdoiDix0m8WkX91qYYgixPJ7d/VYGDuxw1Fh4Hn2VzpeNLHZHERFp0J2v91WUS8J9fppHcGTwZt307LOxmFcHQwOcDceA/CtSpUtNp2jTyjXVVKkggxftvb/ACVIstNGfSq8+vHdXaLo1AsfXw7rGqVXB0m0yR3BVqninx38BJ7ruomZytHpcC6D8hkX4g8+i3WmywujY9mUNMBwHOs+Pit1rpC9HCqXZ5Wd3LoEl1KRK7HA5QmiUAkJyhATBOEkIBwkhCEBCAChCEmT17FZGiCM1rdp1C8xUe6xcbuGhNgCBsPSd4XocUPiYiHAZWXJsTa8R37LJqg1XE6mRldlA189Lb8rzcqtuTPUwukoIosDi07zeeTc2Hp6rTweDh7jGUETM3g3vPgq0sdUDXHLEkDaeCdryZjhLqWKLvkBgAHOQYBM6TvYArNLejXF1shq1Q5x0LWl+8bxbnQQPuqtKkXVBY6+PmLoxOLY2mGtHzTmcON7b8I6c4/Fa4X7HgjT3V0qTKt20jQpAF7m5IBJLYcARHjYbKMzmLuNrKHJ84M6Xtz48LW6W4VHhxklx+adyLz7+y5S1s7w3oq4XBV6ok1hS+YEQY5u4f5bb7L09DpZNOTVc90uJloyOn/EMJhoGxbB7r03Tuk0yAS0ei56vFNogC5gBUeRtF1jinfsofpSh8MuF94V7HdObUkESDZw5HFtvql+nyyIc6DqYCtVKrQSQ4COYn0VDoYtf9P5iCWUnwMozMMhusC+i6H6ZYZc6m0H/wAtheiwnUYgVWRKv1q7Mtldtv2c+n0fF/1P0w0nzsqXTapcMjrjvqIvYnxnUD0XtP14xrqRI1F1866diyxwO/fjzXSH+oHPI+M1+nFdrmvOX9sntMc9126uH23i5sJ4XfUqMEkEwTadh5WWc9kHhaEk1ZlbcXRr4bEkQ0nT891YxQLt4bMW1BOsk/RY3xXGLkiF23EERpInaZntxf2VeG7LfJqjSdTIHzRGWAXQYGog/wAqBtKxyEHLJPMchR0axe0tcfDe/C0ei/PUaw7TeJtB/d9FfHG3TOeWdK0cYbZ0XbbW/AgHVe0wRJYJWAOjFlb4guJmBoDxGy9DRaABAjsteGDjdmHPkjKqJEIQtBmDKkQhJACEkICwkhCEDCFyhAdLl4kQmhAVqWFbTDiXHlzjwAvK4iuHU3Pa993kZcpEQbw7YQW+i9djKRfTcwGC5pE8SOy871So6m1tNz5jV0QT6ePGyy+RGkbfFlcv085UZEktPa/mPHxXLKrSC05gZHhGke8qz1CiW081h80Re5j6QFQa28mwsszRqUr6Iq4ExPstTo7gGOJ5AB0MC3pePJZtUX2K7pOIESI3nTxUSVqiYvjKy5iLkkmw02v/ACp/05igKwMm0el1l1q9ome/1T6daoByIn3Cq4/5ZeM/9o+z4bq7WszErH6vUdXb+4sMy3kd1m9Co/GYW5ocPtCzcZQxYq5TlyzBc2THBLdY73WSMbdHoWuzR6Z0ysxxcMTr+7M6Z8ATYrbwnScJTeKpyueL5jEzz3UnQOj4VwBq1Xl0Gc2Zo2iwAG63KvSsCaYLaAeQCCQwgTsczvDuunF/ZTnFaSZUxvUab2kSPULMwnUCSWAyNnC48D3XON6Dhqj4FKBmmA4gRaxAPb3Vk4dlEFlNoaNgAAB4Bcpqi6/hl9RpZ6FUk7OHovl7mRBvp4QV9S63XFPCkf8Akk+ckr5k5kMaf+zY127hd/H6Zm8n0WMPXsGm7TNtx3A9VHVw7dA8X/PRRPeAQJkA3jvqB7oqMObMGyIGgtsLn09VoSMrdndJn/rQxEaDm2q4qWcCP9LqA0gi5IJMG0GYuuKkEyBA+ikj0dy2z4g5j7QQfcL1X6YYxwcYIJudYvOkry7B29V7L9ON/wCNpjXePFdsCuRn8h1E2IQmkthgGkhCASSaSEghJCAnCcpIQgChCcIBApykhANVq2DY45nNnxvCsQgqGk+yU2ujznXMGIawNGXNJJtE89l5zFtvEQRbtb+NPdez65Wpsp5qk5ZAtPjFrrxjqjXPlocAY8p49VkzRp6N3jzuOys5lwAPBdVzsBYekzqF1WgGIMCfrv5KOg3MYjwvEfkD2XE0CrWj5bG/+uFXqyCCCex91ZqU7nQXPh4Dsuarflu3f8sgPQ9D6oQRVbro4L0uKxArAOb+4DbhfMsNiHUzI8xyvS9L6pBDhtt9Qs+THTtGvFmTWz2/S61UCGm/cLdo0qzm/M63Assbo/UmOg/ngt9vWWtF4iN1xT+zTJv0QGjkBKycZiAASSo+v/qam1uVl3HVeLxmNqVjAkBFBspySK/6t638Q/Cabb+HC862oSIMEAWB8QrHUKEVSIOgVepT7H8C2Y4pRVGDLJyk7LDWgtaQNZ8LeHiFDXJBieNPROjXLQQQNIB3F5/pcvDjsbq5zstMc0wQAANhPJ1J1tHoo3OkwGiSoGA8b/l1ap0XDJUyyCbHwOh7qUiHI1uk9Na8w7i4EiPPzC9dg8OKbAxosNFR6Xhh++NRxFvyPRaq2wgoo8/JNyY5SlCSucwQiEFAKUiUIhCRIThCEEqEJwgEnKRCEA5SRCIQBKJQkgI8RQa8ZXNBHBuFk4rpbGU3BjWtEGwHO621HWphwgqGky0ZNHzJ1N2fITEmLnhDpad76d9oXruo9CpF3xC4tIMkC8x2vCyeo4IPIyU9NzafEBY5Y6N0ctmLUquy6x+c+i5fiHQBMAfXurlfpdQOu0n87KJmBqOcAGG+hhU4nSypTYXOGuq0hRLbhW6HTcutiNfzyV8YaRqFnnPZrx49FDD4x7TZxCuHH1X2LyVG7BXV/CYRUckdYxZVpYMm5WnRwmUK1Sw6leLLk5NnWMUjw3WmO+M4gkaREnSJ0UHwzuvSdR6YXGRIMmCLHQLNw+BrNcSTLRs64PY+S2YpRkkjz80JRbl6M6lhM1h2+/3UdVhba4jXw7Bey6aaBdkAyuiYd9Ad1Jj/ANPsqOzFzge0fyPdavitaMXz1LaPH08I97PlzXNv74Xr+i4Mii0OEGLiIjhXsD09lNoA9T/KtwusMfE4ZMvPRxSYAIFgu5QQkupyBCIRCAJSJQhAJOUQkUA5QuUISSyhEpShA0IBTsgEhIpSgOpSlEhaWEwIDRUqDu1v8u+yhui0YuTpFTD4Rzr6N5P8cqZ+HAsPVWa1QnXThdNauTk2aI41EzzggVJT6a0bK/kRlKqdChUwIOyq1cCBcCAfY/Za5aVG5s7fYoDzuJwQcZ0O/B/tZ9WhlMEQV6p+F49Dr5cqCphp+UgGNARt/EfZZ8uBS2jRh8hw09o8vl3VmjVhbB6ez/q4eF/quP8A8pp/y9isz8fIvRsj5WN+yqx8q1hsOTcqzSwLQIn2V+kwAQAfNVXjZH6omXlY107KVLBAm+nKldgWxpb3KuBn+hoF1Mffjw58VtxYVj/p5+XM8n8MDGfp5r9r7/ZVKGCq0jGYkcG4/peoNVRubOy7rRxavsyWk7iE1oPo9lXq0FdT+zhLD9FdCHCNUSFc41QkIKSkgEJ2QVBIkJJhSBITshAdISBTzIATlKUIASTlNoJIA1JgIC50jCZ3yf2tue52C0sRUly7wgaymWj/AB1PLjuqzreazylbNmOHFHWVdAKphcT/AMjqR4zN8Nx+cq6QoLDCEimCgFmCcBBC5hAMsBXDqU/xN/z1TKRcgOA2dBoYN9PX7oNPsfT+1xWxLhl+JVcTZocWybCzflEbRdTt+IQXCCBGY8TYSJvJUJktezjLFzby/tdsYI1dN5DhAF7ZSP3WUfxjAcypSec3zMIJyxYh7QZBOovwuzVKdkHfw9j6beifwgow8roKwO8oT8lyAupUA5cFC+krATCkGbUw8rPrU8phbrwqPUKO6tGVM55IckZqESjMuplBJCApIBNEpEqCQQkhAdEJShCkDCaEKCQJVzBNgZ9zIb2G5/j1SQqzejpiVyLuGP8Axj/05zvLQfQp1ShC4I1GTXqZcRTPJLfIj+lvjRCFJAQlCEIAlOE0IBFqUIQgFlSNBubNHzARPb+UIQDy9kwxCEAwxOEIQAiEIQCTahCAje75gOB9f9KKsyQUIQGNWbBXCSF3j0Y5qpM6hKEIUlQTASQhAQhCELUf/9k="
     }
   ],
   "company": [

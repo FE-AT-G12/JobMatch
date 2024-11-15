@@ -1,7 +1,7 @@
 import { FormOutlined, LockOutlined, LogoutOutlined } from '@ant-design/icons'
 import { Link } from 'react-router-dom'
 
-export const headerItems = [
+export const headerItems = (role) => [
   {
     label: (
       <div className='header__item'>
@@ -19,10 +19,16 @@ export const headerItems = [
     key: '2',
   },
   {
-    label: (
+    label: role ? (
       <div className='header__item'>
-        <Link to='/job/my-posted-job'>Việc làm của tôi</Link>
+        <Link
+          to={role === 'hirer' ? '/job/my-posted-job' : '/job/my-applied-job'}
+        >
+          Việc làm của tôi
+        </Link>
       </div>
+    ) : (
+      <></>
     ),
     key: '3',
   },

@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import JobPostedList from '../../components/Job/JobPostedList'
 import { useSelector } from 'react-redux'
 import { selectUser } from '../../redux/features/userSlice'
