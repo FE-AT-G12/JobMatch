@@ -1,5 +1,5 @@
 .baner-handbook {
-  background: linear-gradient(to bottom, #024caa 70%, #ffffff 100%);
+  background: linear-gradient(to bottom, #024caa, #ffffff);
   padding: 20px; // Thêm khoảng đệm nếu cần
 
   .intro {
@@ -14,8 +14,9 @@
     .intro-handbook {
       display: flex;
       justify-content: center;
-      color: #fff;
+      color: #000000;
       text-align: center;
+      font-size: 15px;
     }
   }
 }

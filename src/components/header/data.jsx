@@ -43,7 +43,7 @@ export const headerItems = (role) => [
   {
     label: (
       <div className='header__item'>
-        <Link to='/hand-book'>Cẩm nang nghề nghiệp</Link>
+        <Link to='/blog'>Cẩm nang nghề nghiệp</Link>
       </div>
     ),
     key: '5',
