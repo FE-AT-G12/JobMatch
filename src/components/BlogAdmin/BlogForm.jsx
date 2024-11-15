@@ -3,12 +3,13 @@ import { Form, Input, Button } from 'antd'
 import ReactQuill from 'react-quill'
 import 'react-quill/dist/quill.snow.css'
 import './BlogForm.css'
-
+import { EditFilled } from '@ant-design/icons'
 export default function BlogForm({
   handleCancel,
   handleSubmit,
   initialValues,
   style,
+  type,
 }) {
   const [form] = Form.useForm()
   const [quillValue, setQuillValue] = useState(initialValues?.content || '')
@@ -132,12 +133,23 @@ export default function BlogForm({
         />
       </Form.Item>
       <Form.Item>
-        <div className='addFormButton'>
-          <Button type='primary' danger onClick={onCancel}>
+        <div
+          style={{
+            display: 'flex',
+            justifyContent: 'space-between',
+          }}
+        >
+          <Button type='primary' danger onClick={onCancel} size='large'>
             Hủy
           </Button>
-          <Button type='primary' htmlType='submit'>
-            Cập nhật
+          <Button
+            type='primary'
+            htmlType='submit'
+            size='large'
+            icon={<EditFilled />}
+          >
+            {type === 'create' && 'Tạo mới'}
+            {type === 'update' && 'Cập nhật'}
           </Button>
         </div>
       </Form.Item>

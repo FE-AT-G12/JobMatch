@@ -3,6 +3,7 @@ import { useParams } from 'react-router-dom'
 import { useGetBlogDetailQuery } from '../../features/blog/blogApi'
 import { Spin } from 'antd'
 import BlogUpdateButton from './BlogUpdateButton'
+import BlogDeleteButton from './BlogDeleteButton'
 export default function BlogAdminDetail() {
   const { blogId } = useParams()
   const { data, error, isLoading } = useGetBlogDetailQuery(blogId)
@@ -26,6 +27,7 @@ export default function BlogAdminDetail() {
       <p>{data.author}</p>
 
       <BlogUpdateButton initialValues={data} />
+      <BlogDeleteButton blogID={data.id} />
     </div>
   )
 }

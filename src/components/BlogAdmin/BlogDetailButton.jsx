@@ -10,7 +10,7 @@ export const BlogDetailButton = ({ record }) => {
   }
 
   return (
-    <Button color='primary' variant='outlined' onClick={handleDetailClick}>
+    <Button color='primary' onClick={handleDetailClick}>
       Chi tiết
     </Button>
   )

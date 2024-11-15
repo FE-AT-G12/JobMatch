@@ -15,8 +15,8 @@ import JobPost from '../page/Job/JobPost'
 import SimpleLayout from '../components/layout/SimpleLayout'
 
 import CompanyDetail from '../page/Company/CompanyDetail'
-import HandbookUser from '../page/HandbookUser/HandbookUser'
-import HandbookD from '../page/HandbookUser/HandbookD'
+import BlogUser from '../page/BlogUser/BlogUser'
+import BlogUserDetail from '../page/BlogUser/BlogUserDetail'
 
 import JobPostedListPage from '../page/Job/JobPostedListPage'
 
@@ -43,12 +43,12 @@ const routes = [
         component: CompanyDetail,
       },
       {
-        path: '/hand-book',
-        component: HandbookUser,
+        path: '/blog',
+        component: BlogUser,
       },
       {
-        path: '/handbook-detail/:id',
-        component: HandbookD,
+        path: '/blog/:id',
+        component: BlogUserDetail,
       },
       {
         path: '/user',

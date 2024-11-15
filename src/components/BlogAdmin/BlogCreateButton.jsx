@@ -72,6 +72,7 @@ const BlogCreateButton = () => {
           initialValues={initialValues}
           handleSubmit={handleSubmit}
           handleCancel={handleCancel}
+          type={'create'}
         />
       </Modal>
     </>
