@@ -24,7 +24,7 @@ function Header() {
   const handleMenuClick = (e) => {
     setCurrent(e.key)
   }
-
+  const items = headerItems(user?.role)
   return (
     <div className='header'>
       <AntHeader
@@ -53,10 +53,9 @@ function Header() {
           mode='horizontal'
           selectedKeys={[current]}
           onClick={handleMenuClick}
-          items={headerItems}
+          items={items}
           className='header__menu'
         />
-
 
         {/* Buttons */}
         <HeaderButtonGroup user={user} handleLogout={handleLogout} />

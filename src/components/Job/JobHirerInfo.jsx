@@ -1,20 +1,43 @@
-import { Col, DatePicker, Flex, Form, Input, Row, Typography } from 'antd'
-import React from 'react'
+import {
+  Col,
+  DatePicker,
+  Flex,
+  Form,
+  Input,
+  message,
+  Row,
+  Typography,
+} from 'antd'
+import React, { useEffect } from 'react'
 import { dateFormatter } from '../../utils/DayFormater'
-
+import dayjs from 'dayjs'
+import { useNavigate } from 'react-router-dom'
 function JobHirerInfo({ user }) {
+  const nav = useNavigate()
+
+  useEffect(() => {
+    if (
+      !user.phoneNumber ||
+      !user.email ||
+      !user.birthDate ||
+      !user.identityCard
+    ) {
+      nav(`/profile/${user.id}`)
+      message.warning('Bạn cần cập nhật thông tin để đăng tin tuyển dụng')
+    }
+  }, [])
   return (
     <Form
       layout='vertical'
       initialValues={{
         name: user.name,
-        phoneNumber: user.phoneNumber,
+        phoneNumber: user?.phoneNumber,
         email: user.email,
-        identityNumber: user.identityCard.identityNumber,
-        placeOfIssue: user.identityCard.placeOfIssue,
-        dateOfIssue:
-          user.identityCard.dateOfIssue &&
-          dateFormatter(user.identityCard.dateOfIssue),
+        identityNumber: user?.identityCard?.identityNumber,
+        placeOfIssue: user?.identityCard?.placeOfIssue,
+        dateOfIssue: user?.identityCard?.dateOfIssue
+          ? dayjs(user.identityCard.dateOfIssue, 'YYYY-MM-DD')
+          : null,
         birthDate: user.birthDate && dateFormatter(user.birthDate),
       }}
     >

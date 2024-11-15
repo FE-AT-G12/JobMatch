@@ -1,0 +1,14 @@
+.form-item {
+  width: 100%;
+}
+
+.form-item .ant-input,
+.form-item .ant-input-textarea,
+.form-item .ql-container {
+  width: 100%;
+}
+
+.form-item .ant-form-item-label {
+  text-align: left;
+  width: 110px;
+}

@@ -16,7 +16,7 @@ import {
   useClientApplyJobMutation,
   useGetJobDetailQuery,
 } from '../../features/job/jobApi'
-import { useParams } from 'react-router-dom'
+import { useNavigate, useParams } from 'react-router-dom'
 import CustomLoading from '../../components/Loading/Loading'
 import { useGetUserDetailQuery } from '../../features/user/userApi'
 import JobDescription from './JobDescription'
@@ -25,7 +25,7 @@ import { selectUser } from '../../redux/features/userSlice'
 
 export default function JobDetailClient() {
   const [open, setOpen] = useState(false)
-
+  const nav = useNavigate()
   const { id } = useParams()
   const { data: job, isLoading } = useGetJobDetailQuery(id)
   const user = useSelector(selectUser)
@@ -33,6 +33,9 @@ export default function JobDetailClient() {
   // Use skip option to avoid conditional hook rendering
   const { data: hirer } = useGetUserDetailQuery(job?.hirerId, {
     skip: !job?.hirerId,
+  })
+  const {data: client} = useGetUserDetailQuery(user?.userId, {
+    skip: !user?.userId
   })
 
   const [applyJob, { isLoading: isApplying }] = useClientApplyJobMutation()
@@ -43,11 +46,22 @@ export default function JobDetailClient() {
 
   const handleApplyJob = async () => {
     if (isApplying) return
-    if (job.clientApplyId.some((id) => user.userId === id)) {
+    if (
+      !client.phoneNumber ||
+      !client.email ||
+      !client.birthDate ||
+      !client.identityCard
+    ) {
+      nav(`/profile/${client.id}`)
+      message.warning('Bạn cần cập nhật thông tin để ứng tuyển')
+      return 
+    }
+    if (job.clientApplyId.some((id) => user.userId === id) || job.clientId.some((id) => user.userId === id)) {
       message.error('Bạn đã ứng tuyển việc này rồi !')
       setOpen(false)
       return
     }
+
     try {
       await applyJob({
         id: job.id,
@@ -100,7 +114,7 @@ export default function JobDetailClient() {
                   src={hirer?.avatar || '/public/blank-avt.jpg'}
                   width={83}
                   height={83}
-                  style={{ borderRadius: '100%' }}
+                  style={{ borderRadius: '100%', objectFit: 'cover' }}
                   alt='hirer Avatar'
                 />
                 <div>

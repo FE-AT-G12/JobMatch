@@ -1,9 +1,6 @@
 import {
-  Badge,
-  Button,
   Col,
   Flex,
-  Image,
   Result,
   Row,
   Select,
