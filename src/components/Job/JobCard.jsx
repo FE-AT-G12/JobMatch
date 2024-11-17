@@ -19,7 +19,7 @@ import { selectUser } from '../../redux/features/userSlice'
 import { moneyFormatter } from '../../utils/moneyFormatter'
 import { DollarOutlined } from '@ant-design/icons'
 import JobStatusTag from './JobStatusTag'
-const JobCard = ({ job, idx }) => {
+const JobCard = ({ job, idx, showListClient=true }) => {
   const pathName = useLocation().pathname
   const user = useSelector(selectUser)
 
@@ -79,42 +79,44 @@ const JobCard = ({ job, idx }) => {
                 Đã đăng {calculateTimeSincePosted(job.datePosted)}
               </Tag>
             </Space>
-            {user?.role === 'hirer' && (
-              <Link to={`/job/my-posted-job/${job.id}/candidate-list`}>
-                <Button
-                  variant='filled'
-                  type='default'
-                  style={{ height: '100%' }}
-                >
-                  Danh sách ứng viên
-                </Button>
-              </Link>
-            )}  
-            <Link
-              to={
-                pathName.includes('my-posted-job')
-                  ? `/job/my-posted-job/${job.id}`
-                  : `/job/${job.id}`
-              }
-            >
-              <button
-                style={{
-                  width: 150,
-                  padding: '10px 0',
-                  backgroundColor: '#024caa',
-                  color: '#fff',
-                  textAlign: 'center',
-                  borderRadius: 10,
-                  fontSize: 16,
-                  fontWeight: 500,
-                  alignSelf: 'end',
-                }}
+            <Flex gap={16}>
+              {user?.role === 'hirer' && showListClient && (
+                <Link to={`/job/my-posted-job/${job.id}/candidate-list`}>
+                  <Button
+                    variant='filled'
+                    type='default'
+                    style={{ height: '100%' }}
+                  >
+                    Danh sách ứng viên
+                  </Button>
+                </Link>
+              )}
+              <Link
+                to={
+                  pathName.includes('my-posted-job')
+                    ? `/job/my-posted-job/${job.id}`
+                    : `/job/${job.id}`
+                }
               >
-                {pathName.includes('my-posted-job')
-                  ? `Chỉnh sửa`
-                  : `Xem chi tiết`}
-              </button>
-            </Link>
+                <button
+                  style={{
+                    width: 150,
+                    padding: '10px 0',
+                    backgroundColor: '#024caa',
+                    color: '#fff',
+                    textAlign: 'center',
+                    borderRadius: 10,
+                    fontSize: 16,
+                    fontWeight: 500,
+                    alignSelf: 'end',
+                  }}
+                >
+                  {pathName.includes('my-posted-job')
+                    ? `Chỉnh sửa`
+                    : `Xem chi tiết`}
+                </button>
+              </Link>
+            </Flex>
           </Flex>
         </Flex>
       </Flex>

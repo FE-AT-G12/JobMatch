@@ -136,7 +136,7 @@ export default function JobDetailClient() {
               <Typography.Paragraph>{hirer.description}</Typography.Paragraph>
               <Typography.Text strong>Đánh giá: </Typography.Text>
               {hirer?.rating ? (
-                <Rate disabled defaultValue={hirer?.rating} />
+                <Rate disabled defaultValue={hirer?.rating.average} />
               ) : (
                 'Chưa có đánh giá'
               )}

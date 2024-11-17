@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 import {
   Button,
@@ -11,6 +11,7 @@ import {
   Typography,
   DatePicker,
   TimePicker,
+  Modal,
 } from 'antd'
 import {
   dateJsToStringFormatter,
@@ -25,6 +26,7 @@ import { useUpdateJobMutation } from '../../features/job/jobApi'
 
 const Require = () => <span style={{ color: 'red' }}>*</span>
 function JobUpdateForm({ job }) {
+  const [open, setOpen] = useState(false)
   const [updateJob] = useUpdateJobMutation()
   const [form] = Form.useForm()
 
@@ -65,11 +67,20 @@ function JobUpdateForm({ job }) {
       message.error('Cập nhật công việc thất bại!')
     }
   }
-
+  const handleDelete = async () => {
+    try {
+      await updateJob({ id: job.id, data: { status: 'Đã hủy' } })
+      message.success(`Hủy công việc ${job.title} thành công`)
+      setOpen(false)
+    } catch (error) {
+      message.error('Có lỗi xảy ra')
+    }
+  }
   return (
     <>
       <Form
         form={form}
+        disabled={job.status === 'Đã hủy'}
         onFinish={handleSubmit}
         layout='vertical'
         initialValues={{
@@ -265,39 +276,68 @@ function JobUpdateForm({ job }) {
             </Form.Item>
           </Flex>
         </div>
-        <Form.Item>
-          <Form.Item>
+        {job.status !== 'Đã hủy' && (
+          <>
+            <Form.Item>
+              <Button
+                style={{
+                  width: '100%',
+                  marginTop: '24px',
+                  padding: '25px 0',
+                  textAlign: 'center',
+                  borderRadius: '20px',
+                }}
+                htmlType='reset'
+                variant='text'
+                onClick={form.resetFields}
+              >
+                <div style={{ fontSize: '20px', fontWeight: '600' }}>
+                  Hủy thay đổi
+                </div>
+              </Button>
+            </Form.Item>
+            <Form.Item>
+              <Button
+                style={{
+                  width: '100%',
+                  padding: '25px 0',
+                  color: '#fff',
+                  backgroundColor: '#024CAA',
+                  textAlign: 'center',
+                  borderRadius: '20px',
+                }}
+                htmlType='submit'
+              >
+                <div style={{ fontSize: '20px', fontWeight: '600' }}>
+                  Cập nhật
+                </div>
+              </Button>
+            </Form.Item>
             <Button
+              danger
               style={{
                 width: '100%',
-                marginTop: '24px',
                 padding: '25px 0',
                 textAlign: 'center',
                 borderRadius: '20px',
               }}
-              htmlType='reset'
-              variant='text'
+              onClick={() => setOpen(true)}
             >
               <div style={{ fontSize: '20px', fontWeight: '600' }}>
-                Hủy thay đổi
+                Huỷ công việc
               </div>
             </Button>
-          </Form.Item>
-          <Button
-            style={{
-              width: '100%',
-              padding: '25px 0',
-              color: '#fff',
-              backgroundColor: '#024CAA',
-              textAlign: 'center',
-              borderRadius: '20px',
-            }}
-            htmlType='submit'
-          >
-            <div style={{ fontSize: '20px', fontWeight: '600' }}>Cập nhật</div>
-          </Button>
-        </Form.Item>
+          </>
+        )}
       </Form>
+      <Modal
+        title={`Bạn có chắn chắc muốn hủy công việc ?`}
+        open={open}
+        onOk={handleDelete}
+        onCancel={() => setOpen(false)}
+      >
+        Hủy công việc {job.title}
+      </Modal>
     </>
   )
 }

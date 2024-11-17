@@ -1,5 +1,5 @@
 import React from 'react'
-import { Card, Row, Col, Button, Tag, Typography, Flex } from 'antd'
+import { Card, Row, Col, Button, Typography, Flex } from 'antd'
 import {
   EnvironmentOutlined,
   MoneyCollectOutlined,
@@ -68,7 +68,7 @@ export default function JobDetail({ job, handleApplyJob, user, notShowBtn }) {
           <Col span={24} style={{display: notShowBtn ? 'none': 'block'}}>
             <Flex style={{ marginTop: 16 }} wrap gap={16}>
               {user ? (
-                user.role == 'client' && (
+                (user.role === 'client' && job.status === 'Đang tuyển') && (
                   <Button
                     onClick={handleApplyJob}
                     type='primary'
@@ -90,7 +90,6 @@ export default function JobDetail({ job, handleApplyJob, user, notShowBtn }) {
                   </Button>
                 </Link>
               )}
-              {user?.role == 'client' && <Button size='large'>Lưu</Button>}
             </Flex>
           </Col>
         </Row>

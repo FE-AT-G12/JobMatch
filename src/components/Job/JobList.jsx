@@ -69,8 +69,8 @@ function JobList() {
     setCurrentPage(1) // Reset to first page
   }
   const handleResetFilter = () => {
-    setTitleFilter()
-    setCityFilter()
+    setTitleFilter('')
+    setCityFilter([])
     setFilteredJobs(jobs?.filter((job) => job.status === 'Đang tuyển'))
   }
 
@@ -176,7 +176,7 @@ function JobList() {
         {filteredJobs && filteredJobs.length !== 0 ? (
           <>
             {jobsData.map((job) => (
-              <JobCard key={job.id} job={job} />
+              <JobCard key={job.id} job={job} showListClient={false}/>
             ))}
             <Pagination
               current={currentPage}

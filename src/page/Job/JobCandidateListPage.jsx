@@ -26,7 +26,7 @@ function JobCandidateListPage() {
         <>
           {job.clientId && job.clientId.length !== 0 ? (
             job.clientId.map((id) => (
-              <JobUserAppliedList key={id} clientId={id} setKey={setKey} notShowBtn={true}/>
+              <JobUserAppliedList key={id} clientId={id} job={job} setKey={setKey} notShowBtn={true} tabKey={1}/>
             ))
           ) : (
             <Card>
@@ -53,7 +53,7 @@ function JobCandidateListPage() {
         <>
           {job.clientApplyId && job.clientApplyId.length !== 0 ? (
             job.clientApplyId.map((id) => (
-              <JobUserAppliedList key={id} clientId={id} setKey={setKey} job={job}/>
+              <JobUserAppliedList key={id} clientId={id} setKey={setKey} job={job}  tabKey={2}/>
             ))
           ) : (
             <Card>
