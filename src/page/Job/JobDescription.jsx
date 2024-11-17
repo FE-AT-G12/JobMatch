@@ -94,7 +94,7 @@ const JobDescription = ({ job, handleApplyJob, user }) => {
         </li>
       </ul>
       {user ? (
-        user.role == 'client' && <Button
+        user.role == 'client'  && job.status === 'Đang tuyển' && <Button
           type='primary'
           style={{ backgroundColor: '#024caa', flex: 1 }}
           size='large'
