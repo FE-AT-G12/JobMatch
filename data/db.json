@@ -4,12 +4,20 @@
       "id": "5ac8",
       "title": "Gõ word",
       "description": "Gõ word",
-      "skillRequirement": ["Gõ word"],
+      "skillRequirement": [
+        "Gõ word"
+      ],
       "ageRequirement": {
         "min": "18",
         "max": "30"
       },
-      "repeatOn": ["Thứ 2", "Thứ 3", "Thứ 4", "Thứ 5", "Thứ 6"],
+      "repeatOn": [
+        "Thứ 2",
+        "Thứ 3",
+        "Thứ 4",
+        "Thứ 5",
+        "Thứ 6"
+      ],
       "category": "Văn phòng",
       "location": "Tại nhà",
       "dateStart": "2024-10-31",
@@ -22,8 +30,14 @@
         "payTime": "Sau khi thành công"
       },
       "hirerId": "1",
-      "clientId": ["5", "4"],
-      "clientApplyId": ["3", "1"],
+      "clientId": [
+        "5",
+        "4"
+      ],
+      "clientApplyId": [
+        "3",
+        "1"
+      ],
       "datePosted": "2024-02-10 12:20:43",
       "status": "Đang tuyển"
     },
@@ -31,12 +45,18 @@
       "id": "c7ce",
       "title": "333",
       "description": "3312312312",
-      "skillRequirement": ["1231233", "33"],
+      "skillRequirement": [
+        "1231233",
+        "33"
+      ],
       "ageRequirement": {
         "min": 22,
         "max": 23
       },
-      "repeatOn": ["Thứ 3", "Thứ 2"],
+      "repeatOn": [
+        "Thứ 3",
+        "Thứ 2"
+      ],
       "category": "Dọn dẹp vệ sinh",
       "location": "12, Hoang Dieu, Thắng Lợi, Thành phố Kon Tum, Tỉnh Kon Tum, Việt Nam",
       "dateStart": "2024-11-13",
@@ -50,46 +70,43 @@
       },
       "hirerId": "4",
       "clientId": [],
-      "clientApplyId": ["3", "5"],
+      "clientApplyId": [
+        "3",
+        "5"
+      ],
       "datePosted": "2024-11-13 17:32:41",
       "status": "Đang tuyển"
     }
   ],
   "user": [
     {
-      "id": "1",
-      "name": "Trần Minh C",
-      "phoneNumber": "0933445566",
+      "name": "Trần Minh A",
+      "phoneNumber": "0933445563",
       "email": "tranmc@gmail.com",
-      "identityNumber": "074200910287",
-      "placeOfIssue": "Hà Nội",
-      "dateOfIssue": "2020-10-12T17:00:00.000Z",
-      "birthDate": "1994-05-18",
-      "education": "9",
-      "skills": [
-        "Nhập liệu",
-        "Phục vụ",
-        "Chăm sóc khách hàng",
-        "Dọn dẹp vệ sinh"
-      ],
-      "description": "Cực chuyên nghiệp",
-      "identityCard": {
-        "identityNumber": "074200910287",
-        "placeOfIssue": "Hà Nội",
-        "dateOfIssue": "2020-10-13"
-      },
-      "role": "client",
-      "password": "96cae35ce8a9b0244178bf28e4966c2ce1b8385723a96a6b838858cdd6ca0a1e"
+      "identityNumber": "074200910286",
+      "status": true,
+      "id": "1"
     },
     {
       "id": "3",
-      "name": "Trần Minh Vua",
+      "role": "client",
+      "name": "Trần Minh Th",
+      "location": "Hồ Chí Minh, Việt Nam",
       "phoneNumber": "0933445566",
       "email": "tranmc@gmail.com",
+      "rating": 4.7,
+      "identityCard": {
+        "identityNumber": "074200910287",
+        "placeOfIssue": "Hà Nội",
+        "dateOfIssue": "2020-10-13"
+      },
+      "birthDate": "1994-05-18",
+      "description": "Cực chuyên nghiệp",
+      "status": true,
+      "password": "96cae35ce8a9b0244178bf28e4966c2ce1b8385723a96a6b838858cdd6ca0a1e",
       "identityNumber": "074200910287",
       "placeOfIssue": "Hà Nội",
       "dateOfIssue": "2020-10-12T17:00:00.000Z",
-      "birthDate": "1994-05-18",
       "education": "9",
       "skills": [
         "Nhập liệu",
@@ -97,14 +114,8 @@
         "Chăm sóc khách hàng",
         "Dọn dẹp vệ sinh"
       ],
-      "description": "Cực chuyên nghiệp",
-      "identityCard": {
-        "identityNumber": "074200910287",
-        "placeOfIssue": "Hà Nội",
-        "dateOfIssue": "2020-10-13"
-      },
-      "role": "client",
-      "password": "96cae35ce8a9b0244178bf28e4966c2ce1b8385723a96a6b838858cdd6ca0a1e"
+      "age": 22,
+      "availability": "Bán thời gian"
     },
     {
       "id": "4",
@@ -121,30 +132,47 @@
       },
       "birthDate": "1994-05-18",
       "description": "Công ty dịch vụ hỗ trợ tổ chức sự kiện.",
-      "status": "active",
-      "password": "96cae35ce8a9b0244178bf28e4966c2ce1b8385723a96a6b838858cdd6ca0a1e"
+      "status": false,
+      "password": "96cae35ce8a9b0244178bf28e4966c2ce1b8385723a96a6b838858cdd6ca0a1e",
+      "identityNumber": "074200910286",
+      "placeOfIssue": "Hà Nội",
+      "dateOfIssue": "2020-10-12T17:00:00.000Z",
+      "education": "9",
+      "skills": [
+        "Nhập liệu",
+        "Phục vụ",
+        "Chăm sóc khách hàng",
+        "Dọn dẹp vệ sinh"
+      ]
     },
     {
       "id": "5",
       "role": "client",
       "name": "Ngô Tấn E",
-      "age": 22,
+      "location": "Hồ Chí Minh, Việt Nam",
       "phoneNumber": "0922457890",
       "email": "ngotane@gmail.com",
-      "skills": ["Phục vụ quán", "Tạp vụ", "Dọn dẹp nhà cửa"],
-      "location": "Hồ Chí Minh, Việt Nam",
-      "availability": "Bán thời gian",
-      "birthDate": "01/09/2002",
-      "education": "12/12",
       "rating": 4.7,
       "identityCard": {
         "identityNumber": "074200910483",
         "placeOfIssue": "Tp. HCM",
         "dateOfIssue": "22/07/2021"
       },
+      "birthDate": "01/09/2002",
       "description": "",
-      "status": "active",
-      "password": "96cae35ce8a9b0244178bf28e4966c2ce1b8385723a96a6b838858cdd6ca0a1e"
+      "status": false,
+      "password": "96cae35ce8a9b0244178bf28e4966c2ce1b8385723a96a6b838858cdd6ca0a1e",
+      "identityNumber": "074200910286",
+      "placeOfIssue": "Hà Nội",
+      "dateOfIssue": "2020-10-12T17:00:00.000Z",
+      "education": "12/12",
+      "skills": [
+        "Phục vụ quán",
+        "Tạp vụ",
+        "Dọn dẹp nhà cửa"
+      ],
+      "age": 22,
+      "availability": "Bán thời gian"
     },
     {
       "id": "6",
@@ -161,7 +189,7 @@
       },
       "birthDate": "1994-05-18",
       "description": "Dịch vụ bảo vệ và vệ sinh văn phòng.",
-      "status": "active",
+      "status": true,
       "password": "96cae35ce8a9b0244178bf28e4966c2ce1b8385723a96a6b838858cdd6ca0a1e"
     },
     {
@@ -187,7 +215,7 @@
         "dateOfIssue": "15/08/2021"
       },
       "description": "",
-      "status": "active",
+      "status": true,
       "password": "96cae35ce8a9b0244178bf28e4966c2ce1b8385723a96a6b838858cdd6ca0a1e"
     },
     {
@@ -205,7 +233,7 @@
       },
       "birthDate": "1994-05-18",
       "description": "Dịch vụ cung cấp lao động thời vụ cho nhà hàng.",
-      "status": "active",
+      "status": true,
       "password": "96cae35ce8a9b0244178bf28e4966c2ce1b8385723a96a6b838858cdd6ca0a1e"
     },
     {
@@ -215,7 +243,10 @@
       "age": 24,
       "phoneNumber": "0903123789",
       "email": "dovanai@gmail.com",
-      "skills": ["Sửa chữa xe máy", "Giao hàng"],
+      "skills": [
+        "Sửa chữa xe máy",
+        "Giao hàng"
+      ],
       "location": "Hà Nội, Việt Nam",
       "availability": "Toàn thời gian",
       "birthDate": "19/07/2000",
@@ -227,7 +258,7 @@
         "dateOfIssue": "05/04/2021"
       },
       "description": "",
-      "status": "active",
+      "status": true,
       "password": "96cae35ce8a9b0244178bf28e4966c2ce1b8385723a96a6b838858cdd6ca0a1e"
     },
     {
@@ -245,7 +276,7 @@
       },
       "birthDate": "1994-05-18",
       "description": "Doanh nghiệp vận tải hàng hóa.",
-      "status": "active",
+      "status": true,
       "password": "96cae35ce8a9b0244178bf28e4966c2ce1b8385723a96a6b838858cdd6ca0a1e"
     },
     {
@@ -255,7 +286,10 @@
       "age": 27,
       "phoneNumber": "0905671234",
       "email": "vuhongk@gmail.com",
-      "skills": ["Giao hàng", "Giúp việc gia đình"],
+      "skills": [
+        "Giao hàng",
+        "Giúp việc gia đình"
+      ],
       "location": "Cần Thơ, Việt Nam",
       "availability": "Toàn thời gian",
       "birthDate": "22/06/1996",
@@ -267,7 +301,7 @@
         "dateOfIssue": "12/09/2021"
       },
       "description": "",
-      "status": "active",
+      "status": true,
       "password": "96cae35ce8a9b0244178bf28e4966c2ce1b8385723a96a6b838858cdd6ca0a1e"
     },
     {
@@ -285,7 +319,7 @@
       },
       "birthDate": "1994-05-18",
       "description": "Dịch vụ sửa chữa điện lạnh.",
-      "status": "active",
+      "status": true,
       "password": "96cae35ce8a9b0244178bf28e4966c2ce1b8385723a96a6b838858cdd6ca0a1e"
     },
     {
@@ -295,7 +329,10 @@
       "age": 29,
       "phoneNumber": "0912678990",
       "email": "lyquocm@gmail.com",
-      "skills": ["Phục vụ sự kiện", "Giữ trẻ"],
+      "skills": [
+        "Phục vụ sự kiện",
+        "Giữ trẻ"
+      ],
       "location": "Hải Dương, Việt Nam",
       "availability": "Bán thời gian",
       "birthDate": "14/08/1995",
@@ -307,7 +344,7 @@
         "dateOfIssue": "15/03/2020"
       },
       "description": "",
-      "status": "active",
+      "status": true,
       "password": "96cae35ce8a9b0244178bf28e4966c2ce1b8385723a96a6b838858cdd6ca0a1e"
     },
     {
@@ -315,7 +352,8 @@
       "name": "Huỳnh Minh Long",
       "email": "long@gmail.com",
       "password": "96cae35ce8a9b0244178bf28e4966c2ce1b8385723a96a6b838858cdd6ca0a1e",
-      "role": "client"
+      "role": "client",
+      "status": true
     },
     {
       "name": "Minh Long Huỳnh",
@@ -331,7 +369,9 @@
         "placeOfIssue": "Hà Nội",
         "dateOfIssue": "2024-11-19"
       },
-      "id": "de11"
+      "id": "de11",
+      "status": false,
+      "phoneNumber": "0933445564"
     }
   ],
   "company": [
