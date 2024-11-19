@@ -11,7 +11,7 @@ function TopIndustriesSection() {
   if (isLoading) return <div>Loading...</div>
   if (error) return <div>Error: {error.message}</div>
 
-  // Calculate the jobs to display on the current page
+
   const startIndex = (currentPage - 1) * pageSize
   const currentJobs = jobs.slice(startIndex, startIndex + pageSize)
 
@@ -64,7 +64,6 @@ function TopIndustriesSection() {
           marginTop: '20px',
           display: 'flex',
           justifyContent: 'center',
-          marginBottom: '20px',
         }}
       />
     </div>
