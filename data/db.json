@@ -80,12 +80,34 @@
   ],
   "user": [
     {
+      "id": "1",
+      "role": "client",
       "name": "Trần Minh A",
-      "phoneNumber": "0933445563",
+      "location": "Hồ Chí Minh, Việt Nam",
+      "phoneNumber": "0933445565",
       "email": "tranmc@gmail.com",
-      "identityNumber": "074200910286",
+      "rating": 4.7,
+      "identityCard": {
+        "identityNumber": "074200910287",
+        "placeOfIssue": "Hà Nội",
+        "dateOfIssue": "2020-10-13"
+      },
+      "birthDate": "1994-05-18",
+      "description": "Cực chuyên nghiệp",
       "status": true,
-      "id": "1"
+      "password": "96cae35ce8a9b0244178bf28e4966c2ce1b8385723a96a6b838858cdd6ca0a1e",
+      "identityNumber": "074200910287",
+      "placeOfIssue": "Hà Nội",
+      "dateOfIssue": "2020-10-12T17:00:00.000Z",
+      "education": "9",
+      "skills": [
+        "Nhập liệu",
+        "Phục vụ",
+        "Chăm sóc khách hàng",
+        "Dọn dẹp vệ sinh"
+      ],
+      "age": 22,
+      "availability": "Bán thời gian"
     },
     {
       "id": "3",

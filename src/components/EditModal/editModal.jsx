@@ -20,10 +20,9 @@ export default function EditModal({ isOpen, onOk, onClose, userInfo, error }) {
     }, [userInfo, form]);
 
     const handleSubmit = async (values) => {
-        // const updatedValues = { ...currentValues, ...values };
-        const updatedValues = {
-            ...values,
-        }
+        const currentValues = form.getFieldsValue(true);
+        const updatedValues = { ...currentValues, ...values };
+
         try {
             await updateAccount({
                 id: userInfo?.id,
