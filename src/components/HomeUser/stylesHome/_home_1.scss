@@ -1,138 +1,141 @@
-.home-1 {
-  .title-1 {
-    color: #024caa;
-    font-size: 24px;
-    font-weight: bold;
-  }
-  .search-dropdown {
-    position: relative;
-    width: 250px;
-    padding: 20px 0px;
+.title-1 {
+  color: #024caa;
+  font-size: 24px;
+  font-weight: bold;
+  padding: 30px 0px;
+}
+.search-dropdown {
+  position: relative;
+  width: 250px;
+  padding: 20px 0px;
 
-    .search-input {
-      display: flex;
-      align-items: center;
-      border: 1px solid #ccc;
-      border-radius: 8px;
-      padding: 5px;
-      cursor: pointer;
-      background-color: #fff;
-
-      input {
-        border: none;
-        width: 100%;
-        font-size: 16px;
-        cursor: pointer;
-        padding-left: 50px;
-
-        &:focus {
-          outline: none;
-        }
-      }
-
-      .dropdown-icon {
-        font-size: 18px;
-        margin-left: 10px;
-        color: #888;
-      }
-    }
-
-    .dropdown-menu {
-      position: absolute;
-      top: 70%;
-      left: 0;
-      right: 0;
-      background-color: #fff;
-      border: 1px solid #ccc;
-      border-radius: 8px;
-      margin-top: 5px;
-      list-style: none;
-      padding: 0;
-      z-index: 1000;
-      max-height: 150px;
-      overflow-y: auto; // Thêm scroll nếu có quá nhiều lựa chọn
-
-      li {
-        padding: 10px;
-        cursor: pointer;
-        transition: background-color 0.3s;
-
-        &:hover {
-          background-color: #f4f4f4;
-        }
-      }
-    }
-  }
-  .card-job-container {
+  .search-input {
     display: flex;
-    flex-wrap: wrap; // Allow the cards to wrap to the next line
-    justify-content: space-between; // Distribute space evenly
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 5px;
+    cursor: pointer;
+    background-color: #fff;
 
-    .card-job {
-      //flex: 0 0 calc(33.33% - 16px);
-      margin-bottom: 16px;
+    input {
+      border: none;
+      width: 100%;
+      font-size: 16px;
+      cursor: pointer;
+      padding-left: 50px;
 
-      display: flex;
-      transition:
-        transform 0.3s ease,
-        box-shadow 0.3s ease;
+      &:focus {
+        outline: none;
+      }
+    }
+
+    .dropdown-icon {
+      font-size: 18px;
+      margin-left: 10px;
+      color: #888;
+    }
+  }
+
+  .dropdown-menu {
+    position: absolute;
+    top: 70%;
+    left: 0;
+    right: 0;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin-top: 5px;
+    list-style: none;
+    padding: 0;
+    z-index: 1000;
+    max-height: 150px;
+    overflow-y: auto; // Thêm scroll nếu có quá nhiều lựa chọn
+
+    li {
+      padding: 10px;
+      cursor: pointer;
+      transition: background-color 0.3s;
 
       &:hover {
-        transform: translateY(-5px);
-        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+        background-color: #f4f4f4;
+      }
+    }
+  }
+}
+.card-job-container {
+  display: flex;
+  flex-wrap: wrap; // Allow the cards to wrap to the next line
+  justify-content: space-between; // Distribute space evenly
+
+  .card-job {
+    //flex: 0 0 calc(33.33% - 16px);
+    margin-bottom: 16px;
+
+    display: flex;
+    transition:
+      transform 0.3s ease,
+      box-shadow 0.3s ease;
+
+    &:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    }
+
+    .ant-card {
+      padding: 1px;
+      border: 1px solid #f0f0f0;
+      border-radius: 10px;
+      background-color: #fff;
+    }
+
+    .job-infor {
+      margin-top: -10px;
+
+      .job-title,
+      .job-city,
+      .salary,
+      .address {
+        justify-content: flex-start;
+        font-size: 18px;
+        color: #333;
+        margin: 0px 0;
       }
 
-      .ant-card {
-        padding: 1px;
-        border: 1px solid #f0f0f0;
-        border-radius: 10px;
-        background-color: #fff;
+      .text_ellipsis {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: block;
+        max-width: 100%;
       }
 
-      .job-infor {
-        margin-top: -10px;
+      .job-title {
+        font-weight: bold;
+        font-size: 20px;
+      }
 
-        .job-title,
-        .job-city,
-        .salary,
-        .address {
-          justify-content: flex-start;
-          font-size: 18px;
-          color: #333;
-          margin: 0px 0;
-        }
+      .box-footer {
+        margin-top: 10px;
+      }
 
-        .text_ellipsis {
-          white-space: nowrap;
-          overflow: hidden;
-          text-overflow: ellipsis;
-          display: block;
-          max-width: 100%;
-        }
+      .col-job-info {
+        display: flex;
 
-        .job-title {
+        .salary {
+          color: #007bff;
           font-weight: bold;
-          font-size: 20px;
         }
 
-        .box-footer {
-          margin-top: 10px;
-        }
-
-        .col-job-info {
-          display: flex;
-
-          .salary {
-            color: #007bff;
-            font-weight: bold;
-          }
-
-          .address {
-            margin-left: 10px;
-            color: #666;
-          }
+        .address {
+          margin-left: 10px;
+          color: #666;
         }
       }
     }
   }
+}
+.pagination{
+  display: flex;
+  justify-content: center;
 }
