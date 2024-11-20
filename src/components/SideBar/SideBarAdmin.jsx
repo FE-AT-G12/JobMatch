@@ -5,7 +5,7 @@ export default function SideBarAdmin() {
   return (
     <>
 
-      <Menu defaultSelectedKeys={['1']} items={dataItems} />
+      <Menu defaultSelectedKeys={['2']} items={dataItems} />
       <LogOut />
     </>
   )

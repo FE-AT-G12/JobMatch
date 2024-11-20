@@ -136,8 +136,8 @@
   "user": [
     {
       "id": "1",
-      "name": "Trần Minh B",
-      "phoneNumber": "0933445566",
+      "name": "Trần Minh A",
+      "phoneNumber": "0933445564",
       "email": "tranmc@gmail.com",
       "birthDate": "1994-05-18",
       "education": "9",
@@ -149,7 +149,7 @@
       ],
       "description": "Cực chuyên nghiệp",
       "identityCard": {
-        "identityNumber": "074200910286",
+        "identityNumber": "074200910284",
         "placeOfIssue": "Hồ Chí Minh",
         "dateOfIssue": "2024-11-19"
       },
