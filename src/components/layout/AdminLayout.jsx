@@ -14,7 +14,7 @@ export default function AdminLayout() {
           collapsible
           collapsed={collapsed}
           style={{
-            height: '100vh',
+            minHeight: '100vh',
             background: '#fff',
           }}
         >
@@ -41,6 +41,7 @@ export default function AdminLayout() {
           <Content
             style={{
               minHeight: '90vh',
+              overflow: 'initial',
             }}
           >
             <Outlet />

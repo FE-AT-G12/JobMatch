@@ -28,8 +28,8 @@
     text-align: right;
     font-weight: 500;
     cursor: pointer;
-    transition: .3s;
-    &:hover{
+    transition: 0.3s;
+    &:hover {
       color: $primary;
     }
   }
@@ -60,7 +60,7 @@
       background-color: black;
     }
   }
-  &__username{
+  &__username {
     color: $primary !important;
   }
 }

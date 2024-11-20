@@ -5,6 +5,7 @@ import { Card, Col, Image, Row } from 'antd'
 import { useGetCompanyListQuery } from '../../features/company/companyApi'
 import Container from '../../components/container'
 import Whychose from '../../components/whychosewe'
+import { Link } from 'react-router-dom'
 
 function Company() {
   const [input, setInput] = useState('')
@@ -64,64 +65,62 @@ function Company() {
             <Row gutter={16}>
               {companies.map((company) => (
                 <Col span={8} key={company.id}>
-                  <Card
-                    className='card-company'
-                    style={{
-                      height: '300px',
-                      borderRadius: '20px',
-                      overflow: 'hidden',
-                      position: 'relative',
-                      boxShadow: '0 4px 12px rgba(0, 0, 0, 0.15)',
-                      marginBottom: '15px',
-                    }}
-                  >
-                    {/* Banner positioned absolutely */}
-                    <Image
-                      src={company.coverImage}
-                      alt='Company Banner'
-                      className='company-banner'
+                  <Link to={`/companyDetail/${company.id}`}>
+                    <Card
+                      className='card-company'
                       style={{
-                        width: '350px',
-                        height: '150px',
-                        objectFit: 'cover',
-                      }}
-                    />
-
-                    {/* Logo and Details positioned at the bottom */}
-                    <div
-                      className='company-info-container'
-                      style={{
-                        position: 'absolute',
-                        bottom: '0',
-                        left: '0',
-                        right: '0',
-                        padding: '10px',
-                        background: 'rgba(255, 255, 255, 0.9)',
+                        height: '300px',
+                        borderRadius: '20px',
+                        overflow: 'hidden',
+                        position: 'relative',
+                        boxShadow: '0 4px 12px rgba(0, 0, 0, 0.15)',
+                        marginBottom: '15px',
                       }}
                     >
                       <Image
-                        src={company.logo}
-                        alt='Company Logo'
-                        className='company-logo'
+                        src={company.coverImage}
+                        alt='Company Banner'
+                        className='company-banner'
                         style={{
-                          width: '50px',
-                          height: '50px',
-                          borderRadius: '8px',
-                          marginBottom: '5px',
+                          width: '350px',
+                          height: '150px',
+                          objectFit: 'cover',
                         }}
                       />
-                      <div className='company-info'>
-                        <p className='company-name'>{company.name}</p>
-                        <p className='company-intro'>{company.intro}</p>
+                      <div
+                        className='company-info-container'
+                        style={{
+                          position: 'absolute',
+                          bottom: '0',
+                          left: '0',
+                          right: '0',
+                          padding: '10px',
+                          background: 'rgba(255, 255, 255, 0.9)',
+                        }}
+                      >
+                        <Image
+                          src={company.logo}
+                          alt='Company Logo'
+                          className='company-logo'
+                          style={{
+                            width: '50px',
+                            height: '50px',
+                            borderRadius: '8px',
+                            marginBottom: '5px',
+                          }}
+                        />
+                        <div className='company-info'>
+                          <p className='company-name'>{company.name}</p>
+                          <p className='company-intro'>{company.intro}</p>
+                        </div>
                       </div>
-                    </div>
-                  </Card>
+                    </Card>
+                  </Link>
                 </Col>
               ))}
             </Row>
           </div>
         </div>
-        <Whychose />
       </Container>
     </div>
   )

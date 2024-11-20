@@ -18,36 +18,13 @@ import { useSelector } from 'react-redux'
 import { selectUser } from '../../redux/features/userSlice'
 import { moneyFormatter } from '../../utils/moneyFormatter'
 import { DollarOutlined } from '@ant-design/icons'
-
-const JobCard = ({ job, idx }) => {
+import JobStatusTag from './JobStatusTag'
+const JobCard = ({ job, idx, showListClient=true }) => {
   const pathName = useLocation().pathname
   const user = useSelector(selectUser)
 
   if (!job) return 'hehe'
-  const jobStatus = (status) => {
-    switch (status) {
-      case 'Đã tuyển':
-        return (
-          <div>
-            <Tag color='success'>{status}</Tag>
-          </div>
-        )
-      case 'Đang tuyển':
-        return (
-          <div>
-            <Tag color='warning'>{status}</Tag>
-          </div>
-        )
-      case 'Đã hủy':
-        return (
-          <div>
-            <Tag color='error'>{status}</Tag>
-          </div>
-        )
-      default:
-        break
-    }
-  }
+
   return (
     <div style={{ position: 'relative' }}>
       <Flex
@@ -70,7 +47,7 @@ const JobCard = ({ job, idx }) => {
               <Typography.Title style={{ marginBottom: 2 }} level={4}>
                 {job.title}
               </Typography.Title>
-              {jobStatus(job.status)}
+              <JobStatusTag status={job.status} />
             </Flex>
             <Typography.Text style={{ color: '#888', marginBottom: 8 }}>
               {job.clientApplyId.length === 0
@@ -102,55 +79,70 @@ const JobCard = ({ job, idx }) => {
                 Đã đăng {calculateTimeSincePosted(job.datePosted)}
               </Tag>
             </Space>
-            <Link
-              to={
-                pathName.includes('my-posted-job')
-                  ? `/job/my-posted-job/${job.id}`
-                  : `/job/${job.id}`
-              }
-            >
-              <button
-                style={{
-                  width: 150,
-                  padding: '10px 0',
-                  backgroundColor: '#024caa',
-                  color: '#fff',
-                  textAlign: 'center',
-                  borderRadius: 10,
-                  fontSize: 16,
-                  fontWeight: 500,
-                  alignSelf: 'end',
-                }}
+            <Flex gap={16}>
+              {user?.role === 'hirer' && showListClient && (
+                <Link to={`/job/my-posted-job/${job.id}/candidate-list`}>
+                  <Button
+                    variant='filled'
+                    type='default'
+                    style={{ height: '100%' }}
+                  >
+                    Danh sách ứng viên
+                  </Button>
+                </Link>
+              )}
+              <Link
+                to={
+                  pathName.includes('my-posted-job')
+                    ? `/job/my-posted-job/${job.id}`
+                    : `/job/${job.id}`
+                }
               >
-                {pathName.includes('my-posted-job')
-                  ? `Chỉnh sửa`
-                  : `Xem chi tiết`}
-              </button>
-            </Link>
+                <button
+                  style={{
+                    width: 150,
+                    padding: '10px 0',
+                    backgroundColor: '#024caa',
+                    color: '#fff',
+                    textAlign: 'center',
+                    borderRadius: 10,
+                    fontSize: 16,
+                    fontWeight: 500,
+                    alignSelf: 'end',
+                  }}
+                >
+                  {pathName.includes('my-posted-job')
+                    ? `Chỉnh sửa`
+                    : `Xem chi tiết`}
+                </button>
+              </Link>
+            </Flex>
           </Flex>
         </Flex>
       </Flex>
-      {job.clientApplyId.length !== 0 && user?.role === 'hirer' && (
-        <Flex
-          align='center'
-          justify='center'
-          style={{
-            position: 'absolute',
-            top: -10,
-            right: -10,
-            padding: 8,
-            borderRadius: '100%',
-            backgroundColor: 'red',
-            width: 24,
-            height: 24,
-            textAlign: 'center',
-            fontSize: 11,
-            color: '#fff',
-          }}
-        >
-          {job.clientApplyId.length}
-        </Flex>
-      )}
+      {job.clientApplyId.length !== 0 &&
+        user?.role === 'hirer' &&
+        pathName === '/job/my-posted-job' && (
+          <Flex
+            align='center'
+            justify='center'
+            style={{
+              position: 'absolute',
+              top: -10,
+              right: -10,
+              padding: 8,
+              borderRadius: '100%',
+              backgroundColor: 'red',
+              width: 24,
+              height: 24,
+              textAlign: 'center',
+              fontSize: 11,
+              color: '#fff',
+            }}
+          >
+            {job.clientApplyId.length}
+          </Flex>
+        )}
     </div>
   )
 }

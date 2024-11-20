@@ -13,12 +13,25 @@ import BlogAdmin from '../page/BlogAdmin/BlogAdmin'
 import Profile from '../page/User/Profile'
 import JobPost from '../page/Job/JobPost'
 import SimpleLayout from '../components/layout/SimpleLayout'
+
+import CompanyDetail from '../page/Company/CompanyDetail'
+import BlogUser from '../page/BlogUser/BlogUser'
+import BlogUserDetail from '../page/BlogUser/BlogUserDetail'
+
 import JobPostedListPage from '../page/Job/JobPostedListPage'
 
 import JobUpdatePage from '../page/Job/JobUpdatePage'
 import BlogAdminDetail from '../page/BlogAdmin/BlogAdminDetail'
 import JobBrowsePage from '../page/Job/JobBrowsePage'
 import JobDetailClient from '../page/Job/JobDetailClient'
+
+import CompanyAdmin from '../page/CompanyAdmin/CompanyAdmin'
+import CompanyAdDetail from '../page/CompanyAdmin/CompanyAdDetail'
+import CompanyAdd from '../components/CompanyAdmin/CompanyAdd'
+
+import JobAppliedListPage from '../page/Job/JobAppliedListPage'
+import JobCandidateListPage from '../page/Job/JobCandidateListPage'
+
 
 const routes = [
   {
@@ -32,6 +45,18 @@ const routes = [
       {
         path: '/company',
         component: Company,
+      },
+      {
+        path: '/companyDetail/:id',
+        component: CompanyDetail,
+      },
+      {
+        path: '/blog',
+        component: BlogUser,
+      },
+      {
+        path: '/blog/:id',
+        component: BlogUserDetail,
       },
       {
         path: '/user',
@@ -53,6 +78,12 @@ const routes = [
       {
         path: '/job/my-posted-job/:id',
         component: JobUpdatePage,
+        role: ['hirer']
+      },
+      {
+        path: '/job/my-posted-job/:id/candidate-list',
+        component: JobCandidateListPage,
+        role: ['hirer']
       },
       {
         path: '/job/post',
@@ -63,6 +94,11 @@ const routes = [
         path: '/job/my-posted-job',
         component: JobPostedListPage,
         role: ['hirer'],
+      },
+      {
+        path: '/job/my-applied-job',
+        component: JobAppliedListPage,
+        role: ['client'],
       },
     ],
   },
@@ -79,6 +115,7 @@ const routes = [
       },
     ],
   },
+
   {
     layout: AdminLayout,
     data: [
@@ -100,6 +137,21 @@ const routes = [
       {
         path: '/admin/job/:jobId',
         component: JobAdminDetail,
+        role: ['admin'],
+      },
+      {
+        path: '/admin/company',
+        component: CompanyAdmin,
+        role: ['admin'],
+      },
+      {
+        path: '/admin/companyadd',
+        component: CompanyAdd,
+        role: ['admin'],
+      },
+      {
+        path: '/admin/company/:id',
+        component: CompanyAdDetail,
         role: ['admin'],
       },
       {

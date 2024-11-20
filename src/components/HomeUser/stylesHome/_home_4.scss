@@ -1,5 +1,6 @@
 .home-4 {
   margin-top: 20px;
+  margin-bottom: -20px;
   .title-2 {
     color: #024caa;
     font-size: 24px;
@@ -8,7 +9,14 @@
   }
   .city-card {
     padding: 20px 0px;
-
+    justify-content: center;
+    
+    .job-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr); 
+      gap: 16px; 
+      width: 100%;
+    }
     .city-card-mini {
       display: flex;
       justify-content: center;
@@ -28,4 +36,5 @@
       display: flex;
     }
   }
+
 }

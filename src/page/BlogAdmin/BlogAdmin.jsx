@@ -1,6 +1,6 @@
 import React from 'react'
 import BlogAdminTable from '../../components/BlogAdmin/BlogAdminTable'
-
+import BlogCreateButton from '../../components/BlogAdmin/BlogCreateButton'
 export default function BlogAdmin() {
   return (
     <div>
@@ -12,7 +12,12 @@ export default function BlogAdmin() {
       >
         <h1>Blog Admin</h1>
       </div>
-      <BlogAdminTable />
+      <div>
+        <BlogCreateButton />
+      </div>
+      <div>
+        <BlogAdminTable />
+      </div>
     </div>
   )
 }

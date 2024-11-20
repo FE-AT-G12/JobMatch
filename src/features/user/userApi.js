@@ -31,11 +31,11 @@ export const userApi = apiSlice.injectEndpoints({
     updateUser: build.mutation({
       query: ({ data, id }) => ({
         url: `/user/${id}`,
-        method: 'PUT',
-        body: { data, id },
+        method: 'PATCH',
+        body: data ,
       }),
       transformResponse: (res) => res,
-      invalidatesTags: ['User'],
+      invalidatesTags: ['User', 'UserDetail'],
     }),
     deleteUser: build.mutation({
       query: (id) => ({
@@ -43,7 +43,7 @@ export const userApi = apiSlice.injectEndpoints({
         method: 'DELETE',
       }),
       transformResponse: (res) => res,
-      invalidatesTags: ['User'],
+      invalidatesTags: ['User', 'UserDetail'],
     }),
   }),
 })

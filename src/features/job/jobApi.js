@@ -44,8 +44,8 @@ export const jobApi = apiSlice.injectEndpoints({
     updateJob: build.mutation({
       query: ({ id, data }) => ({
         url: `/job/${id}`,
-        method: 'PUT',
-        body: { data, id }, // Wrap data inside another object with a data key
+        method: 'PATCH',
+        body: data, // Wrap data inside another object with a data key
       }),
       transformResponse: (res) => res,
       invalidatesTags: ['Job'],
