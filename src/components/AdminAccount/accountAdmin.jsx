@@ -4,10 +4,14 @@ import { Col, Container, Row } from 'react-bootstrap'
 import { useGetUserDetailQuery, useGetUserListQuery } from '../../features/user/userApi'
 import { Button, Modal, Table, Tag } from 'antd'
 import EditModal from '../../components/EditModal/editModal'
+import { useNavigate } from 'react-router-dom'
+import LogOut from '../LogOutButton/logOut'
+import AddAccount from '../AddAccount/addAccount'
 
 export default function AccountAdmin() {
     const { data, error, isLoading } = useGetUserListQuery()
     const [isModalOpen, setIsModalOpen] = useState(false)
+    const [isAddModalOpen, setIsAddModalOpen] = useState(false)
     const [selectedUserId, setSelectedUserId] = useState(null)
     const { data: userInfo, error: error1, isLoading: isLoading1 } = useGetUserDetailQuery(selectedUserId, {
         skip: !selectedUserId,
@@ -15,8 +19,10 @@ export default function AccountAdmin() {
 
     if (isLoading) return <div>Loading...</div>
     if (error) return <div>Error: {error.message}</div>
-
+    const nav = useNavigate()
     const user = JSON.parse(localStorage.getItem("user"))
+
+
 
     const columns = [
         {
@@ -75,15 +81,22 @@ export default function AccountAdmin() {
         setSelectedUserId(id)
         setIsModalOpen(true)
     }
-
+    const showAddModal = () => {
+        setIsAddModalOpen(true)
+    }
     const handleOk = () => {
         setIsModalOpen(false)
         setSelectedUserId(null)
     }
-
+    const handleAddOk = () => {
+        setIsAddModalOpen(false)
+    }
     const handleCancel = () => {
         setIsModalOpen(false)
         setSelectedUserId(null)
+    }
+    const handleAddCancel = () => {
+        setIsAddModalOpen(false)
     }
 
     return (
@@ -95,6 +108,11 @@ export default function AccountAdmin() {
                     onClose={handleCancel}
                     userInfo={userInfo}
                 />
+                <AddAccount
+                    isOpen={isAddModalOpen}
+                    onOk={handleAddOk}
+                    onClose={handleAddCancel}
+                />
                 <Row className='justify-content-md-center'>
                     <Col md={12}>
                         <Row style={{ marginBottom: '5%' }}>
@@ -103,6 +121,13 @@ export default function AccountAdmin() {
                                 Theo dõi mọi tiến độ công việc tại đây!
                             </h5>
                         </Row>
+                        <Button
+                            type="primary"
+                            onClick={() => showAddModal()}
+                            style={{marginBottom:"10px"}}
+                        >
+                            Create new account
+                        </Button>
                         <Row>
                             <Table
                                 dataSource={data}

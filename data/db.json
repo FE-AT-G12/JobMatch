@@ -136,7 +136,7 @@
   "user": [
     {
       "id": "1",
-      "name": "Trần Minh A",
+      "name": "Trần Minh B",
       "phoneNumber": "0933445566",
       "email": "tranmc@gmail.com",
       "birthDate": "1994-05-18",
@@ -155,7 +155,7 @@
       },
       "role": "hirer",
       "password": "96cae35ce8a9b0244178bf28e4966c2ce1b8385723a96a6b838858cdd6ca0a1e",
-      "status": false,
+      "status": true,
       "avatar": "data:image/jpeg;base64,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",
       "rating": {
         "average": 5,
@@ -280,6 +280,75 @@
           }
         ]
       }
+    },
+    {
+      "id": "360b",
+      "name": "Hồ Ngọc Sang",
+      "email": "hongocsang1306@gmail.com",
+      "password": "96cae35ce8a9b0244178bf28e4966c2ce1b8385723a96a6b838858cdd6ca0a1e",
+      "role": "client",
+      "status": true,
+      "identityCard": {}
+    },
+    {
+      "id": "c776",
+      "name": "Test",
+      "email": "test@gmail.com",
+      "phoneNumber": "0909090909",
+      "identityCard": {
+        "identityNumber": "074200910285"
+      },
+      "status": true
+    },
+    {
+      "id": "ebdd",
+      "name": "Trần Minh A",
+      "email": "ad1min@gmail.com",
+      "phoneNumber": "0933445564",
+      "password": "123123",
+      "confirmPassword": "123123",
+      "status": true,
+      "identityCard": {}
+    },
+    {
+      "id": "0116",
+      "name": "Trần Minh A",
+      "email": "tra1mc@gmail.com",
+      "phoneNumber": "0933445564",
+      "password": "123123",
+      "confirmPassword": "123123",
+      "status": true,
+      "identityCard": {}
+    },
+    {
+      "id": "e78d",
+      "name": "Trần Minh A",
+      "email": "tra1msc@gmail.com",
+      "phoneNumber": "0933445564",
+      "password": "4ea5c508a6566e76240543f8feb06fd457777be39549c4016436afda65d2330e",
+      "confirmPassword": "123123"
+    },
+    {
+      "id": "9623",
+      "name": "Trần Minh A",
+      "email": "tra1msdc@gmail.com",
+      "phoneNumber": "0933445564",
+      "password": "96cae35ce8a9b0244178bf28e4966c2ce1b8385723a96a6b838858cdd6ca0a1e"
+    },
+    {
+      "id": "a314",
+      "name": "Trần Minh A",
+      "email": "admsin@gmail.com",
+      "phoneNumber": "0933445564",
+      "password": "96cae35ce8a9b0244178bf28e4966c2ce1b8385723a96a6b838858cdd6ca0a1e"
+    },
+    {
+      "id": "db84",
+      "name": "test1",
+      "email": "davie1306@gmail.com",
+      "phoneNumber": "0933445563",
+      "password": "a665a45920422f9d417e4867efdc4fb8a04a1f3fff1fa07e998e86f7f7a27ae3",
+      "status": true
     }
   ],
   "company": [
